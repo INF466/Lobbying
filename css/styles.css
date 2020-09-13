@@ -1,15 +1,22 @@
-/* placeholder file for Stylesheet */
 
-/*Title Fonts*/
+
+/* hide disclaimer by default=============================*/
+.disclaimer{
+	display: none;
+}
+
+/*Title Fonts=============================================*/
 title {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
- /*Header*/
+ /*Header=================================================*/
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
+  margin: auto;
+  text-align:center;
 }
 
 main{
@@ -17,17 +24,93 @@ main{
   color: black;
 
 }
-/*Typical Paragraph Body*/
+/*Typical Paragraph Body==================================*/
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   color: inherit;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-/*Nav*/
+/*Nav=====================================================*/
 nav {
-  color: white;
-  background-color: #0087D0;
+	color: white;
+	background-color: #0087D0;
+	height: 50px;
+	padding-left: 15%;
+	height:50px;
+	position:sticky;
+	top:0;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top:10px;
+	height:50px;
+	display: inline-block;
+}
+
+.active{
+	background-color: #0076d0;	
+	height:80%;
+}
+
+.nav a:hover{
+	background-color: #0076d0;
+	height:80%;
+	text-shadow: 2px 2px #333333;
+}
+
+/*aside nav===============================================*/
+aside{
+	overflow:visible;
+	float: left;
+	width:12%;
+	position:sticky;
+	top:50px;
+}
+
+.sideNav{
+	float: left;
+	height:60vh;
+	width: 100%;
+	margin:0px;
+	padding:0px;
+	padding-top: 50px;
+	border-radius: 0px 0px 30px 0px;
+	background-color: #006399;
+}
+
+.sideNav a{
+	margin:auto;
+	text-align:center;
+	padding-left: 0px;
+	padding-right:0px;
+	width:100%;
+}
+
+.sideNav a:hover{
+	margin:auto;
+	text-align:center;
+	padding-left: 0px;
+	padding-right:0px;
+	width:100%;
+	background-color: #0087d0;
+}
+
+
+/*Homepage Slider=========================================*/
+.homeSlider{
+	height: 400px;
+}
+
+.homeSlider p{
+	margin: 0px;
 }
 
 body {
@@ -36,3 +119,37 @@ body {
   background-color: white;
   color: black;
 }
+
+/*footer==================================================*/
+footer{
+	height:75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
