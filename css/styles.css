@@ -24,6 +24,11 @@ main{
   color: black;
 
 }
+
+.pageTitle{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 /*Typical Paragraph Body==================================*/
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -36,12 +41,13 @@ p {
 /*Nav=====================================================*/
 nav {
 	color: white;
-	background-color: #0087D0;
+	background: rgba(0, 135, 208, 0.9);
 	height: 50px;
 	padding-left: 15%;
 	height:50px;
 	position:sticky;
 	top:0;
+	z-index: 1;
 }
 
 nav a{
@@ -71,13 +77,13 @@ aside{
 	overflow:visible;
 	float: left;
 	width:12%;
-	position:sticky;
+	position:fixed;
 	top:50px;
 }
 
 .sideNav{
 	float: left;
-	height:60vh;
+	height:565px;
 	width: 100%;
 	margin:0px;
 	padding:0px;
@@ -103,26 +109,123 @@ aside{
 	background-color: #0087d0;
 }
 
+/*SLider===========================================*/
 
-/*Homepage Slider=========================================*/
-.homeSlider{
-	height: 400px;
+.moduleSlide {
+	display: none;
+	}
+	
+.moduleSlide:first-child {
+    display: block;
 }
 
-.homeSlider p{
+.moduleSlide p{
 	margin: 0px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  background-color: white;
+.slideshowContainer {
+  width: 75%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  background-color:lightgray;
+  border-radius:10px;
+}
+
+.homeSlideshowContainer{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
   color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+}
+
+/* Number text (1/8 etc) */
+.numberText {
+  color: #000;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  left: 44%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotActive, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 /*footer==================================================*/
 footer{
 	height:75px;
+	position:sticky;
+	bottom: -75px;
+	left:0;
+}
+
+.spacer{
+	height:350px;
 }
 
 
