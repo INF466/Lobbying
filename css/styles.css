@@ -193,6 +193,15 @@ aside{
   background-color: #717171;
 }
 
+.asideActive{
+	background-color: #006399;
+}
+
+.asideActive2{
+	background-color: #0076d0;
+}
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

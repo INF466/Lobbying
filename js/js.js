@@ -13,6 +13,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("moduleSlide");
   var dots = document.getElementsByClassName("dot");
+  var asideSquares = document.getElementsByClassName("asideActive");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -21,7 +22,23 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" dotActive", "");
   }
+  for (i = 0; i < asideSquares.length; i++) {
+      asideSquares[i].className = asideSquares[i].className.replace(" asideActive2", "");
+  }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " dotActive";
+  asideSquares[slideIndex-1].className += " asideActive2";
 }
 //END script for the module slider============================//
+
+
+
+
+
+
+
+
+
+
+
+
