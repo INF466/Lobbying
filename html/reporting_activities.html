@@ -1,0 +1,222 @@
+<<<<<<< Updated upstream:html/reporting.html
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Example Title</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 
+  <nav> 
+    <a href="index.html">Home</a>
+    <a href="modules.html">Modules</a>
+    <a href="reporting.html">Reporting</a>
+  </nav>
+  
+  <main>
+    <div class="pageTitle">
+      <h2>
+        Put a title here
+      </h2>
+    </div>
+      <br>
+    <div class="reportact1">
+
+    <h2>Reporting page</h2>
+    <br>
+    <br>
+    <button class="button1" id="activitybut" type="submit">Report my lobbying activities</button>
+    <!-- <button class="expenses" id="expensebut" type="submit">Report my lobbying expenses</button> -->
+
+    <form class="formactivities-form hide" id="formact">
+      <h3>Lobbying activities form</h3>
+      <p> 
+      <label for="date">Did you lobby today?</label>
+      <select id="date" name="date">
+        <option value="null">--</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </p>
+    <br>
+    <p> 
+      <label for="gov">What level of government did you lobby?</label>
+      <select id="gov" name="categorygov">
+          <option value="null">--</option>
+          <option value="state">State</option>
+          <option value="municipality">Municipality</option>
+          <option value="both">State and Municipality</option>
+      </select>
+    </p>  
+    <br>
+    <p>
+      <label for="location">Did you lobby at the office of an individual or state entity?</label>
+      <select id="location" name="locationlob">
+          <option value="null">--</option>
+          <option value="individual">Individual</option>
+          <option value="stateEntity">State Entity</option>
+      </select>     
+    </p>
+    <br>
+    <p> 
+      <label for="office">What office did you lobby?</label><br>
+      <textarea id="office" name="office"></textarea> 
+    </p>
+    <br>
+    <p> 
+      <label for="metwith">Who did you meet with?</label><br>
+      <textarea id="metwith" name="metwith"></textarea>
+      </p>
+    <br>
+    <p>
+       <label for="lobbyfor">Did you lobby for legislation or funding?</label>
+       <select id="lobbyfor" name="lobbyfor">
+          <option value="null">--</option>
+          <option value="legislation">Legislation</option>
+          <option value="funding">Funding</option>
+          <option value="both">Legislation and Funding</option>
+          <option value="other">Other</option>
+       </select>
+    </p>
+    <br>
+    <p> 
+      <label for="lobbyfor2">What did you lobby for?</label>
+      <textarea id="lobbyfor2" name="lobbyfor2"></textarea>
+    </p>
+    <br>
+    <button class="button1" id="submit" type="submit">Submit Lobbying activities report</button>
+    </form>
+  
+
+<!--     <form class="formexpenses-form hide" id="formexp">
+      <h3>Lobbying expenses form</h3>
+      <p> 
+        <label for="date2">Did you incur expenses while lobbying today?</label>
+        <select id="date2" name="date2">
+          <option value="null">--</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </p>
+      <br>
+      <p>
+        <label for="incurmessage">I incurred expenses on </label><br>
+        <p>Check all that apply:</p>
+        <input type="checkbox" id="ad1" name="ad1" value="ad1">
+        <label for="ad1">Advertising - Billboards</label>
+        <input type="checkbox" id="ad2" name="ad2" value="ad2">
+        <label for="ad2">Advertising - Flyers</label>
+        <input type="checkbox" id="ad3" name="ad3" value="ad3">
+        <label for="ad3">Advertising - Television/Radio</label>
+        <input type="checkbox" id="bus" name="bus" value="bus">
+        <label for="bus">Buses for Lobby Event</label>
+        <input type="checkbox" id="cellphone" name="cellphone" value="cellphone">
+        <label for="cellphone">Cell phone</label>
+        <input type="checkbox" id="com" name="com" value="com">
+        <label for="com">Computer/Internet</label>
+        <input type="checkbox" id="con" name="con" value="con">
+        <label for="con">Consulting</label>
+        <input type="checkbox" id="adv" name="adv" value="adv">
+        <label for="adv">E-advocacy</label>
+        <input type="checkbox" id="legisbill" name="legisbill" value="legisbill">
+        <label for="legisbill">Legislative Bill Tracking</label>
+        <input type="checkbox" id="legisres" name="legisres" value="legisres">
+        <label for="legisres">Legislative Research</label>
+        <input type="checkbox" id="lodging" name="lodging" value="loding">
+        <label for="lodging">Lodging</label>
+        <input type="checkbox" id="meal" name="meal" value="meal">
+        <label for="meal">Meals for Lobby Event</label>
+        <input type="checkbox" id="photo" name="photo" value="photo">
+        <label for="photo">Photocopies</label>
+        <input type="checkbox" id="rallies" name="rallies" value="rallies">
+        <label for="rallies">Rallies</label>
+        <input type="checkbox" id="rent" name="rent" value="rent">
+        <label for="rent">Rent</label>
+        <input type="checkbox" id="social" name="social" value="social">
+        <label for="social">Social</label>
+        <input type="checkbox" id="eventre" name="eventre" value="eventre">
+        <label for="eventre">Event/Reception/Banquet Rent</label>
+        <input type="checkbox" id="socialweb" name="socialweb" value="socialweb">
+        <label for="socialweb">Social Media - Websites</label>
+        <input type="checkbox" id="travel" name="travel" value="travel">
+        <label for="travel">Travel Reimbursement - Train, Airfare, Care, Hotel</label>
+        <input type="checkbox" id="other1" name="other1" value="other1">
+        <label for="other1">Other</label>
+      </p>
+
+
+    </form>
+ -->
+  </div>
+
+    
+ 
+ <hr> 
+
+  <footer>
+    <p>Contact Information:</p>
+    <p>Email: CHANGE ME</p>
+  </footer>  
+
+</main>
+    
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes:html/reporting_activities.html
+
