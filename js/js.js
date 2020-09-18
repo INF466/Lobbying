@@ -31,14 +31,18 @@ function showSlides(n) {
 }
 //END script for the module slider============================//
 
+//START script for the reporting page=========================//
 
+var activitiesbut = document.getElementById("activitybut");
+activitiesbut.onclick = function () {
+    document.getElementById("formexp").classList.add("hide");
+    document.getElementById("formact").classList.remove("hide");
+}
+var expensesbut = document.getElementById("expensebut");
+expensesbut.onclick = function () {
+    document.getElementById("formact").classList.add("hide");
+    document.getElementById("formexp").classList.remove("hide");
+}
 
-
-
-
-
-
-
-
-
-
+//END script for the reporting page============================//
+>>>>>>> 275df1aa7412ab9b30d0f7f6b50476fbcb8c90e3
