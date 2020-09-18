@@ -24,4 +24,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " dotActive";
 }
-//END script for the module slider============================//
+
+//START script for the reporting page=========================//
+
+var activitiesbut = document.getElementById("activitybut");
+activitiesbut.onclick = function () {
+    document.getElementById("formexp").classList.add("hide");
+    document.getElementById("formact").classList.remove("hide");
+}
+var expensesbut = document.getElementById("expensebut");
+expensesbut.onclick = function () {
+    document.getElementById("formact").classList.add("hide");
+    document.getElementById("formexp").classList.remove("hide");
+}
+
+//END script for the reporting page============================//
