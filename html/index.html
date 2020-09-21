@@ -19,18 +19,14 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 <body>
 	
-	<!-- Disclaimer 
-	-------------------------------------------------- -->
+	<!-- Disclaimer
+	-------------------------------------------------->
 	<div class="disclaimer">	
 		<h3>Lobbying Web Tool Disclaimers</h3>
 
@@ -53,13 +49,42 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  
-  <nav> 
-    <a href="#">Home</a>
-    <a href="#">Modules</a>
-    <a href="#">Reporting</a>
+  <nav class="nav"> 
+    <a class="active" href="index.html">Home</a>
+    <a href="modules.html">Modules</a>
+    <a href="reporting_activities.html">Reporting</a>
   </nav>
   
   <main>
+	<div class="homeSlideshowContainer">
+	
+		<div class="moduleSlide">
+			 <img src="../images/placeholder.png" alt="PLACEHOLDER" style="width:100%;height:500px;object-fit:cover;"> 
+		</div>
+		
+		<div class="moduleSlide">
+			<p>Slider Placeholder 2</p>
+		</div>
+		
+		<div class="moduleSlide">
+			<p>Slider Placeholder 3</p>
+		</div>
+		
+		<div class="moduleSlide">
+			<p>Slider Placeholder 4</p>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+	</div>
+	<br>
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	
     <h2>
       Guide for Non-Profits to Lobbying Under New York Law
     </h2>
@@ -75,16 +100,16 @@
     </p>
 
   
-    
-  </main>
- <hr> 
+    <hr> 
   <footer>
     <p>Contact Information:</p>
     <p>Email: CHANGE ME</p>
   </footer>  
+  </main>
+ 
     
     
-
+<script src="../js/js.js"></script> 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
