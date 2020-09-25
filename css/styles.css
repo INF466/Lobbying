@@ -154,7 +154,7 @@ aside{
 
 .slideshowContainer {
   width: 75%;
-  height: 650px;
+  min-height: 650px;
   position: relative;
   margin: auto;
   background-color:lightgray;
@@ -172,7 +172,7 @@ aside{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 325px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -180,14 +180,15 @@ aside{
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 15px 15px 0;
   user-select: none;
+  background-color: #C8C8C8;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 15px 0 0 15px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -250,13 +251,57 @@ aside{
 }
 
 video{
-	padding-top: 20px;
-	width: 50%;
+	width: 55%;
 	margin:auto;
+	margin-top: 20px;
+	padding-bottom: 50px;
 	text-align:center;
 	display:block;
 }
 
+audio{
+	display:block;
+	float:clear;
+	width: 55%;
+	padding-top: 15px;
+	margin:auto;
+}
+
+.homeQuestion{
+	position:absolute;
+	top: 45%;
+	left: 20%;
+	color:white;
+	font-size: 50px;
+}
+
+.homeQuestionInfo{
+	position:absolute;
+	top: 55%;
+	left: 20%;
+	color:white;
+	font-size: 30px;
+}
+
+.goThereButton{
+	position:absolute;
+	top: 80%;
+	left: 20%;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+	margin: 0px;
+	color:white;
+	font-size: 14px;
+	border-style:solid;
+	border-color: black;
+	border-width: 1px;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+.goThereButton:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
 
 
 /* On smaller screens, decrease text size */
