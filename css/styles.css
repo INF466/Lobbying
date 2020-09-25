@@ -38,6 +38,35 @@ p {
   padding-right: 15%;
 }
 
+/*Typical (?) tooltips====================================*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tiptext {
+  visibility: hidden;
+  width: 700px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
+
+
+
+
 /*Nav=====================================================*/
 nav {
 	color: white;
@@ -236,32 +265,3 @@ footer{
 .spacer{
 	height:350px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
