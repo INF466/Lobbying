@@ -183,6 +183,17 @@ aside{
   left: 44%;
 }
 
+.slideshowtext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+	left: 50px;
+  bottom: 225px;
+  width: 100%;
+  text-align: left;
+}
+
 .bodytext{
 	text-align: center;
 	margin: auto;
