@@ -1,5 +1,7 @@
 var currentTab = 0;
 var currentSubTab = 0;
+var expensesReported = {};
+var currentIndex = 0;
 showTab(currentTab);
 
 
@@ -12,11 +14,25 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
+  
+  if (n == 2){
+	if ((currentIndex >= 0) && (currentIndex < expensesReported.expense_type.length)){
+		showLoopedExpenses(currentIndex);
+	}
+  }
+  
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
+}
+
+function showLoopedExpenses(n){
+	var expenseType = expensesReported.expense_type[n];
+	var expense = expenseType.replace("_", " ");
+	document.getElementById("expenseType").innerHTML = expense;
+	
 }
   /* Function to check whether active tab contains subtabs; if so, should change 
      next/previous buttons to switch between tabs
@@ -48,12 +64,21 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form... :
+  if (n == 1){
+	   if (!validateForm()) {
+		   return false;
+	   } else {
+		   saveResults(currentTab);
+	   }
+  }
+  if ((currentTab == 2) && (currentIndex < expensesReported.expense_type.length)){
+  } else{
+	  // Hide the current tab:
+	  x[currentTab].style.display = "none";
+	  // Increase or decrease the current tab by 1:
+	  currentTab = currentTab + n;
+	  // if you have reached the end of the form... :
+  }
   if (currentTab >= x.length) {
     //...the form gets submitted:
     document.getElementById("regForm").submit();
@@ -61,6 +86,33 @@ function nextPrev(n) {
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
+}
+
+function saveResults(n){
+	var currentTabObj = document.getElementsByClassName("tab")[n];
+	var inputs = currentTabObj.getElementsByTagName("input"); 
+	var userInput = {};
+	var index = 0;
+	for (x of inputs){
+		if (x.type == "radio"){
+			if (x.checked){
+				userInput[x.name] = {};
+				userInput[x.name] = x.value;
+			}
+		} else if (x.type == "checkbox"){
+			if (x.checked){
+				if (index == 0) userInput[x.name] = [];
+				userInput[x.name][index] = x.value;
+				index++;
+			}
+		} else {
+			userInput[x.name] = x.value;
+		}
+	}
+	var keys = Object.keys(userInput);
+	for (key of keys){
+		expensesReported[key] = userInput[key];
+	};
 }
 
 function validateForm(){
