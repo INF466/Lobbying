@@ -38,6 +38,215 @@ p {
   padding-right: 15%;
 }
 
+/*styles for report-activities*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tiptext {
+  visibility: hidden;
+  width: 700px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+}
+
+.reportContainer {
+  width: 75%;
+  height: auto;
+  min-height: 800px;
+  position: relative;
+  margin: auto;
+  background-color:lightgray;
+  border-radius:10px;
+}
+.reportbutton {
+  background-color: #0076d0;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  top: 11%;
+  left: 22.5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.reportbutton2 {
+  background-color: #0076d0;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  top: 98%;
+  left: 23%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.reportbutton3 {
+  background-color: #0076d0;
+  width: 210px;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  top: 5%;
+  left: 22.5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal2 {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+  -webkit-animation-name: fadeIn; 
+  -webkit-animation-duration: 0.6s;
+  animation-name: fadeIn;
+  animation-duration: 0.6s
+}
+
+.modal2-header {
+  padding: 4px 12px;
+  background-color: #0076d0;
+  color: white;
+}
+
+.modal2-body {padding: 4px 12px;}
+
+.modal2-footer {
+  padding: 4px 12px;
+  background-color: #0076d0;
+  color: white;
+}
+
+.modalActivities {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animatetop;
+  animation-duration: 0.7s
+}
+
+.modalActivities2 {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.6s;
+  animation-name: slideIn;
+  animation-duration: 0.6s
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  cursor: pointer;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
 /*Nav=====================================================*/
 nav {
 <<<<<<< HEAD
@@ -47,7 +256,6 @@ nav {
 =======
 	color: white;
 	background: rgba(0, 135, 208, 0.9);
-	height: 50px;
 	padding-left: 15%;
 	height:50px;
 	position:sticky;
@@ -131,7 +339,7 @@ aside{
 
 .slideshowContainer {
   width: 75%;
-  height: 500px;
+  min-height: 650px;
   position: relative;
   margin: auto;
   background-color:lightgray;
@@ -149,7 +357,7 @@ aside{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 325px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -157,14 +365,15 @@ aside{
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 15px 15px 0;
   user-select: none;
+  background-color: #C8C8C8;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 15px 0 0 15px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -297,10 +506,128 @@ aside{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+video{
+	width: 55%;
+	margin:auto;
+	margin-top: 20px;
+	padding-bottom: 50px;
+	text-align:center;
+	display:block;
 }
+
+audio{
+	display:block;
+	float:clear;
+	width: 55%;
+	padding-top: 15px;
+	margin:auto;
+}
+
+.homeQuestion{
+	position:absolute;
+	top: 45%;
+	left: 20%;
+	color:white;
+	font-size: 50px;
+}
+
+.homeQuestionInfo{
+	position:absolute;
+	top: 55%;
+	left: 20%;
+	color:white;
+	font-size: 30px;
+}
+
+.goThereButton{
+	position:absolute;
+	top: 80%;
+	left: 20%;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+	margin: 0px;
+	color:white;
+	font-size: 14px;
+	border-style:solid;
+	border-color: black;
+	border-width: 1px;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+.goThereButton:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 900px) {
+	.homeQuestion{
+		font-size: 40px;
+		text-align: center;
+		width: 75%;
+		top: 100px;
+		left: 15%;
+		
+	}
+	
+	.homeQuestionInfo{
+		font-size: 20px;
+		text-align: center;
+		width: 75%;
+		top: 175px;
+		left: 15%;
+	}
+	
+	.homeSlideshowContainer{
+		height: 350px;
+	}
+	
+	.moduleSlide img{
+		height: 350px !important; 
+	}
+}
+@media only screen and (max-width: 650px) {
+	nav a{
+		font-size:20px;
+	}
+	
+	nav {
+		height:40px;
+	}
+	
+	.active{
+		height:75%;
+	}
+	
+	.nav a:hover{
+		height:75%;
+	}
+	
+	.homeQuestion{
+		font-size: 30px;
+		text-align: center;
+		width: 75%;
+		top: 50px;
+		left: 15%;
+		
+	}
+	
+	.homeQuestionInfo{
+		font-size: 15px;
+		text-align: center;
+		width: 75%;
+		top: 175px;
+		left: 15%;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 400px) {
+	nav a{
+		font-size:15px;
+	}
+}
+
 
 /*footer==================================================*/
 footer{
