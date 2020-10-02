@@ -15,9 +15,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -52,14 +49,26 @@
     </div>
     <hr>
       <br>
+    <div class="reportContainer">
     <div class="reportact1">
 
     <h2>Reporting page</h2>
     <br>
     <br>
-    <button class="button1" id="activitybut" type="submit">Report my lobbying activities</button>
+    <button class="reportbutton3" id="modalbtn">Read instruction</button>
+    <div id="modalreport" class="modal">
+      <div class="modalActivities">
+        <span class="close">&times;</span>
+        <h3>Welcome to the Nonprofit Lobbying Web Tool!</h3>
+        <p>This web tool is designed to help you keep track of your nonprofit organization’s activity.</p>
+      </div>
+    </div>
+    <button class="reportbutton" id="activitybut" type="submit">Report my lobbying activities</button>
     <!-- <button class="expenses" id="expensebut" type="submit">Report my lobbying expenses</button> -->
-
+      <br>
+      <br>
+      <br>
+      
     <form class="formactivities-form hide" id="formact">
       <h2>Lobbying activities form</h2>
       <p> 
@@ -140,8 +149,29 @@
         State Regulation/ Rate-making/ Rule<br>
         Municipal Regulation/ Rate-making/ Rule<br></span></p>
     <br>
-    <button class="button1" id="submit" type="submit">Submit Lobbying activities report</button>
-    </form>
+    
+  </form>
+    </div>
+
+   
+
+    <button class="reportbutton2" id="modalbtn2">Submit Lobbying activities report</button>
+    <div id="modalreport2" class="modal2">
+    <div class="modalActivities2">
+      <div class="modal2-header">
+        <span class="close2">&times;</span>
+        <h2>Next Steps</h2>
+      </div>
+      <div class="modal2-body">
+        <h3>Are you finished reporting lobbying that you engaged in today or would you like to record another instance of lobbying?</h3>
+        <p>Finished for Today</p>
+        <p>Record another instance of lobbying</p>
+        <p>Print Report of all lobbying.</p>
+      </div>
+      <div class="modal2-footer">
+        <h3>Thank you!</h3>
+      </div>
+    </div>
   
 
 <!--     <form class="formexpenses-form hide" id="formexp">
@@ -198,12 +228,13 @@
         <label for="travel">Travel Reimbursement - Train, Airfare, Care, Hotel</label>
         <input type="checkbox" id="other1" name="other1" value="other1">
         <label for="other1">Other</label>
-      </p>
-    </form>
+      </p></form>
+    
  -->
   </div>
 
-    
+  </div>
+
  
  <hr> 
 
