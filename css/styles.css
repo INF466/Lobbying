@@ -254,11 +254,8 @@ p {
 
 /*Nav=====================================================*/
 nav {
-<<<<<<< HEAD
   color: white;
   background-color: #0087D0;
-  text-align: center;
-=======
 	color: white;
 	background: rgba(0, 135, 208, 0.9);
 	padding-left: 15%;
@@ -266,7 +263,6 @@ nav {
 	position:sticky;
 	top:0;
 	z-index: 1;
->>>>>>> master
 }
 
 nav a{
@@ -418,16 +414,27 @@ aside{
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flipcardholder{
-	margin: auto;
-	width: auto;
+	margin: 0 auto;
+	display:block;
+	text-align: center;
+	max-width: 906px;
+}
+
+.container{
+	width:100%;
+	max-width: 1200px;
+	text-align:center;
+	margin: 0 auto;
 }
 
 .flip-card {
   background-color: transparent;
+  text-align: center;
+  float:left;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-	margin: auto;
+  margin: auto;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -564,7 +571,7 @@ audio{
 	background: rgba(0, 0, 0, 0.9);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 906px) {
 	.homeQuestion{
 		font-size: 40px;
 		text-align: center;
@@ -572,6 +579,14 @@ audio{
 		top: 100px;
 		left: 15%;
 		
+	}
+	
+	.flipcardholder{
+		max-width: 604px;
+	}
+	
+	.container{
+		width:100%;
 	}
 	
 	.homeQuestionInfo{
@@ -616,6 +631,14 @@ audio{
 		
 	}
 	
+	.flipcardholder{
+		max-width: 302px;
+	}
+	
+	.container{
+		width:100%;
+	}
+	
 	.homeQuestionInfo{
 		font-size: 15px;
 		text-align: center;
@@ -640,6 +663,8 @@ footer{
 	position:sticky;
 	bottom: -75px;
 	left:0;
+	clear:both;
+	
 }
 
 .spacer{
