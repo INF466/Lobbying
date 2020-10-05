@@ -1,4 +1,9 @@
-
+#logo{
+	width:160px;
+	position: fixed;
+	top: 3px;
+	left: 5px;
+}
 
 /* hide disclaimer by default=============================*/
 .disclaimer{
@@ -7,12 +12,12 @@
 
 /*Title Fonts=============================================*/
 title {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, sans-serif;
 }
 
  /*Header=================================================*/
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, sans-serif;
   font-size: 25px;
   color: black;
   margin: auto;
@@ -39,7 +44,7 @@ main{
 
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, sans-serif;
   font-size: 20px;
   color: inherit;
   padding-left: 15%;
@@ -257,11 +262,11 @@ p {
 
 /*Nav=====================================================*/
 nav {
-  color: white;
-  background-color: #0087D0;
+	color: white;
+	background-color: #0087D0;
 	color: white;
 	background: rgba(0, 135, 208, 0.9);
-	padding-left: 15%;
+	padding-left: 200px;
 	height:50px;
 	position:sticky;
 	top:0;
@@ -270,6 +275,7 @@ nav {
 
 nav a{
 	text-decoration: none;
+	font-family: Verdana;
 	color: white;
 	font-size: 25px;
 	padding-left: 15px;
@@ -292,25 +298,26 @@ nav a{
 
 /*aside nav===============================================*/
 aside{
-	overflow:visible;
 	float: left;
 	width:225px;
 	position:fixed;
 	top:50px;
+	bottom: 0;
 	z-index: 1;
 }
 
 .sideNav{
+	overflow:auto;
 	float: left;
-	height:100vh;
+	height:100%;
 	width: 100%;
 	margin:0px;
 	padding:0px;
-	padding-top: 50px;
 	background-color: #006399;
 }
 
 .sideNav a{
+	
 	margin:auto;
 	text-align:center;
 	padding-left: 0px;
@@ -649,15 +656,19 @@ video{
 	
 }
 @media only screen and (max-width: 650px) {
+	#logo{
+		width:120px;
+	}
 	.pageTitle h2{
 		margin-left: 150px;
 	}
 	nav a{
-		font-size:20px;
+		font-size:15px;
 	}
 	
 	nav {
 		height:40px;
+		padding-left: 135px;
 	}
 	
 	.active{
@@ -707,13 +718,16 @@ video{
 	}
 	
 	.slideshowContainer {
-		margin-left: 165px;
+		margin-left: 130px;
+		margin-right: 0px;
 	}
 }
 
 @media only screen and (max-width: 400px) {
 	nav a{
-		font-size:15px;
+		font-size:12px;
+		padding-right:3px;
+		padding-left:3px;
 	}
 }
 
