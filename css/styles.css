@@ -22,6 +22,7 @@ h2 {
 main{
   background-color: #C8C8C8;
   color: black;
+  height:auto;
 
 }
 
@@ -29,11 +30,13 @@ main{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+.pageTitle h2{
+	margin-left: 250px;
+    text-align:left;
+}
 /*Typical Paragraph Body==================================*/
 
-body{
-
-}
 
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -291,19 +294,19 @@ nav a{
 aside{
 	overflow:visible;
 	float: left;
-	width:12%;
+	width:225px;
 	position:fixed;
 	top:50px;
+	z-index: 1;
 }
 
 .sideNav{
 	float: left;
-	height:565px;
+	height:100vh;
 	width: 100%;
 	margin:0px;
 	padding:0px;
 	padding-top: 50px;
-	border-radius: 0px 0px 30px 0px;
 	background-color: #006399;
 }
 
@@ -339,10 +342,11 @@ aside{
 }
 
 .slideshowContainer {
-  width: 75%;
+  max-width: 85%;
   min-height: 650px;
   position: relative;
-  margin: auto;
+  margin-left: 250px;
+  margin-right: 5%;
   background-color:lightgray;
   border-radius:10px;
 }
@@ -390,7 +394,9 @@ aside{
   padding: 8px 12px;
   position: absolute;
   bottom: 0;
-  left: 44%;
+  left: 5%;
+  background-color: #C8C8C8;
+  border-radius: 15px 15px 0 0;
 }
 
 .slideshowtext {
@@ -433,7 +439,6 @@ aside{
   float:left;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
   margin: auto;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -458,6 +463,8 @@ aside{
   position: absolute;
   width: 100%;
   height: 100%;
+  border: 1px solid #000;
+  border-radius:15px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -571,6 +578,18 @@ audio{
 	background: rgba(0, 0, 0, 0.9);
 }
 
+footer p {
+		margin-left: 150px;
+}
+	
+#dotHide{
+	display:none;
+}
+@media only screen and (max-width: 1280px) {
+video{
+		width: 75%;
+	}
+}
 @media only screen and (max-width: 906px) {
 	.homeQuestion{
 		font-size: 40px;
@@ -604,8 +623,35 @@ audio{
 	.moduleSlide img{
 		height: 350px !important; 
 	}
+	
+	.moduleSlide h2{
+		font-size: 20px;
+	}
+	
+	.moduleSlide p{
+		font-size: 15px;
+	}
+	
+	footer p {
+		font-size:12px;
+		margin-left: 200px;
+	}
+	
+	aside{
+		width:200px;
+		top:50px;
+	}
+
+	
+	.slideshowContainer {
+		margin-left: 215px;
+	}
+	
 }
 @media only screen and (max-width: 650px) {
+	.pageTitle h2{
+		margin-left: 150px;
+	}
 	nav a{
 		font-size:20px;
 	}
@@ -647,7 +693,22 @@ audio{
 		left: 15%;
 	}
 	
+	.numberText {
+	  font-size: 20px;
+	}
 	
+	aside{
+		width:125px;
+		top:40px;
+	}
+
+	.sideNav a{
+		font-size: 15px;
+	}
+	
+	.slideshowContainer {
+		margin-left: 165px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -659,11 +720,13 @@ audio{
 
 /*footer==================================================*/
 footer{
-	height:75px;
+	height:150px;
+	margin-top:25px;
 	position:sticky;
-	bottom: -75px;
+	bottom: -150px;
 	left:0;
 	clear:both;
+	background-color: #C8C8C8;
 	
 }
 
