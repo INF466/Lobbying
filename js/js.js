@@ -1,3 +1,17 @@
+//START script for the module hamburger============================//
+function openNav() {
+  document.getElementById("sideNavMoble").style.width = "250px";
+  document.getElementById("sideNavMoble").style.display = "block";
+  document.getElementById("hamburger").style.marginLeft = "250px";
+  document.getElementById("hamburger").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("sideNavMoble").style.width = "0";
+  document.getElementById("hamburger").style.marginLeft= "0";
+  document.getElementById("hamburger").style.display= "block";
+}
+//END script for the module hamburger============================//
 //START script for the module slider============================//
 var slideIndex = 1;
 

@@ -2,7 +2,14 @@
 	width:160px;
 	position: fixed;
 	top: 3px;
-	left: 5px;
+	left: 35px;
+}
+
+#footerLogo{
+	max-width:260px;
+	position: absolute;
+	bottom: 50px;
+	right: 20px;
 }
 
 /* hide disclaimer by default=============================*/
@@ -306,7 +313,7 @@ aside{
 	z-index: 1;
 }
 
-.sideNav{
+#sideNav{
 	overflow:auto;
 	float: left;
 	height:100%;
@@ -314,24 +321,81 @@ aside{
 	margin:0px;
 	padding:0px;
 	background-color: #006399;
+	transition: 0.5s;
 }
 
-.sideNav a{
-	
+#sideNavMoble{
+	overflow:auto;
+	float: left;
+	height:100%;
+	width: 100%;
+	margin:0px;
+	padding:0px;
+	background-color: #006399;
+	transition: 0.5s;
+	display:none;
+}
+
+#sideNav a{
 	margin:auto;
 	text-align:center;
 	padding-left: 0px;
 	padding-right:0px;
 	width:100%;
+	transition: 0.3s;
 }
 
-.sideNav a:hover{
+#sideNavMoble a{
 	margin:auto;
 	text-align:center;
 	padding-left: 0px;
 	padding-right:0px;
 	width:100%;
+	transition: 0.3s;
+}
+
+#sideNav a:hover{
 	background-color: #0087d0;
+}
+
+#sideNavMoble a:hover{
+	background-color: #0087d0;
+}
+
+#sideNavMoble .closebtn {
+    margin:auto;
+	text-align:center;
+	padding-left: 0px;
+	padding-right:0px;
+	width:100%;
+	transition: 0.3s;
+	font-size: 25px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position:fixed;
+  left:0;
+  border-radius: 0 20px 20px 0;
+  background: rgba(0, 135, 208, 0.9);
+  top: 45px;
+  
+  
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#hamburger {
+  transition: margin-left .5s;
+  padding: 16px;
+
 }
 
 /*SLider===========================================*/
@@ -551,10 +615,12 @@ audio{
 
 .homeQuestion{
 	position:absolute;
-	top: 45%;
+	top: 38%;
 	left: 20%;
 	color:white;
 	font-size: 50px;
+	margin-right: 6%;
+	text-align:left;
 }
 
 .homeQuestionInfo{
@@ -563,6 +629,7 @@ audio{
 	left: 20%;
 	color:white;
 	font-size: 30px;
+	margin-right: 6%;
 }
 
 .goThereButton{
@@ -587,6 +654,8 @@ audio{
 
 footer p {
 		margin-left: 150px;
+		margin-top:0px;
+		color:white;
 }
 	
 #dotHide{
@@ -653,6 +722,9 @@ video{
 	.slideshowContainer {
 		margin-left: 215px;
 	}
+	#footerLogo{
+		width:25%;
+	}
 	
 }
 @media only screen and (max-width: 650px) {
@@ -660,7 +732,7 @@ video{
 		width:120px;
 	}
 	.pageTitle h2{
-		margin-left: 150px;
+		margin-left: 20px;
 	}
 	nav a{
 		font-size:15px;
@@ -668,7 +740,7 @@ video{
 	
 	nav {
 		height:40px;
-		padding-left: 135px;
+		padding-left: 145px;
 	}
 	
 	.active{
@@ -708,39 +780,54 @@ video{
 	  font-size: 20px;
 	}
 	
-	aside{
-		width:125px;
-		top:40px;
+	#sideNav{
+		display: none;
 	}
 
-	.sideNav a{
+	#sideNav a{
 		font-size: 15px;
 	}
 	
 	.slideshowContainer {
-		margin-left: 130px;
+		margin-left: 0px;
 		margin-right: 0px;
+		max-width: 100%;
+	}
+	.moduleSlide{
+		width:100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	
+	footer p{
+		margin-left: 0px;
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
 	nav a{
 		font-size:12px;
 		padding-right:3px;
 		padding-left:3px;
 	}
+	
+	nav {
+		padding-left: 175px;
+	}
+	
 }
 
 
 /*footer==================================================*/
 footer{
 	height:150px;
-	margin-top:25px;
+	margin-top:0px;
 	position:sticky;
 	bottom: -150px;
 	left:0;
 	clear:both;
-	background-color: #C8C8C8;
+	background-color: #0076d0;
 	
 }
 
