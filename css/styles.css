@@ -395,6 +395,7 @@ aside{
 #hamburger {
   transition: margin-left .5s;
   padding: 16px;
+  display:none;
 
 }
 
@@ -782,6 +783,11 @@ video{
 	
 	#sideNav{
 		display: none;
+	}
+	
+	#hamburger {
+		display:block;
+
 	}
 
 	#sideNav a{
