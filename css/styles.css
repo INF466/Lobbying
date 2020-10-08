@@ -31,10 +31,6 @@ main{
 }
 /*Typical Paragraph Body==================================*/
 
-body{
-
-}
-
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -128,29 +124,29 @@ p {
 }
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .modal2 {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
-  -webkit-animation-name: fadeIn; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.6s;
   animation-name: fadeIn;
   animation-duration: 0.6s
@@ -221,7 +217,7 @@ p {
   cursor: pointer;
 }
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
 
@@ -231,7 +227,7 @@ p {
 }
 
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
+  from {bottom: -300px; opacity: 0}
   to {bottom: 0; opacity: 1}
 }
 
@@ -241,12 +237,12 @@ p {
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
@@ -468,6 +464,66 @@ aside{
   transform: rotateY(180deg);
 }
 
+
+/*POP UP STUFF!*/
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 350%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+	overflow: auto;
+	height: 250px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -571,9 +627,9 @@ audio{
 		width: 75%;
 		top: 100px;
 		left: 15%;
-		
+
 	}
-	
+
 	.homeQuestionInfo{
 		font-size: 20px;
 		text-align: center;
@@ -581,41 +637,41 @@ audio{
 		top: 175px;
 		left: 15%;
 	}
-	
+
 	.homeSlideshowContainer{
 		height: 350px;
 	}
-	
+
 	.moduleSlide img{
-		height: 350px !important; 
+		height: 350px !important;
 	}
 }
 @media only screen and (max-width: 650px) {
 	nav a{
 		font-size:20px;
 	}
-	
+
 	nav {
 		height:40px;
 	}
-	
+
 	.active{
 		height:75%;
 	}
-	
+
 	.nav a:hover{
 		height:75%;
 	}
-	
+
 	.homeQuestion{
 		font-size: 30px;
 		text-align: center;
 		width: 75%;
 		top: 50px;
 		left: 15%;
-		
+
 	}
-	
+
 	.homeQuestionInfo{
 		font-size: 15px;
 		text-align: center;
@@ -623,8 +679,8 @@ audio{
 		top: 175px;
 		left: 15%;
 	}
-	
-	
+
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -640,6 +696,7 @@ footer{
 	position:sticky;
 	bottom: -75px;
 	left:0;
+	text-align: center;
 }
 
 .spacer{
