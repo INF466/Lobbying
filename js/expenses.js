@@ -1,13 +1,25 @@
+<<<<<<< HEAD
 var currentTab = 0; 
 var currentSubTab = 0; 
 var expensesReported = {}; // Object to hold user input
 var currentIndex = 0; 
 showTab(currentTab); // Show the first tab of the form
+=======
+var currentTab = 0;
+var currentSubTab = 0;
+var expensesReported = {};
+var currentIndex = 0;
+showTab(currentTab);
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 
 
 function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
+<<<<<<< HEAD
+=======
+  // showSubtab(currentSubTab);
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
@@ -15,7 +27,11 @@ function showTab(n) {
   }
   
   if (n == 2){
+<<<<<<< HEAD
 	if ((currentIndex >= 0) && (currentIndex < expensesReported.expenseType.length)){
+=======
+	if ((currentIndex >= 0) && (currentIndex < expensesReported.expense_type.length)){
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 		showLoopedExpenses(currentIndex);
 	}
   }
@@ -28,10 +44,43 @@ function showTab(n) {
 }
 
 function showLoopedExpenses(n){
+<<<<<<< HEAD
 	var expenseType = expensesReported.expenseType[n];
 	document.getElementById("expenseType").innerHTML = expenseType;
 	
 }
+=======
+	var expenseType = expensesReported.expense_type[n];
+	var expense = expenseType.replace("_", " ");
+	document.getElementById("expenseType").innerHTML = expense;
+	
+}
+  /* Function to check whether active tab contains subtabs; if so, should change 
+     next/previous buttons to switch between tabs
+	 
+	 Method needs work, which is why it's commented out
+  */
+
+/* function showSubtab(n) {
+  var x = document.getElementsByClassName("tab");
+  if (x[currentTab].classList.contains("looped")
+  {
+	  var subtabs = x[currentTab].getElementsByClassName("subtab");
+	  subtabs[n].style.display = "block";
+	  
+	  if (n == 0) {
+		document.getElementById("prevBtn").style.display = "none";
+	  } else {
+		document.getElementById("prevBtn").style.display = "inline";
+	  }
+	  if (n == (x.length - 1)) {
+		document.getElementById("nextBtn").innerHTML = "Submit";
+	  } else {
+		document.getElementById("nextBtn").innerHTML = "Next";
+	  }
+  }
+} */
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 
 function nextPrev(n) {
   // This function will figure out which tab to display
@@ -43,6 +92,7 @@ function nextPrev(n) {
 	   } else {
 		   saveResults(currentTab);
 	   }
+<<<<<<< HEAD
   }else{
 		if ((currentTab + n) == 2){
 			var maxIndex = (expensesReported.expenseType.length - 1);
@@ -82,10 +132,25 @@ function nextPrev(n) {
   if (currentTab >= x.length){
     //...the form input is processed:
     displayUserInput();
+=======
+  }
+  if ((currentTab == 2) && (currentIndex < expensesReported.expense_type.length)){
+  } else{
+	  // Hide the current tab:
+	  x[currentTab].style.display = "none";
+	  // Increase or decrease the current tab by 1:
+	  currentTab = currentTab + n;
+	  // if you have reached the end of the form... :
+  }
+  if (currentTab >= x.length) {
+    //...the form gets submitted:
+    document.getElementById("regForm").submit();
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
     return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
+<<<<<<< HEAD
 	if (/* (n == -1) && */ (currentTab == 2)){
 		recallResults();
 	}
@@ -106,6 +171,8 @@ function recallResults(){
 				x.value = expensesReported[x.name][currentIndex];
 			}
 	}
+=======
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 }
 
 function saveResults(n){
@@ -123,6 +190,7 @@ function saveResults(n){
 			if (x.checked){
 				if (index == 0) userInput[x.name] = [];
 				userInput[x.name][index] = x.value;
+<<<<<<< HEAD
 				if (x.id == "type19"){
 					var otherText = document.getElementById("otherType").value;
 					if (otherText != "") userInput[x.name][index] += (" (" + otherText + ")");
@@ -140,10 +208,17 @@ function saveResults(n){
 					x.value = "";
 				}
 			}
+=======
+				index++;
+			}
+		} else {
+			userInput[x.name] = x.value;
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 		}
 	}
 	var keys = Object.keys(userInput);
 	for (key of keys){
+<<<<<<< HEAD
 		if (currentTab != 2){
 			expensesReported[key] = userInput[key];
 		} else{
@@ -153,11 +228,15 @@ function saveResults(n){
 			expensesReported[key][currentIndex] = userInput[key];
 		}
 		// window.alert(expensesReported[key]);
+=======
+		expensesReported[key] = userInput[key];
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 	};
 }
 
 function validateForm(){
   // This function deals with validation of the form fields
+<<<<<<< HEAD
 	var current = document.getElementsByClassName("tab")[currentTab];
 	var valid = false;
 	var inputs = current.getElementsByTagName("input");
@@ -223,4 +302,12 @@ function displayUserInput(){
 	
 	target.style.display = "block";
 		
+=======
+  var x, y, i;
+  var valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  
+  return valid; // return the valid status
+>>>>>>> d437f50b87572b7b03520d62dd8f9022c970e361
 }
