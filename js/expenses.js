@@ -15,7 +15,7 @@ function showTab(n) {
   }
   
   if (n == 2){
-	if ((currentIndex >= 0) && (currentIndex < expensesReported.expense_type.length)){
+	if ((currentIndex >= 0) && (currentIndex < expensesReported.expenseType.length)){
 		showLoopedExpenses(currentIndex);
 	}
   }
@@ -28,7 +28,7 @@ function showTab(n) {
 }
 
 function showLoopedExpenses(n){
-	var expenseType = expensesReported.expense_type[n];
+	var expenseType = expensesReported.expenseType[n];
 	document.getElementById("expenseType").innerHTML = expenseType;
 	
 }
@@ -43,20 +43,30 @@ function nextPrev(n) {
 	   } else {
 		   saveResults(currentTab);
 	   }
-  }
+  }else{
+		if ((currentTab + n) == 2){
+			var maxIndex = (expensesReported.expenseType.length - 1);
+			currentIndex = maxIndex;
+			
+			window.alert(currentIndex + ", " + maxIndex);
+		}
+	}
   if (currentTab == 2){
-	  var maxIndex = expensesReported.expense_type.length;
+	  var maxIndex = expensesReported.expenseType.length;
 	  if (currentIndex < maxIndex){
 		  currentIndex += n;
+			
+			// window.alert(currentIndex + ", " + maxIndex)
 		  if ((currentIndex < 0) || (currentIndex >= maxIndex)){
+				// window.alert(currentIndex + ", " + maxIndex)
 			  // reset currentIndex
 			  currentIndex = 0;
 			  // Hide the current tab:
 			  x[currentTab].style.display = "none";
 			  // Increase or decrease the current tab by 1:
-			  currentTab = currentTab + n;
+			  currentTab += n;
 			  if (currentIndex < 0){
-				  curentIndex = 0;
+				  currentIndex = 0;
 				  currentTab += n;
 			  }
 		  }  
@@ -66,16 +76,19 @@ function nextPrev(n) {
 		  x[currentTab].style.display = "none";
 		  // Increase or decrease the current tab by 1:
 		  currentTab = currentTab + n;
-		  if ((currentTab == 2) && (n == -1)) currentIndex = maxIndex-1;
+		  /* if ((currentTab == 2) && (n == -1)) currentIndex = maxIndex-1; */
 		  // if you have reached the end of the form... :
 	  }
-  if (currentTab >= x.length) {
-    //...the form gets submitted:
+  if (currentTab >= x.length){
+    //...the form input is processed:
     displayUserInput();
     return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
+	if (/* (n == -1) && */ (currentTab == 2)){
+		recallResults();
+	}
 }
 
 function toggleOtherInput(){
@@ -83,6 +96,16 @@ function toggleOtherInput(){
 	if (otherInputBox.style.visibility == "visible"){
 		otherInputBox.style.visibility = "hidden";
 	} else otherInputBox.style.visibility = "visible";
+}
+
+function recallResults(){
+	var currentTabObj = document.getElementsByClassName("tab")[currentTab];
+	var inputs = currentTabObj.getElementsByTagName("input");
+	for (x of inputs){
+		if (expensesReported[x.name] != undefined) if (expensesReported[x.name][currentIndex] != undefined){
+				x.value = expensesReported[x.name][currentIndex];
+			}
+	}
 }
 
 function saveResults(n){
@@ -114,15 +137,19 @@ function saveResults(n){
 					// window.alert(x.name);
 					userInput[x.name] = x.value;
 					// window.alert(userInput[x.name]);
+					x.value = "";
 				}
 			}
 		}
 	}
 	var keys = Object.keys(userInput);
 	for (key of keys){
-		if (currentIndex == 0){
+		if (currentTab != 2){
 			expensesReported[key] = userInput[key];
 		} else{
+			if (expensesReported[key] == undefined){
+				expensesReported[key] = [];
+			}
 			expensesReported[key][currentIndex] = userInput[key];
 		}
 		// window.alert(expensesReported[key]);
@@ -130,15 +157,50 @@ function saveResults(n){
 }
 
 function validateForm(){
- /*  // This function deals with validation of the form fields
-  var x, y, i;
-  var valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-   
-  return valid; // return the valid status
-  */
-  return true;
+  // This function deals with validation of the form fields
+	var current = document.getElementsByClassName("tab")[currentTab];
+	var valid = false;
+	var inputs = current.getElementsByTagName("input");
+	if (currentTab < 2){
+		if (currentTab == 0){
+			for (x of inputs) {
+				if (x.checked) {
+					valid = true;
+				}
+				window.alert(valid);
+			}
+		} else{
+			for (x of inputs){
+				if (x.type =="checkbox"){
+					if (x.id == "type19"){
+						if ((x.checked)){
+							if (inputs[inputs.length - 1].value != ""){
+								valid = true;
+							} else valid = false;
+						}
+					} else if (x.checked){
+					valid = true;
+					}
+				}
+			}
+		}
+	} else if (currentTab == 2){
+		for (x of inputs){
+			if (x.value != ""){
+				valid = true;
+			} else valid = false;
+		}
+	} else{
+		var compReceived = false;
+		for (x of inputs){
+			if (x.type == "radio"){
+				if ((x.checked) && (x.value == "false")){
+					valid = true;
+				} else compReceived = true
+			}
+		}
+	}
+	return valid; // return the valid status
 }
 
 function displayCompensation(){
