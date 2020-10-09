@@ -73,6 +73,27 @@ window.onclick = function(event) {
   }
 }
 
+var modal3 = document.getElementById("modalcontact");
+
+var btn3 = document.getElementById("contactbtn");
+
+var span3 = document.getElementsByClassName("close3")[0];
+
+btn3.onclick = function() {
+ modal3.style.display = "block";
+}
+
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+
+
 var modal2 = document.getElementById("modalreport2");
 
 var btn2 = document.getElementById("modalbtn2");
@@ -92,6 +113,8 @@ window.onclick = function(event) {
     modal2.style.display = "none";
   }
 }
+
+
 
 //var expensesbut = document.getElementById("expensebut");
 //expensesbut.onclick = function () {
