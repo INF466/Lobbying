@@ -25,6 +25,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  
   <nav class="nav"> 
+	<img id="logo" src="../images/logoTrans.png" alt="NY Lobbying Express">
     <a href="index.html">Home</a>
     <a class="active" href="modules.html">Modules</a>
     <a href="reporting_activities.html">Reporting</a>
@@ -32,7 +33,7 @@
     
   <main>
     <aside>
-    <nav class="sideNav">
+    <nav id="sideNav">
       <a href="#" class="asideActive" onclick="currentSlide(1)">Module 1</a>
       <a href="#" class="asideActive" onclick="currentSlide(2)">Module 2</a>
       <a href="#" class="asideActive" onclick="currentSlide(3)">Module 3</a>
@@ -43,10 +44,25 @@
       <a href="#" class="asideActive" onclick="currentSlide(8)">Module 8</a>
       <a href="#" class="asideActive" onclick="currentSlide(9)">Podcasts</a>
     </nav>
+	<nav id="sideNavMoble">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#" class="asideActive" onclick="currentSlide(1); closeNav();">Module 1</a>
+      <a href="#" class="asideActive" onclick="currentSlide(2); closeNav();">Module 2</a>
+      <a href="#" class="asideActive" onclick="currentSlide(3); closeNav();">Module 3</a>
+      <a href="#" class="asideActive" onclick="currentSlide(4); closeNav();">Module 4</a>
+      <a href="#" class="asideActive" onclick="currentSlide(5); closeNav();">Module 5</a>
+      <a href="#" class="asideActive" onclick="currentSlide(6); closeNav();">Module 6</a>
+      <a href="#" class="asideActive" onclick="currentSlide(7); closeNav();">Module 7</a>
+      <a href="#" class="asideActive" onclick="currentSlide(8); closeNav();">Module 8</a>
+      <a href="#" class="asideActive" onclick="currentSlide(9); closeNav();">Podcasts</a>
+    </nav>
+	<div id="hamburger">
+		<button class="openbtn" onclick="openNav()">☰</button>  
+	</div>
   </aside>
 	<div class="pageTitle">
 		<h2>
-			Put a title here
+			Guide for Non-Profits to Lobbying Under New York Law
 		</h2>
 	</div>
     <div class="slideshowContainer">
@@ -192,7 +208,7 @@
     </div>
 	<br>
 
-	<div style="text-align:center">
+	<div id="dotHide"style="text-align:center">
 	  <span class="dot" onclick="currentSlide(1)"></span> 
 	  <span class="dot" onclick="currentSlide(2)"></span> 
 	  <span class="dot" onclick="currentSlide(3)"></span> 
@@ -204,11 +220,13 @@
 	  <span class="dot" onclick="currentSlide(9)"></span>
 	</div>
 	<div class="spacer"></div>
-	 <hr> 
-	<footer>
-		<p>Contact Information:</p>
-		<p>Email: CHANGE ME</p>
-	</footer>  
+	 <footer>
+	<hr>
+	<br>
+    <p>Contact Information:</p>
+    <p>Email: CHANGE ME</p>
+	<img id="footerLogo" src="../images/logoBackground.png" alt="NY Lobbying Express">
+  </footer>
   </main>
 
     
