@@ -124,3 +124,12 @@ window.onclick = function(event) {
 
 
 //END script for the reporting page============================//
+//START script for accessibility===============================//
+function click() {
+  
+}
+
+
+//END script for accessibility=================================//
+
+
