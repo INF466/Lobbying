@@ -42,7 +42,6 @@ main{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-<<<<<<< HEAD
 
 .pageTitle h2{
 	margin-left: 250px;
@@ -54,7 +53,6 @@ main{
 =======
 /*Typical Paragraph Body==================================*/
 
->>>>>>> jocelyn
 p {
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 20px;
@@ -294,16 +292,16 @@ p {
   cursor: pointer;
 }
 .modal3 {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 .close3 {
   color: #aaaaaa;
@@ -490,8 +488,8 @@ aside{
   border-radius: 0 20px 20px 0;
   background: rgba(0, 135, 208, 0.9);
   top: 45px;
-  
-  
+
+
 }
 
 .openbtn:hover {
@@ -828,7 +826,7 @@ footer p {
 		margin-top:0px;
 		color:white;
 }
-	
+
 #dotHide{
 	display:none;
 }
@@ -847,15 +845,15 @@ video{
 
 	}
 <<<<<<< HEAD
-	
+
 	.flipcardholder{
 		max-width: 604px;
 	}
-	
+
 	.container{
 		width:100%;
 	}
-	
+
 =======
 
 >>>>>>> jocelyn
@@ -874,33 +872,33 @@ video{
 	.moduleSlide img{
 		height: 350px !important;
 	}
-	
+
 	.moduleSlide h2{
 		font-size: 20px;
 	}
-	
+
 	.moduleSlide p{
 		font-size: 15px;
 	}
-	
+
 	footer p {
 		font-size:12px;
 		margin-left: 200px;
 	}
-	
+
 	aside{
 		width:200px;
 		top:50px;
 	}
 
-	
+
 	.slideshowContainer {
 		margin-left: 215px;
 	}
 	#footerLogo{
 		width:25%;
 	}
-	
+
 }
 @media only screen and (max-width: 650px) {
 	#logo{
@@ -935,15 +933,15 @@ video{
 
 	}
 <<<<<<< HEAD
-	
+
 	.flipcardholder{
 		max-width: 302px;
 	}
-	
+
 	.container{
 		width:100%;
 	}
-	
+
 =======
 
 >>>>>>> jocelyn
@@ -955,15 +953,15 @@ video{
 		left: 15%;
 	}
 <<<<<<< HEAD
-	
+
 	.numberText {
 	  font-size: 20px;
 	}
-	
+
 	#sideNav{
 		display: none;
 	}
-	
+
 	#hamburger {
 		display:block;
 =======
@@ -977,8 +975,8 @@ video{
 	#sideNav a{
 		font-size: 15px;
 	}
-	
-	.slideshowContainer { 
+
+	.slideshowContainer {
 		margin-left: 0px;
 		margin-right: 0px;
 		max-width: 100%;
@@ -988,8 +986,8 @@ video{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	
-	
+
+
 	footer p{
 		margin-left: 0px;
   }
@@ -1021,63 +1019,63 @@ video{
   }
   .modal {
     padding-top: 300px;
-    width: 99%; 
-    height: 100%; 
+    width: 99%;
+    height: 100%;
   }
   .modal2 {
-    width: 99%; 
-    height: 100%; 
+    width: 99%;
+    height: 100%;
   }
-  
+
   .modal2-header {
     padding: 4px 12px;
     background-color: #0076d0;
     color: white;
   }
-  
+
   .modal2-body {padding: 4px 12px;}
-  
+
   .modal2-footer {
     padding: 4px 12px;
     background-color: #0076d0;
     color: white;
   }
-  
+
   .modalActivities {
     width: 100%;
   }
-  
+
   .modalActivities2 {
     width: 100%;
   }
-  
+
   .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
     cursor: pointer;
   }
-  
+
   .close2 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
 
   }
   .tooltip {
     position: relative;
     display: inline-block;
   }
-  
+
   .tooltip .tiptext {
     visibility: hidden;
     width: 300px;
@@ -1085,14 +1083,14 @@ video{
     color: black;
     text-align: center;
     padding: 5px 0;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -5px;
     left: 85%;
   }
-  
+
   .tooltip:hover .tiptext {
     visibility: visible;
   }
@@ -1100,7 +1098,7 @@ video{
     position: relative;
     display: inline-block;
   }
-  
+
   .tooltip2 .tiptext2 {
     visibility: hidden;
     width: 300px;
@@ -1108,14 +1106,14 @@ video{
     color: black;
     text-align: center;
     padding: 5px 0;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -250px;
     left: 85%;
   }
-  
+
   .tooltip2:hover .tiptext {
     visibility: visible;
   }
@@ -1127,11 +1125,11 @@ video{
 		padding-right:3px;
 		padding-left:3px;
 	}
-	
+
 	nav {
 		padding-left: 175px;
 	}
-	
+
 }
 
 
@@ -1145,7 +1143,7 @@ footer{
 <<<<<<< HEAD
 	clear:both;
 	background-color: #0076d0;
-	
+
 =======
 	text-align: center;
 >>>>>>> jocelyn
