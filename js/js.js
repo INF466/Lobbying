@@ -124,6 +124,7 @@ window.onclick = function(event) {
 
 
 //END script for the reporting page============================//
+<<<<<<< HEAD
 
 
 //Start script for popup arrow//
@@ -135,3 +136,14 @@ function myFunction() {
 }
 
 //End script for popup arrow//
+=======
+//START script for accessibility===============================//
+function click() {
+  
+}
+
+
+//END script for accessibility=================================//
+
+
+>>>>>>> a05f261af83c10b67cb457d7a6454647de7b5128
