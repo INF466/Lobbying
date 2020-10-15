@@ -50,6 +50,9 @@ main{
 /*Typical Paragraph Body==================================*/
 
 
+=======
+/*Typical Paragraph Body==================================*/
+
 p {
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 20px;
@@ -180,29 +183,29 @@ p {
   transform: translate(-50%, -50%);
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .modal2 {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
-  -webkit-animation-name: fadeIn; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.6s;
   animation-name: fadeIn;
   animation-duration: 0.6s
@@ -289,16 +292,16 @@ p {
   cursor: pointer;
 }
 .modal3 {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 .close3 {
   color: #aaaaaa;
@@ -338,7 +341,7 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
 
@@ -348,7 +351,7 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
+  from {bottom: -300px; opacity: 0}
   to {bottom: 0; opacity: 1}
 }
 
@@ -358,12 +361,12 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
@@ -485,8 +488,8 @@ aside{
   border-radius: 0 20px 20px 0;
   background: rgba(0, 135, 208, 0.9);
   top: 45px;
-  
-  
+
+
 }
 
 .openbtn:hover {
@@ -631,6 +634,10 @@ aside{
   transform: rotateY(180deg);
 }
 
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -654,6 +661,66 @@ aside{
   color: white;
   transform: rotateY(180deg);
 }
+
+
+/*POP UP STUFF!*/
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 350%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+	overflow: auto;
+	height: 250px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -759,7 +826,7 @@ footer p {
 		margin-top:0px;
 		color:white;
 }
-	
+
 #dotHide{
 	display:none;
 }
@@ -775,17 +842,21 @@ video{
 		width: 75%;
 		top: 100px;
 		left: 15%;
-		
+
 	}
-	
+<<<<<<< HEAD
+
 	.flipcardholder{
 		max-width: 604px;
 	}
-	
+
 	.container{
 		width:100%;
 	}
-	
+
+=======
+
+>>>>>>> jocelyn
 	.homeQuestionInfo{
 		font-size: 20px;
 		text-align: center;
@@ -793,41 +864,41 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-	
+
 	.homeSlideshowContainer{
 		height: 350px;
 	}
-	
+
 	.moduleSlide img{
-		height: 350px !important; 
+		height: 350px !important;
 	}
-	
+
 	.moduleSlide h2{
 		font-size: 20px;
 	}
-	
+
 	.moduleSlide p{
 		font-size: 15px;
 	}
-	
+
 	footer p {
 		font-size:12px;
 		margin-left: 200px;
 	}
-	
+
 	aside{
 		width:200px;
 		top:50px;
 	}
 
-	
+
 	.slideshowContainer {
 		margin-left: 215px;
 	}
 	#footerLogo{
 		width:25%;
 	}
-	
+
 }
 @media only screen and (max-width: 650px) {
 	#logo{
@@ -839,37 +910,41 @@ video{
 	nav a{
 		font-size:15px;
 	}
-	
+
 	nav {
 		height:40px;
 		padding-left: 145px;
 	}
-	
+
 	.active{
 		height:75%;
 	}
-	
+
 	.nav a:hover{
 		height:75%;
 	}
-	
+
 	.homeQuestion{
 		font-size: 30px;
 		text-align: center;
 		width: 75%;
 		top: 50px;
 		left: 15%;
-		
+
 	}
-	
+<<<<<<< HEAD
+
 	.flipcardholder{
 		max-width: 302px;
 	}
-	
+
 	.container{
 		width:100%;
 	}
-	
+
+=======
+
+>>>>>>> jocelyn
 	.homeQuestionInfo{
 		font-size: 15px;
 		text-align: center;
@@ -877,25 +952,31 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-	
+<<<<<<< HEAD
+
 	.numberText {
 	  font-size: 20px;
 	}
-	
+
 	#sideNav{
 		display: none;
 	}
-	
+
 	#hamburger {
 		display:block;
+=======
+
+
+}
+>>>>>>> jocelyn
 
 	}
 
 	#sideNav a{
 		font-size: 15px;
 	}
-	
-	.slideshowContainer { 
+
+	.slideshowContainer {
 		margin-left: 0px;
 		margin-right: 0px;
 		max-width: 100%;
@@ -905,8 +986,8 @@ video{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	
-	
+
+
 	footer p{
 		margin-left: 0px;
   }
@@ -938,63 +1019,63 @@ video{
   }
   .modal {
     padding-top: 300px;
-    width: 99%; 
-    height: 100%; 
+    width: 99%;
+    height: 100%;
   }
   .modal2 {
-    width: 99%; 
-    height: 100%; 
+    width: 99%;
+    height: 100%;
   }
-  
+
   .modal2-header {
     padding: 4px 12px;
     background-color: #0076d0;
     color: white;
   }
-  
+
   .modal2-body {padding: 4px 12px;}
-  
+
   .modal2-footer {
     padding: 4px 12px;
     background-color: #0076d0;
     color: white;
   }
-  
+
   .modalActivities {
     width: 100%;
   }
-  
+
   .modalActivities2 {
     width: 100%;
   }
-  
+
   .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
     cursor: pointer;
   }
-  
+
   .close2 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
 
   }
   .tooltip {
     position: relative;
     display: inline-block;
   }
-  
+
   .tooltip .tiptext {
     visibility: hidden;
     width: 300px;
@@ -1002,14 +1083,14 @@ video{
     color: black;
     text-align: center;
     padding: 5px 0;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -5px;
     left: 85%;
   }
-  
+
   .tooltip:hover .tiptext {
     visibility: visible;
   }
@@ -1017,7 +1098,7 @@ video{
     position: relative;
     display: inline-block;
   }
-  
+
   .tooltip2 .tiptext2 {
     visibility: hidden;
     width: 300px;
@@ -1025,14 +1106,14 @@ video{
     color: black;
     text-align: center;
     padding: 5px 0;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -250px;
     left: 85%;
   }
-  
+
   .tooltip2:hover .tiptext {
     visibility: visible;
   }
@@ -1044,11 +1125,11 @@ video{
 		padding-right:3px;
 		padding-left:3px;
 	}
-	
+
 	nav {
 		padding-left: 175px;
 	}
-	
+
 }
 
 
@@ -1059,9 +1140,13 @@ footer{
 	position:sticky;
 	bottom: -150px;
 	left:0;
+<<<<<<< HEAD
 	clear:both;
 	background-color: #0076d0;
-	
+
+=======
+	text-align: center;
+>>>>>>> jocelyn
 }
 
 .spacer{
