@@ -48,7 +48,7 @@ function nextPrev(n) {
 			var maxIndex = (expensesReported.expenseType.length - 1);
 			currentIndex = maxIndex;
 			
-			window.alert(currentIndex + ", " + maxIndex);
+			// window.alert(currentIndex + ", " + maxIndex);
 		}
 	}
   if (currentTab == 2){
@@ -167,7 +167,7 @@ function validateForm(){
 				if (x.checked) {
 					valid = true;
 				}
-				window.alert(valid);
+				// window.alert(valid);
 			}
 		} else{
 			for (x of inputs){
@@ -188,17 +188,25 @@ function validateForm(){
 		for (x of inputs){
 			if (x.value != ""){
 				valid = true;
-			} else valid = false;
-		}
-	} else{
-		var compReceived = false;
-		for (x of inputs){
-			if (x.type == "radio"){
-				if ((x.checked) && (x.value == "false")){
-					valid = true;
-				} else compReceived = true
+			} else {
+				valid = false;
+				break;
 			}
 		}
+	} else if(currentTab == 3){
+		var compReceived = document.getElementById("compYes").checked;
+		if(compReceived){
+			for (x of inputs){
+				if (x.type == "text"){
+					if (x.value != ""){
+						valid = true;
+					} else{
+						valid = false;
+						break;
+					}
+				}
+			}
+		} else valid = true;
 	}
 	return valid; // return the valid status
 }

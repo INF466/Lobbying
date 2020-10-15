@@ -40,7 +40,8 @@
 		#expenseReporting{
 			display:block;
 			width:80%;
-			margin:0 auto;
+			min-width:400px;
+			margin:0 auto 10px;
 		}
 		#reportingResults{
 			display:none;
@@ -177,7 +178,7 @@
 				
 				<div class="subtab">
 					<p>Who or what was the expense paid to?</p>
-					<label for="expensePaidTo">My organization paid the expense of <span id="expenseCostPaid"></span> to:</label>
+					<label for="expensePaidTo">My organization paid this to:</label>
 					<input type="text" id="expensePaidTo" name="expensePaidTo" placeholder="Organization/company">
 				</div>
 			</div>
@@ -196,13 +197,13 @@
 					<label for="compAmt">Amount: </label>
 					<input type="text" id="compAmt" name="compAmt" placeholder="Amount in USD">
 					<label for="compFrom">Paid from: </label>
-					<input type="text" id="compFrom" name="compFrom">
+					<input type="text" id="compFrom" name="compFrom" placeholder="Source">
 					<label for="compMethod">Payment method: </label>
-					<input type="text" id="compMethod" name="compMethod">
+					<input type="text" id="compMethod" name="compMethod" placeholder="Cash, check or other">
 					<label for="compNumer">Payment number: </label>
-					<input type="text" id="compNumber" name="compNumber">
+					<input type="text" id="compNumber" name="compNumber" placeholder="Check number or 'N/A for cash">
 					<label for="compType">Type of compensation: </label>
-					<input type="text" id="compType" name="compType">
+					<input type="text" id="compType" name="compType" placeholder="I'm not even sure">
 				</div>
 			</div>	
 			<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
