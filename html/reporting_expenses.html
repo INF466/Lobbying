@@ -5,8 +5,10 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Reporting form- Expenses</title>
-  <meta name="description" content="">
+  <title>Lobbster: Reporting Lobbying Expenses</title>
+  <meta name="description" content="Lobbster provides a way for you to report and save your lobbying expenses">
+  <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Expenses, Reporting Lobbying Expenses">
+
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
@@ -34,18 +36,18 @@
 		.tab{
 			display:none;
 	</style>
-	
-	
+
+
 </head>
 <body>
 
-	<nav> 
+	<nav>
     <a href="index.html">Home</a>
     <a href="modules.html">Modules</a>
     <a class="active" href="reporting_activities.html">Reporting</a>
   </nav>
 
-  <main>	
+  <main>
 	<!-- Disclaimer
 	-------------------------------------------------- -->
 	<section class="disclaimer">
@@ -64,8 +66,8 @@
 			<input type="radio" id="expenses_no" name="incurredExpenses" value="false">
 			<label for="expensesNo">No</label>
 		</div>
-		
-		<div class="tab">		
+
+		<div class="tab">
 			<p>You incurred expenses on:</p>
 			<input type="checkbox" id="type1" name="expense_type" value="Advertising – Billboards">
 			<label for="type1">Advertising – Billboards</label>
@@ -107,8 +109,8 @@
 			<label for="type19">Other:<input type="text" id="otherType" name="otherType"></label>
 			<p>Please check all that apply.</p>
 		</div>
-		
-		<div class="tab looped">	
+
+		<div class="tab looped">
 			<div class="subtab">
 				<p>What was the cost of those expenses?</p>
 				<label for="expenseType">Expense: </label>
@@ -116,14 +118,14 @@
 				<label for="expenseCost">My organization spent:</label>
 				<input type="text" id="expenseCost" name="expenseCost" value="0">
 			</div>
-			
+
 			<div class="subtab">
 				<p>Who or what was the expense paid to?</p>
 				<label for="expensePaidTo">My organization paid the expense of <span>{amount}</span> to:</label>
 				<input type="text" id="expensePaidTo" name="expensePaidTo">
 			</div>
 		</div>
-		
+
 		<div class="tab looped">
 			<div class="subtab">
 				<p>Did you incur any reportable compensation today?</p>
@@ -132,7 +134,7 @@
 				<input type="radio" id="compNo" name="compensationReceived" value="false">
 				<label for="compNo">No</label>
 			</div>
-		
+
 			<div class="subtab">
 				<p>What are the details of compensation received?</p>
 				<label for="compAmt">Amount:</label>
@@ -146,18 +148,18 @@
 				<label for="compType">Type of compensation:</label>
 				<input type="text" id="compType" name="compType">
 			</div>
-		</div>	
+		</div>
 		<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
     <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 	</form>
-</main>	
- <hr> 
+</main>
+ <hr>
   <footer>
     <p>Contact Information:</p>
     <p>Email: CHANGE ME</p>
-  </footer>  
-    
-    
+  </footer>
+
+
 	<script src="../js/expenses.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
