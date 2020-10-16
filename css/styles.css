@@ -605,7 +605,7 @@ aside{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-image: linear-gradient(lightgray, dodgerblue);
   color: black;
 }
 
