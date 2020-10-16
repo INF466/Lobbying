@@ -108,5 +108,3 @@ function click() {
 
 
 //END script for accessibility=================================//
-
-
