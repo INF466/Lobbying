@@ -31,6 +31,20 @@ h2 {
   text-align:center;
 }
 
+h3 {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: auto;
+  text-align:center;
+}
+
+h4 {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: auto;
+  text-align:center;
+}
+
 main{
   background-color: #C8C8C8;
   color: black;
@@ -270,7 +284,7 @@ p {
 /*Nav=====================================================*/
 nav {
 	color: white;
-	background-color: #0087D0;
+	background-color: dodgerblue;
 	color: white;
 	background: rgba(0, 135, 208, 0.9);
 	padding-left: 200px;
@@ -355,11 +369,11 @@ aside{
 }
 
 #sideNav a:hover{
-	background-color: #0087d0;
+	background-color: dodgerblue;
 }
 
 #sideNavMoble a:hover{
-	background-color: #0087d0;
+	background-color: dodgerblue;
 }
 
 #sideNavMoble .closebtn {
@@ -519,6 +533,7 @@ aside{
 /* Popup arrow */
 .popup .popuptext::after {
   content: "";
+	text-align: center;
   position: absolute;
   top: 100%;
   left: 50%;
