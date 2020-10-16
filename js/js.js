@@ -127,6 +127,7 @@ window.onclick = function(event) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 //Start script for popup arrow//
@@ -149,6 +150,8 @@ function click() {
 
 
 >>>>>>> a05f261af83c10b67cb457d7a6454647de7b5128
+=======
+>>>>>>> parent of eb92bd8... Merge pull request #25 from INF466/jesse
 =======
 >>>>>>> parent of eb92bd8... Merge pull request #25 from INF466/jesse
 =======
