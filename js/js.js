@@ -28,10 +28,10 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("moduleSlide");
   var dots = document.getElementsByClassName("dot");
   var asideSquares = document.getElementsByClassName("asideActive");
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" dotActive", "");
@@ -39,7 +39,7 @@ function showSlides(n) {
   for (i = 0; i < asideSquares.length; i++) {
       asideSquares[i].className = asideSquares[i].className.replace(" asideActive2", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " dotActive";
   asideSquares[slideIndex-1].className += " asideActive2";
 }
@@ -124,26 +124,3 @@ window.onclick = function(event) {
 
 
 //END script for the reporting page============================//
-<<<<<<< HEAD
-
-
-//Start script for popup arrow//
-
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-
-//End script for popup arrow//
-=======
-//START script for accessibility===============================//
-function click() {
-  
-}
-
-
-//END script for accessibility=================================//
-
-
->>>>>>> a05f261af83c10b67cb457d7a6454647de7b5128
