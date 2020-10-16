@@ -83,7 +83,29 @@ p {
 .tooltip:hover .tiptext {
   visibility: visible;
 }
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+}
 
+.tooltip2 .tiptext2 {
+  visibility: hidden;
+  width: 700px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+
+  /* Position the tooltip2 */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip2:hover .tiptext2 {
+  visibility: visible;
+}
 .hide {
   display: none;
 }
@@ -142,6 +164,21 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.contactbutton {
+  background-color: #0076d0;
+  width: 210px;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 23px;
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .modal {
   display: none; 
   position: fixed; 
@@ -210,6 +247,22 @@ p {
   animation-duration: 0.6s
 }
 
+.mdcontact {
+  position: relative;
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animatetop;
+  animation-duration: 0.7s;
+  border-radius: 5px;
+  }
+
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -235,7 +288,6 @@ p {
   color: #000;
   cursor: pointer;
 }
-
 .modal3 {
   display: none; 
   position: fixed; 
@@ -314,7 +366,6 @@ input[type=submit]:hover {
   from {opacity: 0} 
   to {opacity: 1}
 }
-
 
 
 /*Nav=====================================================*/
@@ -844,8 +895,7 @@ video{
 		font-size: 15px;
 	}
 	
-
-	.slideshowContainer {
+	.slideshowContainer { 
 		margin-left: 0px;
 		margin-right: 0px;
 		max-width: 100%;
@@ -859,8 +909,7 @@ video{
 	
 	footer p{
 		margin-left: 0px;
-	}
-
+  }
   .reportbutton {
     font-size: 8px;
     position: absolute;
