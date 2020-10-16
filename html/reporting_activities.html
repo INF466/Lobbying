@@ -6,12 +6,11 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Lobbster: Reporting Lobbying Activities</title>
-  <meta name="description" content="Lobbster provides a way for you to report and save your lobbying activities.">
-  <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Activities, Reporting Lobbying Activities">
+  <title>Example Title</title>
+  <meta name="description" content="">
   <meta name="author" content="">
-
-
+  
+  
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,19 +32,19 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <nav>
-    <img id="logo" src="logoTrans.png" alt="NY Lobbying Express">
+ 
+  <nav> 
     <a href="index.html">Home</a>
+
     <a class="active" href="modules.html">Modules</a>
     <a class="active" href="reporting_activities.html">Reporting</a>
 
   </nav>
-
+  
   <main>
     <div class="pageTitle">
       <h2>
-        Guide for Non-Profits to Lobbying Under New York Law
+        Put a title here
       </h2>
     </div>
     <hr>
@@ -69,15 +68,10 @@
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
+      
     <form class="formactivities-form hide" id="formact">
       <h2>Lobbying activities form</h2>
-      <p>
+      <p> 
       <label for="date">Did you lobby today?</label>
       <select id="date" name="date">
         <option value="null">--</option>
@@ -87,7 +81,7 @@
     </p>
     <p class="tooltip">(?)<span class="tiptext">Lobbying is an attempt to influence government decision-making.</span></p>
     <br>
-    <p>
+    <p> 
       <label for="gov">What level of government did you lobby?</label>
       <select id="gov" name="categorygov">
           <option value="null">--</option>
@@ -95,7 +89,7 @@
           <option value="municipality">Municipality</option>
           <option value="both">State and Municipality</option>
       </select>
-    </p>
+    </p>  
     <p class="tooltip">(?)<span class="tiptext">District or local offices of elected officials for state positions are state-level government.</span></p>
     <br>
     <p>
@@ -104,23 +98,23 @@
           <option value="null">--</option>
           <option value="individual">Individual</option>
           <option value="stateEntity">State Entity</option>
-      </select>
+      </select>     
     </p>
     <p class="tooltip">(?)<span class="tiptext">An individual is a state person including statewide elected officials;<br>
         members of the legislature and legislative employees;<br>
         heads of State departments and their deputies and assistants, other than members of the board of regents of the university of the State of New York who receive no compensation or are compensated on a per diem basis;<br>
         officers and employees of statewide elected officials;<br>
         officers and employees of State departments, boards, bureaus, divisions, commissions, councils, or other State agencies;<br>
-        and employees of public authorities (other than multi-state authorities), public benefit corporations and commissions at least one of whose members is appointment by the governor,
+        and employees of public authorities (other than multi-state authorities), public benefit corporations and commissions at least one of whose members is appointment by the governor, 
         and members or directors of such authorities, corporations, and commissions who are compensated other than on a per diem basis.</span></p>
     <br>
-    <p>
+    <p> 
       <label for="office">What office did you lobby?</label><br>
-      <textarea id="office" name="office"></textarea>
+      <textarea id="office" name="office"></textarea> 
     </p>
     <p class="tooltip">(?)<span class="tiptext">Example of Senator ______ or the Governor’s Office.</span></p>
     <br>
-    <p>
+    <p> 
       <label for="metwith">Who did you meet with?</label><br>
       <textarea id="metwith" name="metwith"></textarea>
       </p>
@@ -135,14 +129,14 @@
           <option value="other">Other</option>
        </select>
     </p>
-    <p class="tooltip2">(?)<span class="tiptext2">1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
+    <p class="tooltip">(?)<span class="tiptext">1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
         <br>2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies.</span></p>
     <br>
-    <p>
+    <p> 
       <label for="lobbyfor2">What did you lobby for?</label><br>
       <textarea id="lobbyfor2" name="lobbyfor2"></textarea>
     </p>
-    <p class="tooltip2">(?)<span class="tiptext2">Provide topic title and applicable number.  Examples include:<br>
+    <p class="tooltip">(?)<span class="tiptext">Provide topic title and applicable number.  Examples include:<br>
         State Bill<br>
         Municipal Bill<br>
         State Executive Order<br>
@@ -155,11 +149,11 @@
         State Regulation/ Rate-making/ Rule<br>
         Municipal Regulation/ Rate-making/ Rule<br></span></p>
     <br>
-
+    
   </form>
     </div>
 
-
+   
 
     <button class="reportbutton2" id="modalbtn2">Submit Lobbying activities report</button>
     <div id="modalreport2" class="modal2">
@@ -178,11 +172,11 @@
         <h3>Thank you!</h3>
       </div>
     </div>
-
+  
 
 <!--     <form class="formexpenses-form hide" id="formexp">
       <h3>Lobbying expenses form</h3>
-      <p>
+      <p> 
         <label for="date2">Did you incur expenses while lobbying today?</label>
         <select id="date2" name="date2">
           <option value="null">--</option>
@@ -235,46 +229,24 @@
         <input type="checkbox" id="other1" name="other1" value="other1">
         <label for="other1">Other</label>
       </p></form>
-
+    
  -->
   </div>
 
   </div>
 
-
- <hr>
+ 
+ <hr> 
 
   <footer>
     <p>Contact Information:</p>
     <p>Email: CHANGE ME</p>
-    <button class="contactbutton" id="contactbtn">Contact us!</button>
-        <div id="modalcontact" class="modal3">
-            <div class="mdcontact">
-                <span class="close3">&times;</span>
-                    <form class="formcontact" id="formcontact">
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname">
-
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname">
-
-                      <label for="email">E-mail</label>
-                      <input type="text" id="email" name="email">
-
-                      <label for="subject">Subject</label>
-                      <textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
-
-                      <input type="submit" value="Submit">
-                    </form>
-                  </div>
-    </div>
-    <img id="footerLogo" src="logoBackground.png" alt="NY Lobbying Express">
-  </footer>
+  </footer>  
 
 </main>
-
+    
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="js.js"></script>
+<script src="js.js"></script> 
 </body>
 </html>
