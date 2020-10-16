@@ -1006,6 +1006,7 @@ video{
 		font-size: 15px;
 	}
 	
+
 	.slideshowContainer { 
 		margin-left: 0px;
 		margin-right: 0px;
@@ -1034,6 +1035,12 @@ video{
     font-size: 8px;
     position: absolute;
     top: 8%;
+	}
+  }
+  .reportbutton {
+    font-size: 8px;
+    position: absolute;
+    top: 12%;
     left: 50%;
     padding: 12px 25px;
   }
@@ -1048,6 +1055,7 @@ video{
     font-size: 8px;
     position: absolute;
     top: 5%;
+    top: 7%;
     left: 50%;
     width: 183px;
   }
@@ -1063,6 +1071,9 @@ video{
     left: 50%;
   }
 
+    top: 22%;
+    left: 55%;
+  }
   .modal {
     padding-top: 300px;
     width: 99%; 
