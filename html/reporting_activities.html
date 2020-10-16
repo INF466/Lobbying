@@ -34,6 +34,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  
   <nav> 
+    <img id="logo" src="logoTrans.png" alt="NY Lobbying Express">
     <a href="index.html">Home</a>
 
     <a class="active" href="modules.html">Modules</a>
@@ -68,7 +69,12 @@
       <br>
       <br>
       <br>
-      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     
     <form class="formactivities-form hide" id="formact">
       <h2>Lobbying activities form</h2>
       <p> 
@@ -241,6 +247,28 @@
   <footer>
     <p>Contact Information:</p>
     <p>Email: CHANGE ME</p>
+    <button class="contactbutton" id="contactbtn">Contact us!</button>
+        <div id="modalcontact" class="modal3">
+            <div class="mdcontact">
+                <span class="close3">&times;</span>
+                    <form class="formcontact" id="formcontact">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname">
+                  
+                      <label for="email">E-mail</label>
+                      <input type="text" id="email" name="email">
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+    </div>
+    <img id="footerLogo" src="logoBackground.png" alt="NY Lobbying Express">
   </footer>  
 
 </main>
