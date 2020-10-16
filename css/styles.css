@@ -50,7 +50,6 @@ main{
 /*Typical Paragraph Body==================================*/
 
 
-=======
 /*Typical Paragraph Body==================================*/
 
 p {
@@ -844,7 +843,6 @@ video{
 		left: 15%;
 
 	}
-<<<<<<< HEAD
 
 	.flipcardholder{
 		max-width: 604px;
@@ -854,9 +852,7 @@ video{
 		width:100%;
 	}
 
-=======
 
->>>>>>> jocelyn
 	.homeQuestionInfo{
 		font-size: 20px;
 		text-align: center;
@@ -932,7 +928,7 @@ video{
 		left: 15%;
 
 	}
-<<<<<<< HEAD
+
 
 	.flipcardholder{
 		max-width: 302px;
@@ -942,9 +938,7 @@ video{
 		width:100%;
 	}
 
-=======
 
->>>>>>> jocelyn
 	.homeQuestionInfo{
 		font-size: 15px;
 		text-align: center;
@@ -952,7 +946,7 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-<<<<<<< HEAD
+
 
 	.numberText {
 	  font-size: 20px;
@@ -964,12 +958,6 @@ video{
 
 	#hamburger {
 		display:block;
-=======
-
-
-}
->>>>>>> jocelyn
-
 	}
 
 	#sideNav a{
@@ -1140,13 +1128,9 @@ footer{
 	position:sticky;
 	bottom: -150px;
 	left:0;
-<<<<<<< HEAD
 	clear:both;
 	background-color: #0076d0;
-
-=======
 	text-align: center;
->>>>>>> jocelyn
 }
 
 .spacer{
