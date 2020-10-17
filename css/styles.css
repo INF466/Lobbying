@@ -210,7 +210,7 @@ p {
   display: inline-block;
   font-size: 23px;
   position: absolute;
-  top: 35%;
+  top: 41%;
   left: 55%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -449,6 +449,8 @@ nav a{
 	height:80%;
 	text-shadow: 2px 2px #333333;
 }
+
+
 
 /*aside nav===============================================*/
 aside{
@@ -884,17 +886,17 @@ video{
 		width: 75%;
 		top: 100px;
 		left: 15%;
-
+		
 	}
-
+	
 	.flipcardholder{
 		max-width: 604px;
 	}
-
+	
 	.container{
 		width:100%;
 	}
-
+	
 	.homeQuestionInfo{
 		font-size: 20px;
 		text-align: center;
@@ -902,41 +904,41 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-
+	
 	.homeSlideshowContainer{
 		height: 350px;
 	}
-
+	
 	.moduleSlide img{
-		height: 350px !important;
+		height: 350px !important; 
 	}
-
+	
 	.moduleSlide h2{
 		font-size: 20px;
 	}
-
+	
 	.moduleSlide p{
 		font-size: 15px;
 	}
-
+	
 	footer p {
 		font-size:12px;
 		margin-left: 200px;
 	}
-
+	
 	aside{
 		width:200px;
 		top:50px;
 	}
 
-
+	
 	.slideshowContainer {
 		margin-left: 215px;
 	}
 	#footerLogo{
 		width:25%;
 	}
-
+	
 }
 @media only screen and (max-width: 650px) {
 	#logo{
@@ -948,37 +950,37 @@ video{
 	nav a{
 		font-size:15px;
 	}
-
+	
 	nav {
 		height:40px;
 		padding-left: 145px;
 	}
-
+	
 	.active{
 		height:75%;
 	}
-
+	
 	.nav a:hover{
 		height:75%;
 	}
-
+	
 	.homeQuestion{
 		font-size: 30px;
 		text-align: center;
 		width: 75%;
 		top: 50px;
 		left: 15%;
-
+		
 	}
-
+	
 	.flipcardholder{
 		max-width: 302px;
 	}
-
+	
 	.container{
 		width:100%;
 	}
-
+	
 	.homeQuestionInfo{
 		font-size: 15px;
 		text-align: center;
@@ -986,15 +988,15 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-
+	
 	.numberText {
 	  font-size: 20px;
 	}
-
+	
 	#sideNav{
 		display: none;
 	}
-
+	
 	#hamburger {
 		display:block;
 
@@ -1003,8 +1005,8 @@ video{
 	#sideNav a{
 		font-size: 15px;
 	}
-
-	.slideshowContainer {
+	
+	.slideshowContainer { 
 		margin-left: 0px;
 		margin-right: 0px;
 		max-width: 100%;
@@ -1014,11 +1016,11 @@ video{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-
-
+	
+	
 	footer p{
 		margin-left: 0px;
-	}
+  }
 
   .reportContainer {
    height: 1650px;
@@ -1051,7 +1053,7 @@ video{
   }
   .contactbutton {
     font-size: 15px;
-    top: 22%;
+    top: 41%;
     left: 55%;
   }
   .printbutton {
@@ -1162,17 +1164,19 @@ video{
     visibility: visible;
   }
 }
+
+
 @media only screen and (max-width: 425px) {
 	nav a{
 		font-size:12px;
 		padding-right:3px;
 		padding-left:3px;
 	}
-
+	
 	nav {
 		padding-left: 175px;
 	}
-
+	
 }
 
 
@@ -1185,7 +1189,7 @@ footer{
 	left:0;
 	clear:both;
 	background-color: #0076d0;
-
+	
 }
 
 .spacer{
