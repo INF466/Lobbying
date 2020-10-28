@@ -19,7 +19,7 @@
 	src: url('../fonts/sintony.otf');
 }
 
-/*logos*/
+
 
 #logo{
 	width:160px;
@@ -35,12 +35,17 @@
 	right: 20px;
 }
 
-/*All fonts related to headings, titles, body paragraphs, texts, etc.*/
+/* hide disclaimer by default=============================*/
+.disclaimer{
+	display: none;
+}
+
+/*Title Fonts=============================================*/
 title {
   font-family: Helvetica, sans-serif;
 }
 
-
+ /*Header=================================================*/
 h2 {
   font-family: sintony, Helvetica, sans-serif;
   font-size: 35px;
@@ -70,14 +75,6 @@ main{
 
 }
 
-p {
-  font-family: titillium, Helvetica, sans-serif;
-  font-size: 20px;
-  color: inherit;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .pageTitle{
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -87,41 +84,18 @@ p {
 	margin-left: 250px;
     text-align:left;
 }
+/*Typical Paragraph Body==================================*/
 
-/*other basic tags, such as audio*/
 
-video{
-	width: 55%;
-	margin:auto;
-	margin-top: 20px;
-	padding-bottom: 50px;
-	text-align:center;
-	display:block;
+p {
+  font-family: titillium, Helvetica, sans-serif;
+  font-size: 20px;
+  color: inherit;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-audio{
-	display:block;
-	float:clear;
-	width: 55%;
-	margin:auto;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	height: 25px;
-	padding:10px;
-	box-shadow: inset 0px 0px 5px 5px rgba(0, 135, 208, 1);
-	border-radius:10px;
-}
-
-aside{
-	float: left;
-	width:225px;
-	position:fixed;
-	top:50px;
-	bottom: 0;
-	z-index: 1;
-}
-
-/*CSS involved with reporting and reports */
+/*styles for report-activities*/
 
 .tooltip {
   position: relative;
@@ -422,8 +396,6 @@ input[type=submit]:hover {
   background-color:#0076d0;
 }
 
-/*Involving accessibility, mobile, viewport*/
-
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
@@ -454,34 +426,6 @@ input[type=submit]:hover {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 1280px) {
-video{
-		width: 75%;
-	}
-}
-
-@media only screen and (max-width: 906px) {
-	.homeQuestion{
-		font-size: 40px;
-		text-align: center;
-		width: 75%;
-		top: 100px;
-		left: 15%;
-
-	}
-
-	@media only screen and (max-width: 650px) {
-		#logo{
-			width:120px;
-		}
-
-	@media only screen and (max-width: 425px) {
-		nav a{
-			font-size:12px;
-			padding-right:3px;
-			padding-left:3px;
-		}
-
 /*media for print option*/
 
 @media print {
@@ -493,7 +437,7 @@ video{
   }
 
 
-/* Things involved with navigation */
+/*Nav=====================================================*/
 nav {
 	color: white;
 	background-color: dodgerblue;
@@ -531,7 +475,15 @@ nav a{
 
 
 
-/*Sidebar navigation, used on modules page*/
+/*aside nav===============================================*/
+aside{
+	float: left;
+	width:225px;
+	position:fixed;
+	top:50px;
+	bottom: 0;
+	z-index: 1;
+}
 
 #sideNav{
 	overflow:auto;
@@ -623,7 +575,7 @@ nav a{
 
 }
 
-/*Slider on homepage*/
+/*SLider===========================================*/
 
 .moduleSlide {
 	display: none;
@@ -894,6 +846,28 @@ nav a{
   to {opacity: 1}
 }
 
+video{
+	width: 55%;
+	margin:auto;
+	margin-top: 20px;
+	padding-bottom: 50px;
+	text-align:center;
+	display:block;
+}
+
+audio{
+	display:block;
+	float:clear;
+	width: 55%;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	height: 25px;
+	padding:10px;
+	box-shadow: inset 0px 0px 5px 5px rgba(0, 135, 208, 1);
+	border-radius:10px;
+}
+
 .homeQuestion{
 	position:absolute;
 	top: 38%;
@@ -942,7 +916,20 @@ footer p {
 #dotHide{
 	display:none;
 }
+@media only screen and (max-width: 1280px) {
+video{
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 906px) {
+	.homeQuestion{
+		font-size: 40px;
+		text-align: center;
+		width: 75%;
+		top: 100px;
+		left: 15%;
 
+	}
 	#sideNav a{
 		font-size: 20px;
 	}
@@ -998,8 +985,10 @@ footer p {
 	}
 
 }
-
-
+@media only screen and (max-width: 650px) {
+	#logo{
+		width:120px;
+	}
 	.pageTitle h2{
 		margin-left: 20px;
 	}
@@ -1231,6 +1220,14 @@ footer p {
     visibility: visible;
   }
 }
+
+
+@media only screen and (max-width: 425px) {
+	nav a{
+		font-size:12px;
+		padding-right:3px;
+		padding-left:3px;
+	}
 
 	nav {
 		padding-left: 175px;
