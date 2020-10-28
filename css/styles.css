@@ -469,6 +469,7 @@ aside{
 	width: 100%;
 	margin:0px;
 	padding:0px;
+	padding-top:50px;
 	background-color: #006399;
 	transition: 0.5s;
 }
@@ -487,11 +488,14 @@ aside{
 
 #sideNav a{
 	margin:auto;
-	text-align:center;
-	padding-left: 0px;
+	height:45px;
+	text-align:left;
+	padding-left: 12px;
 	padding-right:0px;
-	width:100%;
+	margin-bottom:5px;
+	width:99%;
 	transition: 0.3s;
+	font-size: 22px;
 }
 
 #sideNavMoble a{
@@ -902,6 +906,9 @@ video{
 		top: 100px;
 		left: 15%;
 		
+	}
+	#sideNav a{
+		font-size: 20px;
 	}
 	
 	.flipcardholder{
