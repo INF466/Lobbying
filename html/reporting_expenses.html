@@ -79,6 +79,8 @@
 	-------------------------------------------------- -->
 	<div class="reporting">
 		<form id="expenseReporting" >
+
+      <!--New Question Section-->
 			<div class="tab">
 				<p>Did you incur expenses while lobbying today?</p>
 				<input type="radio" id="expenses_yes" name="incurredExpenses" value="true">
@@ -93,18 +95,22 @@
 					<input type="checkbox" id="type1" name="expenseType" value="Advertising – Billboards">
 					<label for="type1">Advertising – Billboards</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type2" name="expenseType" value="Advertising – Flyers">
 					<label for="type2">Advertising – flyers</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type3" name="expenseType" value="Advertising - Print Media">
 					<label for="type3">Advertising - Print Media</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type4" name="expenseType" value="Buses for Lobby Event">
 					<label for="type4">Buses for Lobby Event</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type5" name="expenseType" value="Cell Phone">
 					<label for="type5">Cell Phone</label>
@@ -113,54 +119,67 @@
 					<input type="checkbox" id="type6" name="expenseType" value="Computer/Internet">
 					<label for="type6">Computer/Internet</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type7" name="expenseType" value="Consulting ">
 					<label for="type7">Consulting</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type8" name="expenseType" value="E-advocacy">
 					<label for="type8">E-advocacy</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type9" name="expenseType" value="Legislative Bill Tracking">
 					<label for="type9">Legislative Bill Tracking</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type10" name="expenseType" value="Legislative Research">
 					<label for="type10">Legislative Research</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type11" name="expenseType" value="Lodging">
 					<label for="type11">Lodging</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type12" name="expenseType" value="Meals for Lobby Event">
 					<label for="type12">Meals for Lobby Event</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type13" name="expenseType" value="Photocopies">
 					<label for="type13">Photocopies</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type14" name="expenseType" value="Rallies">
 					<label for="type14">Rallies</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type15" name="expenseType" value="Rent">
 					<label for="type15">Rent</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type16" name="expenseType" value="Social Event/Reception/Banquet">
 					<label for="type16">Social Event/Reception/Banquet</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type17" name="expenseType" value="Social Media – Websites">
 					<label for="type17">Social Media – Websites</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type18" name="expenseType" value="Travel Reimbursement - Train, Airfare, Car, Hotel">
 					<label for="type18">Travel Reimbursement - Train, Airfare, Car, Hotel</label>
 				</div>
+
 				<div class="checkbox">
 					<input type="checkbox" id="type19" name="expenseType" value="Other" onchange="toggleOtherInput()">
 					<label for="type19">Other: <input type="text" id="otherType" name="otherType"></label>
@@ -168,6 +187,7 @@
 				<p>Please check all that apply.</p>
 			</div>
 
+<!--New Question Section-->
 			<div class="tab looped">
 				<div class="subtab">
 					<p>What was the cost of those expenses?</p>
@@ -176,6 +196,7 @@
 					<input type="text" id="expenseCost" name="expenseCost" placeholder="Amount in USD">
 				</div>
 
+<!--New Question Section-->
 				<div class="subtab">
 					<p>Who or what was the expense paid to?</p>
 					<label for="expensePaidTo">My organization paid this to:</label>
@@ -183,6 +204,7 @@
 				</div>
 			</div>
 
+<!--New Question Section-->
 			<div class="tab looped">
 				<div>
 					<p>Did you incur any reportable compensation today?</p>
@@ -191,7 +213,8 @@
 					<input type="radio" id="compNo" name="compensationReceived" value="false" checked onclick="displayCompensation()">
 					<label for="compNo">No</label>
 				</div>
-
+        
+<!--New Question Section-->
 				<div class="subtab" id="compTab">
 					<p>What are the details of compensation received?</p>
 					<label for="compAmt">Amount: </label>
