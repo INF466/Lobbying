@@ -1,25 +1,25 @@
 /*Custom Fonts Declared Here===============================*/
 @font-face {
-	font-family: lobster; 
-	src: url('../fonts/lobster.otf'); 
-} 
+	font-family: lobster;
+	src: url('../fonts/lobster.otf');
+}
 
 @font-face {
-	font-family: arc; 
-	src: url('../fonts/arc.ttf'); 
-} 
+	font-family: arc;
+	src: url('../fonts/arc.ttf');
+}
 
 @font-face {
-	font-family: titillium; 
-	src: url('../fonts/titillium.otf'); 
-} 
+	font-family: titillium;
+	src: url('../fonts/titillium.otf');
+}
 
 @font-face {
-	font-family: sintony; 
-	src: url('../fonts/sintony.otf'); 
-} 
+	font-family: sintony;
+	src: url('../fonts/sintony.otf');
+}
 
-
+/*logos*/
 
 #logo{
 	width:160px;
@@ -35,17 +35,12 @@
 	right: 20px;
 }
 
-/* hide disclaimer by default=============================*/
-.disclaimer{
-	display: none;
-}
-
-/*Title Fonts=============================================*/
+/*All fonts related to headings, titles, body paragraphs, texts, etc.*/
 title {
   font-family: Helvetica, sans-serif;
 }
 
- /*Header=================================================*/
+
 h2 {
   font-family: sintony, Helvetica, sans-serif;
   font-size: 35px;
@@ -75,6 +70,14 @@ main{
 
 }
 
+p {
+  font-family: titillium, Helvetica, sans-serif;
+  font-size: 20px;
+  color: inherit;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .pageTitle{
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -84,18 +87,41 @@ main{
 	margin-left: 250px;
     text-align:left;
 }
-/*Typical Paragraph Body==================================*/
 
+/*other basic tags, such as audio*/
 
-p {
-  font-family: titillium, Helvetica, sans-serif;
-  font-size: 20px;
-  color: inherit;
-  padding-left: 15%;
-  padding-right: 15%;
+video{
+	width: 55%;
+	margin:auto;
+	margin-top: 20px;
+	padding-bottom: 50px;
+	text-align:center;
+	display:block;
 }
 
-/*styles for report-activities*/
+audio{
+	display:block;
+	float:clear;
+	width: 55%;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	height: 25px;
+	padding:10px;
+	box-shadow: inset 0px 0px 5px 5px rgba(0, 135, 208, 1);
+	border-radius:10px;
+}
+
+aside{
+	float: left;
+	width:225px;
+	position:fixed;
+	top:50px;
+	bottom: 0;
+	z-index: 1;
+}
+
+/*CSS involved with reporting and reports */
 
 .tooltip {
   position: relative;
@@ -239,29 +265,29 @@ p {
   transform: translate(-50%, -50%);
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .modal2 {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
-  -webkit-animation-name: fadeIn; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.6s;
   animation-name: fadeIn;
   animation-duration: 0.6s
@@ -348,16 +374,16 @@ p {
   cursor: pointer;
 }
 .modal3 {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 .close3 {
   color: #aaaaaa;
@@ -396,8 +422,10 @@ input[type=submit]:hover {
   background-color:#0076d0;
 }
 
+/*Involving accessibility, mobile, viewport*/
+
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
 
@@ -407,7 +435,7 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
+  from {bottom: -300px; opacity: 0}
   to {bottom: 0; opacity: 1}
 }
 
@@ -417,27 +445,55 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
+
+@media only screen and (max-width: 1280px) {
+video{
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 906px) {
+	.homeQuestion{
+		font-size: 40px;
+		text-align: center;
+		width: 75%;
+		top: 100px;
+		left: 15%;
+
+	}
+
+	@media only screen and (max-width: 650px) {
+		#logo{
+			width:120px;
+		}
+
+	@media only screen and (max-width: 425px) {
+		nav a{
+			font-size:12px;
+			padding-right:3px;
+			padding-left:3px;
+		}
 
 /*media for print option*/
 
 @media print {
   nav {display:none;}
-  header {display:none;}   
+  header {display:none;}
   footer {display:none;}
   .reportbutton,.reportbutton2,.reportbutton3,.printbutton,.pageTitle {display:none;}
   h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
   }
 
 
-/*Nav=====================================================*/
+/* Things involved with navigation */
 nav {
 	color: white;
 	background-color: dodgerblue;
@@ -452,7 +508,7 @@ nav {
 
 nav a{
 	text-decoration: none;
-	font-family: titillium; 
+	font-family: titillium;
 	color: white;
 	font-size: 25px;
 	padding-left: 15px;
@@ -475,15 +531,7 @@ nav a{
 
 
 
-/*aside nav===============================================*/
-aside{
-	float: left;
-	width:225px;
-	position:fixed;
-	top:50px;
-	bottom: 0;
-	z-index: 1;
-}
+/*Sidebar navigation, used on modules page*/
 
 #sideNav{
 	overflow:auto;
@@ -575,14 +623,14 @@ aside{
 
 }
 
-/*SLider===========================================*/
+/*Slider on homepage*/
 
 .moduleSlide {
 	display: none;
 	box-shadow: inset 0px 0px 10px 5px #888888;
 	}
-	
-	
+
+
 
 .moduleSlide:first-child {
     display: block;
@@ -846,28 +894,6 @@ aside{
   to {opacity: 1}
 }
 
-video{
-	width: 55%;
-	margin:auto;
-	margin-top: 20px;
-	padding-bottom: 50px;
-	text-align:center;
-	display:block;
-}
-
-audio{
-	display:block;
-	float:clear;
-	width: 55%;
-	margin:auto;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	height: 25px;
-	padding:10px;
-	box-shadow: inset 0px 0px 5px 5px rgba(0, 135, 208, 1);
-	border-radius:10px;
-}
-
 .homeQuestion{
 	position:absolute;
 	top: 38%;
@@ -916,32 +942,19 @@ footer p {
 #dotHide{
 	display:none;
 }
-@media only screen and (max-width: 1280px) {
-video{
-		width: 75%;
-	}
-}
-@media only screen and (max-width: 906px) {
-	.homeQuestion{
-		font-size: 40px;
-		text-align: center;
-		width: 75%;
-		top: 100px;
-		left: 15%;
-		
-	}
+
 	#sideNav a{
 		font-size: 20px;
 	}
-	
+
 	.flipcardholder{
 		max-width: 604px;
 	}
-	
+
 	.container{
 		width:100%;
 	}
-	
+
 	.homeQuestionInfo{
 		font-size: 20px;
 		text-align: center;
@@ -949,83 +962,81 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-	
+
 	.homeSlideshowContainer{
 		height: 350px;
 	}
-	
+
 	.moduleSlide img{
-		height: 350px !important; 
+		height: 350px !important;
 	}
-	
+
 	.moduleSlide h2{
 		font-size: 20px;
 	}
-	
+
 	.moduleSlide p{
 		font-size: 15px;
 	}
-	
+
 	footer p {
 		font-size:12px;
 		margin-left: 200px;
 	}
-	
+
 	aside{
 		width:200px;
 		top:50px;
 	}
 
-	
+
 	.slideshowContainer {
 		margin-left: 215px;
 	}
 	#footerLogo{
 		width:25%;
 	}
-	
+
 }
-@media only screen and (max-width: 650px) {
-	#logo{
-		width:120px;
-	}
+
+
 	.pageTitle h2{
 		margin-left: 20px;
 	}
 	nav a{
 		font-size:15px;
 	}
-	
+
 	nav {
 		height:40px;
 		padding-left: 145px;
 	}
-	
+
 	.active{
 		height:34px;
 	}
-	
+
 	.nav a:hover{
 		height:34px;
 	}
-	
+
 	.homeQuestion{
 		font-size: 30px;
 		text-align: center;
 		width: 75%;
 		top: 50px;
 		left: 15%;
-		
+
 	}
-	
+
 	.flipcardholder{
 		max-width: 302px;
 	}
-	
+
 	.container{
 		width:100%;
 	}
-	
+
 	.homeQuestionInfo{
 		font-size: 15px;
 		text-align: center;
@@ -1033,15 +1044,15 @@ video{
 		top: 175px;
 		left: 15%;
 	}
-	
+
 	.numberText {
 	  font-size: 20px;
 	}
-	
+
 	#sideNav{
 		display: none;
 	}
-	
+
 	#hamburger {
 		display:block;
 
@@ -1050,9 +1061,9 @@ video{
 	#sideNav a{
 		font-size: 15px;
 	}
-	
 
-	.slideshowContainer { 
+
+	.slideshowContainer {
 		margin-left: 0px;
 		margin-right: 0px;
 		max-width: 100%;
@@ -1062,8 +1073,8 @@ video{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	
-	
+
+
 	footer p{
 		margin-left: 0px;
   }
@@ -1121,63 +1132,63 @@ video{
   }
   .modal {
     padding-top: 300px;
-    width: 99%; 
-    height: 100%; 
+    width: 99%;
+    height: 100%;
   }
   .modal2 {
-    width: 99%; 
-    height: 100%; 
+    width: 99%;
+    height: 100%;
   }
-  
+
   .modal2-header {
     padding: 4px 12px;
     background-color: #0076d0;
     color: white;
   }
-  
+
   .modal2-body {padding: 4px 12px;}
-  
+
   .modal2-footer {
     padding: 4px 12px;
     background-color: #0076d0;
     color: white;
   }
-  
+
   .modalActivities {
     width: 100%;
   }
-  
+
   .modalActivities2 {
     width: 100%;
   }
-  
+
   .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
     cursor: pointer;
   }
-  
+
   .close2 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
 
   }
   .tooltip {
     position: relative;
     display: inline-block;
   }
-  
+
   .tooltip .tiptext {
     visibility: hidden;
     width: 300px;
@@ -1185,14 +1196,14 @@ video{
     color: black;
     text-align: center;
     padding: 5px 0;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -5px;
     left: 85%;
   }
-  
+
   .tooltip:hover .tiptext {
     visibility: visible;
   }
@@ -1200,7 +1211,7 @@ video{
     position: relative;
     display: inline-block;
   }
-  
+
   .tooltip2 .tiptext2 {
     visibility: hidden;
     width: 300px;
@@ -1208,31 +1219,23 @@ video{
     color: black;
     text-align: center;
     padding: 5px 0;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -250px;
     left: 85%;
   }
-  
+
   .tooltip2:hover .tiptext {
     visibility: visible;
   }
 }
 
-
-@media only screen and (max-width: 425px) {
-	nav a{
-		font-size:12px;
-		padding-right:3px;
-		padding-left:3px;
-	}
-	
 	nav {
 		padding-left: 175px;
 	}
-	
+
 }
 
 
@@ -1245,7 +1248,7 @@ footer{
 	left:0;
 	clear:both;
 	background-color: #0076d0;
-	
+
 }
 
 .spacer{
