@@ -1,3 +1,26 @@
+/*Custom Fonts Declared Here===============================*/
+@font-face {
+	font-family: lobster; 
+	src: url('../fonts/lobster.otf'); 
+} 
+
+@font-face {
+	font-family: arc; 
+	src: url('../fonts/arc.ttf'); 
+} 
+
+@font-face {
+	font-family: titillium; 
+	src: url('../fonts/titillium.otf'); 
+} 
+
+@font-face {
+	font-family: sintony; 
+	src: url('../fonts/sintony.otf'); 
+} 
+
+
+
 #logo{
 	width:160px;
 	position: fixed;
@@ -19,27 +42,27 @@
 
 /*Title Fonts=============================================*/
 title {
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
  /*Header=================================================*/
 h2 {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 25px;
+  font-family: sintony, Helvetica, sans-serif;
+  font-size: 35px;
   color: black;
   margin: auto;
   text-align:center;
 }
 
 h3 {
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: sintony, Helvetica, sans-serif;
   font-size: 20px;
   margin: auto;
   text-align:center;
 }
 
 h4 {
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: sintony, Helvetica, sans-serif;
   font-size: 15px;
   margin: auto;
   text-align:center;
@@ -65,7 +88,7 @@ main{
 
 
 p {
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: titillium, Helvetica, sans-serif;
   font-size: 20px;
   color: inherit;
   padding-left: 15%;
@@ -429,24 +452,24 @@ nav {
 
 nav a{
 	text-decoration: none;
-	font-family: Verdana;
+	font-family: titillium; 
 	color: white;
 	font-size: 25px;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top:10px;
+	padding-top:6px;
 	height:50px;
 	display: inline-block;
 }
 
 .active{
 	background-color: #0076d0;
-	height:80%;
+	height:44px;
 }
 
 .nav a:hover{
 	background-color: #0076d0;
-	height:80%;
+	height:44px;
 	text-shadow: 2px 2px #333333;
 }
 
@@ -979,11 +1002,11 @@ video{
 	}
 	
 	.active{
-		height:75%;
+		height:34px;
 	}
 	
 	.nav a:hover{
-		height:75%;
+		height:34px;
 	}
 	
 	.homeQuestion{
