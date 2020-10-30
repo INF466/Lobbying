@@ -38,10 +38,10 @@ function nextPrev(n) {
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
   if (n == 1){
-	   if (!validateForm()) {
+	   if (validateForm()) {
+			saveResults(currentTab);
+		} else {
 		   return false;
-	   } else {
-		   saveResults(currentTab);
 	   }
   }else{
 		if ((currentTab + n) == 2){
@@ -102,9 +102,11 @@ function recallResults(){
 	var currentTabObj = document.getElementsByClassName("tab")[currentTab];
 	var inputs = currentTabObj.getElementsByTagName("input");
 	for (x of inputs){
-		if (expensesReported[x.name] != undefined) if (expensesReported[x.name][currentIndex] != undefined){
+		if (expensesReported[x.name] != undefined){
+			if (expensesReported[x.name][currentIndex] != undefined){
 				x.value = expensesReported[x.name][currentIndex];
 			}
+		}
 	}
 }
 
@@ -161,6 +163,7 @@ function validateForm(){
 	var current = document.getElementsByClassName("tab")[currentTab];
 	var valid = false;
 	var inputs = current.getElementsByTagName("input");
+
 	if (currentTab < 2){
 		if (currentTab == 0){
 			for (x of inputs) {
@@ -169,44 +172,101 @@ function validateForm(){
 				}
 				// window.alert(valid);
 			}
+			if (!valid) displayModal("<p>Please select an option.</p>");
 		} else{
+			var otherSelected = false;
 			for (x of inputs){
 				if (x.type =="checkbox"){
 					if (x.id == "type19"){
 						if ((x.checked)){
 							if (inputs[inputs.length - 1].value != ""){
 								valid = true;
-							} else valid = false;
+							} else {
+								valid = false;
+								otherSelected = true;
+							}
 						}
 					} else if (x.checked){
-					valid = true;
+						valid = true;
 					}
 				}
 			}
-		}
+			if (!valid){
+				if (otherSelected){
+					displayModal("<p>Please enter a value for 'Other'</p>");
+				} else{
+					displayModal("<p>Please select at least one option.</p>");
+				}
+			}
+		}		
 	} else if (currentTab == 2){
+		var emptyFields = [];
+		var fieldIndex = 0;
 		for (x of inputs){
-			if (x.value != ""){
-				valid = true;
-			} else {
-				valid = false;
-				break;
+			if (x.value == ""){
+				emptyFields[fieldIndex] = x.name;
+				fieldIndex++;
 			}
 		}
+		if (emptyFields.length == 0){
+			valid = true;
+		} else{
+			var modalText = "<p>Please enter ";
+			if (emptyFields.length > 1){
+				modalText += "values for ";
+			}else{
+				modalText += "a value for "
+			}
+			for (i = 0; i < emptyFields.length; i++) {
+				if (emptyFields[i] == "expenseCost") modalText += "the amount spent";
+				else{
+					if (i == 1){
+						modalText += " and ";
+					}
+					if (emptyFields[i] == "expensePaidTo") modalText += "who that amount was paid to";
+				}
+			}
+			modalText += ".</p>";
+			displayModal(modalText);
+		}
+		
 	} else if(currentTab == 3){
 		var compReceived = document.getElementById("compYes").checked;
-		if(compReceived){
-			for (x of inputs){
-				if (x.type == "text"){
-					if (x.value != ""){
-						valid = true;
-					} else{
-						valid = false;
-						break;
+			if(compReceived){
+				var emptyFields = [];
+				var fieldIndex = 0;
+				for (x of inputs){
+					if (x.value == ""){
+						emptyFields[fieldIndex] = x.name;
+						fieldIndex++;
 					}
 				}
-			}
-		} else valid = true;
+				if (emptyFields.length == 0){
+					valid = true;
+				} else{
+					var modalText = "<p>Please enter ";
+					if (emptyFields.length > 1){
+						modalText += "values for ";
+					}else{
+						modalText += "a value for "
+					}
+					for (i = 0; i < emptyFields.length; i++) {
+						if (emptyFields[i] == "compAmt") modalText += "the amount received";
+						else{
+							if (i > 0){
+								if (i == (emptyFields.length - 1)) modalText += " and ";
+								else modalText += ", ";
+							}
+							if (emptyFields[i] == "compFrom") modalText += "who that amount was paid by";
+							else if (emptyFields[i] == "compMethod") modalText += "the type of payment";
+							else if (emptyFields[i] == "compNumber") modalText += "the payment number";
+							else if (emptyFields[i] == "compType") modalText += "the type of payment received";
+						}
+					}
+					modalText += ".</p>";
+					displayModal(modalText);
+				}
+			}else valid = true;
 	}
 	return valid; // return the valid status
 }
@@ -217,6 +277,17 @@ function displayCompensation(){
 		updateTab.style.visibility = "hidden";
 	} else updateTab.style.visibility = "visible";
 		
+}
+
+function displayModal(modalText){
+	var modal = document.getElementById("modalPopUp");
+	document.getElementById("modalText").innerHTML = modalText;
+	modal.style.display = "block";
+}
+
+function hideModal(){
+	var modal = document.getElementById("modalPopUp");
+	modal.style.display = "none";
 }
 
 function displayUserInput(){
