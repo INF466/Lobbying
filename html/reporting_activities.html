@@ -6,11 +6,12 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Example Title</title>
-  <meta name="description" content="">
+  <title>Lobbster: Reporting Lobbying Activities</title>
+  <meta name="description" content="Lobbster provides a way for you to report and save your lobbying activities.">
+  <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Activities, Reporting Lobbying Activities">
   <meta name="author" content="">
-  
-  
+
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,15 +33,16 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- 
-  <nav> 
+
+  <nav>
     <img id="logo" src="logoTrans.png" alt="NY Lobbying Express">
+
     <a href="index.html">Home</a>
     <a class="active" href="modules.html">Modules</a>
     <a class="active" href="reporting_activities.html">Reporting</a>
 
   </nav>
-  
+
   <main>
     <div class="pageTitle">
       <h2>
@@ -55,7 +57,9 @@
     <h2>Reporting page</h2>
     <br>
     <br>
-    <button class="reportbutton3" id="modalbtn">Read instruction</button>
+
+    <button class="reportbutton3" id="modalbtn">Read instructions</button>
+
     <div id="modalreport" class="modal">
       <div class="modalActivities">
         <span class="close">&times;</span>
@@ -64,7 +68,6 @@
       </div>
     </div>
     <button class="reportbutton" id="activitybut" type="submit">Report my lobbying activities</button>
-    <!-- <button class="expenses" id="expensebut" type="submit">Report my lobbying expenses</button> -->
       <br>
       <br>
       <br>
@@ -73,71 +76,106 @@
       <br>
       <br>
       <br>
-     
-    <form class="formactivities-form hide" onsubmit="return results()" id="formact">
-      <h2>Lobbying activities form</h2>
-      <p> 
-      <label for="date">Did you lobby today?&nbsp;&nbsp;</label>
-      <img src="question.png" class="questionmark" alt="tooltipact" title="Lobbying is an attempt to influence government decision-making."/>
-      <select id="date" name="date">
-        <option value="null">--</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-    </p>
+
+<!--New Question Section-->
+    <form class="formactivities-form hide" id="formact">
+      <div class="act">
+        <label for="date"></label>Did you lobby today?&nbsp;&nbsp;</label>
+        <img src="question.png" class="questionmark" alt="tooltipact" title="Lobbying is an attempt to influence government decision-making."/>
+        <br>
+        <br>
+        <input type="radio" id="lobbyyes" name="Lobby status" value="true">
+        <label for="lobbyYes">Yes</label>
+        <br>
+        <br>
+        <input type="radio" id="lobbyno" name="Lobby status" value="false">
+        <label for="lobbyNo">No</label>
+    </div>
     <br>
-    <p> 
-      <label for="gov">What level of government did you lobby?</label>
-      <img src="question.png" class="questionmark" alt="tooltipact2" title="District or local offices of elected officials for state positions are state-level government."/>
-      <select id="gov" name="categorygov">
-          <option value="null">--</option>
-          <option value="state">State</option>
-          <option value="municipality">Municipality</option>
-          <option value="both">State and Municipality</option>
-      </select>
-    </p>  
-    <br>
-    <p>
-      <label for="location">Did you lobby at the office of an individual or state entity?</label>
-      <img src="question.png" class="questionmark" alt="tooltipact3" title="An individual is a state person including statewide elected officials;
-      members of the legislature and legislative employees;
-      heads of State departments and their deputies and assistants, other than members of the board of regents of the university of the State of New York who receive no compensation or are compensated on a per diem basis;
-      officers and employees of statewide elected officials;
-      officers and employees of State departments, boards, bureaus, divisions, commissions, councils, or other State agencies;
-      and employees of public authorities (other than multi-state authorities), public benefit corporations and commissions at least one of whose members is appointment by the governor, 
-      and members or directors of such authorities, corporations, and commissions who are compensated other than on a per diem basis."/>
-      <select id="location" name="locationlob">
-          <option value="null">--</option>
-          <option value="individual">Individual</option>
-          <option value="stateEntity">State Entity</option>
-      </select>     
-    </p>
-    <br>
-    <p> 
-      <label for="office">What office did you lobby?</label>
-      <img src="question.png" class="questionmark" alt="tooltipact4" title="Example of Senator ______ or the Governor’s Office."/>
-      <textarea id="office" name="office"></textarea> 
-    </p>
-    <br>
-    <p> 
+
+<!--New Question Section-->
+<div class="act"> 
+  <label for="gov">What level of government did you lobby?</label>
+  <img src="question.png" class="questionmark" alt="tooltipact2" title="District or local offices of elected officials for state positions are state-level government."/>
+  <br>
+  <br>
+  <input type="radio" id="state" name="Level of goverment" value="state">
+  <label for="lobbystate">State</label>
+  <br>
+  <br>
+  <input type="radio" id="Municipality" name="Level of goverment" value="municipality">
+  <label for="lobbymunicipality">Municipality</label>
+  <br>
+  <br>
+  <input type="radio" id="lobbyboth" name="Level of goverment" value="both">
+  <label for="lobbyboth">Both</label>
+</div>
+<br>
+
+
+<!--New Question Section-->
+<div class="act">
+  <label for="location">Did you lobby at the office of an individual or state entity?</label>
+  <img src="question.png" class="questionmark" alt="tooltipact3" title="An individual is a state person including statewide elected officials;
+  members of the legislature and legislative employees;
+  heads of State departments and their deputies and assistants, other than members of the board of regents of the university of the State of New York who receive no compensation or are compensated on a per diem basis;
+  officers and employees of statewide elected officials;
+  officers and employees of State departments, boards, bureaus, divisions, commissions, councils, or other State agencies;
+  and employees of public authorities (other than multi-state authorities), public benefit corporations and commissions at least one of whose members is appointment by the governor, 
+  and members or directors of such authorities, corporations, and commissions who are compensated other than on a per diem basis."/>
+  <br>
+  <br>
+  <input type="radio" id="individual" name="Did you lobby at the office of an individual or state entity?" value="individual">
+  <label for="lobbyindividual">Individual</label>
+  <br>
+  <br>
+  <input type="radio" id="stateentity" name="Did you lobby at the office of an individual or state entity?" value="state entity">
+  <label for="lobbystateentity">State Entity</label>
+</div>
+<br>
+
+<!--New Question Section-->
+<div class="act">
+  <label for="office">What office did you lobby?</label>
+  <img src="question.png" class="questionmark" alt="tooltipact4" title="Example of Senator ______ or the Governor’s Office."/>
+  <br>
+  <br>
+  <input type="text" id="whatOffice" name="What office did you lobby?" placeholder="Example of Senator ______ or the Governor’s Office.">
+</div>
+<br>
+    <!--New Question Section-->
+    <div class="act">
       <label for="metwith">Who did you meet with?</label><br>
-      <textarea id="metwith" name="metwith"></textarea>
-      </p>
+      <br>
+      <br>
+      <input type="text" id="whoMet" name="Who did you meet with?" placeholder="I met ____ while I was lobbying.">
+    </div>
     <br>
-    <p>
-       <label for="lobbyfor">Did you lobby for legislation or funding?</label>
-       <img src="question.png" class="questionmark" alt="tooltipact5" title="1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
-       2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies."/>
-       <select id="lobbyfor" name="lobbyfor">
-          <option value="null">--</option>
-          <option value="legislation">Legislation</option>
-          <option value="funding">Funding</option>
-          <option value="both">Legislation and Funding</option>
-          <option value="other">Other</option>
-       </select>
-    </p>
-    <br>
-    <p> 
+    <!--New Question Section-->
+    <div class="act">
+      <label for="lobbyfor">Did you lobby for legislation or funding?</label>
+      <img src="question.png" class="questionmark" alt="tooltipact5" title="1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
+      2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies."/>
+      <br>
+      <br>
+      <input type="radio" id="legislation" name="Did you lobby for legislation or funding?" value="true">
+      <label for="lobbylegislation">Legislation</label>
+      <br>
+      <br>
+      <input type="radio" id="Funding" name="Did you lobby for legislation or funding?" value="true">
+      <label for="lobbyfunding">Funding</label>
+      <br>
+      <br>
+      <input type="radio" id="both1" name="Did you lobby for legislation or funding?" value="true">
+      <label for="lobbyboth1">Legislation and funding</label>
+      <br>
+      <br>
+      <input type="radio" id="other" name="Did you lobby for legislation or funding?" value="Other" onchange="toggleOtherInput()">
+      <label for="other">Other: <input type="text" id="otherType" name="otherType"></label>
+   </div>
+   <br>
+    <!--New Question Section-->
+    <div class="act"> 
       <label for="lobbyfor2">What did you lobby for?</label>
       <img src="question.png" class="questionmark" alt="tooltipact6" title="Provide topic title and applicable number.  
       Examples include:
@@ -145,27 +183,33 @@
       Municipal Bill
       State Executive Order
       Municipal Executive Order
-      State Law
+      State Lawz
       Municipal Law
       State Procurement
       State Resolution
       Municipal Resolutions
       State Regulation/ Rate-making/ Rule
       Municipal Regulation/ Rate-making/ Rule"/>
-      <textarea id="lobbyfor2" name="lobbyfor2"></textarea>
-    </p>
+      <br>
+      <br>
+      <input type="text" id="whatDid" name="What did you lobby for?" placeholder="I did _____ while I was lobbying.">
+    </div>
     <br>
     <br>
     <br>
     <br>
-    <button class="printbutton" onclick="window.print()">Print Report of all lobbying.</button>
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
   </form>
-  
+  <div class="reportingactResults" id="reportingactResults">
+    <h4>Reported Activities</h4>
+    <button class="printbutton" onclick="window.print()">Print Report of all lobbying.</button>
+    </div>
     </div>
 
-   
 
-    <button class="reportbutton2" id="modalbtn2" type="submit">Submit Lobbying activities report</button>
+
+    <button class="reportbutton2" id="modalbtn2">Submit Lobbying activities report</button>
     <div id="modalreport2" class="modal2">
     <div class="modalActivities2">
       <div class="modal2-header">
@@ -174,82 +218,25 @@
       </div>
       <div class="modal2-body">
         <h3>Are you finished reporting lobbying that you engaged in today or would you like to record another instance of lobbying?</h3>
-        <a href="index.html"><p>Finished for Today (Go to the main homepage)</p></a>
-        <a href="reporting_activities.html"><p>Record another instance of lobbying</p></a>
+        <p>Finished for Today</p>
+        <p>Record another instance of lobbying</p>
+        <p>Print Report of all lobbying.</p>
       </div>
       <div class="modal2-footer">
         <h3>Thank you!</h3>
       </div>
     </div>
-  
 
-<!--     <form class="formexpenses-form hide" id="formexp">
-      <h3>Lobbying expenses form</h3>
-      <p> 
-        <label for="date2">Did you incur expenses while lobbying today?</label>
-        <select id="date2" name="date2">
-          <option value="null">--</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-      </p>
-      <br>
-      <p>
-        <label for="incurmessage">I incurred expenses on </label><br>
-        <p>Check all that apply:</p>
-        <input type="checkbox" id="ad1" name="ad1" value="ad1">
-        <label for="ad1">Advertising - Billboards</label>
-        <input type="checkbox" id="ad2" name="ad2" value="ad2">
-        <label for="ad2">Advertising - Flyers</label>
-        <input type="checkbox" id="ad3" name="ad3" value="ad3">
-        <label for="ad3">Advertising - Television/Radio</label>
-        <input type="checkbox" id="bus" name="bus" value="bus">
-        <label for="bus">Buses for Lobby Event</label>
-        <input type="checkbox" id="cellphone" name="cellphone" value="cellphone">
-        <label for="cellphone">Cell phone</label>
-        <input type="checkbox" id="com" name="com" value="com">
-        <label for="com">Computer/Internet</label>
-        <input type="checkbox" id="con" name="con" value="con">
-        <label for="con">Consulting</label>
-        <input type="checkbox" id="adv" name="adv" value="adv">
-        <label for="adv">E-advocacy</label>
-        <input type="checkbox" id="legisbill" name="legisbill" value="legisbill">
-        <label for="legisbill">Legislative Bill Tracking</label>
-        <input type="checkbox" id="legisres" name="legisres" value="legisres">
-        <label for="legisres">Legislative Research</label>
-        <input type="checkbox" id="lodging" name="lodging" value="loding">
-        <label for="lodging">Lodging</label>
-        <input type="checkbox" id="meal" name="meal" value="meal">
-        <label for="meal">Meals for Lobby Event</label>
-        <input type="checkbox" id="photo" name="photo" value="photo">
-        <label for="photo">Photocopies</label>
-        <input type="checkbox" id="rallies" name="rallies" value="rallies">
-        <label for="rallies">Rallies</label>
-        <input type="checkbox" id="rent" name="rent" value="rent">
-        <label for="rent">Rent</label>
-        <input type="checkbox" id="social" name="social" value="social">
-        <label for="social">Social</label>
-        <input type="checkbox" id="eventre" name="eventre" value="eventre">
-        <label for="eventre">Event/Reception/Banquet Rent</label>
-        <input type="checkbox" id="socialweb" name="socialweb" value="socialweb">
-        <label for="socialweb">Social Media - Websites</label>
-        <input type="checkbox" id="travel" name="travel" value="travel">
-        <label for="travel">Travel Reimbursement - Train, Airfare, Care, Hotel</label>
-        <input type="checkbox" id="other1" name="other1" value="other1">
-        <label for="other1">Other</label>
-      </p></form>
-    
- -->
+
+
   </div>
 
   </div>
 
- 
- <hr> 
+
+ <hr>
 
   <footer>
-    <hr>
-    <br>
     <p>Contact Information:</p>
     <p>Email: CHANGE ME</p>
     <button class="contactbutton" id="contactbtn">Contact us!</button>
@@ -259,27 +246,28 @@
                     <form class="formcontact" id="formcontact">
                       <label for="fname">First Name</label>
                       <input type="text" id="fname" name="firstname">
-                  
+
                       <label for="lname">Last Name</label>
                       <input type="text" id="lname" name="lastname">
-                  
+
                       <label for="email">E-mail</label>
                       <input type="text" id="email" name="email">
-                  
+
                       <label for="subject">Subject</label>
                       <textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
-                  
+
                       <input type="submit" value="Submit">
                     </form>
                   </div>
     </div>
     <img id="footerLogo" src="logoBackground.png" alt="NY Lobbying Express">
-  </footer>  
+  </footer>
 
 </main>
-    
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="js.js"></script> 
+<script src="js.js"></script>
+<script src="activities.js"></script>
 </body>
 </html>
