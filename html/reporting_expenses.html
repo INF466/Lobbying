@@ -22,6 +22,7 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/reportingStyles.css">
 
 
   <!-- Favicon
@@ -33,6 +34,7 @@
 	<style>
 		.tab{
 			display:none;
+			margin:50px auto;
 		}
 		#otherType{
 			visibility:hidden;
@@ -41,6 +43,7 @@
 			display:block;
 			width:80%;
 			min-width:400px;
+			min-height:400px;
 			margin:0 auto 10px;
 		}
 		#reportingResults{
@@ -58,7 +61,7 @@
 	
 	
 </head>
-<body>
+<body onload="checkDisclaimer()">
 
 	<nav> 
     <a href="index.html">Home</a>
@@ -69,12 +72,14 @@
   <main>	
 	<!-- Disclaimer
 	-------------------------------------------------- -->
-	<section class="disclaimer">
-		<h4>Disclaimer</h4>
-		<p>This web tool is in no way affiliated or endorsed by New York State.</p>
-		<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
-		<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
-	</section>
+	<div id="modalDisclaimer" class="modal disclaimer">
+		<div class="modal-content"><h4>Disclaimer</h4>
+			<p>This web tool is in no way affiliated or endorsed by New York State.</p>
+			<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
+			<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
+			<button type="button" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+			</div>
+	</div>
 	<!-- Form
 	-------------------------------------------------- -->
 	<div class="reporting">
@@ -213,6 +218,15 @@
 		<h4>Reported Expenses</h4>
 		
 		</div>
+	</div>
+	<div id="modalPopUp" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" onclick="hideModal()">&times;</span>
+			<div id="modalText"></div>
+		</div>
+
 	</div>
 </main>	
  <hr> 
