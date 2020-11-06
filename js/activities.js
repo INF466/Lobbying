@@ -1,32 +1,27 @@
 var currentTab = 0; 
 var currentIndex = 0; 
-var activitiesReported = {};
+var activitiesReported = [];
+activitiesReported[currentIndex] = {}
 showTab(currentTab); // Show the first tab of the form
 
 function showTab(n) {
-  var x = document.getElementsByClassName("act");
+  var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }  
-  if (n == 6) {
+  if (n == 7) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
 }
 
-function showLoopedExpenses(n){
-	var expenseType = expensesReported.expenseType[n];
-	document.getElementById("expenseType").innerHTML = expenseType;
-	
-}
-
 function nextPrev(n) {
  
-  var x = document.getElementsByClassName("act");
+  var x = document.getElementsByClassName("tab");
   
   if (n == 1){
 	   if (!validateForm()) {
@@ -37,23 +32,20 @@ function nextPrev(n) {
 	}
 		  x[currentTab].style.display = "none";
 		  currentTab = currentTab + n;	 
-  if (currentTab >= 6){
-    displayUserInput();
-    return false;
-  }
-	if ((currentTab == 6)){
-		recallResults();
+	if (currentTab > 6){
+	displayUserInput();
+	return false;
 	}
 	showTab(currentTab);
-	}
+}
 
 function displayUserInput(){
-	var target = document.getElementById("reportingactResults");
-	var keys = Object.keys(activitiesReported);
-	document.getElementById("formact").style.display = "none";
+	var target = document.getElementById("reportingResults");
+	var keys = Object.keys(activitiesReported[currentIndex]);
+	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
 	for (key of keys){
-		target.innerHTML += ("<dt>" + key + "</dt><dd>" + activitiesReported[key] + "</dd>");
+		target.innerHTML += ("<dt>" + key + "</dt><dd>" + activitiesReported[currentIndex][key] + "</dd>");
 	}
 	target.innerHTML += ("</dl>");
 	
@@ -69,15 +61,15 @@ function toggleOtherInput(){
 }
 
 function recallResults(){
-	var currentTabObj = document.getElementsByClassName("act")[currentTab];
+	var currentTabObj = document.getElementsByClassName("tab")[currentTab];
 	var inputs = currentTabObj.getElementsByTagName("input");
 	for (x of inputs){
-		x.value = activitiesReported[x.name];
+		x.value = activitiesReported[currentIndex][x.name];
 		}
 	}
 
 function saveResults(n){
-	var currentTabObj = document.getElementsByClassName("act")[n];
+	var currentTabObj = document.getElementsByClassName("tab")[n];
 	var inputs = currentTabObj.getElementsByTagName("input"); 
 	var userInput = {};
 	var index = 0;
@@ -103,12 +95,12 @@ function saveResults(n){
 	}
 	var keys = Object.keys(userInput);
 	for (key of keys){
-		activitiesReported[key] = userInput[key];
+		activitiesReported[currentIndex][key] = userInput[key];
 	};
 }
 
 function validateForm(){
-	var current = document.getElementsByClassName("act")[currentTab];
+	var current = document.getElementsByClassName("tab")[currentTab];
 	var valid = false;
 	var inputs = current.getElementsByTagName("input");
 	if (currentTab < 3){
@@ -138,15 +130,15 @@ function validateForm(){
 				valid = true;
 			}
 		}
+	} else if (currentTab == 6){
+		for (x of inputs){
+			if (x.value != ""){
+				valid = true;
+			} else {
+				valid = false;
+				break;
+			}
+		}
 	}
 	return valid; 
 }
-
-function displayCompensation(){
-	var updateTab = document.getElementById("compTab");
-	if (updateTab.style.visibility == "visible"){
-		updateTab.style.visibility = "hidden";
-	} else updateTab.style.visibility = "visible";
-		
-}
-

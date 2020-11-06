@@ -273,9 +273,9 @@ function validateForm(){
 
 function displayCompensation(){
 	var updateTab = document.getElementById("compTab");
-	if (updateTab.style.visibility == "visible"){
-		updateTab.style.visibility = "hidden";
-	} else updateTab.style.visibility = "visible";
+	if (updateTab.style.display == "block"){
+		updateTab.style.display = "none";
+	} else updateTab.style.display = "block";
 		
 }
 

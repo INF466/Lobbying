@@ -41,3 +41,29 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.pageTitle{
+	padding-bottom:15px;
+}
+
+.pageTitle h2{
+	margin-left: inherit;
+	text-align: center;
+}
+
+#reportingForm{
+	display:block;
+	width:80%;
+	min-width:400px;
+	min-height:400px;
+	margin:0 auto 10px;
+}
+
+.tab{
+	display:none;
+	margin:50px auto;
+}
+
+#reportingResults{
+	display:none;
+}

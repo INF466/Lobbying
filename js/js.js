@@ -51,6 +51,7 @@ var activitiesbut = document.getElementById("activitybut");
 activitiesbut.onclick = function () {
     document.getElementById("formact").classList.add("hide");
     document.getElementById("formact").classList.remove("hide");
+	activitiesbut.style.display = "none";
 }
 
 var modal = document.getElementById("modalreport");

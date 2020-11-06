@@ -150,7 +150,7 @@ p {
 .reportContainer {
   width: 75%;
   height: auto;
-  min-height: 800px;
+  min-height: 400px;
   position: relative;
   margin: auto;
   background-color:lightgray;
