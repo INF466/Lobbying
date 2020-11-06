@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Lobbster: Learn About Lobbying</title>
+  <meta name="description" content="Need to know more about Lobbying? We can help! Look at our podcast series on non-profit organizations and how they can lobby.">
+  <meta name="keywords" content="Lobbying, Lobbying on Social Media, Grassroots Lobbying, Direct Lobbying, Lobbying Days, Reporting Lobbying Activities, Podcasts, Lobbying Podcasts">
+  <meta name="keywords" content="Lobbying, New York State Lobbying, Non-Profit Lobbying, Non-Profit Organization Lobbying, Lobbying Podcasts">
+
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <nav class="nav">
+	<img id="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
+    <a href="index.html">Home</a>
+    <a class="active" href="modules.html">Modules</a>
+    <a href="reporting_activities.html">Reporting</a>
+    <a href="podcasts.html">Podcasts</a>
+  </nav>
+
+  <main>
+    <aside>
+    <nav id="sideNav">
+      <a href="#" class="asideActive" onclick="currentSlide(1)">Lobbying</a>
+      <a href="#" class="asideActive" onclick="currentSlide(2)">Why Lobby?</a>
+      <a href="#" class="asideActive" onclick="currentSlide(3)">Can I Lobby?</a>
+      <a href="#" class="asideActive" onclick="currentSlide(4)">How Can I Lobby?</a>
+      <a href="#" class="asideActive" onclick="currentSlide(5)">Lobbying Strategies</a>
+    </nav>
+
+	<nav id="sideNavMoble">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="#" class="asideActive" onclick="currentSlide(1); closeNav();">Lobbying</a>
+         <a href="#" class="asideActive" onclick="currentSlide(2); closeNav();">Why Lobby?</a>
+         <a href="#" class="asideActive" onclick="currentSlide(3); closeNav();">Can I Lobby?</a>
+         <a href="#" class="asideActive" onclick="currentSlide(4); closeNav();">How Can I Lobby?</a>
+         <a href="#" class="asideActive" onclick="currentSlide(5); closeNav();">Lobbying Strategies</a>
+    </nav>
+
+	<div id="hamburger">
+		<button class="openbtn" onclick="openNav()">☰</button>
+	</div>
+  </aside>
+
+	<div class="pageTitle">
+		<h2>
+			Podcasts for Non-Profit Organizations on Lobbying
+		</h2>
+	</div>
+    <div class="slideshowContainer">
+		<div class="moduleSlide">
+		  <div class="numberText">Podcast 1 / 5</div>
+		  <h2>
+			Lobbying
+		  </h2>
+      <p>Learn vocabulary terms you may need to know when lobbying, and even the basics of what this website can do! You may want to listen to this podcast if you want to learn more about lobbying.</p>
+  		  <audio controls>
+  			<source src="../audio/podcast1.m4a" type="audio/mp4">
+  			Your browser does not support the audio element.
+  		  </audio>
+        <br>
+		</div>
+
+		<div class="moduleSlide">
+		  <div class="numberText">Podcast 2 / 5</div>
+		  <h2>
+			Why Lobby?
+		  </h2>
+      <p>Go over the basics of why non-profit organizations may need to lobby.</p>
+		  <audio controls>
+			<source src="../audio/podcast2.m4a" type="audio/mp4">
+			Your browser does not support the audio element.
+		  </audio>
+      <br>
+		</div>
+
+		<div class="moduleSlide">
+		  <div class="numberText">Podcast 3 / 5</div>
+		  <h2>
+			Can I Lobby?
+		  </h2>
+      <p>Learn if non-profit organizations can learn lobby in NYS, and what activities needs to be reported.</p>
+      <audio controls>
+      <source src="../audio/podcast3.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+      </audio>
+      <br>
+		</div>
+
+		<div class="moduleSlide">
+		  <div class="numberText">Podcast 4 / 5</div>
+		  <h2>
+			How Can I Lobby?
+		  </h2>
+      <p>Learn how non-profit organizations can lobby in NYS.</p>
+		  <audio controls>
+			<source src="../audio/podcast4.m4a" type="audio/mp4">
+			Your browser does not support the audio element.
+		  </audio>
+      <br>
+		</div>
+
+		<div class="moduleSlide">
+		  <div class="numberText">Podcast 5 / 5</div>
+		  <h2>
+			Lobbying Strategies
+		  </h2>
+      <p>Learn strategies on how to lobby as a non-profit organization in NYS.</p>
+      <audio controls>
+      <source src="../audio/podcast5.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+      </audio>
+      <br>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+	<br>
+
+	<div id="dotHide"style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	  <span class="dot" onclick="currentSlide(5)"></span>
+	</div>
+	<div class="spacer"></div>
+	 <footer>
+	<hr>
+	<br>
+    <p>Contact Information:</p>
+    <p>Email: CHANGE ME</p>
+	<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
+  </footer>
+  </main>
+
+
+
+<script src="js/js.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

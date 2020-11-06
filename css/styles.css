@@ -1,22 +1,38 @@
 /*Custom Fonts Declared Here===============================*/
 @font-face {
 	font-family: lobster;
+<<<<<<< HEAD
 	src: url(lobster.otf);
+=======
+	src: url('../fonts/lobster.otf');
+>>>>>>> master
 }
 
 @font-face {
 	font-family: arc;
+<<<<<<< HEAD
 	src: url(arc.ttf);
+=======
+	src: url('../fonts/arc.ttf');
+>>>>>>> master
 }
 
 @font-face {
 	font-family: titillium;
+<<<<<<< HEAD
 	src: url(titillium.otf);
+=======
+	src: url('../fonts/titillium.otf');
+>>>>>>> master
 }
 
 @font-face {
 	font-family: sintony;
+<<<<<<< HEAD
 	src: url(sintony.otf);
+=======
+	src: url('../fonts/sintony.otf');
+>>>>>>> master
 }
 
 
@@ -96,6 +112,7 @@ p {
 }
 
 /*styles for report-activities*/
+<<<<<<< HEAD
 .act{
   display:none;
 }
@@ -107,6 +124,8 @@ p {
 #reportingactResults{
   display: none;
 }
+=======
+>>>>>>> master
 
 .tooltip {
   position: relative;
@@ -158,6 +177,7 @@ p {
   display: none;
 }
 
+<<<<<<< HEAD
 .lobbyact {
  display: none;
  width: 75%;
@@ -175,6 +195,8 @@ p {
 
 
 
+=======
+>>>>>>> master
 .reportContainer {
   width: 75%;
   height: auto;
@@ -245,7 +267,11 @@ p {
   display: inline-block;
   font-size: 12px;
   position: absolute;
+<<<<<<< HEAD
   top: 90%;
+=======
+  top: 95%;
+>>>>>>> master
   left: 22.3%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -267,6 +293,7 @@ p {
   transform: translate(-50%, -50%);
 }
 .modal {
+<<<<<<< HEAD
   display: none; 
   position: fixed; 
   z-index: 1; 
@@ -290,6 +317,31 @@ p {
   overflow: auto; 
   background-color: rgba(0,0,0,0.4); 
   -webkit-animation-name: fadeIn; 
+=======
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-animation-name: fadeIn;
+>>>>>>> master
   -webkit-animation-duration: 0.6s;
   animation-name: fadeIn;
   animation-duration: 0.6s
@@ -376,6 +428,7 @@ p {
   cursor: pointer;
 }
 .modal3 {
+<<<<<<< HEAD
   display: none; 
   position: fixed; 
   z-index: 1; 
@@ -386,6 +439,18 @@ p {
   height: 100%; 
   overflow: auto; 
   background-color: rgba(0,0,0,0.4); 
+=======
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+>>>>>>> master
 }
 .close3 {
   color: #aaaaaa;
@@ -425,7 +490,11 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes animatetop {
+<<<<<<< HEAD
   from {top:-300px; opacity:0} 
+=======
+  from {top:-300px; opacity:0}
+>>>>>>> master
   to {top:0; opacity:1}
 }
 
@@ -435,7 +504,11 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes slideIn {
+<<<<<<< HEAD
   from {bottom: -300px; opacity: 0} 
+=======
+  from {bottom: -300px; opacity: 0}
+>>>>>>> master
   to {bottom: 0; opacity: 1}
 }
 
@@ -445,12 +518,20 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes fadeIn {
+<<<<<<< HEAD
   from {opacity: 0} 
+=======
+  from {opacity: 0}
+>>>>>>> master
   to {opacity: 1}
 }
 
 @keyframes fadeIn {
+<<<<<<< HEAD
   from {opacity: 0} 
+=======
+  from {opacity: 0}
+>>>>>>> master
   to {opacity: 1}
 }
 
@@ -458,7 +539,11 @@ input[type=submit]:hover {
 
 @media print {
   nav {display:none;}
+<<<<<<< HEAD
   header {display:none;}   
+=======
+  header {display:none;}
+>>>>>>> master
   footer {display:none;}
   .reportbutton,.reportbutton2,.reportbutton3,.printbutton,.pageTitle {display:none;}
   h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
@@ -604,9 +689,61 @@ aside{
 }
 
 /*SLider===========================================*/
+<<<<<<< HEAD
 
 .moduleSlide {
 	display: none;
+=======
+#moduleStart{
+	width: 70%;
+	margin:auto;
+	min-height:400px;
+	padding-bottom: 50px;
+}
+#moduleStartBtn{
+	transition-duration: 0.5s;
+	width:200px;
+	background-color: rgba(0, 135, 208, 0.9);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color:white;
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width:1px;
+}
+#moduleStartBtn:hover{
+	cursor: pointer;
+	background-color: rgba(0, 135, 208, 0.6);
+	
+}
+
+.moduleStartLinks{
+	text-decoration:none;
+	width:100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display:block;
+	float:left;
+	background-color: rgba(0, 135, 208, 0.9);
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width:1px;
+	margin:2px;
+	text-align:center;
+	color:white;
+}
+
+.moduleStartLinks:hover{
+	cursor: pointer;
+	background-color: rgba(0, 135, 208, 0.6);
+}
+
+.moduleSlide {
+	display: none;
+	min-height: 500px;
+>>>>>>> master
 	box-shadow: inset 0px 0px 10px 5px #888888;
 	}
 
@@ -614,7 +751,11 @@ aside{
 
 .moduleSlide:first-child {
     display: block;
+<<<<<<< HEAD
 
+=======
+	min-height: 500px;
+>>>>>>> master
 }
 
 .moduleSlide p{
@@ -900,6 +1041,42 @@ audio{
 	border-radius:10px;
 }
 
+<<<<<<< HEAD
+=======
+.descImg{
+		height:500px;
+	}
+
+.homeTitle{
+	position:absolute;
+	top: 2%;
+	left: 2%;
+	color:white;
+	font-size: 40px;
+	margin-right: 6%;
+	text-align:left;
+	text-shadow: 2px 2px 5px #444;
+}
+
+.homeDescription{
+	position:absolute;
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width: 1px;
+	background-color: rgba(0,0,0, 0.4);
+	top: 20%;
+	width:90%;
+	left: 3%;
+	color:white;
+	font-size: 20px;
+	margin-left:10%;
+	margin-right:10%;
+	padding:1%;
+	text-shadow: 3px 3px 10px #000;
+}
+
+>>>>>>> master
 .homeQuestion{
 	position:absolute;
 	top: 38%;
@@ -908,6 +1085,10 @@ audio{
 	font-size: 50px;
 	margin-right: 6%;
 	text-align:left;
+<<<<<<< HEAD
+=======
+	text-shadow: 2px 2px 5px #444;
+>>>>>>> master
 }
 
 .homeQuestionInfo{
@@ -917,6 +1098,10 @@ audio{
 	color:white;
 	font-size: 30px;
 	margin-right: 6%;
+<<<<<<< HEAD
+=======
+	text-shadow: 2px 2px 5px #444;
+>>>>>>> master
 }
 
 .goThereButton{
@@ -954,14 +1139,36 @@ video{
 	}
 }
 @media only screen and (max-width: 906px) {
+<<<<<<< HEAD
+=======
+	.homeDescription{
+	position:absolute;
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width: 1px;
+	background-color: rgba(0,0,0, 0.4);
+	top: 20%;
+	width:80%;
+	left: 8%;
+
+	}
+	
+>>>>>>> master
 	.homeQuestion{
 		font-size: 40px;
 		text-align: center;
 		width: 75%;
 		top: 100px;
 		left: 15%;
+<<<<<<< HEAD
 
 	}
+=======
+	}
+	
+	
+>>>>>>> master
 	#sideNav a{
 		font-size: 20px;
 	}
@@ -986,9 +1193,13 @@ video{
 		height: 350px;
 	}
 
+<<<<<<< HEAD
 	.moduleSlide img{
 		height: 350px !important;
 	}
+=======
+	
+>>>>>>> master
 
 	.moduleSlide h2{
 		font-size: 20px;
@@ -1017,7 +1228,17 @@ video{
 	}
 
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 650px) {
+=======
+@media only screen and (max-width: 700px) {
+	
+	.homeDescription{
+	width:75%;
+	left: 10%;
+
+	}
+>>>>>>> master
 	#logo{
 		width:120px;
 	}
@@ -1034,6 +1255,10 @@ video{
 	}
 
 	.active{
+<<<<<<< HEAD
+=======
+		display:none;
+>>>>>>> master
 		height:34px;
 	}
 
@@ -1113,7 +1338,12 @@ video{
     position: absolute;
     top: 8%;
 	}
+<<<<<<< HEAD
   }
+=======
+}
+
+>>>>>>> master
   .reportbutton {
     font-size: 8px;
     position: absolute;
@@ -1251,22 +1481,49 @@ video{
   .tooltip2:hover .tiptext {
     visibility: visible;
   }
+<<<<<<< HEAD
 }
 
 
 @media only screen and (max-width: 425px) {
+=======
+
+
+@media only screen and (max-width: 555px) {
+>>>>>>> master
 	nav a{
 		font-size:12px;
 		padding-right:3px;
 		padding-left:3px;
 	}
+<<<<<<< HEAD
+=======
+	
+	.descImg{
+		height:550px;
+	}
+>>>>>>> master
 
 	nav {
 		padding-left: 175px;
 	}
+<<<<<<< HEAD
 
 }
 
+=======
+}
+@media only screen and (max-width: 470px) {
+	.descImg{
+		height:600px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.homeDescription{
+		margin-bottom:100px;
+	}
+}
+>>>>>>> master
 
 /*footer==================================================*/
 footer{
