@@ -11,7 +11,7 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }  
-  if (n == 6) {
+  if (n == 5) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
@@ -86,7 +86,7 @@ function saveResults(n){
 			if (x.checked){
 				userInput[x.name] = {};
 				userInput[x.name] = x.value;
-				if (x.id == "otherType"){
+				if (x.id == "other"){
 					var otherText = document.getElementById("otherType").value;
 					if (otherText != "") userInput[x.name] += (" (" + otherText + ")");
 				}
@@ -117,19 +117,21 @@ function validateForm(){
 					valid = true;
 				}
 			}
+			if (!valid) displayModal("<p>Please select an option.</p>");
 	} else if (currentTab == 3 || currentTab == 4){
 		for (x of inputs){
 			if (x.value != ""){
 				valid = true;
 			} else {
 				valid = false;
-				break;
 			}
+			if (!valid) displayModal("<p>Please fill out the details related to the lobby.</p>");
 		}
 	} else if (currentTab == 5){
 		for (x of inputs){
 			if (x.id == "other"){
 				if ((x.checked)){
+					var otherSelected = true;
 					if (inputs[inputs.length - 1].value != ""){
 						valid = true;
 					} else valid = false;
@@ -138,9 +140,28 @@ function validateForm(){
 				valid = true;
 			}
 		}
+		if (!valid){
+			if (otherSelected){
+				displayModal("<p>Please fill out the details related to the lobby.</p>");
+			} else{
+				displayModal("<p>Please select an option.</p>");
+			}
+		}
 	}
 	return valid; 
 }
+
+function displayModal(modalText){
+	var modal = document.getElementById("modalPopUp");
+	document.getElementById("modalText").innerHTML = modalText;
+	modal.style.display = "block";
+}
+
+function hideModal(){
+	var modal = document.getElementById("modalPopUp");
+	modal.style.display = "none";
+}
+
 
 function displayCompensation(){
 	var updateTab = document.getElementById("compTab");
