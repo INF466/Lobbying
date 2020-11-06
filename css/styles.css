@@ -584,12 +584,20 @@ aside{
 }
 #moduleStartBtn{
 	transition-duration: 0.5s;
-	width:70%;
+	width:200px;
+	background-color: rgba(0, 135, 208, 0.9);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color:white;
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width:1px;
 }
 #moduleStartBtn:hover{
 	cursor: pointer;
 	background-color: rgba(0, 135, 208, 0.6);
-	color:white;
+	
 }
 
 .moduleStartLinks{
