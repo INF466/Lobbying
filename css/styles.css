@@ -576,9 +576,47 @@ aside{
 }
 
 /*SLider===========================================*/
+#moduleStart{
+	width: 70%;
+	margin:auto;
+	min-height:400px;
+	padding-bottom: 50px;
+}
+#moduleStartBtn{
+	transition-duration: 0.5s;
+	width:70%;
+}
+#moduleStartBtn:hover{
+	cursor: pointer;
+	background-color: rgba(0, 135, 208, 0.6);
+	color:white;
+}
+
+.moduleStartLinks{
+	text-decoration:none;
+	width:100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display:block;
+	float:left;
+	background-color: rgba(0, 135, 208, 0.9);
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width:1px;
+	margin:2px;
+	text-align:center;
+	color:white;
+}
+
+.moduleStartLinks:hover{
+	cursor: pointer;
+	background-color: rgba(0, 135, 208, 0.6);
+}
 
 .moduleSlide {
 	display: none;
+	min-height: 500px;
 	box-shadow: inset 0px 0px 10px 5px #888888;
 	}
 
@@ -586,7 +624,7 @@ aside{
 
 .moduleSlide:first-child {
     display: block;
-
+	min-height: 500px;
 }
 
 .moduleSlide p{
@@ -872,6 +910,39 @@ audio{
 	border-radius:10px;
 }
 
+.descImg{
+		height:500px;
+	}
+
+.homeTitle{
+	position:absolute;
+	top: 2%;
+	left: 2%;
+	color:white;
+	font-size: 40px;
+	margin-right: 6%;
+	text-align:left;
+	text-shadow: 2px 2px 5px #444;
+}
+
+.homeDescription{
+	position:absolute;
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width: 1px;
+	background-color: rgba(0,0,0, 0.4);
+	top: 20%;
+	width:90%;
+	left: 3%;
+	color:white;
+	font-size: 20px;
+	margin-left:10%;
+	margin-right:10%;
+	padding:1%;
+	text-shadow: 3px 3px 10px #000;
+}
+
 .homeQuestion{
 	position:absolute;
 	top: 38%;
@@ -880,6 +951,7 @@ audio{
 	font-size: 50px;
 	margin-right: 6%;
 	text-align:left;
+	text-shadow: 2px 2px 5px #444;
 }
 
 .homeQuestionInfo{
@@ -889,6 +961,7 @@ audio{
 	color:white;
 	font-size: 30px;
 	margin-right: 6%;
+	text-shadow: 2px 2px 5px #444;
 }
 
 .goThereButton{
@@ -926,14 +999,28 @@ video{
 	}
 }
 @media only screen and (max-width: 906px) {
+	.homeDescription{
+	position:absolute;
+	border-style:solid;
+	border-color:black;
+	border-radius:15px;
+	border-width: 1px;
+	background-color: rgba(0,0,0, 0.4);
+	top: 20%;
+	width:80%;
+	left: 8%;
+
+	}
+	
 	.homeQuestion{
 		font-size: 40px;
 		text-align: center;
 		width: 75%;
 		top: 100px;
 		left: 15%;
-
 	}
+	
+	
 	#sideNav a{
 		font-size: 20px;
 	}
@@ -958,9 +1045,7 @@ video{
 		height: 350px;
 	}
 
-	.moduleSlide img{
-		height: 350px !important;
-	}
+	
 
 	.moduleSlide h2{
 		font-size: 20px;
@@ -989,7 +1074,13 @@ video{
 	}
 
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
+	
+	.homeDescription{
+	width:75%;
+	left: 10%;
+
+	}
 	#logo{
 		width:120px;
 	}
@@ -1006,6 +1097,7 @@ video{
 	}
 
 	.active{
+		display:none;
 		height:34px;
 	}
 
@@ -1085,7 +1177,8 @@ video{
     position: absolute;
     top: 8%;
 	}
-  }
+}
+
   .reportbutton {
     font-size: 8px;
     position: absolute;
@@ -1223,22 +1316,33 @@ video{
   .tooltip2:hover .tiptext {
     visibility: visible;
   }
-}
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 555px) {
 	nav a{
 		font-size:12px;
 		padding-right:3px;
 		padding-left:3px;
 	}
+	
+	.descImg{
+		height:550px;
+	}
 
 	nav {
 		padding-left: 175px;
 	}
-
 }
-
+@media only screen and (max-width: 470px) {
+	.descImg{
+		height:600px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.homeDescription{
+		margin-bottom:100px;
+	}
+}
 
 /*footer==================================================*/
 footer{
