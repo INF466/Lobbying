@@ -9,6 +9,7 @@
   <title>Lobbster: Reporting Lobbying Activities</title>
   <meta name="description" content="Lobbster provides a way for you to report and save your lobbying activities.">
   <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Activities, Reporting Lobbying Activities">
+  <meta name="author" content="">
 
 
   <!-- Mobile Specific Metas
@@ -19,8 +20,9 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reportingStyles.css">
 
 
   <!-- Favicon
@@ -28,7 +30,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
 
 </head>
-<body>
+<body onload="checkDisclaimer()">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,11 +41,10 @@
     <a href="index.html">Home</a>
     <a class="active" href="modules.html">Modules</a>
     <a class="active" href="reporting_activities.html">Reporting</a>
-    <a href="podcasts.html">Podcasts</a>
 
   </nav>
 
-   <main>
+  <main>
   <!--disclaimer-->
   <div id="modalDisclaimer" class="modal disclaimer">
 		<div class="modal-content"><h4>Disclaimer</h4>
@@ -197,11 +198,11 @@
     <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
   </form>
   <div class="reportingactResults" id="reportingactResults">
-    <h3>Reported Activities</h3>
+    <h3 class="resultmob">Reported Activities</h3>
     <h4 class="result">Here are some materials that can help you with the lobbying. </h4>
     <button class="reportbutton4"><a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank">Lobbying Laws and Regulations</a></button>
     <button class="reportbutton5"><a href="https://webapps.jcope.ny.gov/public" target="_blank">Searching for lobbying cases</a></button>
-
+    </br>
     <button class="printbutton" onclick="window.print()">Print Report of all lobbying.</button>
     </div>
     </div>
@@ -271,6 +272,7 @@
 
 	</div>
 </main>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
