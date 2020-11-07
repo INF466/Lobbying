@@ -64,14 +64,32 @@
 			<p>This web tool is in no way affiliated or endorsed by New York State.</p>
 			<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
 			<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
-			<button type="button" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
-				 
+			<div>
+				<button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+			</div>
 		</div>
 	</div>
+	<div id="modalInstructions" class="modal instructions">
+		<div class="modal-content"><h4>Directions</h4>
+		<span class="close" onclick="hideModalInstructions()">&times;</span>
+			<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
+			<button type="button" class="modalClose" id="acceptDisclaimer" onclick="hideModalInstructions()">OK</button>
+		</div>
+	</div>
+
 	<!-- Form
 	-------------------------------------------------- -->
 	<div class="reportContainer">
 		<div class="reporting">
+			<div class="formlanding">
+				<div class="formInstructions" id="formInstructions">
+					<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
+				</div>
+				<div class="buttons">
+					<button class="reportButton" id="reportButton" onclick="startForm()">Report my lobbying activities</button>
+					<button class="instructionsButton hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
+			</div>
+			<div>
 			<form id="reportingForm" >
 
 				<!--New Question Section-->
@@ -225,8 +243,10 @@
 						<input type="text" id="compType" name="compType" placeholder="I'm not even sure">
 					</div>
 				</div>
-				<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-				<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+				<div class="navButtons hide" id="navButtons">
+					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+				</div>
 			</form>
 			<div class="reportingResults" id="reportingResults">
 			<h4>Reported Expenses</h4>
@@ -244,8 +264,9 @@
 		</div>
 
 	</div>
+	 <hr> 
 </main>	
- <hr> 
+
   <footer>
     <p>Contact Information:</p>
     <p>Email: CHANGE ME</p>

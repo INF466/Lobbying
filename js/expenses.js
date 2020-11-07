@@ -2,7 +2,15 @@ var currentTab = 0;
 var currentSubTab = 0; 
 var expensesReported = {}; // Object to hold user input
 var currentIndex = 0; 
-showTab(currentTab); // Show the first tab of the form
+
+function startForm(){
+	document.getElementById("reportButton").style.display = "none";
+	document.getElementById("formInstructions").style.display = "none";
+	document.getElementById("instructionsButton").style.display = "block";
+	document.getElementById("navButtons").style.display = "block";
+	
+	showTab(currentTab); // Show the first tab of the form
+}
 
 
 function showTab(n) {
@@ -293,7 +301,7 @@ function hideModal(){
 function displayUserInput(){
 	var target = document.getElementById("reportingResults");
 	var keys = Object.keys(expensesReported);
-	document.getElementById("expenseReporting").style.display = "none";
+	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
 	for (key of keys){
 		target.innerHTML += ("<dt>" + key + "</dt><dd>" + expensesReported[key] + "</dd>");
@@ -302,4 +310,14 @@ function displayUserInput(){
 	
 	target.style.display = "block";
 		
+}
+
+function showModalInstructions(){
+	var modal = document.getElementById("modalInstructions");
+	modal.style.display = "block";
+}
+
+function hideModalInstructions(){
+	var modal = document.getElementById("modalInstructions");
+	modal.style.display = "none";
 }
