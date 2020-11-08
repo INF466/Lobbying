@@ -109,19 +109,22 @@ function validateForm(){
 					valid = true;
 				}
 			}
+			if (!valid) displayModal("<p>Please select an option.</p>");
 	} else if (currentTab == 3 || currentTab == 4){
 		for (x of inputs){
 			if (x.value != ""){
 				valid = true;
 			} else {
 				valid = false;
-				break;
 			}
+			if (!valid) displayModal("<p>Please fill out the details related to the lobby.</p>");
 		}
 	} else if (currentTab == 5){
+		var otherSelected = false;
 		for (x of inputs){
 			if (x.id == "other"){
 				if ((x.checked)){
+					otherSelected = true;
 					if (inputs[inputs.length - 1].value != ""){
 						valid = true;
 					} else valid = false;
@@ -130,13 +133,11 @@ function validateForm(){
 				valid = true;
 			}
 		}
-	} else if (currentTab == 6){
-		for (x of inputs){
-			if (x.value != ""){
-				valid = true;
-			} else {
-				valid = false;
-				break;
+		if (!valid){
+			if (otherSelected){
+				displayModal("<p>Please fill out the details related to the lobby.</p>");
+			} else{
+				displayModal("<p>Please select an option.</p>");
 			}
 		}
 	}

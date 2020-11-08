@@ -1,14 +1,3 @@
-//START script for the module startpage drop down============================//
-function moduleStart() {
-	var x = document.getElementById("moduleStart");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} 
-		else {
-			x.style.display = "none";
-		}
-}
-//END script for the module startpage drop down============================//
 //START script for the module hamburger============================//
 function openNav() {
   document.getElementById("sideNavMoble").style.width = "250px";
@@ -62,7 +51,6 @@ var activitiesbut = document.getElementById("activitybut");
 activitiesbut.onclick = function () {
     document.getElementById("formact").classList.add("hide");
     document.getElementById("formact").classList.remove("hide");
-	activitiesbut.style.display = "none";
 }
 
 var modal = document.getElementById("modalreport");
