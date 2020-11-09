@@ -2,16 +2,29 @@ var currentTab = 0;
 var currentSubTab = 0; 
 var expensesReported = {}; // Object to hold user input
 var currentIndex = 0; 
-showTab(currentTab); // Show the first tab of the form
 
+// Form Scripts
 
+// Function to open the form initially
+function startForm(){
+	document.getElementById("reportButton").style.display = "none";
+	document.getElementById("formInstructions").style.display = "none";
+	document.getElementById("instructionsButton").style.display = "block";
+	document.getElementById("navButtons").style.display = "block";
+	
+	showTab(currentTab); // Show the first tab of the form
+}
+
+// Function to show the active tab of the form, update navigation buttons as necessary
 function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
   if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
+    document.getElementById("prevBtn").style.visibility = "hidden";
   } else {
-    document.getElementById("prevBtn").style.display = "inline";
+    document.getElementById("prevBtn").style.visibility = "visible";
+
+    // document.getElementById("prevBtn").style.display = "inline-block";
   }
   
   if (n == 2){
@@ -27,12 +40,14 @@ function showTab(n) {
   }
 }
 
+// Function to update the looped tabs with the appropriate expense name
 function showLoopedExpenses(n){
 	var expenseType = expensesReported.expenseType[n];
 	document.getElementById("expenseType").innerHTML = expenseType;
 	
 }
 
+// Function to change the current tab of the form
 function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
@@ -91,13 +106,15 @@ function nextPrev(n) {
 	}
 }
 
-function toggleOtherInput(){
+// Function to show or hide the "Other" text box as appropriate, based on whether it is selected
+function toggleOtherInput(inputObject){
 	var otherInputBox = document.getElementById("otherType");
-	if (otherInputBox.style.visibility == "visible"){
-		otherInputBox.style.visibility = "hidden";
-	} else otherInputBox.style.visibility = "visible";
+	if ((inputObject.id == "type19") && ( inputObject.checked)){
+		otherInputBox.style.visibility = "visible";
+	} else otherInputBox.style.visibility = "hidden";
 }
 
+// Function to reacll results from the object holding the user's input. Allows user to move backward through the looped tab.
 function recallResults(){
 	var currentTabObj = document.getElementsByClassName("tab")[currentTab];
 	var inputs = currentTabObj.getElementsByTagName("input");
@@ -110,6 +127,7 @@ function recallResults(){
 	}
 }
 
+// Function to save the user's input to the object created to hold them.
 function saveResults(n){
 	var currentTabObj = document.getElementsByClassName("tab")[n];
 	var inputs = currentTabObj.getElementsByTagName("input"); 
@@ -273,33 +291,25 @@ function validateForm(){
 
 function displayCompensation(){
 	var updateTab = document.getElementById("compTab");
-	if (updateTab.style.visibility == "visible"){
-		updateTab.style.visibility = "hidden";
-	} else updateTab.style.visibility = "visible";
+	if (updateTab.style.display == "block"){
+		updateTab.style.display = "none";
+	} else updateTab.style.display = "block";
 		
 }
 
-function displayModal(modalText){
-	var modal = document.getElementById("modalPopUp");
-	document.getElementById("modalText").innerHTML = modalText;
-	modal.style.display = "block";
-}
 
-function hideModal(){
-	var modal = document.getElementById("modalPopUp");
-	modal.style.display = "none";
-}
 
 function displayUserInput(){
-	var target = document.getElementById("reportingResults");
+	var showTarget = document.getElementById("reportingResults");
+	var target = document.getElementById("userResults");
 	var keys = Object.keys(expensesReported);
-	document.getElementById("expenseReporting").style.display = "none";
+	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
 	for (key of keys){
 		target.innerHTML += ("<dt>" + key + "</dt><dd>" + expensesReported[key] + "</dd>");
 	}
 	target.innerHTML += ("</dl>");
 	
-	target.style.display = "block";
-		
+	showTarget.style.display = "block";		
 }
+
