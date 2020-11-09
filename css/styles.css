@@ -96,7 +96,17 @@ p {
 }
 
 /*styles for report-activities*/
-
+.act{
+    display:none;
+  }
+  
+  #otherType{
+    visibility: hidden;
+  }
+  
+  #reportingactResults{
+    display: none;
+  }
 
 /*Nav=====================================================*/
 nav {

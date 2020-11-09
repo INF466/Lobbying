@@ -17,9 +17,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reportingStyles.css">
 
 </head>
-<body>
+
+<body onload="checkDisclaimer()">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,6 +35,18 @@
   </nav>
 
   <main>
+
+    <!-- Disclaimer
+    -------------------------------------------------- -->
+    <div id="modalDisclaimer" class="modal disclaimer">
+      <div class="modal-content"><h4>Disclaimer</h4>
+        <p>This web tool is in no way affiliated or endorsed by New York State.</p>
+        <p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
+        <p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
+        <button type="button" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+        </div>
+    </div>
+
     <aside>
     <nav id="sideNav">
 	  <a href="#" class="asideActive" onclick="currentSlide(1)">Start</a>
@@ -93,6 +107,7 @@
 		</div>
 
 		<div class="moduleSlide">
+
 		  <div class="numberText">Module 1 / 8</div>
 		  <h2>
 			What is Lobbying?
@@ -201,55 +216,6 @@
 		  </video>
 		</div>
 
-		<div class="moduleSlide">
-		  <h2>
-			Podcasts
-		  </h2>
-
-      <h3>These podcasts help guide non-profit organizations with lobby in NYS.</h3>
-	  <br>
-	  <hr>
-		<p>Learn vocabulary terms you may need to know when lobbying, and even the basics of what this website can do! You may want to listen to this podcast if you want to learn more about lobbying.</p>
-		  <audio controls>
-			<source src="audio/podcast1.m4a" type="audio/mp4">
-			Your browser does not support the audio element.
-		  </audio>
-
-
-
-      <p>Go over the basics of why non-profit organizations may need to lobby.</p>
-		  <audio controls>
-			<source src="audio/podcast2.m4a" type="audio/mp4">
-			Your browser does not support the audio element.
-		  </audio>
-
-
-
-			<p>Learn if non-profit organizations can learn lobby in NYS, and what activities needs to be reported.</p>
-		  <audio controls>
-			<source src="audio/podcast3.m4a" type="audio/mp4">
-			Your browser does not support the audio element.
-		  </audio>
-
-
-
-			<p>Learn how non-profit organizations can lobby in NYS.</p>
-		  <audio controls>
-			<source src="audio/podcast4.m4a" type="audio/mp4">
-			Your browser does not support the audio element.
-		  </audio>
-
-
-
-			<p>Learn strategies on how to lobby as a non-profit organization in NYS.</p>
-		  <audio controls>
-			<source src="audio/podcast5.m4a" type="audio/mp4">
-			Your browser does not support the audio element.
-		  </audio>
-
-
-		</div>
-
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
@@ -274,11 +240,23 @@
     <p>Email: CHANGE ME</p>
 	<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
   </footer>
+
+  <div id="modalPopUp" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="hideModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+
+  </div>
+
   </main>
 
 
 
 <script src="js/js.js"></script>
+<script src="js/disclaimer.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
