@@ -30,22 +30,12 @@
 	<!-- Styles- placeholder
 	-------------------------------------------------- -->
 	<style>
-		#otherType{
-			visibility:hidden;
-		}
-		#compTab{
-			display:none;
-		}
-		.checkbox{
-		margin:5px auto;
-			width:48%;
-			display:inline-block;
-		}
+		
 	</style>
 </head>
 <body onload="checkDisclaimer()">
 
-	<nav>
+	<nav class="nav">
 		<img id="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
     <a href="index.html">Home</a>
     <a href="modules.html">Modules</a>
@@ -57,223 +47,258 @@
 		<div class="pageTitle">
 			<h2>Reporting: Lobbying Expenses</h2>
 		</div>
-	<!-- Disclaimer
-	-------------------------------------------------- -->
-	<div id="modalDisclaimer" class="modal disclaimer">
-		<div class="modal-content"><h4>Disclaimer</h4>
-			<p>This web tool is in no way affiliated or endorsed by New York State.</p>
-			<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
-			<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
-			<div>
-				<button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+		<!--Disclaimer-->
+		<div id="modalDisclaimer" class="modal disclaimer">
+			<div class="modal-content"><h4>Disclaimer</h4>
+				<p>This web tool is in no way affiliated or endorsed by New York State.</p>
+				<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
+				<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
+				<div>
+					<button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="modalInstructions" class="modal instructions">
-		<div class="modal-content"><h4>Directions</h4>
-		<span class="close" onclick="hideModalInstructions()">&times;</span>
-			<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
-			<button type="button" class="modalClose" id="acceptDisclaimer" onclick="hideModalInstructions()">OK</button>
-		</div>
-	</div>
-
-	<!-- Form
-	-------------------------------------------------- -->
-	<div class="reportContainer">
-		<div class="reporting">
-			<div class="formlanding">
-				<div class="formInstructions" id="formInstructions">
-					<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
-				</div>
-				<div class="buttons">
-					<button class="reportButton" id="reportButton" onclick="startForm()">Report my lobbying activities</button>
-					<button class="instructionsButton hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
-			</div>
-			<div>
-			<form id="reportingForm" >
-
-				<!--New Question Section-->
-				<div class="tab">
-					<p>Did you incur expenses while lobbying today?</p>
-					<input type="radio" id="expenses_yes" name="incurredExpenses" value="true">
-					<label for="expensesYes">Yes</label>
-					<input type="radio" id="expenses_no" name="incurredExpenses" value="false">
-					<label for="expensesNo">No</label>
-				</div>
-
-				<div class="tab">
-					<p>You incurred expenses on:</p>
-					<div class="checkbox">
-						<input type="checkbox" id="type1" name="expenseType" value="Advertising – Billboards">
-						<label for="type1">Advertising – Billboards</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type2" name="expenseType" value="Advertising – Flyers">
-						<label for="type2">Advertising – flyers</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type3" name="expenseType" value="Advertising - Print Media">
-						<label for="type3">Advertising - Print Media</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type4" name="expenseType" value="Buses for Lobby Event">
-						<label for="type4">Buses for Lobby Event</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type5" name="expenseType" value="Cell Phone">
-						<label for="type5">Cell Phone</label>
-					</div>
-					<div class="checkbox">
-						<input type="checkbox" id="type6" name="expenseType" value="Computer/Internet">
-						<label for="type6">Computer/Internet</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type7" name="expenseType" value="Consulting ">
-						<label for="type7">Consulting</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type8" name="expenseType" value="E-advocacy">
-						<label for="type8">E-advocacy</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type9" name="expenseType" value="Legislative Bill Tracking">
-						<label for="type9">Legislative Bill Tracking</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type10" name="expenseType" value="Legislative Research">
-						<label for="type10">Legislative Research</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type11" name="expenseType" value="Lodging">
-						<label for="type11">Lodging</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type12" name="expenseType" value="Meals for Lobby Event">
-						<label for="type12">Meals for Lobby Event</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type13" name="expenseType" value="Photocopies">
-						<label for="type13">Photocopies</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type14" name="expenseType" value="Rallies">
-						<label for="type14">Rallies</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type15" name="expenseType" value="Rent">
-						<label for="type15">Rent</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type16" name="expenseType" value="Social Event/Reception/Banquet">
-						<label for="type16">Social Event/Reception/Banquet</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type17" name="expenseType" value="Social Media – Websites">
-						<label for="type17">Social Media – Websites</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type18" name="expenseType" value="Travel Reimbursement - Train, Airfare, Car, Hotel">
-						<label for="type18">Travel Reimbursement - Train, Airfare, Car, Hotel</label>
-					</div>
-
-					<div class="checkbox">
-						<input type="checkbox" id="type19" name="expenseType" value="Other" onchange="toggleOtherInput()">
-						<label for="type19">Other: <input type="text" id="otherType" name="otherType"></label>
-					</div>
-					<p>Please check all that apply.</p>
-				</div>
-
-	<!--New Question Section-->
-														 
-												 
-				<div class="tab looped">
-					<div class="subtab">
-						<p>What was the cost of those expenses?</p>
-						<p>Expense: <span id ="expenseType"></span></p>
-						<label for="expenseCost">My organization spent:</label>
-						<input type="text" id="expenseCost" name="expenseCost" placeholder="Amount in USD">
-					</div>
-
-	<!--New Question Section-->
-					<div class="subtab">
-						<p>Who or what was the expense paid to?</p>
-						<label for="expensePaidTo">My organization paid this to:</label>
-						<input type="text" id="expensePaidTo" name="expensePaidTo" placeholder="Organization/company">
-					</div>
-				</div>
-
-	<!--New Question Section-->
-				<div class="tab looped">
-					<div>
-						<p>Did you incur any reportable compensation today?</p>
-						<input type="radio" id="compYes" name="compensationReceived" value="true" onclick="displayCompensation()">
-						<label for="compYes">Yes</label>
-						<input type="radio" id="compNo" name="compensationReceived" value="false" checked onclick="displayCompensation()">
-						<label for="compNo">No</label>
-					</div>
-
-	<!--New Question Section-->
-					<div class="subtab" id="compTab">
-						<p>What are the details of compensation received?</p>
-						<label for="compAmt">Amount: </label>
-						<input type="text" id="compAmt" name="compAmt" placeholder="Amount in USD">
-						<label for="compFrom">Paid from: </label>
-						<input type="text" id="compFrom" name="compFrom" placeholder="Source">
-						<label for="compMethod">Payment method: </label>
-						<input type="text" id="compMethod" name="compMethod" placeholder="Cash, check or other">
-						<label for="compNumer">Payment number: </label>
-						<input type="text" id="compNumber" name="compNumber" placeholder="Check number or 'N/A for cash">
-						<label for="compType">Type of compensation: </label>
-						<input type="text" id="compType" name="compType" placeholder="I'm not even sure">
-					</div>
-				</div>
-				<div class="navButtons hide" id="navButtons">
-					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-				</div>
-			</form>
-			<div class="reportingResults" id="reportingResults">
-			<h4>Reported Expenses</h4>
-
-																			
+		<div id="modalInstructions" class="modal instructions">
+			<div class="modal-content"><h4>Directions</h4>
+			<span class="close" onclick="hideModalInstructions()">&times;</span>
+				<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
+				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModalInstructions()">OK</button>
 			</div>
 		</div>
-	</div>
-	<div id="modalPopUp" class="modal">
 
-		<!-- Modal content -->
-		<div class="modal-content">
-			<span class="close" onclick="hideModal()">&times;</span>
-			<div id="modalText"></div>
+		<!-- Form -->
+		<div class="reportContainer">
+			<div class="reporting">
+				<div class="formlanding">
+					<div class="formInstructions" id="formInstructions">
+						<p>This form is designed to help you track your organization's lobbying expenses. Hovering over the question mark icon will provide more information on each question. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
+					</div>
+					<div class="buttonFrame">
+						<button class="reportButton" id="reportButton" onclick="startForm()">Report my lobbying expenses</button>
+						<button class="instructionsButton reportButton hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
+					</div>
+				</div>
+				<form class="reportingForm expenseForm" id="reportingForm" >
+
+					<!--New Question Section-->
+					<div class="tab">
+						<p>Did you incur expenses while lobbying today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
+						<br>
+						<br>
+						<input type="radio" id="expenses_yes" name="incurredExpenses" value="true">
+						<label for="expenses_yes">Yes</label>
+						<br>
+						<br>
+						<input type="radio" id="expenses_no" name="incurredExpenses" value="false">
+						<label for="expenses_no">No</label>
+					</div>
+					
+					<!--New Question Section-->
+					<div class="tab">
+						<p>You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
+						<br>
+						<br>
+						<div class="checkbox">
+							<input type="checkbox" id="type1" name="expenseType" value="Advertising – Billboards">
+							<label for="type1">Advertising – Billboards</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type2" name="expenseType" value="Advertising – Flyers">
+							<label for="type2">Advertising – flyers</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type3" name="expenseType" value="Advertising - Print Media">
+							<label for="type3">Advertising - Print Media</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type4" name="expenseType" value="Buses for Lobby Event">
+							<label for="type4">Buses for Lobby Event</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type5" name="expenseType" value="Cell Phone">
+							<label for="type5">Cell Phone</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="type6" name="expenseType" value="Computer/Internet">
+							<label for="type6">Computer/Internet</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type7" name="expenseType" value="Consulting ">
+							<label for="type7">Consulting</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type8" name="expenseType" value="E-advocacy">
+							<label for="type8">E-advocacy</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type9" name="expenseType" value="Legislative Bill Tracking">
+							<label for="type9">Legislative Bill Tracking</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type10" name="expenseType" value="Legislative Research">
+							<label for="type10">Legislative Research</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type11" name="expenseType" value="Lodging">
+							<label for="type11">Lodging</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type12" name="expenseType" value="Meals for Lobby Event">
+							<label for="type12">Meals for Lobby Event</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type13" name="expenseType" value="Photocopies">
+							<label for="type13">Photocopies</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type14" name="expenseType" value="Rallies">
+							<label for="type14">Rallies</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type15" name="expenseType" value="Rent">
+							<label for="type15">Rent</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type16" name="expenseType" value="Social Event/Reception/Banquet">
+							<label for="type16">Social Event/Reception/Banquet</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type17" name="expenseType" value="Social Media – Websites">
+							<label for="type17">Social Media – Websites</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type18" name="expenseType" value="Travel Reimbursement - Train, Airfare, Car, Hotel">
+							<label for="type18">Travel Reimbursement - Train, Airfare, Car, Hotel</label>
+						</div>
+
+						<div class="checkbox">
+							<input type="checkbox" id="type19" name="expenseType" value="Other" onchange="toggleOtherInput(this)">
+							<label for="type19">Other: <span><input type="text" id="otherType" name="otherType"></span></label>
+						</div>
+						<p>Please check all that apply.</p>
+					</div>
+
+					<!--New Question Section-->
+					<div class="tab looped">
+						<div class="subtab">
+							<p>What was the cost of those expenses?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 3" title="Enter the cost USD for the expense listed below."/></p>
+							<br>
+							<p>Expense: <span id ="expenseType"></span></p>
+							<br>
+							<br>
+							<label for="expenseCost">My organization spent:</label>
+							<input type="text" id="expenseCost" name="expenseCost" placeholder="Amount in USD">
+						</div>
+
+						<div class="subtab">
+							<p>Who or what was the expense paid to?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 4" title="Enter the name of the person or organization the above amount was paid to."/></p>
+							<br>
+							<br>
+							<label for="expensePaidTo">My organization paid this to:</label>
+							<input type="text" id="expensePaidTo" name="expensePaidTo" placeholder="Organization/company">
+						</div>
+					</div>
+
+					<!--New Question Section-->
+					<div class="tab looped">
+						<div>
+							<p>Did you incur any reportable compensation today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 5" title="Information about thresholds for reportable compensation"></p>
+							<br>
+							<br>
+							<input type="radio" id="compYes" name="compensationReceived" value="true" onclick="displayCompensation()">
+							<label for="compYes">Yes</label>
+							<input type="radio" id="compNo" name="compensationReceived" value="false" checked onclick="displayCompensation()">
+							<label for="compNo">No</label>
+						</div>
+
+						<!--Reportable Compensation section-->
+						<div class="subtab" id="compTab">
+							<p>What are the details of compensation received?</p>
+							<label for="compAmt">Amount: </label>
+							<input type="text" id="compAmt" name="compAmt" placeholder="Amount in USD">
+							<label for="compFrom">Paid from: </label>
+							<input type="text" id="compFrom" name="compFrom" placeholder="Source">
+							<label for="compMethod">Payment method: </label>
+							<input type="text" id="compMethod" name="compMethod" placeholder="Cash, check or other">
+							<label for="compNumber">Payment number: </label>
+							<input type="text" id="compNumber" name="compNumber" placeholder="Check number or 'N/A for cash">
+							<label for="compType">Type of compensation: </label>
+							<input type="text" id="compType" name="compType" placeholder="I'm not even sure">
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="navButtons hide" id="navButtons">
+						<button class="navButton" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+						<button class="navButton" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+					</div>
+				</form>
+				<div class="reportingResults" id="reportingResults">
+					<div class="userInput" id="userResults">
+						<h3 class="resultmob">Reported Activities</h3>
+					</div>
+					<h4 class="result">Click below to print the report.</h4>
+					<!-- <button class="reportbutton4"><a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank">Lobbying Laws and Regulations</a></button> -->
+					<!-- <button class="reportbutton5"><a href="https://webapps.jcope.ny.gov/public" target="_blank">Searching for lobbying cases</a></button> -->
+					<!-- </br> -->
+					<button class="printbutton" onclick="window.print()">Print lobbying report</button>
+				</div>
+			</div>
+		</div>
+		<div id="modalPopUp" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close" onclick="hideModal()">&times;</span>
+				<div id="modalText"></div>
+			</div>
 		</div>
 
-	</div>
-	 <hr> 
-</main>	
+		<footer>
+			<hr>
+			<br>
+			<p>Contact Information:</p>
+			<p>Email: CHANGE ME</p>
+			<!-- <button class="contactButton" id="contactBtn" onclick="displayContactModal()">Contact us!</button> -->
+			<!-- <div id="contactModal" class="modal"> -->
+				<!-- <div class="mdcontact"> -->
+					<!-- <span class="close" onclick="hideContactModal()">&times;</span> -->
+					<!-- <form class="formcontact" id="formcontact"> -->
+						<!-- <label for="fname">First Name</label> -->
+						<!-- <input type="text" id="fname" name="firstname"> -->
 
-  <footer>
-    <p>Contact Information:</p>
-    <p>Email: CHANGE ME</p>
-		<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
-  </footer>
+						<!-- <label for="lname">Last Name</label> -->
+						<!-- <input type="text" id="lname" name="lastname"> -->
 
+						<!-- <label for="email">E-mail</label> -->
+						<!-- <input type="text" id="email" name="email"> -->
 
+						<!-- <label for="subject">Subject</label> -->
+						<!-- <textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea> -->
+
+						<!-- <input type="submit" value="Submit"> -->
+					<!-- </form> -->
+				<!-- </div> -->
+			<!-- </div	> -->
+			<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
+		</footer>
+	</main>	
+	<script src="js/reportingModal.js"></script>
 	<script src="js/expenses.js"></script>
 	<script src="js/disclaimer.js"></script>
 <!-- End Document

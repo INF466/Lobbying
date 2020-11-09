@@ -2,17 +2,25 @@ var currentTab = 0;
 var currentIndex = 0; 
 var activitiesReported = [];
 activitiesReported[currentIndex] = {}
-showTab(currentTab); // Show the first tab of the form
+
+function startForm(){
+	document.getElementById("reportButton").style.display = "none";
+	document.getElementById("formInstructions").style.display = "none";
+	document.getElementById("instructionsButton").style.display = "block";
+	document.getElementById("navButtons").style.display = "block";
+	
+	showTab(currentTab); // Show the first tab of the form
+}
 
 function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
   if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
+    document.getElementById("prevBtn").style.visibility = "hidden";
   } else {
-    document.getElementById("prevBtn").style.display = "inline";
+    document.getElementById("prevBtn").style.visibility = "visible";
   }  
-  if (n == 7) {
+  if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
@@ -40,7 +48,8 @@ function nextPrev(n) {
 }
 
 function displayUserInput(){
-	var target = document.getElementById("reportingResults");
+	var showTarget = document.getElementById("reportingResults");
+	var target = document.getElementById("userResults");
 	var keys = Object.keys(activitiesReported[currentIndex]);
 	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
@@ -49,24 +58,16 @@ function displayUserInput(){
 	}
 	target.innerHTML += ("</dl>");
 	
-	target.style.display = "block";
+	showTarget.style.display = "block";
 		
 }
 
-function toggleOtherInput(){
+function toggleOtherInput(inputObject){
 	var otherInputBox = document.getElementById("otherType");
-	if (otherInputBox.style.visibility == "visible"){
-		otherInputBox.style.visibility = "hidden";
-	} else otherInputBox.style.visibility = "visible";
+	if ((inputObject.id == "for_other") && ( inputObject.checked)){
+		otherInputBox.style.visibility = "visible";
+	} else otherInputBox.style.visibility = "hidden";
 }
-
-function recallResults(){
-	var currentTabObj = document.getElementsByClassName("tab")[currentTab];
-	var inputs = currentTabObj.getElementsByTagName("input");
-	for (x of inputs){
-		x.value = activitiesReported[currentIndex][x.name];
-		}
-	}
 
 function saveResults(n){
 	var currentTabObj = document.getElementsByClassName("tab")[n];
@@ -122,7 +123,7 @@ function validateForm(){
 	} else if (currentTab == 5){
 		var otherSelected = false;
 		for (x of inputs){
-			if (x.id == "other"){
+			if (x.id == "for_other"){
 				if ((x.checked)){
 					otherSelected = true;
 					if (inputs[inputs.length - 1].value != ""){
@@ -140,6 +141,29 @@ function validateForm(){
 				displayModal("<p>Please select an option.</p>");
 			}
 		}
-	}
+	} else if (currentTab == 6){
+		for (x of inputs){
+			if (x.value != ""){
+				valid = true;
+			} else {
+				valid = false;
+			}
+			if (!valid) displayModal("<p>Please fill out the details related to the lobby.</p>");
+		}
+	}	
+		
 	return valid; 
+}
+ function startExpenses(){
+	 window.open("reporting_expenses.html", "_self");
+ }
+
+function displaySubmissionModal(){
+	var modal = document.getElementById("submissionModal");
+	modal.style.display = "block";
+}
+
+function hideSubmissionModal(){
+	var modal = document.getElementById("submissionModal");
+	modal.style.display = "none";
 }
