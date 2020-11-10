@@ -38,8 +38,8 @@
     <img id="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
     <a href="index.html">Home</a>
     <a href="modules.html">Modules</a>
-    <a class="active" href="reporting_activities.html">Reporting</a>
     <a href="podcasts.html">Podcasts</a>
+    <a class="active" href="reporting_activities.html">Reporting</a>
   </nav>
 
   <main>
@@ -216,7 +216,7 @@
 							<h3>Are you finished reporting lobbying that you engaged in today or would you like to record another instance of lobbying?</h3>
 							<button>Record another activity</button>
 							<button onclick="startExpenses()">Report expenses</button>
-							<p>Print Report of all lobbying.</p>
+							<!-- <p>Print Report of all lobbying.</p> -->
 						</div>
 						<div class="modal2-footer">
 							<h3>Thank you!</h3>
@@ -230,6 +230,7 @@
 			<div class="modal-content">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<div id="modalText"></div>
+				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModal()">OK</button>
 			</div>
 		</div>
 	
