@@ -78,11 +78,13 @@ main{
 .pageTitle{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	
 }
 
 .pageTitle h2{
-	margin-left: 250px;
-    text-align:left;
+	text-align:left;
+	margin-left:250px;
+    
 }
 /*Typical Paragraph Body==================================*/
 
@@ -856,7 +858,13 @@ video{
 }
 @media only screen and (max-width: 470px) {
 	.descImg{
-		height:600px;
+		height:650px;
+	}
+	.flipcardholder{
+		margin-top:125px;
+	}
+	#footerLogo{
+		display:none;
 	}
 }
 @media only screen and (max-width: 375px) {
