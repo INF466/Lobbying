@@ -454,7 +454,7 @@ input[type=submit]:hover {
   nav {display:none;}
   header {display:none;}
   footer {display:none;}
-  button {display:none;}
+  button {display:none !important;}
   .result {display:none;}
   h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
 }
