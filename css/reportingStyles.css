@@ -20,7 +20,7 @@
 }
 .modalClose{
 	display:inline-block;
-	float:right;
+	float: right;
 	margin-top:-25px;
 }
 .modalClose::after{
@@ -39,7 +39,7 @@
 }
 
 #modalPopUp .modal-content{
-	margin-top:30%;
+	margin-top: 20%;
 }
 
 #modalPopUp .close{
