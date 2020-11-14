@@ -22,6 +22,16 @@ function closeNav() {
   document.getElementById("hamburger").style.marginLeft= "0";
   document.getElementById("hamburger").style.display= "block";
 }
+
+function nav_burger() {
+	var x = document.getElementById("nav_burger_hide");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} 
+		else {
+			x.style.display = "none";
+		}
+}
 //END script for the module hamburger============================//
 //START script for the module slider============================//
 var slideIndex = 1;
