@@ -35,7 +35,7 @@
 <body onload="checkDisclaimer()">
 
 	<nav class="nav">
-		<img id="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
+		<img class="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
     <a href="index.html">Home</a>
 		<a href="modules.html">Modules</a>
     <a href="podcasts.html">Podcasts</a>
@@ -43,8 +43,8 @@
 		<a class="active" href="reporting_expenses.html">Expenses</a>
   </nav>
   <nav class="nav_mobile">
-    <img id="logo" src="images/logoTrans.png" alt="Lobbster: The website for learning about NYS lobbying!">
-	<img onclick="nav_burger()" id="nav_burger"src="images/burger.png" alt="burger">
+    <img class="logo" src="images/logoTrans.png" alt="Lobbster: The website for learning about NYS lobbying!">
+	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
 	<div id="nav_burger_hide" style="display:none;">
 		<a href="index.html">Home</a>
 		
@@ -77,7 +77,7 @@
 			<div class="modal-content"><h4>Directions</h4>
 			<span class="close" onclick="hideModalInstructions()">&times;</span>
 				<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
-				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModalInstructions()">OK</button>
+				<button type="button" class="modalClose acceptInstructions" onclick="hideModalInstructions()">OK</button>
 			</div>
 		</div>
 
@@ -281,7 +281,7 @@
 			<div class="modal-content">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<div id="modalText"></div>
-				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModal()">OK</button>
+				<button type="button" class="modalClose acceptInstructions" onclick="hideModal()">OK</button>
 			</div>
 		</div>
 
