@@ -676,7 +676,6 @@ video{
 
 audio{
 	display:block;
-	float:clear;
 	width: 55%;
 	margin:auto;
 	margin-top: 10px;
