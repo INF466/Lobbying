@@ -476,7 +476,7 @@ input[type=submit]:hover {
 		 /* font-size: 8px; */
 		 /* position: absolute; */
 		 /* top: 8%; */
-		 }
+		 /* } */
 
 	/* .reportbutton { */
 		 /* font-size: 15px; */
@@ -849,4 +849,4 @@ input[type=submit]:hover {
 
 /* @media only screen and (max-width: 555px) { */
 	
-}
+/* } */
