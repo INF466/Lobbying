@@ -8,9 +8,8 @@
   <title>Lobbster: Reporting Lobbying Expenses</title>
   <meta name="description" content="Lobbster provides a way for you to report and save your lobbying expenses">
   <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Expenses, Reporting Lobbying Expenses">
-	
-	<meta name="author" content="">
-	
+  <meta name="author" content="This wesbite was made in collaborations with Albany Law and SUNY Albany. The students who worked on this were Jocelyn Chan, Jesse Conklin, Matthew Galetta, and Gyuhaeng 'Alex' Lee!">
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,17 +29,33 @@
 	<!-- Styles- placeholder
 	-------------------------------------------------- -->
 	<style>
-		
+
 	</style>
 </head>
 <body onload="checkDisclaimer()">
 
 	<nav class="nav">
-		<img id="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
+		<img class="logo" src="images/logoTrans.png" alt="NY Lobbying Express">
     <a href="index.html">Home</a>
-	<a href="modules.html">Modules</a>
-	<a class="active" href="reporting_activities.html">Reporting</a>
+		<a href="modules.html">Modules</a>
     <a href="podcasts.html">Podcasts</a>
+		<a href="reporting_activities.html">Activities</a>
+		<a class="active" href="reporting_expenses.html">Expenses</a>
+  </nav>
+  <nav class="nav_mobile">
+    <img class="logo" src="images/logoTrans.png" alt="Lobbster: The website for learning about NYS lobbying!">
+	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
+	<div id="nav_burger_hide" style="display:none;">
+		<a href="index.html">Home</a>
+		
+		<a href="modules.html">Modules</a>
+		
+		<a href="podcasts.html">Podcasts</a>
+		
+		<a href="reporting_activities.html">Activities</a>
+		
+		<a class="active" href="reporting_expenses.html">Expenses</a>
+	</div>	
   </nav>
 
   <main>
@@ -62,7 +77,7 @@
 			<div class="modal-content"><h4>Directions</h4>
 			<span class="close" onclick="hideModalInstructions()">&times;</span>
 				<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
-				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModalInstructions()">OK</button>
+				<button type="button" class="modalClose acceptInstructions" onclick="hideModalInstructions()">OK</button>
 			</div>
 		</div>
 
@@ -92,7 +107,7 @@
 						<input type="radio" id="expenses_no" name="incurredExpenses" value="false">
 						<label for="expenses_no">No</label>
 					</div>
-					
+
 					<!--New Question Section-->
 					<div class="tab">
 						<p>You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
@@ -266,7 +281,7 @@
 			<div class="modal-content">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<div id="modalText"></div>
-				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModal()">OK</button>
+				<button type="button" class="modalClose acceptInstructions" onclick="hideModal()">OK</button>
 			</div>
 		</div>
 
@@ -298,10 +313,11 @@
 			<!-- </div	> -->
 			<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
 		</footer>
-	</main>	
+	</main>
 	<script src="js/reportingModal.js"></script>
 	<script src="js/expenses.js"></script>
 	<script src="js/disclaimer.js"></script>
+	<script src="js/js.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

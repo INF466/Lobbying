@@ -8,6 +8,7 @@
   <title>Lobbster: The Best NYS Lobbying Reporting Tool!</title>
   <meta name="description" content="We can help you identify if: You have been lobbying, if you should file a report due to lobbying, and different ways you might have been lobbying!">
   <meta name="keywords" content="Lobbying, Lobbying Expenses, Social Media Lobbying, New York State Lobbying, NYS Lobbying, Lobbying Report, Lobbying Activities">
+  <meta name="author" content="This wesbite was made in collaborations with Albany Law and SUNY Albany. The students who worked on this were Jocelyn Chan, Jesse Conklin, Matthew Galetta, and Gyuhaeng 'Alex' Lee!">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -17,9 +18,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reportingStyles.css">
 
 </head>
-<body>
+<body onload="checkDisclaimer()">
 
 
   <!-- Primary Page Layout
@@ -29,15 +31,42 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <nav class="nav">
-    <img id="logo" src="images/logoTrans.png" alt="Lobbster: The website for learning about NYS lobbying!">
+    <img class="logo" src="images/logoTrans.png" alt="Lobbster: The website for learning about NYS lobbying!">
     <a class="active" href="index.html">Home</a>
     <a href="modules.html">Modules</a>
-    <a href="reporting_expenses.html">Reporting</a>
-    <a href="podcasts.html">Podcasts</a>
+	<a href="podcasts.html">Podcasts</a>
+    <a href="reporting_activities.html">Activities</a>
+	<a href="reporting_expenses.html">Expenses</a>
+  </nav>
+  
+  <nav class="nav_mobile">
+    <img class="logo" src="images/logoTrans.png" alt="Lobbster: The website for learning about NYS lobbying!">
+	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
+	<div id="nav_burger_hide" style="display:none;">
+		<a class="active" href="index.html">Home</a>
+		
+		<a href="modules.html">Modules</a>
+		
+		<a href="podcasts.html">Podcasts</a>
+		
+		<a href="reporting_activities.html">Activities</a>
+		
+		<a href="reporting_expenses.html">Expenses</a>
+	</div>	
   </nav>
 
   <main>
 
+    <!-- Disclaimer
+    -------------------------------------------------- -->
+    <div id="modalDisclaimer" class="modal disclaimer">
+      <div class="modal-content"><h4>Disclaimer</h4>
+        <p>This web tool is in no way affiliated or endorsed by New York State.</p>
+        <p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
+        <p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
+        <button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+        </div>
+    </div>
 
 	<div class="homeSlideshowContainer">
 		<!--Description Slide-->
@@ -103,21 +132,6 @@
 				NYS Lobbying Site
 			</a>
 		</div>
-
-    <!--Slide 4-->
-		<div class="moduleSlide">
-			<img src="images/skyline.png" alt="Lobbster Lobbying: Skyline" style="width:100%;height:500px;object-fit:cover;">
-			<h2 class="homeQuestion">
-				Question goes here.
-			</h2>
-			<h4 class="homeQuestionInfo">
-				Maybe type where this link will take the user.
-			</h4>
-
-			<a href="#" class="goThereButton">
-				Take me there button
-			</a>
-		</div>
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a onkeypress="click()" tabindex="0" class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -144,10 +158,10 @@
     	  <div tabindex="0" class="flip-card">
     		<div class="flip-card-inner">
     		  <div class="flip-card-front">
-    		  <p>Module One: What is Lobbying?</p>
+    		  <p>What is Lobbying?</p>
     		  </div>
     		  <div class="flip-card-back">
-    		  <p>link to module one</p>
+    		  <p><a href="modules.html">Learn more about lobbying.</a></p>
     		  </div>
     		</div>
 
@@ -156,10 +170,10 @@
     	  <div tabindex="0" class="flip-card">
     		<div class="flip-card-inner">
     		  <div class="flip-card-front">
-    		  <p>Module Two: Am I Lobbying??</p>
+    		  <p>Am I Lobbying?</p>
     		  </div>
     		  <div class="flip-card-back">
-    		  <p>link to module two</p>
+    		  <p><a href="modules.html">Learn if you're lobbying!</a></p>
     		  </div>
     		</div>
     		</div>
@@ -167,10 +181,10 @@
       <div tabindex="0" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-          <p>Module Three: Should I Report My Activities?</p>
+          <p>Should I Report My Activities?</p>
           </div>
           <div class="flip-card-back">
-          <p>link to module three</p>
+          <p><a href="modules.html">Learn if your should report your lobbying activities.</a></p>
           </div>
         </div>
       </div>
@@ -179,10 +193,10 @@
       <div tabindex="0" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-          <p>Module Four: Direct Lobbying on Social Media</p>
+          <p>Direct Lobbying on Social Media</p>
           </div>
           <div class="flip-card-back">
-          <p>link to module four</p>
+          <p><a href="modules.html">Learn more about direct lobbying.</a></p>
           </div>
         </div>
       </div>
@@ -190,10 +204,10 @@
       <div tabindex="0" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-          <p>Module Five: Grassroots Lobbying on Social Media</p>
+          <p>Grassroots Lobbying on Social Media</p>
           </div>
           <div class="flip-card-back">
-          <p>link to module five</p>
+          <p><a href="modules.html">Learn more about grassroots lobbying.</a></p>
           </div>
         </div>
       </div>
@@ -201,10 +215,10 @@
       <div tabindex="0" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-          <p>Module Six: Social Media Attribution Test</p>
+          <p>Social Media Attribution Test</p>
           </div>
           <div class="flip-card-back">
-          <p>link to module six</p>
+          <p><a href="modules.html">Take the social media attribution test.</a></p>
           </div>
         </div>
       </div>
@@ -213,21 +227,10 @@
       <div tabindex="0" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-          <p>Module Seven: Lobbying Days</p>
-          </div>
-          <div class="flip-card-back">
           <p>Lobbying Days</p>
           </div>
-        </div>
-      </div>
-
-      <div tabindex="0" class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-          <p>Module Eight: Restrictions on Events and Prohibition on Gifts</p>
-          </div>
           <div class="flip-card-back">
-          <p>link to module Eight</p>
+          <p><a href="modules.html">Learn more about lobbying days.</a></p>
           </div>
         </div>
       </div>
@@ -235,10 +238,21 @@
       <div tabindex="0" class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-          <p>Podcasts(?)</p>
+          <p>Restrictions on Events and Prohibition on Gifts</p>
           </div>
           <div class="flip-card-back">
-          <p>link to podcasts(?)</p>
+          <p><a href="modules.html">Learn more about lobbying restrictions.</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div tabindex="0" class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+          <p>Podcasts</p>
+          </div>
+          <div class="flip-card-back">
+          <p><a href="podcasts.html">Listen to our podcasts about non-profit organizations lobbying.</a></p>
           </div>
         </div>
       </div>
@@ -259,34 +273,7 @@
       <p>Email: CHANGE ME</p>
   	<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
 
-    <!-- Popup
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="popup" onclick="disclaimer()">CLICK ME FOR DISCLAIMER
-   <span class="popuptext" id="myPopup">
-
-   <h3>Lobbying Web Tool Disclaimers</h3>
-
-   <h4>Attorney-Client Relationship</h4>
-   <p>The information contained here, and the accompanying resources are not intended to serve as a substitute for legal advice, and the use of this website does not create an attorney-client relationship between any user and Albany Law School. </p>
-
-   <p>Continued usage of this website indicates that you understand that by using this site you are not creating an attorney-client relationship with Albany Law School or any other entity or individual who has assisted in the preparation of this site and the information it provides.</p>
-
-   <h4>This Website Only Addresses New York State Law</h4>
-   <p>It is important to note that these videos, podcasts and other resources provided through this site only discuss issues related to lobbying under New York State Law. It does not address any state’s laws and requirements other than New York’s, and it does not relate to important issues under U.S./federal law related to the topic of non-profits and lobbying.  There are important limitations on the extent to which non-profits can engage in any type of lobbying under federal law.  Please consult the accompanying website [provide link to website – Brescia to supply] provided by Albany Law School that addresses the restrictions placed on non-profits that want to lobby under federal law.</p>
-
-   <h4>Affiliation, Warranties, and Liabilities</h4>
-   <p>This web tool is in no way affiliated or endorsed by New York State.</p>
-
-   <p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
-
-   <p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
-
-   </span>
-
- </div>
- <!-- End Popup
- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  </footer>
 
     </main>
@@ -294,6 +281,7 @@
 
 
 <script src="js/js.js"></script>
+<script src="js/disclaimer.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

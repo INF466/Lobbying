@@ -21,7 +21,7 @@
 
 
 
-#logo{
+.logo{
 	width:160px;
 	position: fixed;
 	top: 3px;
@@ -33,6 +33,46 @@
 	position: absolute;
 	bottom: 50px;
 	right: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  margin-top:0;
+  /* padding-top: 20px; */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.6s;
+  animation-name: fadeIn;
+  animation-duration: 0.6s
+
+}
+.modalClose{
+	display:inline-block;
+	float: right;
+	margin-top:-25px;
+}
+.modalClose::after{
+	clear:both;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin:75px auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  max-height: 80%;
+  overflow: auto;
 }
 
 /* hide disclaimer by default=============================*/
@@ -111,7 +151,7 @@ p {
   }
 
 /*Nav=====================================================*/
-nav {
+.nav {
 	color: white;
 	background-color: dodgerblue;
 	color: white;
@@ -123,7 +163,36 @@ nav {
 	z-index: 1;
 }
 
-nav a{
+#nav_burger{
+	height:44px;
+	float:right;
+	padding:5px;
+}
+
+#nav_burger:hover{
+	opacity: 0.5;
+}
+
+#nav_burger_hide{
+	display:none;
+	padding-top:55px;
+	background: rgba(0, 135, 208, 0.9);
+	height:auto;
+}
+
+.nav_mobile{
+	color: white;
+	background-color: dodgerblue;
+	background: rgba(0, 135, 208, 0.9);
+	height:55px;
+	position:sticky;
+	top:0;
+	z-index: 1;
+	display:none;
+	text-align:center;
+}
+
+.nav a{
 	text-decoration: none;
 	font-family: titillium;
 	color: white;
@@ -131,8 +200,17 @@ nav a{
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top:6px;
-	height:50px;
 	display: inline-block;
+}
+
+.nav_mobile a{
+	text-decoration: none;
+	font-family: titillium;
+	color: white;
+	font-size: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top:6px;
 }
 
 .active{
@@ -145,6 +223,13 @@ nav a{
 	height:44px;
 	text-shadow: 2px 2px #333333;
 }
+
+.nav_mobile a:hover{
+	background-color: #0076d0;
+	opacity: 0.8;
+	text-shadow: 2px 2px #333333;
+}
+
 
 
 
@@ -180,6 +265,7 @@ aside{
 	background-color: #006399;
 	transition: 0.5s;
 	display:none;
+	margin-top:5px;
 }
 
 #sideNav a{
@@ -190,17 +276,26 @@ aside{
 	padding-right:0px;
 	margin-bottom:5px;
 	width:99%;
+	float:left;
 	transition: 0.3s;
 	font-size: 22px;
+	color:white;
+	text-decoration:none;
 }
 
 #sideNavMoble a{
 	margin:auto;
-	text-align:center;
-	padding-left: 0px;
+	height:45px;
+	text-align:left;
+	padding-left: 12px;
 	padding-right:0px;
-	width:100%;
+	margin-bottom:5px;
+	width:99%;
+	float:left;
 	transition: 0.3s;
+	font-size: 22px;
+	color:white;
+	text-decoration:none;
 }
 
 #sideNav a:hover{
@@ -213,12 +308,13 @@ aside{
 
 #sideNavMoble .closebtn {
     margin:auto;
-	text-align:center;
+	margin-right:10px;
+	text-align:right;
 	padding-left: 0px;
-	padding-right:0px;
+	padding-right:10px;
 	width:100%;
 	transition: 0.3s;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .openbtn {
@@ -232,7 +328,7 @@ aside{
   left:0;
   border-radius: 0 20px 20px 0;
   background: rgba(0, 135, 208, 0.9);
-  top: 45px;
+  top: 58px;
 
 
 }
@@ -573,14 +669,13 @@ video{
 	width: 55%;
 	margin:auto;
 	margin-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 	text-align:center;
 	display:block;
 }
 
 audio{
 	display:block;
-	float:clear;
 	width: 55%;
 	margin:auto;
 	margin-top: 10px;
@@ -643,6 +738,7 @@ audio{
 	font-size: 30px;
 	margin-right: 6%;
 	text-shadow: 2px 2px 5px #444;
+	text-align:left;
 }
 
 .goThereButton{
@@ -675,22 +771,28 @@ footer p {
 	display:none;
 }
 @media only screen and (max-width: 1280px) {
-video{
+	video{
 		width: 75%;
 	}
+	.homeDescription{
+		font-size:15px;
+		top:25%;
+	}
+		
 }
+
 @media only screen and (max-width: 906px) {
 	.homeDescription{
-	position:absolute;
-	border-style:solid;
-	border-color:black;
-	border-radius:15px;
-	border-width: 1px;
-	background-color: rgba(0,0,0, 0.4);
-	top: 20%;
-	width:80%;
-	left: 8%;
-
+		position:absolute;
+		border-style:solid;
+		border-color:black;
+		border-radius:15px;
+		border-width: 1px;
+		background-color: rgba(0,0,0, 0.4);
+		top: 20%;
+		width:80%;
+		left: 8%;
+		font-size: 12px;
 	}
 	
 	.homeQuestion{
@@ -755,26 +857,47 @@ video{
 	}
 
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 816px) {
 	
 	.homeDescription{
 	width:75%;
 	left: 10%;
-
-	}
-	#logo{
-		width:120px;
 	}
 	.pageTitle h2{
 		margin-left: 20px;
 	}
-	nav a{
+	.nav a{
 		font-size:15px;
+		
 	}
 
-	nav {
+	.nav {
 		height:40px;
 		padding-left: 145px;
+		display:none;
+	}
+	
+	.nav_mobile {
+	display:block;
+	min-height:50px;
+	width:100%;
+	}
+	
+	.nav_mobile a{
+	text-decoration: none;
+	font-family: titillium;
+	color: white;
+	font-size: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top:6px;
+	height:50px;
+	display: inline-block;
+	}
+	
+	#nav_burger_hide a{
+		width:100%;
+		padding-left:0px;
 	}
 
 	.active{
@@ -842,7 +965,7 @@ video{
 }
 
 @media only screen and (max-width: 555px) {
-	nav a{
+	.nav a{
 		font-size:12px;
 		padding-right:3px;
 		padding-left:3px;
@@ -852,7 +975,7 @@ video{
 		height:550px;
 	}
 
-	nav {
+	.nav {
 		padding-left: 175px;
 	}
 }
