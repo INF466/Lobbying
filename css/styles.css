@@ -397,7 +397,23 @@ aside{
 	box-shadow: inset 0px 0px 10px 5px #888888;
 	}
 
+.moduleSlide h3{
+	padding: 10px;
+	margin-top:60px;
+}
 
+.transcripts{
+	padding-bottom:60px;
+}
+
+.room{
+	padding-bottom:30px;
+}
+
+.moduleSlide button{
+	padding: 10px;
+	margin-bottom: 60px;
+}
 
 .moduleSlide:first-child {
     display: block;
@@ -665,13 +681,14 @@ aside{
   to {opacity: 1}
 }
 
-video{
+.video{
 	width: 55%;
 	margin:auto;
-	margin-top: 20px;
-	padding-bottom: 100px;
+	margin-top: 0px;
 	text-align:center;
 	display:block;
+	padding:30% 0 0 0;
+	position:relative;
 }
 
 audio{
@@ -771,7 +788,7 @@ footer p {
 	display:none;
 }
 @media only screen and (max-width: 1280px) {
-	video{
+	.video{
 		width: 75%;
 	}
 	.homeDescription{
