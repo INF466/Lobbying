@@ -252,13 +252,33 @@
 	</div>
 	<div class="spacer"></div>
 	 <footer>
-	<hr>
-	<br>
-    <p>Contact Information:</p>
-    <p>Email: CHANGE ME</p>
+		<hr>
+		<br>
+		<p>Contact Information:</p>
+		<p>Email:  LobbsterNY@albanylaw.edu</p>
     <p><a href="aboutus.html">About us</a></p>
-	<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
-  <br>
+		<button class="contactButton" id="contactBtn">Contact us!</button>
+		<div id="contactModal" class="modal2">
+			<div class="mdcontact">
+				<span class="close">&times;</span>
+				<form class="formcontact" id="formcontact">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname">
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname">
+
+					<label for="email">E-mail</label>
+					<input type="text" id="email" name="email">
+
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
+
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<img id="footerLogo" src="images/logoBackground.png" alt="NY Lobbying Express">
   </footer>
 
   <div id="modalPopUp" class="modal">
@@ -277,6 +297,7 @@
 
 <script src="js/js.js"></script>
 <script src="js/disclaimer.js"></script>
+<script src="js/reportingModal.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
