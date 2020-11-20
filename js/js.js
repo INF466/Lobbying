@@ -33,6 +33,18 @@ function nav_burger() {
 		}
 }
 //END script for the module hamburger============================//
+//START script for the module transcript============================//
+function showTranscripts(n) {
+  var transcripts = document.getElementsByClassName("transcripts");
+  if (transcripts[n].style.display == "block" || transcripts[n].style.display == ""){
+	  transcripts[n].style.display = "none";
+  }
+  else{
+	  transcripts[n].style.display = "block";
+  }
+  
+}
+//END script for the module transcripts============================//
 //START script for the module slider============================//
 var slideIndex = 1;
 
