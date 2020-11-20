@@ -422,7 +422,7 @@
   }
   
   input[type=submit] {
-	
+	background-color: #0076d0;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -431,7 +431,8 @@
   }
   
   input[type=submit]:hover {
-	background-color:#0076d0;
+	background-color:white;
+	color: #0076d0;
   }
   
   @-webkit-keyframes animatetop {
