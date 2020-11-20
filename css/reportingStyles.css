@@ -18,6 +18,16 @@
 	animation-duration: 0.6s
   
   }
+
+  .modal2{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 19%;
+	top: 19%;
+	margin: auto;
+  }
+  
   .modalClose{
 	  display:inline-block;
 	  float: right;
@@ -30,7 +40,7 @@
   /* Modal Content/Box */
   .modal-content {
 	background-color: #fefefe;
-	margin:75px auto; /* 15% from the top and centered */
+	margin: 175px auto; /* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
 	width: 60%; /* Could be more or less, depending on screen size */
@@ -57,7 +67,7 @@
   
   /* The Close Button */
   .close {
-	  margin-top:-40px;
+	  margin-top:-30px;
 	  margin-right:-15px;
 	color: #aaa;
 	float: right;
@@ -208,12 +218,19 @@
 	  /* transform: translate(-50%, -50%); */
   }
   .contactButton{
-	  background-color: #C8C8C8;
-	  color:black;
-	  display:inline-block;
-	  margin-left:335px;
-	  /* padding-left:15%; */
-  }
+	width: 200px;
+	border: none;
+	color: white;
+	padding: 12px 25px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	position: absolute;
+	top: 54%;
+	left: 44%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
   
   .navButton{
 	  display: inline-block;
@@ -375,7 +392,7 @@
 	border-radius: 5px;
 	}
   
-  
+ 
   /* .close { */
 	/* color: #aaaaaa; */
 	/* float: right; */
@@ -405,7 +422,7 @@
   }
   
   input[type=submit] {
-	
+	background-color: #0076d0;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -414,7 +431,8 @@
   }
   
   input[type=submit]:hover {
-	background-color:#0076d0;
+	background-color:white;
+	color: #0076d0;
   }
   
   @-webkit-keyframes animatetop {
