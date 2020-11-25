@@ -98,7 +98,7 @@
 
 				<!--New Question Section-->
 				<div class="tab">
-					<p>Did you lobby today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
+					<p class="mobile1">Did you lobby today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
 					<br>
 					<br>
 					<input type="radio" id="lobby_yes" name="Lobby status" value="true">
@@ -111,7 +111,7 @@
 
 				<!--New Question Section-->
 				<div class="tab">
-					<p>What level of government did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 2" title="District or local offices of elected officials for state positions are state-level government."/></p>
+					<p class="mobile1">What level of government did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 2" title="District or local offices of elected officials for state positions are state-level government."/></p>
 					<br>
 					<br>
 					<input type="radio" id="state" name="Level of goverment" value="state">
@@ -128,7 +128,7 @@
 
 				<!--New Question Section-->
 				<div class="tab">
-					<p>Did you lobby at the office of an individual or state entity?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 3" title="An individual is a state person including statewide elected officials;
+					<p class="mobile1">Did you lobby at the office of an individual or state entity?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 3" title="An individual is a state person including statewide elected officials;
 					members of the legislature and legislative employees;
 					heads of State departments and their deputies and assistants, other than members of the board of regents of the university of the State of New York who receive no compensation or are compensated on a per diem basis;
 					officers and employees of statewide elected officials;
@@ -148,7 +148,7 @@
 
 				<!--New Question Section-->
 				<div class="tab">
-					<p>Who did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 4" title="Example of Senator ______ or the Governor’s Office."/></p>
+					<p class="mobile1">Who did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 4" title="Example of Senator ______ or the Governor’s Office."/></p>
 					<br>
 					<br>
 					<input type="text" id="office_lobbied" name="What office did you lobby?" placeholder="Name of individual or Office.">
@@ -164,7 +164,7 @@
 
 				<!--New Question Section-->
 				<div class="tab">
-					<p>Did you lobby for legislation or funding?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooptip 5" title="1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
+					<p class="mobile1">Did you lobby for legislation or funding?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooptip 5" title="1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
 					2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies."/></p>
 					<br>
 					<br>
@@ -181,12 +181,12 @@
 					<br>
 					<br>
 					<input type="radio" id="for_other" name="Did you lobby for legislation or funding?" value="Other" onchange="toggleOtherInput(this)">
-					<label for="for_other">Other: <input type="text" id="otherType" name="otherType"></label>
+					<label for="for_other">Other: <input type="text" class="mobile2" id="otherType" name="otherType"></label>
 				</div>
 
 				<!--New Question Section-->
 				<div class="tab">
-					<p>What did you lobby for?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="tooltipact6" title="Provide topic title and applicable number.
+					<p class="mobile1">What did you lobby for?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="tooltipact6" title="Provide topic title and applicable number.
 					Examples include:
 					State Bill
 					Municipal Bill
@@ -253,9 +253,9 @@
 		<footer>
 			<hr>
 			<br>
-			<p>Contact Information:</p>
-			<p>Email:  LobbsterNY@albanylaw.edu</p>
-      <p><a href="aboutus.html">About us</a></p>
+			<p class="footmob">Contact Information:</p>
+			<p class="footmob">Email:  LobbsterNY@albanylaw.edu</p>
+      <p class="footmob"><a href="aboutus.html">About us</a></p>
 			<button class="contactButton" id="contactBtn">Contact us!</button>
 			<div id="contactModal" class="modal2">
 				<div class="mdcontact">

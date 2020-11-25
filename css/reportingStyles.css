@@ -40,7 +40,7 @@
   /* Modal Content/Box */
   .modal-content {
 	background-color: #fefefe;
-	margin: 175px auto; /* 15% from the top and centered */
+	margin: 130px auto; /* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
 	width: 60%; /* Could be more or less, depending on screen size */
@@ -226,7 +226,7 @@
 	display: inline-block;
 	font-size: 20px;
 	position: absolute;
-	top: 54%;
+	top: 53%;
 	left: 44%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -864,8 +864,540 @@
 		   /* visibility: visible; */
 	  /* }  */
   /* } */
-  
-  /* @media only screen and (max-width: 555px) { */
-	  
-  /* } */
-  
+@media only screen and (max-width: 1024px) {
+.modal-content {
+   background-color: #fefefe;
+   margin: 90px 18% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 60%; /* Could be more or less, depending on screen size */
+   max-height: 80%;
+   overflow: auto;
+}
+.navButton {
+   margin: 10px 9.5%; 
+}
+p{
+   font-size: 15px; 
+}
+h2{
+   font-size: 23px;	
+}
+h3{
+   font-size: 15px;
+}
+.mobile1 {
+   font-size: 15px;
+   margin: auto; 
+   padding-left: 12.5%;
+   padding-right: 10%;
+}
+.modal2-header {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.modal2-body {
+   width: 98%; 
+   padding: 4px 12px;
+}
+.modal2-footer {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.close {
+   margin-top: -10px;
+   margin-right: 0px;
+}
+input[type=text].mobile2 {
+	width: 80%;
+}
+input[type=text], select, textarea {
+   width: 99%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+.checkbox {
+   font-size: 1px;
+   width: 49%;
+}
+.contactButton{
+   width: 120px;
+   font-size: 12px; 
+   top: 35%;
+   left: 54%;
+}
+.footmob	{
+   margin: 15px auto;
+}
+}  
+
+@media only screen and (max-width: 768px) {
+.modal-content {
+   background-color: #fefefe;
+   margin: 90px 17% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 60%; /* Could be more or less, depending on screen size */
+   max-height: 80%;
+   overflow: auto;
+}
+.navButton {
+   margin: 10px 9.5%; 
+}
+p{
+   font-size: 15px; 
+}
+h2{
+   font-size: 23px;	
+}
+h3{
+   font-size: 15px;
+}
+.mobile1 {
+   font-size: 15px;
+   margin: auto; 
+   padding-left: 12.5%;
+   padding-right: 10%;
+}
+.modal2-header {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.modal2-body {
+   width: 98%; 
+   padding: 4px 12px;
+}
+.modal2-footer {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.close {
+   margin-top: -10px;
+   margin-right: 0px;
+}
+input[type=text].mobile2 {
+	width: 80%;
+}
+input[type=text], select, textarea {
+   width: 99%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+.checkbox {
+   font-size: 1px;
+   width: 49%;
+}
+.contactButton{
+   width: 120px;
+   font-size: 12px; 
+   top: 35%;
+   left: 54%;
+}
+.footmob	{
+   margin: 15px auto;
+}
+}
+
+@media only screen and (max-width: 540px) {
+.modal-content {
+   background-color: #fefefe;
+   margin: 90px 17% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 60%; /* Could be more or less, depending on screen size */
+   max-height: 80%;
+   overflow: auto;
+}
+.navButton {
+   margin: 10px 9.5%; 
+}
+p{
+   font-size: 15px; 
+}
+h2{
+   font-size: 23px;	
+}
+h3{
+   font-size: 15px;
+}
+.mobile1 {
+   font-size: 15px;
+   margin: auto; 
+   padding-left: 12.5%;
+   padding-right: 10%;
+}
+.modal2-header {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.modal2-body {
+   width: 98%; 
+   padding: 4px 12px;
+}
+.modal2-footer {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.close {
+   margin-top: -10px;
+   margin-right: 0px;
+}
+input[type=text].mobile2 {
+	width: 80%;
+}
+input[type=text], select, textarea {
+   width: 99%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+.checkbox {
+   font-size: 1px;
+   width: 49%;
+}
+.contactButton{
+   width: 120px;
+   font-size: 12px; 
+   top: 35%;
+   left: 54%;
+}
+.footmob	{
+   margin: 15px auto;
+}
+}
+
+@media only screen and (max-width: 414px) {
+.modal-content {
+   background-color: #fefefe;
+   margin: 110px 16% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 50%; /* Could be more or less, depending on screen size */
+   max-height: 80%;
+   overflow: auto;
+}
+.navButton {
+   margin: 10px 4.25%; 
+}
+p{
+   font-size: 15px; 
+}
+h2{
+   font-size: 23px;	
+}
+h3{
+   font-size: 15px;
+}
+.mobile1 {
+   font-size: 15px;
+   margin: auto; 
+   padding-left: 7.5%;
+   padding-right: 30%;
+}
+.modal2-header {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.modal2-body {
+   width: 98%; 
+   padding: 4px 12px;
+}
+.modal2-footer {
+   width: 98%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.close {
+   margin-top: -10px;
+   margin-right: 0px;
+}
+input[type=text].mobile2 {
+	width: 50%;
+}
+input[type=text], select, textarea {
+   width: 77%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+.checkbox {
+   font-size: 1px;
+   width: 37.3%;
+}
+.contactButton{
+   width: 120px;
+   font-size: 12px; 
+   top: 35%;
+   left: 64%;
+}
+.footmob	{
+   margin: 15px auto;
+}
+}
+
+@media only screen and (max-width: 375px) {
+ .modal-content {
+	background-color: #fefefe;
+	margin: 110px 12.5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%; /* Could be more or less, depending on screen size */
+	max-height: 80%;
+	overflow: auto;
+}
+ .navButton {
+	margin: 10px 2.25%; 
+ }
+ p{
+	font-size: 15px; 
+ }
+ h2{
+	font-size: 20px; 
+ }
+ h3{
+	font-size: 15px;
+ }
+ .mobile1 {
+	font-size: 15px;
+	margin: auto; 
+	padding-left: 7.5%;
+	padding-right: 30%;
+ }
+ .modal2-header {
+	width: 95%;
+	padding: 4px 12px;
+	background-color: #0076d0;
+	color: white;
+ }
+ .modal2-body {
+	width: 95%; 
+	padding: 4px 12px;
+ }
+ .modal2-footer {
+	width: 95%;
+	padding: 4px 12px;
+	background-color: #0076d0;
+	color: white;
+ }
+ .close {
+	margin-top: -10px;
+	margin-right: 0px;
+ }
+ input[type=text].mobile2 {
+	 width: 50%;
+ }
+ input[type=text], select, textarea {
+	width: 70%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+ .checkbox {
+	font-size: 1px;
+	width: 37.3%;
+ }
+ .contactButton{
+	width: 120px;
+	font-size: 12px; 
+	top: 35%;
+	left: 64%;
+ }
+ .footmob	{
+	margin: 15px auto;
+}
+}	  
+
+@media only screen and (max-width: 360px) {
+.modal-content {
+   background-color: #fefefe;
+   margin: 110px 10.5% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 50%; /* Could be more or less, depending on screen size */
+   max-height: 80%;
+   overflow: auto;
+}
+.navButton {
+   margin: 10px 1.5%; 
+}
+p{
+	font-size: 15px; 
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 15px;
+}
+.mobile1 {
+   font-size: 15px;
+   margin: auto; 
+   padding-left: 7.5%;
+   padding-right: 30%;
+}
+.modal2-header {
+   width: 95%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.modal2-body {
+   width: 95%; 
+   padding: 4px 12px;
+}
+.modal2-footer {
+   width: 95%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.close {
+   margin-top: -10px;
+   margin-right: 0px;
+}
+input[type=text].mobile2 {
+	width: 50%;
+}
+input[type=text], select, textarea {
+   width: 67%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+}
+.checkbox {
+   font-size: 1px;
+   width: 37.3%;
+}
+.contactButton{
+   width: 120px;
+   font-size: 12px; 
+   top: 35%;
+   left: 64%;
+}
+.footmob{
+   margin: 15px auto;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.modal-content {
+   background-color: #fefefe;
+   margin: 130px 6.5% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 50%; /* Could be more or less, depending on screen size */
+   max-height: 80%;
+   overflow: auto;
+}
+button {
+   font-size: 10px;
+}
+.navButton {
+   width: 50px;
+   font-size: 10px;
+   margin: 10px 9%; 
+}
+p{
+	font-size: 15px; 
+}
+h3{
+	font-size: 15px;
+}
+.mobile1 {
+   font-size: 15px;
+   margin: auto; 
+   padding-left: 7.5%;
+   padding-right: 30%;
+}
+.modal2-header {
+   width: 92.5%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.modal2-body {
+   width: 92.5%; 
+   padding: 4px 12px;
+}
+.modal2-footer {
+   width: 92.5%;
+   padding: 4px 12px;
+   background-color: #0076d0;
+   color: white;
+}
+.close {
+   margin-top: -10px;
+   margin-right: 0px;
+}
+input[type=text].mobile2 {
+	width: 40%;
+}
+input[type=text], select, textarea {
+   width: 60%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+}
+.checkbox {
+   font-size: 1px;
+   width: 33.3%;
+}
+.contactButton{
+   width: 120px;
+   font-size: 12px; 
+   top: 35%;
+   left: 64%;
+}
+.footmob{
+   margin: 15px auto;
+}
+dt,dd,dl {
+ font-size: 10px;
+}
+}
+ 
