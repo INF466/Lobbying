@@ -97,11 +97,11 @@
 			<form class="reportingForm activityForm" id="reportingForm">
 
 				<!--New Question Section-->
-				<div class="tab">
+				<div class="tab" id="tab">
 					<p class="mobile1">Did you lobby today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
 					<br>
 					<br>
-					<input type="radio" id="lobby_yes" name="Lobby status" value="true">
+					<input type="radio" class="centerbut" id="lobby_yes" name="Lobby status" value="true">
 					<label for="lobby_yes">Yes</label>
 					<br>
 					<br>
@@ -110,7 +110,7 @@
 				</div>
 
 				<!--New Question Section-->
-				<div class="tab">
+				<div class="tab" id="tab">
 					<p class="mobile1">What level of government did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 2" title="District or local offices of elected officials for state positions are state-level government."/></p>
 					<br>
 					<br>
@@ -127,7 +127,7 @@
 				</div>
 
 				<!--New Question Section-->
-				<div class="tab">
+				<div class="tab" id="tab">
 					<p class="mobile1">Did you lobby at the office of an individual or state entity?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 3" title="An individual is a state person including statewide elected officials;
 					members of the legislature and legislative employees;
 					heads of State departments and their deputies and assistants, other than members of the board of regents of the university of the State of New York who receive no compensation or are compensated on a per diem basis;
@@ -147,7 +147,7 @@
 
 
 				<!--New Question Section-->
-				<div class="tab">
+				<div class="tab" id="tab">
 					<p class="mobile1">Who did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 4" title="Example of Senator ______ or the Governor’s Office."/></p>
 					<br>
 					<br>
@@ -155,15 +155,15 @@
 				</div>
 
 				<!--New Question Section-->
-				<div class="tab">
-					<p>Who did you meet with?</p>
+				<div class="tab" id="tab">
+					<p class="mobile1">Who did you meet with?</p>
 					<br>
 					<br>
 					<input type="text" id="met_with" name="Who did you meet with?" placeholder="Name of individual met">
 				</div>
 
 				<!--New Question Section-->
-				<div class="tab">
+				<div class="tab" id="tab">
 					<p class="mobile1">Did you lobby for legislation or funding?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooptip 5" title="1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
 					2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies."/></p>
 					<br>
@@ -185,7 +185,7 @@
 				</div>
 
 				<!--New Question Section-->
-				<div class="tab">
+				<div class="tab" id="tab">
 					<p class="mobile1">What did you lobby for?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="tooltipact6" title="Provide topic title and applicable number.
 					Examples include:
 					State Bill
@@ -213,11 +213,16 @@
 			<div class="reportingResults" id="reportingResults">
 				<div class="userInput" id="userResults">
 					<h3 class="resultmob">Reported Activities</h3>
+					<p>Report summary</p>
 				</div>
-				<!--<h4 class="result">Click below to print the report.</h4> -->
-				<!-- <button class="reportbutton4"><a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank">Lobbying Laws and Regulations</a></button> -->
-				<!-- <button class="reportbutton5"><a href="https://webapps.jcope.ny.gov/public" target="_blank">Searching for lobbying cases</a></button> -->
-				<!-- </br> -->
+				<div class="userInput" id="userResults2">
+					<p>If you want to find out about the law related to lobbying...</p>
+					<a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank"><img src="images/lobbyinglaws.png" class="resultimage" alt="lobbyinglaws"></a>
+					<p>If you want to find a case of lobbying...</p>
+					<a href="https://webapps.jcope.ny.gov/public" target="_blank"><img src="images/searchingcases.png" class="resultimage" alt="searchcases"></a>
+					<p>If you want to know the latest news about lobbing...</p>
+					<a href="https://www.nytimes.com/topic/subject/lobbying-and-lobbyists" target="_blank"><img src="images/lobbyingnews.png" class="resultimage" alt="lobbyingnews"></a>
+				</div>
 				<button class="printbutton" onclick="window.print()">Print Report of all lobbying.</button>
 				<button class="reportbutton reportbutton2" id="modalbtn2" onclick="displaySubmissionModal()">Submit Lobbying activities report</button>
 			</div>

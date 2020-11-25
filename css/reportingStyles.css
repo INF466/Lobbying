@@ -170,7 +170,6 @@
   /* .tooltip2:hover .tiptext2 { */
 	/* visibility: visible; */
   /* } */
-  
   .reportContainer {
 	width: 75%;
 	height: auto;
@@ -185,11 +184,18 @@
 	   position: relative;
 	   top: 325px;
 	 }
-	 
-  /* dl,dt,dd { */
-	  /* margin-left: 20%; */
-  /* } */
+
+  .resultimage {
+	margin-left: 15%;
+  } 
+  dl,dt,dd { 
+	margin-left: 15%;
+  } 
   
+  #tab {
+	  width: 80%;
+  }
+
   .questionmark{
 	  display: inline;
 	  width: 3%;
@@ -244,6 +250,10 @@
   }
   
   #userResults{
+	  width: 80%;
+	  margin: auto;
+  }
+  #userResults2{
 	  width: 80%;
 	  margin: auto;
   }
@@ -474,7 +484,9 @@
 	footer {display:none;}
 	button {display:none !important;}
 	.result {display:none;}
-	h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
+	img {display:none;}
+	p {display:none;}
+	h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
   }
   
   /* @media only screen and (max-width: 700px) { */
@@ -1038,6 +1050,10 @@ h2{
 h3{
    font-size: 15px;
 }
+.resultimage{
+	width: 75%;
+	height: 75%;
+}
 .mobile1 {
    font-size: 15px;
    margin: auto; 
@@ -1114,6 +1130,10 @@ h2{
 h3{
    font-size: 15px;
 }
+.resultimage{
+	width: 75%;
+	height: 75%;
+}
 .mobile1 {
    font-size: 15px;
    margin: auto; 
@@ -1166,12 +1186,15 @@ input[type=text], select, textarea {
 .footmob	{
    margin: 15px auto;
 }
+dt,dd,dl {
+	font-size: 10px;
+}
 }
 
 @media only screen and (max-width: 375px) {
  .modal-content {
 	background-color: #fefefe;
-	margin: 110px 12.5% auto; /* 15% from the top and centered */
+	margin: 110px 12% auto; /* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
 	width: 50%; /* Could be more or less, depending on screen size */
@@ -1190,11 +1213,15 @@ input[type=text], select, textarea {
  h3{
 	font-size: 15px;
  }
+ .resultimage{
+	width: 75%;
+	height: 75%;
+}
  .mobile1 {
 	font-size: 15px;
 	margin: auto; 
-	padding-left: 7.5%;
-	padding-right: 30%;
+	padding-left: 0%;
+	padding-right: 35%;
  }
  .modal2-header {
 	width: 95%;
@@ -1242,6 +1269,9 @@ input[type=text], select, textarea {
  .footmob	{
 	margin: 15px auto;
 }
+dt,dd,dl {
+	font-size: 10px;
+}
 }	  
 
 @media only screen and (max-width: 360px) {
@@ -1266,11 +1296,15 @@ h2{
 h3{
 	font-size: 15px;
 }
+.resultimage{
+	width: 75%;
+	height: 75%;
+}
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 7.5%;
-   padding-right: 30%;
+   padding-left: 0%;
+   padding-right: 35%;
 }
 .modal2-header {
    width: 95%;
@@ -1296,7 +1330,7 @@ input[type=text].mobile2 {
 	width: 50%;
 }
 input[type=text], select, textarea {
-   width: 67%;
+   width: 60%;
    padding: 12px;
    border: 1px solid #ccc;
    border-radius: 4px;
@@ -1307,7 +1341,7 @@ input[type=text], select, textarea {
 }
 .checkbox {
    font-size: 1px;
-   width: 37.3%;
+   width: 32.3%;
 }
 .contactButton{
    width: 120px;
@@ -1317,6 +1351,9 @@ input[type=text], select, textarea {
 }
 .footmob{
    margin: 15px auto;
+}
+dt,dd,dl {
+	font-size: 10px;
 }
 }
 
@@ -1344,11 +1381,15 @@ p{
 h3{
 	font-size: 15px;
 }
+.resultimage{
+	width: 75%;
+	height: 75%;
+}
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 7.5%;
-   padding-right: 30%;
+   padding-left: 0%;
+   padding-right: 48%;
 }
 .modal2-header {
    width: 92.5%;
@@ -1374,7 +1415,7 @@ input[type=text].mobile2 {
 	width: 40%;
 }
 input[type=text], select, textarea {
-   width: 60%;
+   width: 50%;
    padding: 12px;
    border: 1px solid #ccc;
    border-radius: 4px;
@@ -1385,7 +1426,7 @@ input[type=text], select, textarea {
 }
 .checkbox {
    font-size: 1px;
-   width: 33.3%;
+   width: 50%;
 }
 .contactButton{
    width: 120px;
@@ -1400,4 +1441,92 @@ dt,dd,dl {
  font-size: 10px;
 }
 }
- 
+
+@media only screen and (max-width: 280px) {
+	.modal-content {
+	   background-color: #fefefe;
+	   margin: 100px 4.5% auto; /* 15% from the top and centered */
+	   padding: 20px;
+	   border: 1px solid #888;
+	   width: 45%; /* Could be more or less, depending on screen size */
+	   max-height: 80%;
+	   overflow: auto;
+	}
+	button {
+	   font-size: 10px;
+	}
+	.navButton {
+	   width: 50px;
+	   font-size: 10px;
+	   margin: 10px 6.5%; 
+	}
+	p{
+		font-size: 12px; 
+	}
+	h2{
+		font-size: 18px;
+	}
+	h3{
+		font-size: 15px;
+	}
+	.resultimage{
+		width: 75%;
+		height: 75%;
+	}
+	.mobile1 {
+	   font-size: 15px;
+	   margin: auto; 
+	   padding-left: 0%;
+	   padding-right: 50%;
+	}
+	.modal2-header {
+	   width: 92.5%;
+	   padding: 4px 12px;
+	   background-color: #0076d0;
+	   color: white;
+	}
+	.modal2-body {
+	   width: 92.5%; 
+	   padding: 4px 12px;
+	}
+	.modal2-footer {
+	   width: 92.5%;
+	   padding: 4px 12px;
+	   background-color: #0076d0;
+	   color: white;
+	}
+	.close {
+	   margin-top: -10px;
+	   margin-right: 0px;
+	}
+	input[type=text].mobile2 {
+		width: 30%;
+	}
+	input[type=text], select, textarea {
+	   width: 43%;
+	   padding: 12px;
+	   border: 1px solid #ccc;
+	   border-radius: 4px;
+	   box-sizing: border-box;
+	   margin-top: 6px;
+	   margin-bottom: 16px;
+	   resize: vertical;
+	   display: block;
+	}
+	.checkbox {
+	   font-size: 1px;
+	   width: 50%;
+	}
+	.contactButton{
+	   width: 120px;
+	   font-size: 12px; 
+	   top: 35%;
+	   left: 64%;
+	}
+	.footmob{
+	   margin: 15px auto;
+	}
+	dt,dd,dl {
+	 font-size: 10px;
+	}
+	}

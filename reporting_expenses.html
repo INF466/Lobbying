@@ -96,7 +96,7 @@
 				<form class="reportingForm expenseForm" id="reportingForm" >
 
 					<!--New Question Section-->
-					<div class="tab">
+					<div class="tab" id="tab">
 						<p class="mobile1">Did you incur expenses while lobbying today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
 						<br>
 						<br>
@@ -109,8 +109,8 @@
 					</div>
 
 					<!--New Question Section-->
-					<div class="tab">
-						<p>You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
+					<div class="tab" id="tab">
+						<p class="mobile1">You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
 						<br>
 						<br>
 						<div class="checkbox">
@@ -210,7 +210,7 @@
 					</div>
 
 					<!--New Question Section-->
-					<div class="tab looped">
+					<div class="tab looped" id="tab">
 						<div class="subtab">
 							<p class="mobile1">What was the cost of those expenses?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 3" title="Enter the cost USD for the expense listed below."/></p>
 							<br>
@@ -231,7 +231,7 @@
 					</div>
 
 					<!--New Question Section-->
-					<div class="tab looped">
+					<div class="tab looped" id="tab">
 						<div>
 							<p class="mobile1">Did you incur any reportable compensation today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 5" title="Information about thresholds for reportable compensation"></p>
 							<br>
@@ -267,11 +267,16 @@
 				<div class="reportingResults" id="reportingResults">
 					<div class="userInput" id="userResults">
 						<h3 class="resultmob">Reported Expenses</h3>
+						<p>Report summary</p>
 					</div>
-					<!--<h4 class="result">Click below to print the report.</h4>-->
-					<!-- <button class="reportbutton4"><a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank">Lobbying Laws and Regulations</a></button> -->
-					<!-- <button class="reportbutton5"><a href="https://webapps.jcope.ny.gov/public" target="_blank">Searching for lobbying cases</a></button> -->
-					<!-- </br> -->
+					<div class="userInput" id="userResults2">
+						<p>If you want to find out about the law related to lobbying...</p>
+						<a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank"><img src="images/lobbyinglaws.png" class="resultimage" alt="lobbyinglaws"></a>
+						<p>If you want to find a case of lobbying...</p>
+						<a href="https://webapps.jcope.ny.gov/public" target="_blank"><img src="images/searchingcases.png" class="resultimage" alt="searchcases"></a>
+						<p>If you want to know the latest news about lobbing...</p>
+						<a href="https://www.nytimes.com/topic/subject/lobbying-and-lobbyists" target="_blank"><img src="images/lobbyingnews.png" class="resultimage" alt="lobbyingnews"></a>
+					</div>
 					<button class="printbutton" onclick="window.print()">Print lobbying report</button>
 				</div>
 			</div>
