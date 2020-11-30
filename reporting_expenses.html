@@ -35,7 +35,7 @@
 <body onload="checkDisclaimer()">
 
 	<nav class="nav">
-		<img class="logo" src="images/LobbsterCircleTransparent.png" alt="NY Lobbying Express">
+		<img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
     <a href="index.html">Home</a>
 		<a href="modules.html">Modules</a>
     <a href="podcasts.html">Podcasts</a>
@@ -43,7 +43,7 @@
 		<a class="active" href="reporting_expenses.html">Expenses</a>
   </nav>
   <nav class="nav_mobile">
-    <img class="logo" src="images/LobbsterCircle.png" alt="Lobbster: The website for learning about NYS lobbying!">
+    <img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
 	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
 	<div id="nav_burger_hide" style="display:none;">
 		<a href="index.html">Home</a>
@@ -59,7 +59,7 @@
   </nav>
 
   <main>
-		<div class="pageTitle">
+		<div class="reportPageTitle">
 			<h2>Reporting: Lobbying Expenses</h2>
 		</div>
 		<!--Disclaimer-->
@@ -96,8 +96,8 @@
 				<form class="reportingForm expenseForm" id="reportingForm" >
 
 					<!--New Question Section-->
-					<div class="tab">
-						<p>Did you incur expenses while lobbying today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
+					<div class="tab" id="tab">
+						<p class="mobile1">Did you incur expenses while lobbying today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
 						<br>
 						<br>
 						<input type="radio" id="expenses_yes" name="incurredExpenses" value="true">
@@ -109,8 +109,8 @@
 					</div>
 
 					<!--New Question Section-->
-					<div class="tab">
-						<p>You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
+					<div class="tab" id="tab">
+						<p class="mobile1">You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
 						<br>
 						<br>
 						<div class="checkbox">
@@ -210,11 +210,11 @@
 					</div>
 
 					<!--New Question Section-->
-					<div class="tab looped">
+					<div class="tab looped" id="tab">
 						<div class="subtab">
-							<p>What was the cost of those expenses?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 3" title="Enter the cost USD for the expense listed below."/></p>
+							<p class="mobile1">What was the cost of those expenses?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 3" title="Enter the cost USD for the expense listed below."/></p>
 							<br>
-							<p>Expense: <span id ="expenseType"></span></p>
+							<p class="mobile1">Expense: <span id ="expenseType"></span></p>
 							<br>
 							<br>
 							<label for="expenseCost">My organization spent:</label>
@@ -222,7 +222,7 @@
 						</div>
 
 						<div class="subtab">
-							<p>Who or what was the expense paid to?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 4" title="Enter the name of the person or organization the above amount was paid to."/></p>
+							<p class="mobile1">Who or what was the expense paid to?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 4" title="Enter the name of the person or organization the above amount was paid to."/></p>
 							<br>
 							<br>
 							<label for="expensePaidTo">My organization paid this to:</label>
@@ -231,9 +231,9 @@
 					</div>
 
 					<!--New Question Section-->
-					<div class="tab looped">
+					<div class="tab looped" id="tab">
 						<div>
-							<p>Did you incur any reportable compensation today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 5" title="Information about thresholds for reportable compensation"></p>
+							<p class="mobile1">Did you incur any reportable compensation today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 5" title="Information about thresholds for reportable compensation"></p>
 							<br>
 							<br>
 							<input type="radio" id="compYes" name="compensationReceived" value="true" onclick="displayCompensation()">
@@ -267,11 +267,16 @@
 				<div class="reportingResults" id="reportingResults">
 					<div class="userInput" id="userResults">
 						<h3 class="resultmob">Reported Expenses</h3>
+						<p>Report summary</p>
 					</div>
-					<!--<h4 class="result">Click below to print the report.</h4>-->
-					<!-- <button class="reportbutton4"><a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank">Lobbying Laws and Regulations</a></button> -->
-					<!-- <button class="reportbutton5"><a href="https://webapps.jcope.ny.gov/public" target="_blank">Searching for lobbying cases</a></button> -->
-					<!-- </br> -->
+					<div class="userInput" id="userResults2">
+						<p>If you want to find out about the law related to lobbying...</p>
+						<a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank"><img src="images/lobbyinglaws.png" class="resultimage" alt="lobbyinglaws"></a>
+						<p>If you want to find a case of lobbying...</p>
+						<a href="https://webapps.jcope.ny.gov/public" target="_blank"><img src="images/searchingcases.png" class="resultimage" alt="searchcases"></a>
+						<p>If you want to know the latest news about lobbying...</p>
+						<a href="https://www.nytimes.com/topic/subject/lobbying-and-lobbyists" target="_blank"><img src="images/lobbyingnews.png" class="resultimage" alt="lobbyingnews"></a>
+					</div>
 					<button class="printbutton" onclick="window.print()">Print lobbying report</button>
 				</div>
 			</div>
@@ -288,9 +293,9 @@
 		<footer>
 			<hr>
 			<br>
-			<p>Contact Information:</p>
-			<p>Email:  LobbsterNY@albanylaw.edu</p>
-      <p><a href="aboutus.html">About us</a></p>
+			<p class="footmob">Contact Information:</p>
+			<p class="footmob">Email:  LobbsterNY@albanylaw.edu</p>
+      <p class="footmob"><a href="aboutus.html">About us</a></p>
 			<button class="contactButton" id="contactBtn">Contact us!</button>
 			<div id="contactModal" class="modal2">
 				<div class="mdcontact">
@@ -312,7 +317,7 @@
 					</form>
 				</div>
 			</div>
-			<img id="footerLogo" src="images/LobbsterCircle.png" alt="Lobbster: The NYS Lobbying Reporting Tool">
+			<img id="footerLogo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
 		</footer>
 	</main>
 	<script src="js/reportingModal.js"></script>

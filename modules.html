@@ -18,6 +18,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reportingStyles.css">
 
 </head>
 
@@ -27,7 +28,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <nav class="nav">
-		<img class="logo" src="images/LobbsterCircleTransparent.png" alt="NY Lobbying Express">
+		<img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
     <a href="index.html">Home</a>
     <a class="active" href="modules.html">Modules</a>
     <a href="podcasts.html">Podcasts</a>
@@ -35,7 +36,7 @@
 		<a href="reporting_expenses.html">Expenses</a>
 </nav>
 <nav class="nav_mobile">
-    <img class="logo" src="images/LobbsterCircle.png" alt="Lobbster: The website for learning about NYS lobbying!">
+    <img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
 	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
 	<div id="nav_burger_hide" style="display:none;">
 		<a href="index.html">Home</a>
@@ -68,24 +69,16 @@
 	  <a href="#" class="asideActive" onclick="currentSlide(1)">Start</a>
       <a href="#" class="asideActive" onclick="currentSlide(2)">What is Lobbying</a>
       <a href="#" class="asideActive" onclick="currentSlide(3)">Am I a Lobbyist</a>
-      <a href="#" class="asideActive" onclick="currentSlide(4)">Report Activities</a>
-      <a href="#" class="asideActive" onclick="currentSlide(5)">Direct Lobbying</a>
-      <a href="#" class="asideActive" onclick="currentSlide(6)">Grassroots</a>
-      <a href="#" class="asideActive" onclick="currentSlide(7)">Attribution Test</a>
-      <a href="#" class="asideActive" onclick="currentSlide(8)">Lobbying Days</a>
-      <a href="#" class="asideActive" onclick="currentSlide(9)">Restrictions</a>
+      <a href="#" class="asideActive" onclick="currentSlide(4)">Lobbying Days</a>
+      <a href="#" class="asideActive" onclick="currentSlide(5)">Restrictions</a>
     </nav>
 	<nav id="sideNavMoble">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	  <a href="#" class="asideActive" onclick="currentSlide(1); closeNav();">Start</a>
       <a href="#" class="asideActive" onclick="currentSlide(2); closeNav();">What is Lobbying</a>
       <a href="#" class="asideActive" onclick="currentSlide(3); closeNav();">Am I a Lobbyist</a>
-      <a href="#" class="asideActive" onclick="currentSlide(4); closeNav();">Report Activities</a>
-      <a href="#" class="asideActive" onclick="currentSlide(5); closeNav();">Direct Lobbying</a>
-      <a href="#" class="asideActive" onclick="currentSlide(6); closeNav();">Grassroots</a>
-      <a href="#" class="asideActive" onclick="currentSlide(7); closeNav();">Attribution Test</a>
-      <a href="#" class="asideActive" onclick="currentSlide(8); closeNav();">Lobbying Days</a>
-      <a href="#" class="asideActive" onclick="currentSlide(9); closeNav();">Restrictions</a>
+      <a href="#" class="asideActive" onclick="currentSlide(4); closeNav();">Lobbying Days</a>
+      <a href="#" class="asideActive" onclick="currentSlide(5); closeNav();">Restrictions</a>
     </nav>
 	<div id="hamburger">
 		<button class="openbtn" onclick="openNav()">☰</button>
@@ -115,123 +108,251 @@
 		  <div id="moduleStart" style="display:none;">
 			<a href="#"  class="moduleStartLinks" onclick="currentSlide(2)">Module 1: What is Lobbying</a>
 			<a href="#"  class="moduleStartLinks" onclick="currentSlide(3)">Module 2: Am I a Lobbyist</a>
-			<a href="#"  class="moduleStartLinks" onclick="currentSlide(4)">Module 3: Do I need to Report My Activities</a>
-			<a href="#"  class="moduleStartLinks" onclick="currentSlide(5)">Module 4: Direct Lobbying Social Media Test</a>
-			<a href="#"  class="moduleStartLinks" onclick="currentSlide(6)">Module 5: Grassroots Lobbying Social Media Test</a>
-			<a href="#"  class="moduleStartLinks" onclick="currentSlide(7)">Module 6: Social Media Attribution Test</a>
-			<a href="#"  class="moduleStartLinks" onclick="currentSlide(8)">Module 7: Lobbying Days Information</a>
-			<a href="#"  class="moduleStartLinks" onclick="currentSlide(9)">Module 8: Restrictions on Events and Prohibitions on Gifts</a>
+			<a href="#"  class="moduleStartLinks" onclick="currentSlide(4)">Module 3: Lobbying Days Information</a>
+			<a href="#"  class="moduleStartLinks" onclick="currentSlide(5)">Module 4: Restrictions on Events and Prohibitions on Gifts</a>
 		  </div>
 		</div>
 
 		<div class="moduleSlide">
 
-		  <div class="numberText">Module 1 / 8</div>
+		  <div class="numberText">Module 1 / 4</div>
 		  <h2>
 			What is Lobbying?
 		  </h2>
 		  <p>
-			We can help provide you with general information on lobbying, so you can gain an understanding of lobbying concepts and terminology that appear throughout the tool. Familiarizing yourself with this background information is the first step in learning about important aspects of lobbying on behalf of 501(c)(3) organizations.
+			This module serves as a starting point to understand the general concept of lobbying and who is responsible for creating and enforcing lobbying rules in New York State.
 		  </p>
-		  <video controls>
-			  <source src="videos/module1.mp4" type="video/mp4">
-		  </video>
+		  <h3>What is Lobbying?</h3>
+
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478916918" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+
+		  <div class="room"><button type="button" onclick="showTranscripts(0)">Video Transcript</button></div>
+
+		 <!-- TRANSCRIPT ================================================== -->
+		  <div class="transcripts" style="display:none;">
+		  <p>Hello. Thank you for taking the time to learn about how your organization can ensure it stays compliant with New York State lobbying rules and requirements- while you advocate for your cause.</p>
+		  <p>This tool is generally intended for use by members of 501(c)(3) non-profit organizations who are seeking guidance on lobbying regulations in the state of New York. Although primarily intended for non-profits, the information within the tool can be useful to anyone wanting to learn about petitioning the government in New York State.  </p>
+		  <p>Before you begin using the tool, it will be helpful for you to know a little about how regulators view professional non-profit advocates, and the organizations who employ them. </p>
+		  <p>The organization that implements lobbying regulations is called the Joint Commission on Public Ethics - aka JCOPE. It is worth taking the time to view their website for more information after using this tool. </p>
+		  <p>JCOPE regulations state that, “all lobbying is conducted by a Lobbyist for the benefit of a Beneficial Client.”</p>
+		  <p>If a person is acting as their organization’s official advocate, the employer organization is the advocate’s Beneficial Client or Client for short. </p>
+		  <p>For purposes of non-profit organizations, a Client is an organization who retains, employs or designates any person or organization to carry on lobbying activities on behalf of the organization.  </p>
+		  <p>As an organization’s official advocate, one is considered a Designated Lobbyist for their Client employer organization. </p>
+		  <p>A lobbyist may act on behalf of several clients,  or alternatively they may be a Designated Lobbyist for a single organization.  A Designated Lobbyist is a person who lobbies on behalf of a Client as a board member, director or officer, whether compensated or uncompensated, and does not lobby on behalf of other organizations.</p>
+		  <p>This preliminary information is important to understanding certain aspects of the tool; however, we understand that many who use this tool will neither be employed nor designated by their organization as official advocates.</p>
+		  <p>To that point, we think this tool will be particularly helpful to those who are curious about: what lobbying is; when non-official advocates must be identified as lobbyists; when lobbying has to be reported to JCOPE; and would like to know other nuances surrounding advocating on behalf of 501(c)(3)’s. </p>
+		  <p>Again, thank you for taking the time to learn more about advocating in New York State.</p>
+		  <p>We hope this tool can be helpful to you and your organization!</p>
+		  </div>
 		</div>
 
 		<div class="moduleSlide">
-		  <div class="numberText">Module 2 / 8</div>
+		  <div class="numberText">Module 2 / 4</div>
 		  <h2>
 			Am I a Lobbyist?
 		  </h2>
-		  <p>Learn information regarding what actions constitute lobbying under New York State law. You can make an informed decision as to whether you need to follow certain requirements under state law that apply to organizations and individuals that the law considers lobbyists. Gain help to determine if your organization engages in a form of lobbying.</p>
-      <p>First, you will receive information about the general activities that the Joint Commission on Public Integrity (JCOPE) has deemed to constitute lobbying under the law. You can compare these guidelines to your organization’s behavior to determine if your organization engages in lobbying.</p>
-      <p>Next, you can learn about the different types of lobbying and determine which type of lobbying your organization conducts.  Because social media usage can play a large role in lobbying efforts, this module also includes information on how social media activity factors into different types of lobbying. Click “Next” below to start learning about the types of activities that constitute lobbying!</p>
-		  <video controls>
-			  <source src="videos/module2.mp4" type="video/mp4">
-		  </video>
+		  <p>This module contains a total of six videos that explain what activities constitute lobbying and when activities need to be reported.  Additionally, several videos in this module focus on what type of social media activities will create a duty to report.</p>
+
+		  <h3>1-1(c)c Activities</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478917521" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(1)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>New York State requires that non-profit organizations follow strict guidelines related to lobbying activities. If your organization attempts to influence certain types of governmental activities you may be required to report these activities.  However, not all attempts to influence governmental activities will constitute lobbying, so it is important to understand what activities are covered under New York State law. </p>
+			<p>Any attempt to influence the government via an activity listed on the screen is considered lobbying.  These activities are known as 1-c(c) activities, or alternatively as Lobbying Activities.  We will now take a moment to explain each type of activity in more detail.</p>
+			<p>Any attempt to influence the passage or defeat of state or local legislation or resolutions is considered lobbying.  At the state level, this could include such items as gun-control laws, voting regulations or abortion laws.  At the local level, this could include such items as property-tax increases, salaries for paid government employees, or construction of new government buildings.  These are just a few examples of state and local legislation.  Generally speaking, if the government activity requires a vote, then it will likely be considered a 1-c(c) activity.  Any attempt to influence a 1-c(c) activity will constitute lobbying and may need to be reported.  </p>
+			<p>Similarly, attempts to influence the adoption, issuance, rescission or modification of state or local executive orders, or state and local rules or regulations are considered lobbying.  These governmental activities generally do not require a vote, but an attempt to influence them will still constitute lobbying.  Executive orders are issued by the executive of a particular governmental body such as the Governor, a County Executive, a Mayor, or a Town Supervisor.  State or local rules and regulations are crafted by unelected governmental bodies such as the Department of Environmental Conservation, the Department of Labor, or the Department of Transportation.  Advocacy to adopt, issue, rescind or modify these types of governmental activity constitutes lobbying and may need to be reported.</p>
+			<p>Many industries, most notably utility companies that are granted regional monopolies, must have any changes to their billing rates approved by state and/or local governmental bodies.  Any attempt to influence these proceedings, such as advocating for the denial of a rate increase, is considered lobbying and may need to be reported when the proceedings are being conducted by a State Agency or Municipality.</p>
+			<p>Any attempt to influence a purchasing decision made by, or influenced by, a public official or an entity working in conjunction with a public official is considered lobbying.  Additionally, attempting to influence a purchasing decision made by an officer, employee or entity working with the unified court system in relation to a government contract is considered lobbying.  These situations most often come up when an organization is attempting to secure a contract to sell goods or services to the government, or attempting to persuade the government to deny a contract with another party.  Contacting a public official or someone close to the court system to assist in these efforts is considered lobbying, and may need to be reported.</p>
+			<p>The next 1-c(c) activity deals with relations between the state government and any of the recognized tribal authorities in New York.  Any attempt to influence the approval, denial, implementation or administration of any tribal-state agreement, including compacts and memoranda of understanding, constitutes lobbying and may need to be reported.</p>
+			<p>The last 1-c(c) activity that will be discussed in this section is a catchall.  The code states broadly that any attempt to influence a public official is considered lobbying.  Therefore, in addition to the specific 1-c(c) governmental activities already discussed, you must proceed with caution when contacting a public official in an attempt to influence the official on a particular matter.  </p>
+			<p>If there is a question about whether the activity you’re attempting to influence is a 1-c(c) activity, it is best to seek legal assistance from an attorney with lobbying experience in New York State.  </p>
+		  </div>
+
+		  <h3>Direct Lobbying</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478918356" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(2)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>As discussed in the previous video, lobbying activities can take many forms.  Most notably, lobbying activities can be classified into two general categories; direct and grassroots.  In this module we will explore direct lobbying activities.</p>
+			<p>Direct Lobbying occurs when an Organization has Direct Contact with a Public Official in an attempt to influence any 1-c(c) activity.  This includes having Direct or Preliminary contact with a Public Official to facilitate an attempt to influence, such as scheduling a meeting with or making an introduction to a Public official, or having Direct Contact with any member of the Public Officials' staff.  It’s important to note that you can engage in direct lobbying even if the person who you are attempting to influence supports your cause. </p>
+			<p>Direct Lobbying occurs when an Organization has Direct Contact with a Public Official in an attempt to influence any 1-c(c) activity.  This includes having Direct or Preliminary contact with a Public Official to facilitate an attempt to influence, such as scheduling a meeting with or making an introduction to a Public official, or having Direct Contact with any member of the Public Officials' staff.  It’s important to note that you can engage in direct lobbying even if the person who you are attempting to influence supports your cause. </p>
+			<p>The term Public Official includes: <br><br>
+			1.    The four statewide Elected Officials (the governor, lieutenant governor, comptroller or attorney general); members of the state legislature; state officers and employees including:<br><br>
+			2.    Heads of state departments and their deputies and assistants.<br><br>
+			3.    Officers and employees of statewide elected officials.<br><br>
+			4.    Officers and employees of state departments, boards, bureaus, divisions, commissions, councils or other state agencies.<br><br>
+			5.    Members or directors of public authorities, other than multi-state authorities, public benefit corporations and commissions at least one of whose members is appointed by the governor, and employees of such authorities, corporations and commissions.<br><br>
+			6.    Officers and employees of the legislature, and municipal officers and employees including an officer or employee of a municipality. <br><br>
+			</p>
+			<p>Now that we have defined what a Public Official is, we will now define what constitutes Direct Contact. </p>
+			<p>As the name implies, Direct Contact is any communication or interaction directed to a Public Official. Direct Contact can come in many forms including, but not limited to, verbal communications, written communications, electronic mail, social media communications, internet communications, attendance at a meeting with a Public Official, or presence on a phone call with a Public Official when the Public Official is aware of such presence.</p>
+			<p>As the name implies, Direct Contact is any communication or interaction directed to a Public Official. Direct Contact can come in many forms including, but not limited to, verbal communications, written communications, electronic mail, social media communications, internet communications, attendance at a meeting with a Public Official, or presence on a phone call with a Public Official when the Public Official is aware of such presence.</p>
+			<p>The rules around preliminary contacts apply even if the attempt to schedule a meeting or phone call, or to introduce a client to a Public Official, is directed at the staff of the Public Official. </p>
+			<p>However, if these preliminary contacts activities are being carried out for purely administrative purposes, as opposed to as an effort to influence 1-c(c) activities, then the activities are not considered Direct Lobbying.</p>
+			<p>Additionally, there are instances where meetings with Public Officials do not constitute Direct Lobbying.  An Organization may attend a meeting with a Public Official to provide technical information or address technical questions; provide clerical or administrative assistance (including audio/visual, translation or interpretation, and sign language assistance); or observe it for educational purposes and not be engaged in Direct Lobbying.  When an Organization, or members of the Organization, do not play a role in the strategy, planning, messaging or other substantive aspects of an overall lobbying effort, neither the organization nor the individuals are engaged in Direct Lobbying.</p>
+			<p>Finally, if an attempt to communicate is directed at a group for which a Public Official is incidentally a member, or it is intended for the general public, that communication does not constitute Direct Lobbying.  Some examples of this include an opinion piece published in a newspaper, a statement made to a reporter that is published or broadcast by a media outlet, a blog post, and attendance at a speech or public meetings.</p>
+		  </div>
+
+		  <h3>Direct Lobbying via Social Media</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478918574" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(3)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>Direct Lobbying can also take place via social media channels such as Facebook, Twitter or Instagram.  It is important to understand how to identify and account for these activities in order to stay in compliance with New York State law.</p>
+			<p>There are three situations in which a social media message from your organization may be considered direct lobbying.  First, if a social media message is sent DIRECTLY to a social media account known to be owned or controlled by a Public Official.  </p>
+			<p>There are three situations in which a social media message from your organization may be considered direct lobbying.  First, if a social media message is sent DIRECTLY to a social media account known to be owned or controlled by a Public Official.  </p>
+			<p>The last situation where a social media message from your organization would constitute lobbying is when it is targeted to a Public Official’s staff with knowledge that the person is a member of the Public Official’s staff.</p>
+			<p>If your organization maintains a social media account and is communicating with Public Officials or their Staff in the manner described above, those activities will likely be considered lobbying under New York State Law.</p>
+			<p>Thanks for watching!</p>
+		  </div>
+
+		  <h3>Grassroots Lobbying</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478919000" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(4)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>Grassroots Lobbying is different from Direct Lobbying in that Grassroots Lobbying involves attempts to influence indirectly, or through another.  In most cases, this involves motivating or enabling a constituency (voters eligible to elect a given Public Official) to contact the Public Official in support of the Organization’s position.  However, Grassroots Lobbying may take other forms that will be discussed below.</p>
+			<p>A Grassroots Lobbyist is a person or organization who solicits another to deliver a message to a Public Official through Grassroots Communication.  The audience or recipients of this communication voluntarily (and without compensation) then deliver the message to the Public Official.  </p>
+			<p>In order for an activity to be considered a Grassroots Lobbying Communication, it must: (1) Reference or otherwise implicate an 1-c(c) activity (discussed earlier), (2) Take a clear position on a government action, and include (3) A Call to Action by the Organization, urging members of the public to deliver a message to a Public Official in support of the Organization.</p>
+			<p>It is important to note here that the Organization issuing the Grassroots Communication is considered a Grassroots Lobbyist, but the audience or recipients that deliver the message to the Public Official are not Grassroots Lobbyists.  </p>
+			<p>A Call to Action can come in many forms, however, it is generally is defined as a solicitation, exhortation, or encouragement to the public, a segment of the public, or an individual to: (1) directly contact a Public Official; or (2) solicit, exhort, or encourage others to directly contact a Public Official. </p>
+			<p>To qualify as a Call to Action, the communication need not specify the form the contact must take.</p>
+			<p>Evidence of Calls to Action are:<br><br>
+			(ii) The inclusion of an address, email address, website address, phone number or similar contact information for a Public Official even if the communication does not specifically exhort the public to contact the Public Official; or <br><br>
+			(iii)The inclusion of a paper or electronic petition, text message, social media communication, or similar material (or electronic link to such petition or material) for the recipient to use to communicate with a Public Official even if the communication does not specifically exhort the public to use such material.
+			</p>
+			<p>Note that performing the following functions or and employing people in the following roles ALONE are NOT grassroots methods: Owning a billboard or a sign, copy editing, advertisement writing, Storyboard Artists, Film Crews, Photographers, Video Editors, website hosts or managers, media outlets or broadcasters, media buyers or placement agents, delivery services, secretaries, clerical, and ministerial staff.</p>
+			<p>Thanks for watching!</p>
+		  </div>
+
+		  <h3>Grassroots Lobbying via Social Media</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478919307" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(5)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>Grassroots lobbying activity can take place through social media channels, and it is important that this activity is accounted for. </p>
+			<p>First, a social media presence is required to engage in grassroots lobbying through social media.  To qualify as grassroots lobbying, social media activity must satisfy three requirements, the first of which is that it must reference a 1 c(c) lobbying activity.  Second, the communication must take a clear position on the action. </p>
+			<p>Third, the communication must include a call to action.  </p>
+			<p>As a reminder, a call to action is a solicitation to the public or one person to directly contact a public official, or to have them solicit others to directly contact the official.  A call to action could occur over social media when a public official’s contact information is included in a communication, even if the communication does not specifically ask for the public to make contact. </p>
+			<p>Grassroots lobbying over social media could include messages, or communications that have attached papers or electronic petitions. </p>
+			<p>Grassroots lobbying through social media takes place when these three requirements are met. </p>
+			<p>Thank you for watching! </p>
+		  </div>
+
+		  <h3>Social Media Attribution Test</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478919579" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(6)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>Because lobbying activity can take place through social media channels, it is important that you do not overlook the social media activity of employees that may be attributable to your organization. </p>
+			<p>For an individual’s social media activity to be attributable to an organization, a post or message must first have been made in the course of the person’s employment.  Next, the post or message must have been part of a coordinated, mass social media campaign conducted by the organization. </p>
+			<p>Employees are deemed to be individual lobbyists when both of these requirements are fulfilled.  It is important to note that if employees are deemed individual lobbyists, the organization must designate them as such on its filings. </p>
+			<p>Thank you for watching! </p>
+		  </div>
+
 		</div>
 
 		<div class="moduleSlide">
-		  <div class="numberText">Module 3 / 8</div>
-		  <h2>
-			Do I need to Report My Activities?
-		  </h2>
-			<p>Determine if you need to report your organization’s activities in order to comply with New York State’s lobbying reporting requirements.</p>
-      <p>First, this tool will direct you to review the activities that constitute lobbying. Reviewing these activities will be helpful if you need a reminder on which activities your organization conducts that you have determined constitute lobbying.</p>
-      <p>This tool explains the $5,000 expenditure threshold set by New York state.  This threshold is important, because if you determine that lobbying expenses incurred by your organization exceed $5,000, you will be required to report them.</p>
-      <p> Next, this module will explain and define the different types of expenses that you must account for when determining if your organization meets the $5,000 threshold. These expenses consist of reportable compensation, reportable expenses, funds spent on social media, and lobbying days. Each component is explained in its own step of the module. It is important to understand each of these concepts so you can determine what conduct will apply towards the threshold, and conclude if you meet the reporting requirement threshold.</p>
-		  <video controls>
-			  <source src="videos/module3.mp4" type="video/mp4">
-		  </video>
-		</div>
-
-		<div class="moduleSlide">
-		  <div class="numberText">Module 4 / 8</div>
-		  <h2>
-			Direct Lobbying Social Media Test
-		  </h2>
-		  <p>Determine if your organization engages in direct lobbying through social media. Because lobbying activity can take place through social media channels, it is important that this activity is not overlooked.</p>
-      <p>Watching the video below can help you determine if your organization's online activity is considered lobbying. If you conclude that you engage in acts that might be considered Direct Lobbying Social Media activity, then it is likely you will have to report this activity as lobbying to state authorities.  Consult with an attorney if you feel you need guidance on whether you need to report such activity and on how to do so if necessary.</p>
-		  <video controls>
-			  <source src="videos/module4.mp4" type="video/mp4">
-		  </video>
-		</div>
-
-		<div class="moduleSlide">
-		  <div class="numberText">Module 5 / 8</div>
-		  <h2>
-			Grassroots Lobbying Social Media Test
-		  </h2>
-		  <p>Determine if your organization engages in grassroots lobbying through social media. Because lobbying activity can take place through social media channels, it is important that this activity is not overlooked.</p>
-      <p>Watching the video below can help you determine if your organization's online activity is considered lobbying. If you conclude that you engage in activity that might be considered Grassroots Lobbying Social Media activities, then it is likely you will have to report this activity as lobbying to state authorities.</p>
-      <p>Consult with an attorney if you feel you need guidance on whether you need to report such activity and on how to do so if necessary.</p>
-		  <video controls>
-			  <source src="videos/module5.mp4" type="video/mp4">
-		  </video>
-		  <video controls>
-			  <source src="videos/module6.mp4" type="video/mp4">
-		  </video>
-		</div>
-
-		<div class="moduleSlide">
-		  <div class="numberText">Module 6 / 8</div>
-		  <h2>
-			Social Media Attribution Test:  When are employee’s posts attributable to my organization?
-		  </h2>
-		  <p>Determine if the social media activity of employees is attributable to your organization. Because lobbying activity can take place through social media channels, it is important that this activity is not overlooked.</p>
-      <p>Watching the video below can help you determine if your employee’s social media activity is attributable to your organization. If you conclude that your employees engage in activity that might be considered lobbying attributable to your organization, then it is likely you will have to report this activity as lobbying to state authorities.</p>
-      <p>Consult with an attorney if you feel you need guidance on whether you need to report such activity and how to do so if necessary.</p>
-		  <video controls>
-			  <source src="videos/module7.mp4" type="video/mp4">
-		  </video>
-		</div>
-
-		<div class="moduleSlide">
-		  <div class="numberText">Module 7 / 8</div>
+		  <div class="numberText">Module 3 / 4</div>
 		  <h2>
 			Lobbying Days Information
 		  </h2>
-		  <p>Lobby days are days where organizations can meet with politicians to advocate for their causes.  When employees of your organization participate in a lobby day, certain activities they take part in may be attributable to the organization.</p>
-      <p>Watch this video to gain an understanding of what conduct is considered lobbying, and what expenses from a lobby day should be reported.   Consult with an attorney if you feel you need guidance on whether you need to report these activities and expenses and on how to do so if necessary.</p>
-		  <video controls>
-			  <source src="videos/module8.mp4" type="video/mp4">
-		  </video>
+		  <p> Lobbying Days are an important tool used by many organizations to streamline their advocacy efforts and make more efficient use of their resources.  This module will provide information on what exactly a lobbying day is and what information related to these events must be reported to New York State.</p>
+		  <h3>Lobby Days</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478920051" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(7)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>When your organization participates in a lobby day, there are a few important points to keep in mind: </p>
+			<p>First, let’s discuss employee participation. An employee's participation in a Lobby Day will qualify as direct lobbying such that an organization must identify them as an individual lobbyist on its filings when the employee makes direct contact with a public official, AND Speaks on behalf of the organization. </p>
+			<p>Employees and Designated Lobbyists, who make Direct Contact with Public Officials, are subjected to the same reporting requirements for that lobby day. However, an organization hosting a lobby day is not required to register volunteers or members of the organization as individual lobbyists who do not make Direct Contact.</p>
+			<p>Next, you may have some questions about expenses from lobby days. All reportable expenses attributable to the lobby day should be reported. </p>
+			<p>Reportable expenses can include, but are not limited to: time spent by employees at the day itself (if the employees are compensated for this time), staff time spent planning the event, expenses related to placards, signs, t-shirts, and advocacy paraphernalia, transportation expenses (typically to and from the day).  Additionally, all reportable lobby day activities should be assessed to evaluate if your organization has reached the $5,000 reporting requirement threshold. </p>
+			<p>Thank you for watching! </p>
+		  </div>
+
 		</div>
 
 		<div class="moduleSlide">
-		  <div class="numberText">Module 8 / 8</div>
+		  <div class="numberText">Module 4 / 4</div>
 		  <h2>
 			Restrictions on Events and Prohibitions on Gifts
 		  </h2>
 		  <p>
-			An organization that engages in lobbying will be subject to certain restrictions and prohibitions. The videos below explain how the law treats events and give gifts related to lobbying activities. If you plan on engaging in either of these activities, watch the videos to understand these rules and consult an attorney if you have any questions about how these rules apply specifically to your activities.
+			As discussed throughout this resource, there are many rules and restrictions related to organizational lobbying.  This module outlines two important sets of rules that not already addressed in previous modules; restrictions on events and prohibitions on gifts.
 		  </p>
-		  <video controls>
-			  <source src="videos/module9.mp4" type="video/mp4">
-		  </video>
-		  <video controls>
-			  <source src="videos/module10.mp4" type="video/mp4">
-		  </video>
+
+		  <h3>Restrictions on Events</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478920327" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(8)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>A Public Official may accept Complimentary Attendance, to an event if the event is (1) a Bona Fide Charitable Event, (2) a Bona Fide Political Event, (3) a Widely Attended Event, or, provided that certain conditions are satisfied, (4) an Informational Event. </p>
+			<p>A Bona Fide Charitable Event is an event with a primary purpose of providing financial support to an organization that is either registered as a charity with the Attorney General’s Office (unless exempt), or qualified under section 501(c)(3) of the Internal Revenue Code.</p>
+			<p>A Bona Fide Political Event is an event with a primary purpose of providing financial support to a political organization, or a candidate for public office. </p>
+			<p>Before an event can be considered an A Widely Attended Event, FOUR conditions must be satisfied. (1) Complimentary admission must be offered by the sponsor of the event; (2) 25 individuals who are not from your agency attend or are in good faith invited to attend; (3) one of the following two criteria are met: (a) the event is related to your official duties or responsibilities or allows you to perform a ceremonial function appropriate to your position; or, (b) a speaker or attendee at the event addresses an issue of public interest or concern; and, (4) you inform your Ethics Officer in writing of the Widely Attended Event before the event takes place. </p>
+			<p>It is important to note that serving complimentary food and beverage at a Widely Attended Event will only be permissible if food and beverages are offered to all participants.  Additionally, the Widely Attended Event exclusion does not cover entertainment, recreational, or sporting activities unless a presentation addressing the public interest or concern is delivered during the entertainment, recreational, or sporting activity.</p>
+			<p>An Informational Event is an event, the primary purpose of which is to provide information about a subject related to a State officer or employee's official responsibilities.
+			An official CAN accept travel reimbursement or payment for transportation, meals, and accommodations for attending, or serving as a panelist or speaker WHEN the following conditions are met: Such reimbursement or payment is made by a governmental entity or by a New York State accredited public or private institution of higher education that hosts the event on its campus; and, The State office or employee may accept lodging from an institution of higher education only: (a) at a location on or within close proximity to the host campus; and (b) for the night preceding and the nights of the days on which the individual actually attends the Informational Event.
+			</p>
+			<p>Thanks for watching! </p>
+		  </div>
+
+		  <h3>Prohibitions on Gifts</h3>
+		  <!-- VIDEO============================================================== -->
+		  <div class="video">
+			  <iframe src="https://player.vimeo.com/video/478920547" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			  </iframe>
+		  </div>
+		  <!-- TRANSCRIPT ================================================== -->
+		  <div class="room"><button type="button" onclick="showTranscripts(9)">Video Transcript</button></div>
+		  <div class="transcripts" style="display:none;">
+			<p>If your organization gives gifts, it is important to be able to determine what gifts are acceptable to give.  Additionally,  there are restrictions on whom you are allowed to give gifts to. </p>
+			<p>First, you should note that state officers and employees are generally prohibited from accepting or soliciting gifts that are more than nominal value from individuals or entities that conduct business with the state.  The many individuals that this rule covers include: Statewide elected officials, Legislative members and employees, Officers and employees of New York State departments, boards, bureaus, divisions, commissions, councils, or other State agencies (other than unpaid and per diem officers of such entities), and members, directors, and employees of New York State public authorities and public benefit corporations (other than unpaid and per diem members and directors of such entities). Also, gifts from “interested sources” are typically prohibited. An interested source is a person or entity that might wish to influence a decision made by the state officer or the state officer’s agency.  Gifts from interested sources may be acceptable in situations when it is not reasonable to infer that the gift was (1) intended or expected to influence the official or (2) intended as a reward for official action. </p>
+			<p>Although the JCOPE regulations do not specifically define nominal value, this category typically includes any item with a fair market value of fifteen dollars or less.  If a gift is impermissible, it cannot be redirected to a spouse or child of the official, or to a charitable organization.  Also, the official cannot accept multiple gifts from the same source if the collective value exceeds fifteen dollars.  Overall, this restriction is in place to avoid creating the appearance of gifts being offered to either influence officials, or reward them for performing their public duties.  A gift that is not from an interested source, and is less than nominal value is likely permissible unless it can be reasonably inferred that the gift was  (1) intended or expected to influence the official or (2) intended as a reward for official action. </p>
+			<p>There are some exceptions to the gift rule. If the acceptance does not create or give the impression of improper influence, or does not create an actual or apparent conflict of interest, it may be acceptable to give: awards or plaques in recognition of public service, honorary degrees, promotional items with no resale value, discounts available to the general public, gifts from family members and personal relationships where it is clear that the relationship is not being used as a pretext to give an otherwise impermissible gift, contributions to political campaigns, meals and beverages provided to participants at professional and educational programs, local travel payments for tours related to one's official activity, food or beverage valued at fifteen dollars or less per event, and complimentary attendance at certain events. </p>
+			<p>Overall, if an item or service is valued at fifteen dollars or less, or falls into one of the exclusion categories, it can likely be accepted if it does not create an actual or apparent conflict of interest under Public Officer Law 74. </p>
+			<p>Also, it is important to note that some agencies may have different rules, therefore, you should speak to the Agency’s ethics officer about the Agency’s policies on the particular gift. </p>
+			<p>Thanks for watching! </p>
+		  </div>
+
 		</div>
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -254,9 +375,9 @@
 	 <footer>
 		<hr>
 		<br>
-		<p>Contact Information:</p>
-		<p>Email:  LobbsterNY@albanylaw.edu</p>
-    <p><a href="aboutus.html">About us</a></p>
+		<p class="footmob">Contact Information:</p>
+		<p class="footmob">Email:  LobbsterNY@albanylaw.edu</p>
+  <p class="footmob"><a href="aboutus.html">About us</a></p>
 		<button class="contactButton" id="contactBtn">Contact us!</button>
 		<div id="contactModal" class="modal2">
 			<div class="mdcontact">
@@ -278,8 +399,8 @@
 				</form>
 			</div>
 		</div>
-		<img id="footerLogo" src="images/LobbsterCircle.png" alt="Lobbster: The NYS Lobbying Reporting Tool">
-  </footer>
+		<img id="footerLogo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
+	</footer>
 
   <div id="modalPopUp" class="modal">
 
@@ -298,6 +419,7 @@
 <script src="js/js.js"></script>
 <script src="js/disclaimer.js"></script>
 <script src="js/reportingModal.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
