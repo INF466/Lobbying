@@ -306,7 +306,7 @@ function displayUserInput(){
 	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
 	for (key of keys){
-		target.innerHTML += ("<dt>" + key + "</dt><dd>" + expensesReported[key] + "</dd>");
+		target.innerHTML += ("<dt>" + key + "</dt><dd>" + expensesReported[key] + "</dd>" + "<br>");
 	}
 	target.innerHTML += ("</dl>");
 	
