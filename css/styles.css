@@ -1020,7 +1020,8 @@ footer p {
 footer{
 	margin-top:0px;
 	position:sticky;
-
+	
+	bottom: -150px;
 	left:0;
 	clear:both;
 	background-color: #0076d0;
@@ -1029,7 +1030,7 @@ footer{
 .footerShort{
 	margin-top:0px;
 	width:100%;
-	position:absolute;
+	/* position:absolute; */
 	bottom: -150px;
 	left:0;
 	clear:both;
