@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Lobbster: Reporting Lobbying Activities</title>
+  <meta name="description" content="Lobbster provides a way for you to report and save your lobbying activities.">
+  <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Activities, Reporting Lobbying Activities">
+  <meta name="author" content="This wesbite was made in collaborations with Albany Law and SUNY Albany. The students who worked on this were Jocelyn Chan, Jesse Conklin, Matthew Galetta, and Gyuhaeng 'Alex' Lee!">
+
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/reportingStyles.css">
+
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+</head>
+<body onload="checkDisclaimer()">
+
+  <!-- Primary Page Layout -->
+
+  <nav class="nav">
+    <img class="logo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
+    <a href="index.html">Home</a>
+    <a href="modules.html">Modules</a>
+    <a href="podcasts.html">Podcasts</a>
+    <a class="active" href="reporting_activities.html">Activities</a>
+		<a href="reporting_expenses.html">Expenses</a>
+  </nav>
+  <nav class="nav_mobile">
+    <img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
+	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
+	<div id="nav_burger_hide" style="display:none;">
+		<a href="index.html">Home</a>
+
+		<a href="modules.html">Modules</a>
+
+		<a href="podcasts.html">Podcasts</a>
+
+		<a class="active" href="reporting_activities.html">Activities</a>
+
+		<a href="reporting_expenses.html">Expenses</a>
+	</div>
+  </nav>
+
+  <main>
+		<div class="reportPageTitle">
+      <h2>Reporting: Lobbying Activities</h2>
+    </div>
+		<!--Disclaimer-->
+		<div id="modalDisclaimer" class="modal disclaimer">
+			<div class="modal-content"><h4>Disclaimer</h4>
+				<p>This web tool is in no way affiliated or endorsed by New York State.</p>
+				<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
+				<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
+				<div>
+					<button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+				</div>
+			</div>
+		</div>
+		<div id="modalInstructions" class="modal instructions">
+			<div class="modal-content"><h4>Directions</h4>
+			<span class="close" onclick="hideModalInstructions()">&times;</span>
+				<p>This form is designed to help you track your organization's lobbying activities. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
+				<button type="button" class="modalClose" id="accpetInstructions" onclick="hideModalInstructions()">OK</button>
+			</div>
+		</div>
+
+		<!-- Form -->
+		<div class="reportContainer">
+			<div class="reporting">
+				<div class="formlanding">
+					<div class="formInstructions" id="formInstructions">
+						<p>This form is designed to help you track your organization's lobbying activities. Hovering over the question mark icon will provide more information on each question. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
+					</div>
+					<div class="buttonFrame">
+						<button class="reportButton" id="reportButton" onclick="startForm()">Report my lobbying activities</button>
+						<button class="instructionsButton reportButton hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
+					</div>
+				</div>
+
+			<form class="reportingForm activityForm" id="reportingForm">
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">Did you lobby today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
+					<br>
+					<br>
+					<input type="radio" class="centerbut" id="lobby_yes" name="Lobby status" value="true">
+					<label for="lobby_yes">Yes</label>
+					<br>
+					<br>
+					<input type="radio" id="lobby_no" name="Lobby status" value="false">
+					<label for="lobby_no">No</label>
+				</div>
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">What level of government did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 2" title="District or local offices of elected officials for state positions are state-level government."/></p>
+					<br>
+					<br>
+					<input type="radio" id="state" name="Level of goverment" value="state">
+					<label for="state">State</label>
+					<br>
+					<br>
+					<input type="radio" id="municipality" name="Level of goverment" value="municipality">
+					<label for="municipality">Municipality</label>
+					<br>
+					<br>
+					<input type="radio" id="both" name="Level of goverment" value="both">
+					<label for="both">Both</label>
+				</div>
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">Did you lobby at the office of an individual or state entity?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 3" title="An individual is a state person including statewide elected officials;
+					members of the legislature and legislative employees;
+					heads of State departments and their deputies and assistants, other than members of the board of regents of the university of the State of New York who receive no compensation or are compensated on a per diem basis;
+					officers and employees of statewide elected officials;
+					officers and employees of State departments, boards, bureaus, divisions, commissions, councils, or other State agencies;
+					and employees of public authorities (other than multi-state authorities), public benefit corporations and commissions at least one of whose members is appointment by the governor,
+					and members or directors of such authorities, corporations, and commissions who are compensated other than on a per diem basis."/></p>
+					<br>
+					<br>
+					<input type="radio" id="individual" name="Did you lobby at the office of an individual or state entity?" value="individual">
+					<label for="individual">Individual</label>
+					<br>
+					<br>
+					<input type="radio" id="state_entity" name="Did you lobby at the office of an individual or state entity?" value="state entity">
+					<label for="state_entity">State Entity</label>
+				</div>
+
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">Who did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 4" title="Example of Senator ______ or the Governor’s Office."/></p>
+					<br>
+					<br>
+					<input type="text" id="office_lobbied" name="What office did you lobby?" placeholder="Name of individual or Office.">
+				</div>
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">Who did you meet with?</p>
+					<br>
+					<br>
+					<input type="text" id="met_with" name="Who did you meet with?" placeholder="Name of individual met">
+				</div>
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">Did you lobby for legislation or funding?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooptip 5" title="1. Legislation includes action by Congress, any state legislature, any local council, or similar governing body, with respect to acts, bills, resolutions, or similar items (such as legislative confirmation of appointive office), or by the public in referendum, ballot initiative, constitutional amendment, or similar procedure. It does not include actions by executive, judicial, or administrative bodies.
+					2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies."/></p>
+					<br>
+					<br>
+					<input type="radio" id="for_legislation" name="Did you lobby for legislation or funding?" value="Legislation" onchange="toggleOtherInput(this)">
+					<label for="for_legislation">Legislation</label>
+					<br>
+					<br>
+					<input type="radio" id="for_funding" name="Did you lobby for legislation or funding?" value="Funding" onchange="toggleOtherInput(this)">
+					<label for="for_funding">Funding</label>
+					<br>
+					<br>
+					<input type="radio" id="for_both" name="Did you lobby for legislation or funding?" value="Legislation and funding" onchange="toggleOtherInput(this)">
+					<label for="for_both">Legislation and funding</label>
+					<br>
+					<br>
+					<input type="radio" id="for_other" name="Did you lobby for legislation or funding?" value="Other" onchange="toggleOtherInput(this)">
+					<label for="for_other">Other: <input type="text" class="mobile2" id="otherType" name="otherType"></label>
+				</div>
+
+				<!--New Question Section-->
+				<div class="tab" id="tab">
+					<p class="mobile1">What did you lobby for?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="tooltipact6" title="Provide topic title and applicable number.
+					Examples include:
+					State Bill
+					Municipal Bill
+					State Executive Order
+					Municipal Executive Order
+					State Lawz
+					Municipal Law
+					State Procurement
+					State Resolution
+					Municipal Resolutions
+					State Regulation/ Rate-making/ Rule
+					Municipal Regulation/ Rate-making/ Rule"/></p>
+					<br>
+					<br>
+					<input type="text" id="lobbied_for" name="What did you lobby for?" placeholder="The specific action/change lobbied for">
+				</div>
+				<br>
+				<br>
+				<div class="navButtons hide" id="navButtons">
+						<button class="navButton" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+						<button class="navButton" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+				</div>
+			</form>
+			<div class="reportingResults" id="reportingResults">
+				<div class="userInput" id="userResults">
+					<h3 class="resultmob">Reported Activities</h3>
+					<p>Report summary</p>
+				</div>
+				<div class="userInput" id="userResults2">
+					<p>If you want to find out about the law related to lobbying...</p>
+					<a href="https://jcope.ny.gov/lobbying-laws-and-regulations" target="_blank"><img src="images/lobbyinglaws.png" class="resultimage" alt="lobbyinglaws"></a>
+					<p>If you want to find a case of lobbying...</p>
+					<a href="https://webapps.jcope.ny.gov/public" target="_blank"><img src="images/searchingcases.png" class="resultimage" alt="searchcases"></a>
+					<p>If you want to know the latest news about lobbying...</p>
+					<a href="https://www.nytimes.com/topic/subject/lobbying-and-lobbyists" target="_blank"><img src="images/lobbyingnews.png" class="resultimage" alt="lobbyingnews"></a>
+				</div>
+				<button class="printbutton" onclick="window.print()">Print Report of all lobbying.</button>
+				<button class="reportbutton reportbutton2" id="modalbtn2" onclick="displaySubmissionModal()">Submit Lobbying activities report</button>
+			</div>
+
+				<div id="submissionModal" class="modal">
+					<div class="modalActivities2">
+						<div class="modal2-header">
+							<span class="close" onclick="hideSubmissionModal()">&times;</span>
+							<h2>Next Steps</h2>
+						</div>
+						<div class="modal2-body">
+							<h3>Are you finished reporting lobbying that you engaged in today or would you like to record another instance of lobbying?</h3>
+							<button>Record another activity</button>
+							<button onclick="startExpenses()">Report expenses</button>
+							<!-- <p>Print Report of all lobbying.</p> -->
+						</div>
+						<div class="modal2-footer">
+							<h3>Thank you!</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="modalPopUp" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close" onclick="hideModal()">&times;</span>
+				<div id="modalText"></div>
+				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModal()">OK</button>
+			</div>
+		</div>
+
+		<footer class="footerShort">
+			
+			<br>
+			<p class="footmob">Contact Information:</p>
+			<p class="footmob">Email:  LobbsterNY@albanylaw.edu</p>
+      <p class="footmob"><a href="aboutus.html">About us</a></p>
+			<button class="contactButton" id="contactBtn">Contact us!</button>
+			<div id="contactModal" class="modal2">
+				<div class="mdcontact">
+					<span class="close">&times;</span>
+					<form class="formcontact" id="formcontact">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname">
+
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname">
+
+						<label for="email">E-mail</label>
+						<input type="text" id="email" name="email">
+
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
+
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+			<img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
+		</footer>
+	</main>
+	<script src="js/reportingModal.js"></script>
+	<script src="js/js.js"></script>
+	<script src="js/activities.js"></script>
+	<script src="js/disclaimer.js"></script>
+</body>
+</html>

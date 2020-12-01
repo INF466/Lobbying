@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Lobbster: The Best NYS Lobbying Reporting Tool!</title>
+  <meta name="description" content="We can help you identify if: You have been lobbying, if you should file a report due to lobbying, and different ways you might have been lobbying!">
+  <meta name="keywords" content="Lobbying, Lobbying Expenses, Social Media Lobbying, New York State Lobbying, NYS Lobbying, Lobbying Report, Lobbying Activities">
+  <meta name="author" content="This wesbite was made in collaborations with Albany Law and SUNY Albany. The students who worked on this were Jocelyn Chan, Jesse Conklin, Matthew Galetta, and Gyuhaeng 'Alex' Lee!">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reportingStyles.css">
+
+</head>
+<body onload="checkDisclaimer()">
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Slideshow
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <nav class="nav">
+    <img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
+    <a class="active" href="index.html">Home</a>
+    <a href="modules.html">Modules</a>
+	<a href="podcasts.html">Podcasts</a>
+    <a href="reporting_activities.html">Activities</a>
+	<a href="reporting_expenses.html">Expenses</a>
+  </nav>
+
+  <nav class="nav_mobile">
+    <img class="logo" src="images/lobbsterLogo.png" alt="Lobbster: The website for learning about NYS lobbying!">
+	<img onclick="nav_burger()" id="nav_burger" src="images/burger.png" alt="burger">
+	<div id="nav_burger_hide" style="display:none;">
+		<a class="active" href="index.html">Home</a>
+
+		<a href="modules.html">Modules</a>
+
+		<a href="podcasts.html">Podcasts</a>
+
+		<a href="reporting_activities.html">Activities</a>
+
+		<a href="reporting_expenses.html">Expenses</a>
+	</div>
+  </nav>
+
+  <main>
+
+<h2>About Us</h2>
+
+<p>Hello! This website was created in collaboration with Albany Law School and SUNY Albany.</p>
+<p>This project was supervised by Ray Brescia from Albany Law and Christopher Velez from SUNY Albany.</p>
+<p>This website's content was created by James Hoose and Lauren Wilt from Albany Law.</p>
+<p>This website's design and other was created by Jocelyn Chan, Jesse Conklin, Matthew Galletta, and Gyuhaeng 'Alex' Lee from SUNY Albany.</p>
+<p>Thank you for taking the time to checkout our website!</p>
+
+
+    <footer class="footerShort">
+			
+			<br>
+			<p class="footmob">Contact Information:</p>
+			<p class="footmob">Email:  LobbsterNY@albanylaw.edu</p>
+      <p class="footmob"><a href="aboutus.html">About us</a></p>
+			<button class="contactButton" id="contactBtn">Contact us!</button>
+			<div id="contactModal" class="modal2">
+				<div class="mdcontact">
+					<span class="close">&times;</span>
+					<form class="formcontact" id="formcontact">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname">
+
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname">
+
+						<label for="email">E-mail</label>
+						<input type="text" id="email" name="email">
+
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
+
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+			<img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
+		</footer>
+
+    </main>
+
+
+
+<script src="js/js.js"></script>
+<script src="js/disclaimer.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
