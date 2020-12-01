@@ -37,6 +37,12 @@
 	  clear:both;
   }
   
+.footmob	{
+   padding-bottom:12px;
+   margin-bottom:0px;
+   
+}  
+  
   /* Modal Content/Box */
   .modal-content {
 	background-color: #fefefe;
