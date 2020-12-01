@@ -1,3 +1,4 @@
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -40,8 +41,12 @@
 .footmob	{
    padding-bottom:12px;
    margin-bottom:0px;
-   
 }  
+
+footer a{
+	text-decoration:none;
+	color:white;
+}
   
   /* Modal Content/Box */
   .modal-content {
