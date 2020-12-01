@@ -127,7 +127,9 @@ main{
 
 }
 /*Typical Paragraph Body==================================*/
-
+body{
+	background-color:#C8C8C8;
+}
 
 p {
   font-family: titillium, Helvetica, sans-serif;
@@ -1018,6 +1020,17 @@ footer p {
 footer{
 	margin-top:0px;
 	position:sticky;
+	
+	bottom: -150px;
+	left:0;
+	clear:both;
+	background-color: #0076d0;
+}
+
+.footerShort{
+	margin-top:0px;
+	width:100%;
+	position:absolute;
 	bottom: -150px;
 	left:0;
 	clear:both;
