@@ -184,7 +184,7 @@ footer a{
   .reportContainer {
 	width: 75%;
 	height: auto;
-	min-height: 400px;
+	min-height: 85vh;
 	position: relative;
 	margin: auto;
 	background-color:lightgray;

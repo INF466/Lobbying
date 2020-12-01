@@ -1031,7 +1031,7 @@ footer{
 	margin-top:0px;
 	bottom: initial;
 	width:100%;
-	position:absolute;
+	/* position:absolute; */
 	bottom: -150px;
 	left:0;
 	clear:both;
