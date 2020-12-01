@@ -73,8 +73,8 @@
   
   /* The Close Button */
   .close {
-	  margin-top: -10px;
-	  margin-right: 0px;
+	  margin-top:-30px;
+	  margin-right:-15px;
 	color: #aaa;
 	float: right;
 	font-size: 28px;
@@ -490,10 +490,8 @@
 	footer {display:none;}
 	button {display:none !important;}
 	.result {display:none;}
-	.resultmob2 {display:none;}
 	img {display:none;}
 	p {display:none;}
-	hr {display: none;}
 	h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
   }
   
