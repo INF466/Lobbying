@@ -1029,6 +1029,7 @@ footer{
 
 .footerShort{
 	margin-top:0px;
+	bottom: initial;
 	width:100%;
 	/* position:absolute; */
 	bottom: -150px;
