@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -463,8 +464,20 @@
 	  <span class="dot" onclick="currentSlide(5)"></span>
 	</div>
 	<div class="spacer"></div>
-	 <footer>
-    <hr>
+	 
+
+  <div id="modalPopUp" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="hideModal()">&times;</span>
+      <div id="modalText"></div>
+    </div>
+
+  </div>
+  </main>
+<footer>
+    
     <br>
     <p class="footmob">Contact Information:</p>
     <p class="footmob">Email:  LobbsterNY@albanylaw.edu</p>
@@ -493,18 +506,6 @@
     <img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
   </footer>
 
-  <div id="modalPopUp" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" onclick="hideModal()">&times;</span>
-      <div id="modalText"></div>
-    </div>
-
-  </div>
-  </main>
-
-
 
 <script src="js/js.js"></script>
 <script src="js/disclaimer.js"></script>
@@ -513,3 +514,4 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
+
