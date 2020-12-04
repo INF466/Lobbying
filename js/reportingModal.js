@@ -21,22 +21,30 @@ function hideModal(){
 
 //js for contact & submit//
 
-var modal = document.getElementById("contactModal");
+var contactModal = document.getElementById("contactModal");
 
-var btn = document.getElementById("contactBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
+function showContactModal() {
+	var modal = document.getElementById("contactModal");
+	modal.style.display = "block";
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
+function closeContactModal() {
+	var modal = document.getElementById("contactModal");
+	modal.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+	var contactModal = document.getElementById("contactModal");
+	var instructionModal = document.getElementById("modalInstructions");
+	var popUpModal = document.getElementById("modalPopUp");
+	
+	if (event.target == contactModal) {
+		contactModal.style.display = "none";
+	}
+	if (event.target == instructionModal) {
+		instructionModal.style.display = "none";
+	}
+	if (event.target == popUpModal) {
+		popUpModal.style.display = "none";
+	}
 }
