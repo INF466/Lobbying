@@ -251,6 +251,7 @@ button{
 	font-size: 20px;
 	padding: 15px 40px;
   }
+
   .instructionsButton{
 	border-radius: 8px;
 	font-size: 15px;
@@ -601,12 +602,20 @@ input[type=text], select, textarea {
    font-size: 1px;
    width: 49%;
 }
+.aboutButton{
+	width: 110px;
+	font-size: 7px; 
+	top: 33%;
+	left: 45%;
+	padding: 10px 10px;
+ }
 .contactButton{
-   width: 120px;
-   font-size: 12px; 
-   top: 35%;
-   left: 54%;
-}
+	width: 110px;
+	font-size: 7px; 
+	top: 33%;
+	left: 60%;
+	padding: 10px 10px;
+ }
 .footmob	{
    margin: 15px auto;
 }
@@ -683,12 +692,20 @@ input[type=text], select, textarea {
    font-size: 1px;
    width: 49%;
 }
+.aboutButton{
+	width: 90px;
+	font-size: 5px; 
+	top: 33%;
+	left: 35%;
+	padding: 10px 10px;
+ }
 .contactButton{
-   width: 120px;
-   font-size: 12px; 
-   top: 35%;
-   left: 54%;
-}
+	width: 90px;
+	font-size: 5px; 
+	top: 33%;
+	left: 55%;
+	padding: 10px 10px;
+ }
 .footmob	{
    margin: 15px auto;
 }
@@ -777,12 +794,20 @@ input[type=text], select, textarea {
     font-size: 14px;
     padding: 7px 20px;
 }
+.aboutButton{
+	width: 90px;
+	font-size: 5px; 
+	top: 33%;
+	left: 40%;
+	padding: 10px 10px;
+ }
 .contactButton{
-   width: 120px;
-   font-size: 12px; 
-   top: 35%;
-   left: 54%;
-}
+	width: 90px;
+	font-size: 5px; 
+	top: 33%;
+	left: 62.5%;
+	padding: 10px 10px;
+ }
 .footmob	{
    margin: 15px auto;
 }
@@ -873,11 +898,20 @@ input[type=text], select, textarea {
    font-size: 1px;
    width: 37.3%;
 }
-.contactButton{
-   width: 120px;
-   font-size: 12px; 
-   top: 35%;
-   left: 64%;
+.aboutButton{
+	width: 100px;
+	font-size: 7px; 
+	top: 35%;
+	left: 50%;
+ }
+ .contactButton{
+	width: 110px;
+	font-size: 6px; 
+	top: 35%;
+	left: 80%;
+ }
+footer {
+	width: 67%;
 }
 .footmob	{
    margin: 15px auto;
@@ -967,11 +1001,19 @@ dt,dd,dl {
 	font-size: 1px;
 	width: 37.3%;
  }
- .contactButton{
-	width: 120px;
-	font-size: 12px; 
-	top: 35%;
-	left: 64%;
+ .aboutButton{
+	width: 90px;
+	font-size: 5px; 
+	top: 33%;
+	left: 50%;
+	padding: 10px 10px;
+ }
+.contactButton{
+	width: 90px;
+	font-size: 5px; 
+	top: 33%;
+	left: 80%;
+	padding: 10px 10px;
  }
  .footmob	{
 	margin: 15px auto;
@@ -1066,11 +1108,17 @@ input[type=text], select, textarea {
     font-size: 10px;
     padding: 7px 20px;
 }
+.aboutButton{
+   width: 100px;
+   font-size: 7px; 
+   top: 33%;
+   left: 50%;
+}
 .contactButton{
-   width: 120px;
-   font-size: 12px; 
-   top: 35%;
-   left: 64%;
+   width: 110px;
+   font-size: 6px; 
+   top: 33%;
+   left: 80%;
 }
 .footmob{
    margin: 15px auto;
@@ -1150,12 +1198,20 @@ input[type=text], select, textarea {
    font-size: 1px;
    width: 50%;
 }
+.aboutButton{
+	width: 90px;
+	font-size: 5px; 
+	top: 35%;
+	left: 50%;
+	padding: 10px 10px;
+ }
 .contactButton{
-   width: 120px;
-   font-size: 12px; 
-   top: 35%;
-   left: 64%;
-}
+	width: 90px;
+	font-size: 5px; 
+	top: 35%;
+	left: 80%;
+	padding: 10px 10px;
+ }
 .footmob{
    margin: 15px auto;
 }
@@ -1246,12 +1302,20 @@ dt,dd,dl {
 	   font-size: 1px;
 	   width: 50%;
 	}
+	.aboutButton{
+		width: 70px;
+		font-size: 5px; 
+		top: 35%;
+		left: 55%;
+		padding: 7px 7px;
+	 }
 	.contactButton{
-	   width: 120px;
-	   font-size: 12px; 
-	   top: 35%;
-	   left: 64%;
-	}
+		width: 70px;
+		font-size: 5px; 
+		top: 35%;
+		left: 85%;
+		padding: 7px 7px;
+	 }
 	.footmob{
 	   margin: 15px auto;
 	}
