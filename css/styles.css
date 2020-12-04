@@ -726,6 +726,9 @@ audio{
 	text-align:left;
 	text-shadow: 2px 2px 5px #444;
 }
+.homeSlideshowContainer .moduleSlide{
+	padding-bottom:0;
+}
 
 .moduleSlide .homeDescription{
 	position:absolute;
