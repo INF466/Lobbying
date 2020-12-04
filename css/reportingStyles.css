@@ -33,6 +33,8 @@
 	  display:inline-block;
 	  float: right;
 	  margin-top:-25px;
+	  border-radius: 8px;
+	  font-size: 20px;
   }
   .modalClose::after{
 	  clear:both;
@@ -204,8 +206,12 @@ footer a{
   } 
   
   #tab {
-	  width: 80%;
+	padding: 0 150px;
   }
+
+.instruction {
+	padding: 1em 15% 0;
+}
 
   .questionmark{
 	  display: inline;
@@ -234,6 +240,16 @@ footer a{
 	  /* -ms-transform: translate(-50%, -50%); */
 	  /* transform: translate(-50%, -50%); */
   }
+  .reportButton{
+	border-radius: 8px;
+	font-size: 20px;
+	padding: 15px 40px;
+  }
+  .instructionsButton{
+	border-radius: 8px;
+	font-size: 15px;
+	padding: 15px 40px;
+  }
   .contactButton{
 	width: 200px;
 	border: none;
@@ -253,6 +269,7 @@ footer a{
 	  display: inline-block;
 	  margin: 10px 9.5%;
 	  width: 30%;
+	  border-radius: 6px;
   }
   
   .navButtons{
@@ -912,8 +929,6 @@ h3{
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 12.5%;
-   padding-right: 10%;
 }
 .modal2-header {
    width: 98%;
@@ -976,6 +991,14 @@ input[type=text], select, textarea {
 .navButton {
    margin: 10px 9.5%; 
 }
+#tab{
+	padding: 0 30px;
+}
+.reportButton{
+	border-radius: 8px;
+	font-size: 17px;
+	padding: 7px 20px;
+}
 p{
    font-size: 15px; 
 }
@@ -988,8 +1011,6 @@ h3{
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 12.5%;
-   padding-right: 10%;
 }
 .modal2-header {
    width: 98%;
@@ -1052,6 +1073,17 @@ input[type=text], select, textarea {
 .navButton {
    margin: 10px 9.5%; 
 }
+.modalClose{
+	margin-top: 10px;
+}
+#tab{
+	padding: 0 30px;
+}
+.reportButton{
+	border-radius: 8px;
+	font-size: 15px;
+	padding: 7px 20px;
+}
 p{
    font-size: 15px; 
 }
@@ -1068,8 +1100,6 @@ h3{
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 12.5%;
-   padding-right: 10%;
 }
 .modal2-header {
    width: 98%;
@@ -1108,6 +1138,11 @@ input[type=text], select, textarea {
    font-size: 1px;
    width: 49%;
 }
+.instructionsButton{
+	border-radius: 8px;
+    font-size: 14px;
+    padding: 7px 20px;
+}
 .contactButton{
    width: 120px;
    font-size: 12px; 
@@ -1131,6 +1166,7 @@ input[type=text], select, textarea {
 }
 .navButton {
    margin: 10px 4.25%; 
+   font-size: 14px;
 }
 p{
    font-size: 15px; 
@@ -1141,6 +1177,22 @@ h2{
 h3{
    font-size: 15px;
 }
+#tab {
+   padding: 0 30px;
+}
+.reportButton{
+   border-radius: 8px;
+   font-size: 13px;
+   padding: 7px 20px;
+}
+.instructionsButton{
+	border-radius: 8px;
+    font-size: 10px;
+    padding: 7px 20px;
+}
+.modalClose{
+	font-size: 14px;
+}
 .resultimage{
 	width: 75%;
 	height: 75%;
@@ -1148,7 +1200,6 @@ h3{
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 7.5%;
    padding-right: 30%;
 }
 .modal2-header {
@@ -1214,6 +1265,18 @@ dt,dd,dl {
 }
  .navButton {
 	margin: 10px 2.25%; 
+	font-size: 13px;
+ }
+ .modalClose {
+	font-size: 12px;
+ }
+ .reportButton {
+	border-radius: 8px;
+	font-size: 13px;
+	padding: 7px 20px;
+ }
+ #tab{
+	padding: 0 30px;
  }
  p{
 	font-size: 15px; 
@@ -1231,8 +1294,7 @@ dt,dd,dl {
  .mobile1 {
 	font-size: 15px;
 	margin: auto; 
-	padding-left: 0%;
-	padding-right: 35%;
+	padding-right: 30%;
  }
  .modal2-header {
 	width: 95%;
@@ -1297,6 +1359,10 @@ dt,dd,dl {
 }
 .navButton {
    margin: 10px 1.5%; 
+   font-size: 12px;
+}
+.modalClose{
+   font-size: 12px;
 }
 p{
 	font-size: 15px; 
@@ -1311,10 +1377,12 @@ h3{
 	width: 75%;
 	height: 75%;
 }
+#tab {
+	padding: 0 30px;
+  }
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 0%;
    padding-right: 35%;
 }
 .modal2-header {
@@ -1353,6 +1421,16 @@ input[type=text], select, textarea {
 .checkbox {
    font-size: 1px;
    width: 32.3%;
+}
+.reportButton {
+	border-radius: 8px;
+	font-size: 13px;
+	padding: 7px 20px;
+}
+.instructionsButton{
+	border-radius: 8px;
+    font-size: 10px;
+    padding: 7px 20px;
 }
 .contactButton{
    width: 120px;
@@ -1399,8 +1477,7 @@ h3{
 .mobile1 {
    font-size: 15px;
    margin: auto; 
-   padding-left: 0%;
-   padding-right: 48%;
+   padding-right: 40%;
 }
 .modal2-header {
    width: 92.5%;
@@ -1471,6 +1548,14 @@ dt,dd,dl {
 	   font-size: 10px;
 	   margin: 10px 6.5%; 
 	}
+	.modalClose{
+		margin-top: 10px;
+	}
+	.reportButton{
+		border-radius: 8px;
+		font-size: 8px;
+		padding: 7px 20px;
+	}
 	p{
 		font-size: 12px; 
 	}
@@ -1486,9 +1571,8 @@ dt,dd,dl {
 	}
 	.mobile1 {
 	   font-size: 15px;
-	   margin: auto; 
-	   padding-left: 0%;
-	   padding-right: 50%;
+	   margin: auto;
+	   padding-right: 45%; 
 	}
 	.modal2-header {
 	   width: 92.5%;
