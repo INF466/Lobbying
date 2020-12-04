@@ -112,6 +112,7 @@
 					<!--New Question Section-->
 					<div class="tab" id="tab">
 						<p class="mobile1">You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
+						<p>Please check all that apply.</p>
 						<br>
 						<br>
 						<div class="checkbox">
@@ -200,14 +201,13 @@
 
 						<div class="checkbox">
 							<input type="checkbox" id="type18" name="expenseType" value="Travel Reimbursement - Train, Airfare, Car, Hotel">
-							<label for="type18">Travel Reimbursement - Train, Airfare, Car, Hotel</label>
+							<label for="type18">Travel Expense Reimbursement</label>
 						</div>
 
 						<div class="checkbox">
 							<input type="checkbox" id="type19" name="expenseType" value="Other" onchange="toggleOtherInput(this)">
 							<label for="type19">Other: <span><input type="text" id="otherType" name="otherType"></span></label>
 						</div>
-						<p>Please check all that apply.</p>
 					</div>
 
 					<!--New Question Section-->
@@ -295,8 +295,10 @@
 	<footer class="footerShort">
 			
 			<br>
-			<button class="aboutButton"><a href="aboutus.html">About us</a></button>
-			<button class="contactButton" id="contactBtn" onclick="showContactModal()">Contact us!</button>
+			<div id="footerButtons">
+				<button class="aboutButton"><a href="aboutus.html">About us</a></button>
+				<button class="contactButton" id="contactBtn" onclick="showContactModal()">Contact us!</button>
+			</div>
 			<div id="contactModal" class="modal2">
 				<div class="mdcontact">
 					<span class="close" onclick="closeContactModal()">&times;</span>
