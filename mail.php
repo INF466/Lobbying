@@ -131,7 +131,7 @@ EOT;
 			<?php if (!empty($msg)) {
 				echo "<h2>$msg</h2>";
 			} ?>
-			<a href="javascript:close_window();">close</a>
+			<p>You can close this tab</p>
 			</div>
 		</div>
 		<div id="modalPopUp" class="modal">
