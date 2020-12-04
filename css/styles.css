@@ -792,6 +792,7 @@ footer p {
 		margin-left: 150px;
 		margin-top:0px;
 		color:white;
+		
 }
 
 #dotHide{
@@ -1027,7 +1028,7 @@ footer p {
 footer{
 	margin-top:0px;
 	position:sticky;
-	
+	z-index: 2;
 	bottom: -150px;
 	left:0;
 	clear:both;
