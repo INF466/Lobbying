@@ -596,7 +596,7 @@ aside{
   background-color: transparent;
   text-align: center;
   float:left;
-  width: 300px;
+  width: 24.5%;
   height: 200px;
   margin: auto;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
