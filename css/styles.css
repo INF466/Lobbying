@@ -273,11 +273,7 @@ aside{
 }
 
 #sideNav a{
-	margin:auto;
-	height:45px;
-	text-align:left;
-	padding-left: 12px;
-	padding-right:0px;
+	padding: 0.5em;
 	margin-bottom:5px;
 	width:99%;
 	float:left;
@@ -288,11 +284,7 @@ aside{
 }
 
 #sideNavMoble a{
-	margin:auto;
-	height:45px;
-	text-align:left;
-	padding-left: 12px;
-	padding-right:0px;
+	padding: 0.5em;
 	margin-bottom:5px;
 	width:99%;
 	float:left;
@@ -427,6 +419,8 @@ aside{
 
 .moduleSlide p{
 	margin: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .moduleSlide h2{
@@ -617,11 +611,11 @@ aside{
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotatex(180deg);
 }
 
 .flip-card:focus .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotatex(180deg);
 }
 
 /* Position the front and back side */
@@ -646,7 +640,7 @@ aside{
   background-color: dodgerblue;
   text-decoration:none;
   color:white;
-  transform: rotateY(180deg);
+  transform: rotatex(180deg);
 }
 .flip-card-back a{
   text-decoration:none;
