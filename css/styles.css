@@ -644,8 +644,13 @@ aside{
 /* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
-  color: white;
+  text-decoration:none;
+  color:white;
   transform: rotateY(180deg);
+}
+.flip-card-back a{
+  text-decoration:none;
+  color:white;
 }
 
 /* The dots/bullets/indicators */
