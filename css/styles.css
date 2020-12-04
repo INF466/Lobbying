@@ -35,7 +35,7 @@
 #footerLogo{
 	max-width:260px;
 	position: absolute;
-	bottom: 50px;
+	bottom: 20px;
 	right: 20px;
 }
 
@@ -391,6 +391,7 @@ aside{
 	display: none;
 	min-height: 500px;
 	box-shadow: inset 0px 0px 10px 5px #888888;
+	padding-bottom:2em;
 	}
 
 .moduleSlide h3{
@@ -400,11 +401,10 @@ aside{
 
 .transcripts{
 	padding-bottom:60px;
-	border-bottom-style: dotted;
 }
 
 .room{
-	padding-bottom:30px;
+	
 }
 
 .moduleSlide button{
