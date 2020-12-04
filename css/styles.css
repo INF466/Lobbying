@@ -4,6 +4,10 @@
 	src: url('../fonts/lobster.otf');
 }
 
+#mdcontact .close{
+	margin-top: -20px;
+}
+
 @font-face {
 	font-family: arc;
 	src: url('../fonts/arc.ttf');
