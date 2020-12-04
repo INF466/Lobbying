@@ -40,7 +40,7 @@ function showDisclaimer(){
 }
 
 function acceptDisclaimer(){
-	setCookie("disclaimer", "accepted", 10);
+	setCookie("disclaimer", "accepted", 1440);
 	var modal = document.getElementById("modalDisclaimer");
 	modal.style.display = "none";	
 }
