@@ -13,10 +13,10 @@ $mail->Host = "smtp.office365.com";
 $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is deprecated
 $mail->SMTPAuth = True;
-$mail->Username = 'lobbster@mjghre.com'; // email
-$mail->Password = ''; // password redacted for GH
-$mail->setFrom('lobbster@mjghre.com', 'Lobbster contact form'); // From email and name
-$mail->addAddress('matt@mjghre.com', 'Matt'); // to email and name
+$mail->Username = ''; // email address for sending messages; removed for GH
+$mail->Password = ''; // password of sending account; redacted for GH
+$mail->setFrom('', ''); // From email and name; for O365, same as address above
+$mail->addAddress('', 'Matt'); // to email and name; left blank for GH
 
 $data = array();// array to pass back data
 
