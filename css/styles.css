@@ -851,7 +851,7 @@ height:350px;
     top: 20%;
     width:80%;
     left: 5%;
-    font-size: 12px;
+    font-size: 1em;
   }
 
   .homeQuestion{
@@ -928,6 +928,10 @@ height:350px;
   .homeDescription{
     width:75%;
     left: 10%;
+  }
+  
+  .moduleSlide .homeDescription{
+    font-size: .95em;
   }
   
   .pageTitle h2{
@@ -1030,7 +1034,7 @@ height:350px;
   }
 }
 
-  @media only screen and (max-width: 555px) {
+@media only screen and (max-width: 555px) {
   .nav a{
     font-size:12px;
     padding-right:3px;
@@ -1043,6 +1047,10 @@ height:350px;
   
   #footerLogo{
     display:none;
+  }
+  
+  #footerButtons{
+    margin-right:5%;
   }
 
   .nav {
@@ -1059,10 +1067,6 @@ height:350px;
   margin-top:125px;
   }
   
-  #footerButtons{
-    margin-right:5%;
-  }
-  
   footer button{
     width: 110px;
     font-size: 10px; 
@@ -1072,5 +1076,8 @@ height:350px;
 @media only screen and (max-width: 375px) {
   .homeDescription{
     margin-bottom:100px;
+  }
+  .moduleSlide .homeDescription{
+    font-size: .85em;
   }
 }
