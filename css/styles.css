@@ -1,42 +1,36 @@
 /*Custom Fonts Declared Here===============================*/
 @font-face {
-	font-family: lobster;
-	src: url('../fonts/lobster.otf');
-}
-
-#mdcontact .close{
-	margin-top: -20px;
+  font-family: lobster;
+  src: url('../fonts/lobster.otf');
 }
 
 @font-face {
-	font-family: arc;
-	src: url('../fonts/arc.ttf');
+  font-family: arc;
+  src: url('../fonts/arc.ttf');
 }
 
 @font-face {
-	font-family: titillium;
-	src: url('../fonts/titillium.otf');
+  font-family: titillium;
+  src: url('../fonts/titillium.otf');
 }
 
 @font-face {
-	font-family: sintony;
-	src: url('../fonts/sintony.otf');
+  font-family: sintony;
+  src: url('../fonts/sintony.otf');
 }
-
-
 
 .logo{
-	width:160px;
-	position: fixed;
-	top: 3px;
-	left: 35px;
+  width:160px;
+  position: fixed;
+  top: 3px;
+  left: 35px;
 }
 
 #footerLogo{
-	max-width:260px;
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
+  max-width:260px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 /* The Modal (background) */
@@ -47,25 +41,22 @@
   left: 0;
   top: 0;
   margin-top:0;
-  /* padding-top: 20px; */
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  /* overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.6s;
   animation-name: fadeIn;
   animation-duration: 0.6s
-
 }
 .modalClose{
-	display:inline-block;
-	float: right;
-	margin-top:-25px;
+  display:inline-block;
+  float: right;
+  margin-top:-25px;
 }
 .modalClose::after{
-	clear:both;
+  clear:both;
 }
 
 /* Modal Content/Box */
@@ -81,7 +72,7 @@
 
 /* hide disclaimer by default=============================*/
 .disclaimer{
-	display: none;
+  display: none;
 }
 
 /*Title Fonts=============================================*/
@@ -89,7 +80,7 @@ title {
   font-family: Helvetica, sans-serif;
 }
 
- /*Header=================================================*/
+/*Header=================================================*/
 h2 {
   font-family: sintony, Helvetica, sans-serif;
   font-size: 35px;
@@ -116,23 +107,21 @@ main{
   background-color: #C8C8C8;
   color: black;
   height:auto;
-
 }
 
 .pageTitle{
-	padding-top: 50px;
-	padding-bottom: 50px;
-
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pageTitle h2{
-	text-align:left;
-	margin-left:250px;
-
+  text-align:left;
+  margin-left:250px;
 }
 /*Typical Paragraph Body==================================*/
 body{
-	background-color:#C8C8C8;
+  /* width:100vw; */
+  background-color:#C8C8C8;
 }
 
 p {
@@ -143,174 +132,171 @@ p {
 
 /*styles for report-activities*/
 .act{
-    display:none;
-  }
+  display:none;
+}
 
-  #otherType{
-    visibility: hidden;
-  }
+#otherType{
+  visibility: hidden;
+}
 
-  #reportingactResults{
-    display: none;
-  }
+#reportingactResults{
+  display: none;
+}
 
 /*Nav=====================================================*/
 .nav {
-	color: white;
-	background-color: dodgerblue;
-	color: white;
-	background: rgba(0, 135, 208, 0.9);
-	padding-left: 200px;
-	height:50px;
-	position:sticky;
-	top:0;
-	z-index: 1;
+  color: white;
+  background-color: dodgerblue;
+  color: white;
+  background: rgba(0, 135, 208, 0.9);
+  padding-left: 200px;
+  height:50px;
+  position:sticky;
+  top:0;
+  z-index: 1;
 }
 
 #nav_burger{
-	height:44px;
-	float:right;
-	padding:5px;
+  height:44px;
+  float:right;
+  padding:5px;
 }
 
 #nav_burger:hover{
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 #nav_burger_hide{
-	display:none;
-	padding-top:55px;
-	background: rgba(0, 135, 208, 0.9);
-	height:auto;
+  display:none;
+  padding-top:55px;
+  background: rgba(0, 135, 208, 0.9);
+  height:auto;
 }
 
 .nav_mobile{
-	color: white;
-	background-color: dodgerblue;
-	background: rgba(0, 135, 208, 0.9);
-	height:55px;
-	position:sticky;
-	top:0;
-	z-index: 1;
-	display:none;
-	text-align:center;
+  color: white;
+  background-color: dodgerblue;
+  background: rgba(0, 135, 208, 0.9);
+  height:55px;
+  position:sticky;
+  top:0;
+  z-index: 1;
+  display:none;
+  text-align:center;
 }
 
 .nav a{
-	text-decoration: none;
-	font-family: titillium;
-	color: white;
-	font-size: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top:6px;
-	display: inline-block;
+  text-decoration: none;
+  font-family: titillium;
+  color: white;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top:6px;
+  display: inline-block;
 }
 
 .nav_mobile a{
-	text-decoration: none;
-	font-family: titillium;
-	color: white;
-	font-size: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top:6px;
+  text-decoration: none;
+  font-family: titillium;
+  color: white;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top:6px;
 }
 
 .active{
-	background-color: #0076d0;
-	height:44px;
+  background-color: #0076d0;
+  height:44px;
 }
 
 .nav a:hover{
-	background-color: #0076d0;
-	height:44px;
-	text-shadow: 2px 2px #333333;
+  background-color: #0076d0;
+  height:44px;
+  text-shadow: 2px 2px #333333;
 }
 
 .nav_mobile a:hover{
-	background-color: #0076d0;
-	opacity: 0.8;
-	text-shadow: 2px 2px #333333;
+  background-color: #0076d0;
+  opacity: 0.8;
+  text-shadow: 2px 2px #333333;
 }
-
-
-
 
 /*aside nav===============================================*/
 aside{
-	float: left;
-	width:225px;
-	position:fixed;
-	top:50px;
-	bottom: 0;
-	z-index: 1;
+  float: left;
+  width:225px;
+  position:fixed;
+  top:50px;
+  bottom: 0;
+  z-index: 1;
 }
 
 #sideNav{
-	overflow:auto;
-	float: left;
-	height:100%;
-	width: 100%;
-	margin:0px;
-	padding:0px;
-	padding-top:50px;
-	background-color: #006399;
-	transition: 0.5s;
+  overflow:auto;
+  float: left;
+  height:100%;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  padding-top:50px;
+  background-color: #006399;
+  transition: 0.5s;
 }
 
-#sideNavMoble{
-	overflow:auto;
-	float: left;
-	height:100%;
-	width: 100%;
-	margin:0px;
-	padding:0px;
-	background-color: #006399;
-	transition: 0.5s;
-	display:none;
-	margin-top:5px;
+#sideNavMobile{
+  overflow:auto;
+  float: left;
+  height:100%;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  background-color: #006399;
+  transition: 0.5s;
+  display:none;
+  margin-top:5px;
 }
 
 #sideNav a{
-	padding: 0.5em;
-	margin-bottom:5px;
-	width:99%;
-	float:left;
-	transition: 0.3s;
-	font-size: 22px;
-	color:white;
-	text-decoration:none;
+  padding: 0.5em;
+  margin-bottom:5px;
+  width:99%;
+  float:left;
+  transition: 0.3s;
+  font-size: 22px;
+  color:white;
+  text-decoration:none;
 }
 
-#sideNavMoble a{
-	padding: 0.5em;
-	margin-bottom:5px;
-	width:99%;
-	float:left;
-	transition: 0.3s;
-	font-size: 22px;
-	color:white;
-	text-decoration:none;
+#sideNavMobile a{
+  padding: 0.5em;
+  margin-bottom:5px;
+  width:99%;
+  float:left;
+  transition: 0.3s;
+  font-size: 22px;
+  color:white;
+  text-decoration:none;
 }
 
 #sideNav a:hover{
-	background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 
-#sideNavMoble a:hover{
-	background-color: dodgerblue;
+#sideNavMobile a:hover{
+  background-color: dodgerblue;
 }
 
-#sideNavMoble .closebtn {
-    margin:auto;
-	margin-right:10px;
-	text-align:right;
-	padding-left: 0px;
-	padding-right:10px;
-	width:100%;
-	transition: 0.3s;
-	font-size: 30px;
+#sideNavMobile .closebtn {
+  margin:auto;
+  margin-right:10px;
+  text-align:right;
+  padding-left: 0px;
+  padding-right:10px;
+  width:100%;
+  transition: 0.3s;
+  font-size: 30px;
 }
 
 .openbtn {
@@ -325,8 +311,6 @@ aside{
   border-radius: 0 20px 20px 0;
   background: rgba(0, 135, 208, 0.9);
   top: 58px;
-
-
 }
 
 .openbtn:hover {
@@ -337,94 +321,90 @@ aside{
   transition: margin-left .5s;
   padding: 16px;
   display:none;
-
 }
 
-/*SLider===========================================*/
+/*Slider===========================================*/
 #moduleStart{
-	width: 70%;
-	margin:auto;
-	min-height:400px;
-	padding-bottom: 50px;
+  width: 70%;
+  margin:auto;
+  min-height:400px;
+  padding-bottom: 50px;
 }
-#moduleStartBtn{
-	transition-duration: 0.5s;
-	width:200px;
-	background-color: rgba(0, 135, 208, 0.9);
-	padding-top: 5px;
-	padding-bottom: 5px;
-	color:white;
-	border-style:solid;
-	border-color:black;
-	border-radius:15px;
-	border-width:1px;
-}
-#moduleStartBtn:hover{
-	cursor: pointer;
-	background-color: rgba(0, 135, 208, 0.6);
 
+#moduleStartBtn{
+  transition-duration: 0.5s;
+  width:200px;
+  background-color: rgba(0, 135, 208, 0.9);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:white;
+  border-style:solid;
+  border-color:black;
+  border-radius:15px;
+  border-width:1px;
+}
+
+#moduleStartBtn:hover, .altHover:hover{
+  cursor: pointer;
+  background-color: rgba(0, 135, 208, 0.6);
 }
 
 .moduleStartLinks{
-	text-decoration:none;
-	width:100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display:block;
-	float:left;
-	background-color: rgba(0, 135, 208, 0.9);
-	border-style:solid;
-	border-color:black;
-	border-radius:15px;
-	border-width:1px;
-	margin:2px;
-	text-align:center;
-	color:white;
+  text-decoration:none;
+  width:100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display:block;
+  float:left;
+  background-color: rgba(0, 135, 208, 0.9);
+  border-style:solid;
+  border-color:black;
+  border-radius:15px;
+  border-width:1px;
+  margin:2px;
+  text-align:center;
+  color:white;
 }
 
 .moduleStartLinks:hover{
-	cursor: pointer;
-	background-color: rgba(0, 135, 208, 0.6);
+  cursor: pointer;
+  background-color: rgba(0, 135, 208, 0.6);
 }
 
 .moduleSlide {
-	display: none;
-	min-height: 500px;
-	box-shadow: inset 0px 0px 10px 5px #888888;
-	padding-bottom:2em;
-	}
+  display: none;
+  min-height: 500px;
+  box-shadow: inset 0px 0px 10px 5px #888888;
+  padding-bottom:2em;
+}
 
 .moduleSlide h3{
-	padding: 10px;
-	margin-top:60px;
+  padding: 10px;
+  margin-top:60px;
 }
 
 .transcripts{
-	padding-bottom:60px;
-}
-
-.room{
-	
+  padding-bottom:60px;
 }
 
 .moduleSlide button{
-	padding: 10px;
-	margin-bottom: 60px;
+  padding: 10px;
+  margin-bottom: 60px;
 }
 
 .moduleSlide:first-child {
-    display: block;
-	min-height: 500px;
+  display: block;
+  min-height: 500px;
 }
 
 .moduleSlide p{
-	margin: 10px;
-	margin-left: 10%;
-	margin-right: 10%;
+  margin: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .moduleSlide h2{
-	padding-top:20px;
+  padding-top:20px;
 }
 
 .slideshowContainer {
@@ -435,7 +415,6 @@ aside{
   margin-right: 5%;
   background-color:lightgray;
   border-radius:10px;
-
 }
 
 .homeSlideshowContainer{
@@ -443,8 +422,7 @@ aside{
   min-height: 500px;
   position: relative;
   margin: auto;
-	filter: brightness(90%)
-
+  filter: brightness(90%)
 }
 
 /* Next & previous buttons */
@@ -496,16 +474,16 @@ aside{
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
-	left: 50px;
+  left: 50px;
   bottom: 225px;
   width: 100%;
   text-align: left;
 }
 
 .bodytext{
-	text-align: center;
-	margin: auto;
-	padding: inherit;
+  text-align: center;
+  margin: auto;
+  padding: inherit;
 }
 
 /*CSS for disclaimer popup*/
@@ -515,8 +493,8 @@ aside{
   position: relative;
   display: inline-block;
   cursor: pointer;
-	text-align: center;
-	font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* The actual popup (appears on top) */
@@ -532,14 +510,14 @@ aside{
   z-index: 1;
   bottom: 125%;
   left: 50%;
-	overflow: auto;
-	height: 250px;
+  overflow: auto;
+  height: 250px;
 }
 
 /* Popup arrow */
 .popup .popuptext::after {
   content: "";
-	text-align: center;
+  text-align: center;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -550,7 +528,7 @@ aside{
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+  .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
@@ -571,18 +549,18 @@ aside{
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flipcardholder{
-	margin: 15px;
-	display:block;
-	text-align: center;
-	margin: auto;
-	width:100%;
+  margin: 15px;
+  display:block;
+  text-align: center;
+  margin: auto;
+  width:100%;
 }
 
 .container{
-	width:100%;
-	max-width: 1200px;
-	text-align:center;
-	margin: auto;
+  width:100%;
+  max-width: 1200px;
+  text-align:center;
+  margin: auto;
 }
 
 .flip-card {
@@ -596,7 +574,7 @@ aside{
 }
 
 .flip-card:nth-child(4){
-	margin-bottom: 4em;
+  margin-bottom: 4em;
 }
 
 /* This container is needed to position the front and back side */
@@ -609,7 +587,7 @@ aside{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do avertical flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotatex(180deg);
 }
@@ -642,6 +620,7 @@ aside{
   color:white;
   transform: rotatex(180deg);
 }
+
 .flip-card-back a{
   text-decoration:none;
   color:white;
@@ -664,11 +643,11 @@ aside{
 }
 
 .asideActive{
-	background-color: #006399;
+  background-color: #006399;
 }
 
 .asideActive2{
-	background-color: #0076d0;
+  background-color: #0076d0;
 }
 
 
@@ -691,367 +670,405 @@ aside{
 }
 
 .video{
-	width: 55%;
-	margin:auto;
-	margin-top: 0px;
-	text-align:center;
-	display:block;
-	padding:30% 0 0 0;
-	position:relative;
+  width: 55%;
+  margin:auto;
+  margin-top: 0px;
+  text-align:center;
+  display:block;
+  padding:30% 0 0 0;
+  position:relative;
 }
 
 audio{
-	display:block;
-	width: 55%;
-	margin:auto;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	height: 25px;
-	padding:10px;
-	box-shadow: inset 0px 0px 5px 5px rgba(0, 135, 208, 1);
-	border-radius:10px;
+  display:block;
+  width: 55%;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  height: 25px;
+  padding:10px;
+  box-shadow: inset 0px 0px 5px 5px rgba(0, 135, 208, 1);
+  border-radius:10px;
 }
 
 .descImg{
-		height:500px;
-	}
+  height:500px;
+}
 
 .homeTitle{
-	position:absolute;
-	top: 2%;
-	left: 2%;
-	color:white;
-	font-size: 40px;
-	margin-right: 6%;
-	text-align:left;
-	text-shadow: 2px 2px 5px #444;
+  position:absolute;
+  top: 2%;
+  left: 2%;
+  color:white;
+  font-size: 40px;
+  margin-right: 6%;
+  text-align:left;
+  text-shadow: 2px 2px 5px #444;
 }
+
 .homeSlideshowContainer .moduleSlide{
-	padding-bottom:0;
+  padding-bottom:0;
 }
 
 .moduleSlide .homeDescription{
-	position:absolute;
-	border-style:solid;
-	border-color:black;
-	border-radius:15px;
-	border-width: 1px;
-	background-color: rgba(0,0,0, 0.4);
-	top: 20%;
-	width:90%;
-	/* left: 3%; */
-	color:white;
-	font-size: 20px;
-	/* margin-left:10%; */
-	/* margin-right:10%; */
-	margin: 0 4%;
-	padding:1%;
-	text-shadow: 3px 3px 10px #000;
+  position:absolute;
+  border-style:solid;
+  border-color:black;
+  border-radius:15px;
+  border-width: 1px;
+  background-color: rgba(0,0,0, 0.4);
+  top: 20%;
+  width:90%;
+  color:white;
+  font-size: 20px;
+  margin: 0 4%;
+  padding:1%;
+  text-shadow: 3px 3px 10px #000;
 }
 
 .homeQuestion{
-	position:absolute;
-	top: 38%;
-	left: 20%;
-	color:white;
-	font-size: 50px;
-	margin-right: 6%;
-	text-align:left;
-	text-shadow: 2px 2px 5px #444;
+  position:absolute;
+  top: 38%;
+  left: 20%;
+  color:white;
+  font-size: 50px;
+  margin-right: 6%;
+  text-align:left;
+  text-shadow: 2px 2px 5px #444;
 }
 
 .homeQuestionInfo{
-	position:absolute;
-	top: 55%;
-	left: 20%;
-	color:white;
-	font-size: 30px;
-	margin-right: 6%;
-	text-shadow: 2px 2px 5px #444;
-	text-align:left;
+  position:absolute;
+  top: 55%;
+  left: 20%;
+  color:white;
+  font-size: 30px;
+  margin-right: 6%;
+  text-shadow: 2px 2px 5px #444;
+  text-align:left;
 }
 
 .goThereButton{
-	position:absolute;
-	top: 80%;
-	left: 20%;
-	background: rgba(0, 0, 0, 0.5);
-	padding: 15px;
-	margin: 0px;
-	color:white;
-	font-size: 14px;
-	border-style:solid;
-	border-color: black;
-	border-width: 1px;
-	cursor: pointer;
-	text-decoration:none;
+  position:absolute;
+  top: 80%;
+  left: 20%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin: 0px;
+  color:white;
+  font-size: 14px;
+  border-style:solid;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+  text-decoration:none;
 }
 
 .goThereButton:hover{
-	background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 footer p {
-		margin-left: 150px;
-		margin-top:0px;
-		color:white;
-		
+  margin-left: 150px;
+  margin-top:0px;
+  color:white;
 }
 
 #dotHide{
-	display:none;
-}
-@media only screen and (max-width: 1280px) {
-	.video{
-		width: 75%;
-	}
-	.moduleSlide .homeDescription{
-		font-size:15px;
-		top:25%;
-	}
-
-}
-
-@media only screen and (max-width: 906px) {
-	.moduleSlide .homeDescription{
-		position:absolute;
-		border-style:solid;
-		border-color:black;
-		border-radius:15px;
-		border-width: 1px;
-		background-color: rgba(0,0,0, 0.4);
-		top: 20%;
-		width:80%;
-		left: 5%;
-		font-size: 12px;
-	}
-
-	.homeQuestion{
-		font-size: 40px;
-		text-align: center;
-		width: 75%;
-		top: 100px;
-		left: 15%;
-	}
-
-
-	#sideNav a{
-		font-size: 20px;
-	}
-
-	.flipcardholder{
-		max-width: 604px;
-	}
-
-	.container{
-		width:100%;
-	}
-
-	.homeQuestionInfo{
-		font-size: 20px;
-		text-align: center;
-		width: 75%;
-		top: 175px;
-		left: 15%;
-	}
-
-	.homeSlideshowContainer{
-		height: 350px;
-	}
-
-
-
-	.moduleSlide h2{
-		font-size: 20px;
-	}
-
-	.moduleSlide p{
-		font-size: 15px;
-	}
-
-	footer p {
-		font-size:12px;
-		margin-left: 200px;
-	}
-
-	aside{
-		width:200px;
-		top:50px;
-	}
-
-
-	.slideshowContainer {
-		margin-left: 215px;
-	}
-	#footerLogo{
-		width:25%;
-	}
-
-}
-@media only screen and (max-width: 816px) {
-
-	.homeDescription{
-	width:75%;
-	left: 10%;
-	}
-	.pageTitle h2{
-		margin-left: 20px;
-	}
-	.nav a{
-		font-size:15px;
-
-	}
-
-	.nav {
-		height:40px;
-		padding-left: 145px;
-		display:none;
-	}
-
-	.nav_mobile {
-	display:block;
-	min-height:50px;
-	width:100%;
-	}
-
-	.nav_mobile a{
-	text-decoration: none;
-	font-family: titillium;
-	color: white;
-	font-size: 25px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top:6px;
-	height:50px;
-	display: inline-block;
-	}
-
-	#nav_burger_hide a{
-		width:100%;
-		padding-left:0px;
-	}
-
-	.active{
-		display:none;
-		height:34px;
-	}
-
-	.nav a:hover{
-		height:34px;
-	}
-
-	.homeQuestion{
-		font-size: 30px;
-		text-align: center;
-		width: 75%;
-		top: 50px;
-		left: 15%;
-
-	}
-
-	.flipcardholder{
-		max-width: 302px;
-	}
-
-	.container{
-		width:100%;
-	}
-
-	.homeQuestionInfo{
-		font-size: 15px;
-		text-align: center;
-		width: 75%;
-		top: 175px;
-		left: 15%;
-	}
-
-	.numberText {
-	  font-size: 20px;
-	}
-
-	#sideNav{
-		display: none;
-	}
-
-	#hamburger {
-		display:block;
-
-	}
-
-	#sideNav a{
-		font-size: 15px;
-	}
-
-
-	.slideshowContainer {
-		margin-left: 0px;
-		margin-right: 0px;
-		max-width: 100%;
-	}
-	.moduleSlide{
-		width:100%;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-}
-
-@media only screen and (max-width: 555px) {
-	.nav a{
-		font-size:12px;
-		padding-right:3px;
-		padding-left:3px;
-	}
-
-	.descImg{
-		height:550px;
-	}
-
-	.nav {
-		padding-left: 175px;
-	}
-}
-@media only screen and (max-width: 470px) {
-	.descImg{
-		height:650px;
-	}
-	.flipcardholder{
-		margin-top:125px;
-	}
-	#footerLogo{
-		display:none;
-	}
-}
-@media only screen and (max-width: 375px) {
-	.homeDescription{
-		margin-bottom:100px;
-	}
+  display:none;
 }
 
 /*footer==================================================*/
 footer{
-	margin-top:0px;
-	position:sticky;
-	z-index: 2;
-	bottom: -150px;
-	left:0;
-	clear:both;
-	background-color: #0076d0;
-	height: 100px;
+margin-top:0px;
+position:sticky;
+z-index: 2;
+bottom: -150px;
+left:0;
+clear:both;
+background-color: #0076d0;
+height: 100px;
 }
 
 .footerShort{
-	margin-top:0px;
-	bottom: initial;
-	width:100%;
-	/* position:absolute; */
-	bottom: -150px;
-	left:0;
-	clear:both;
-	background-color: #0076d0;
+margin-top:0px;
+bottom: initial;
+width:100%;
+/* position:absolute; */
+bottom: -150px;
+left:0;
+clear:both;
+background-color: #0076d0;
+}
+
+#footerButtons{
+  margin-right: 300px;
+}
+
+footer button{
+  width: 200px;
+  border: 1px solid #000;
+  border-radius:10px;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  float:right;
+  margin:.25em 1em;
 }
 
 .spacer{
-	height:350px;
+height:350px;
 }
 
-/*===*/
+@media only screen and (max-width: 1280px) {
+  .video{
+    width: 75%;
+  }
+  
+  .moduleSlide .homeDescription{
+    font-size:15px;
+    top:25%;
+  }
+
+  .spacer{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 906px) {
+  .moduleSlide .homeDescription{
+    position:absolute;
+    border-style:solid;
+    border-color:black;
+    border-radius:15px;
+    border-width: 1px;
+    background-color: rgba(0,0,0, 0.4);
+    top: 20%;
+    width:80%;
+    left: 5%;
+    font-size: 12px;
+  }
+
+  .homeQuestion{
+    font-size: 40px;
+    text-align: center;
+    width: 75%;
+    top: 100px;
+    left: 15%;
+  }
+
+
+  #sideNav a{
+    font-size: 20px;
+  }
+
+  .flipcardholder{
+    max-width: 604px;
+  }
+
+  .container{
+    width:100%;
+  }
+
+  .homeQuestionInfo{
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    top: 175px;
+    left: 15%;
+  }
+
+  .homeSlideshowContainer{
+    height: 350px;
+  }
+
+  .moduleSlide h2{
+    font-size: 20px;
+  }
+
+  .moduleSlide p{
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size:12px;
+    margin-left: 200px;
+  }
+
+  aside{
+    width:200px;
+    top:50px;
+  }
+
+  .slideshowContainer {
+    margin-left: 215px;
+  }
+  
+  #footerLogo{
+    width:25%;
+  }
+  
+  #footerButtons{
+    margin-right:28%;
+  }
+  
+  footer button{
+    width: 150px;
+    font-size:15px;
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  .homeDescription{
+    width:75%;
+    left: 10%;
+  }
+  
+  .pageTitle h2{
+    margin-left: 20px;
+  }
+  
+  .nav a{
+    font-size:15px;
+  }
+
+  .nav {
+    height:40px;
+    padding-left: 145px;
+    display:none;
+  }
+
+  .nav_mobile {
+    display:block;
+    min-height:50px;
+    width:100%;
+  }
+
+  .nav_mobile a{
+    text-decoration: none;
+    font-family: titillium;
+    color: white;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:6px;
+    height:50px;
+    display: inline-block;
+  }
+
+  #nav_burger_hide a{
+    width:100%;
+    padding-left:0px;
+  }
+
+  .active{
+    display:none;
+    height:34px;
+  }
+
+  .nav a:hover{
+    height:34px;
+  }
+
+  .homeQuestion{
+    font-size: 30px;
+    text-align: center;
+    width: 75%;
+    top: 50px;
+    left: 15%;
+  }
+
+  .flipcardholder{
+    max-width: 302px;
+  }
+
+  .container{
+    width:100%;
+  }
+
+  .homeQuestionInfo{
+    font-size: 15px;
+    text-align: center;
+    width: 75%;
+    top: 175px;
+    left: 15%;
+  }
+
+  .numberText {
+    font-size: 20px;
+  }
+
+  #sideNav{
+    display: none;
+  }
+
+  #hamburger {
+    display:block;
+
+  }
+
+  #sideNav a{
+    font-size: 15px;
+  }
+
+
+  .slideshowContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+  }
+  
+  .moduleSlide{
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+  @media only screen and (max-width: 555px) {
+  .nav a{
+    font-size:12px;
+    padding-right:3px;
+    padding-left:3px;
+  }
+
+  .descImg{
+    height:550px;
+  }
+
+  .nav {
+    padding-left: 175px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .descImg{
+    height:650px;
+  }
+  
+  .flipcardholder{
+  margin-top:125px;
+  }
+  
+  #footerLogo{
+    display:none;
+  }
+  
+  #footerButtons{
+    margin-right:5%;
+  }
+  
+  footer button{
+    width: 110px;
+    font-size: 10px; 
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .homeDescription{
+    margin-bottom:100px;
+  }
+}
