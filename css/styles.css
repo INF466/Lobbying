@@ -1010,7 +1010,6 @@ height:350px;
 
   #hamburger {
     display:block;
-
   }
 
   #sideNav a{
@@ -1041,6 +1040,10 @@ height:350px;
   .descImg{
     height:550px;
   }
+  
+  #footerLogo{
+    display:none;
+  }
 
   .nav {
     padding-left: 175px;
@@ -1054,10 +1057,6 @@ height:350px;
   
   .flipcardholder{
   margin-top:125px;
-  }
-  
-  #footerLogo{
-    display:none;
   }
   
   #footerButtons{
