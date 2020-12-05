@@ -361,6 +361,10 @@ input[type=submit]:hover {
     font-size: 15px;
   }
   
+  #tab{
+    padding: 0 4em;
+  }
+  
   .mobile1 {
     font-size: 15px;
     margin: auto; 
