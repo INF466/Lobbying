@@ -344,7 +344,7 @@ aside{
   border-width:1px;
 }
 
-#moduleStartBtn:hover{
+#moduleStartBtn:hover, .altHover:hover{
   cursor: pointer;
   background-color: rgba(0, 135, 208, 0.6);
 }

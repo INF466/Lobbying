@@ -4,8 +4,7 @@
 <head>
 
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Basic Page Needs -->
   <meta charset="utf-8">
   <title>Lobbster: Reporting Lobbying Activities</title>
   <meta name="description" content="Lobbster provides a way for you to report and save your lobbying activities.">
@@ -14,22 +13,22 @@
 
 	<meta name="author" content="">
 
-	<!-- Mobile Specific Metas
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<!-- CSS
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- CSS -->
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/reportingStyles.css">
 
-	<!-- Favicon
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-
+  <!-- Favicon -->
+	<link rel="icon" type="image/ico" href="images/lobbster.ico">
+  
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
 </head>
 <body onload="checkDisclaimer()">
 
@@ -70,7 +69,7 @@
 				<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
 				<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
 				<div>
-					<button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+					<button type="button" class="modalClose altHover" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
 				</div>
 			</div>
 		</div>
@@ -78,7 +77,7 @@
 			<div class="modal-content"><h4>Directions</h4>
 			<span class="close" onclick="hideModalInstructions()">&times;</span>
 				<p>This form is designed to help you track your organization's lobbying activities. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
-				<button type="button" class="modalClose" id="accpetInstructions" onclick="hideModalInstructions()">OK</button>
+				<button type="button" class="modalClose altHover" id="accpetInstructions" onclick="hideModalInstructions()">OK</button>
 			</div>
 		</div>
 
@@ -90,8 +89,8 @@
 						<p class="instruction">This form is designed to help you track your organization's lobbying activities. Hovering over the question mark icon will provide more information on each question. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
 					</div>
 					<div class="buttonFrame">
-						<button class="reportButton" id="reportButton" onclick="startForm()">Report my lobbying activities</button>
-						<button class="instructionsButton hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
+						<button class="reportButton altHover" id="reportButton" onclick="startForm()">Report my lobbying activities</button>
+						<button class="instructionsButton altHover hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
 					</div>
 				</div>
 
@@ -102,11 +101,11 @@
 					<p class="mobile1">Did you lobby today?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 1" title="Lobbying is an attempt to influence government decision-making."/></p>
 					<br>
 					<br>
-					<input type="radio" class="centerbut" id="lobby_yes" name="Lobby status" value="true">
+					<input type="radio" class="centerbut" id="lobby_yes" name="lobbyStatus" value="true">
 					<label for="lobby_yes">Yes</label>
 					<br>
 					<br>
-					<input type="radio" id="lobby_no" name="Lobby status" value="false">
+					<input type="radio" id="lobby_no" name="lobbyStatus" value="false">
 					<label for="lobby_no">No</label>
 				</div>
 
@@ -115,15 +114,15 @@
 					<p class="mobile1">What level of government did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 2" title="District or local offices of elected officials for state positions are state-level government."/></p>
 					<br>
 					<br>
-					<input type="radio" id="state" name="Level of goverment" value="state">
+					<input type="radio" id="state" name="lobbyTarget" value="state">
 					<label for="state">State</label>
 					<br>
 					<br>
-					<input type="radio" id="municipality" name="Level of goverment" value="municipality">
+					<input type="radio" id="municipality" name="lobbyTarget" value="municipality">
 					<label for="municipality">Municipality</label>
 					<br>
 					<br>
-					<input type="radio" id="both" name="Level of goverment" value="both">
+					<input type="radio" id="both" name="lobbyTarget" value="both">
 					<label for="both">Both</label>
 				</div>
 
@@ -138,11 +137,11 @@
 					and members or directors of such authorities, corporations, and commissions who are compensated other than on a per diem basis."/></p>
 					<br>
 					<br>
-					<input type="radio" id="individual" name="Did you lobby at the office of an individual or state entity?" value="individual">
+					<input type="radio" id="individual" name="lobbyOfficeType" value="individual">
 					<label for="individual">Individual</label>
 					<br>
 					<br>
-					<input type="radio" id="state_entity" name="Did you lobby at the office of an individual or state entity?" value="state entity">
+					<input type="radio" id="state_entity" name="lobbyOfficeType" value="state entity">
 					<label for="state_entity">State Entity</label>
 				</div>
 
@@ -152,7 +151,7 @@
 					<p class="mobile1">Who did you lobby?&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Activity tooltip 4" title="Example of Senator ______ or the Governor’s Office."/></p>
 					<br>
 					<br>
-					<input type="text" id="office_lobbied" name="What office did you lobby?" placeholder="Name of individual or Office.">
+					<input type="text" id="office_lobbied" name="lobbiedOffice" placeholder="Name of individual or Office.">
 				</div>
 
 				<!--New Question Section-->
@@ -160,7 +159,7 @@
 					<p class="mobile1">Who did you meet with?</p>
 					<br>
 					<br>
-					<input type="text" id="met_with" name="Who did you meet with?" placeholder="Name of individual met">
+					<input type="text" id="met_with" name="lobbiedIndividual" placeholder="Name of individual met">
 				</div>
 
 				<!--New Question Section-->
@@ -169,19 +168,19 @@
 					2. Funding includes solicitation, award, or administration of a grant, loan, or agreement involving the Disbursement of Public Monies."/></p>
 					<br>
 					<br>
-					<input type="radio" id="for_legislation" name="Did you lobby for legislation or funding?" value="Legislation" onchange="toggleOtherInput(this)">
+					<input type="radio" id="for_legislation" name="lobbiedFor" value="Legislation" onchange="toggleOtherInput(this)">
 					<label for="for_legislation">Legislation</label>
 					<br>
 					<br>
-					<input type="radio" id="for_funding" name="Did you lobby for legislation or funding?" value="Funding" onchange="toggleOtherInput(this)">
+					<input type="radio" id="for_funding" name="lobbiedFor" value="Funding" onchange="toggleOtherInput(this)">
 					<label for="for_funding">Funding</label>
 					<br>
 					<br>
-					<input type="radio" id="for_both" name="Did you lobby for legislation or funding?" value="Legislation and funding" onchange="toggleOtherInput(this)">
+					<input type="radio" id="for_both" name="lobbiedFor" value="Legislation and funding" onchange="toggleOtherInput(this)">
 					<label for="for_both">Legislation and funding</label>
 					<br>
 					<br>
-					<input type="radio" id="for_other" name="Did you lobby for legislation or funding?" value="Other" onchange="toggleOtherInput(this)">
+					<input type="radio" id="for_other" name="lobbiedFor" value="Other" onchange="toggleOtherInput(this)">
 					<label for="for_other">Other: <input type="text" class="mobile2" id="otherType" name="otherType"></label>
 				</div>
 
@@ -202,19 +201,19 @@
 					Municipal Regulation/ Rate-making/ Rule"/></p>
 					<br>
 					<br>
-					<input type="text" id="lobbied_for" name="What did you lobby for?" placeholder="The specific action/change lobbied for">
+					<input type="text" id="lobbied_for" name="lobbiedforSpecific" placeholder="The specific action/change lobbied for">
 				</div>
 				<br>
 				<br>
 				<div class="navButtons hide" id="navButtons">
-						<button class="navButton" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-						<button class="navButton" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+						<button class="navButton altHover" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+						<button class="navButton altHover" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 				</div>
 			</form>
 			<div class="reportingResults" id="reportingResults">
 				<div class="userInput" id="userResults">
 					<h3 class="resultmob">Reported Activities</h3>
-					<button class="printbutton" onclick="window.print()">Print Report of all lobbying.</button>
+					<button class="printbutton altHover" onclick="window.print()">Print Report of all lobbying.</button>
 					<p>Report summary</p>
 				</div>
 				<div class="userInput" id="userResults2">
@@ -225,7 +224,7 @@
 					<p>If you want to know the latest news about lobbying...</p>
 					<a href="https://www.nytimes.com/topic/subject/lobbying-and-lobbyists" target="_blank"><img src="images/lobbyingnews.png" class="resultimage" alt="lobbyingnews"></a>
 				</div>
-				<button class="reportbutton reportbutton2" id="modalbtn2" onclick="displaySubmissionModal()">Submit Lobbying activities report</button>
+				<button class="reportbutton reportbutton2 altHover" id="modalbtn2" onclick="displaySubmissionModal()">Submit Lobbying activities report</button>
 			</div>
 
 				<div id="submissionModal" class="modal">
@@ -236,8 +235,8 @@
 						</div>
 						<div class="modal2-body">
 							<h3>Are you finished reporting lobbying that you engaged in today or would you like to record another instance of lobbying?</h3>
-							<button>Record another activity</button>
-							<button onclick="startExpenses()">Report expenses</button>
+							<button class="altHover">Record another activity</button>
+							<button class="altHover" onclick="startExpenses()">Report expenses</button>
 							<!-- <p>Print Report of all lobbying.</p> -->
 						</div>
 						<div class="modal2-footer">
@@ -252,42 +251,45 @@
 			<div class="modal-content">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<div id="modalText"></div>
-				<button type="button" class="modalClose" id="acceptInstructions" onclick="hideModal()">OK</button>
+				<button type="button" class="modalClose altHover" id="acceptInstructions" onclick="hideModal()">OK</button>
 			</div>
 		</div>
 		
 	</main>
 	<footer class="footerShort">
 			
-			<br>
-      			<button class="aboutButton"><a href="aboutus.html">About us</a></button>
-			<button class="contactButton" id="contactBtn" onclick="showContactModal()">Contact us!</button>
-			<div id="contactModal" class="modal2">
-				<div class="mdcontact">
-					<span class="close" onclick="closeContactModal()">&times;</span>
-					<form class="formcontact" id="formcontact" action="mail.php" method="post" target="_blank">
-						<label for="fname">First Name</label>
-						<input type="text" id="fname" name="firstname">
+    <br>
+    <div id="footerButtons">
+      <button class="aboutButton altHover"><a href="aboutus.html">About us</a></button>
+      <button class="contactButton altHover" id="contactBtn" onclick="showContactModal()">Contact us!</button>
+    </div>
+    <div id="contactModal" class="modal2">
+      <div class="mdcontact">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <form class="formcontact" id="formcontact"  action="" method="post">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname">
 
-						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname">
 
-						<label for="email">E-mail</label>
-						<input type="text" id="email" name="email">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email">
 
-						<label for="subject">Subject</label>
-						<textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="We look forward to hearing from you!" style="height:200px"></textarea>
 
-						<input type="submit" value="Submit">
-					</form>
-				</div>
-			</div>
-			<img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
-		</footer>
+          <input type="submit" name="submitContact" value="Submit" class="altHover">
+        </form>
+      </div>
+    </div>
+    <img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
+  </footer>
 	<script src="js/reportingModal.js"></script>
 	<script src="js/js.js"></script>
 	<script src="js/activities.js"></script>
 	<script src="js/disclaimer.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
 
