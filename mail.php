@@ -14,7 +14,7 @@ $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is deprecated
 $mail->SMTPAuth = True;
 $mail->Username = 'lobbster@mjghre.com'; // email
-$mail->Password = 'kink9.jamboree eschewmagazine.silly.unipolar'; // password
+$mail->Password = ''; // password redacted for GH
 $mail->setFrom('lobbster@mjghre.com', 'Lobbster contact form'); // From email and name
 $mail->addAddress('matt@mjghre.com', 'Matt'); // to email and name
 
