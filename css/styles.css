@@ -149,9 +149,12 @@ p {
   background-color: dodgerblue;
   color: white;
   background: rgba(0, 135, 208, 0.9);
-  padding-left: 200px;
+  /* padding-left: 200px; */
+  /* position:sticky; */
+  padding-left:max(20%, 200px);
+  width:80%;
+  position:fixed;
   height:50px;
-  position:sticky;
   top:0;
   z-index: 1;
 }

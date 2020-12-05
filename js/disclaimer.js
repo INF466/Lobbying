@@ -38,7 +38,7 @@ function showDisclaimer(){
 	var modal = document.getElementById("modalDisclaimer");
 	var pageBody = document.getElementsByTagName("body")[0];
 	modal.style.display = "block";
-	pageBody.style.height = "100vh";
+	// pageBody.style.height = "100vh";
 	pageBody.style.overflow = "hidden";
 }
 

@@ -170,8 +170,8 @@ dl,dt,dd {
 
 .questionmark{
   display: inline;
-  width: 3%;
-  height: 3%;
+  width: .6em;
+  height: .6em;
 }
 
 .buttonFrame{
@@ -425,8 +425,8 @@ input[type=submit]:hover {
   }
     
   .checkbox {
-    font-size: 10px;
-    height:3em;
+    font-size: 15px;
+    height:1.5em;
   }
   
   .footmob	{
@@ -459,7 +459,7 @@ input[type=submit]:hover {
   }
 
   .checkbox {
-    width:90%;
+    width:95%;
   }
 }
 
@@ -481,6 +481,10 @@ input[type=submit]:hover {
   .modalClose{
     font-size: 14px;
   }
+    
+  #tab{
+    padding: 0;
+  }
   
   input[type=text].mobile2 {
     width: 50%;
@@ -488,6 +492,9 @@ input[type=submit]:hover {
   
   input[type=text], select, textarea {
     width: 77%;
+  }
+  .formcontact input, .formcontact textarea{
+    width: 95%;
   }
   
   dt,dd,dl {
@@ -508,10 +515,6 @@ input[type=submit]:hover {
     border-radius: 8px;
     font-size: 13px;
     padding: 7px 20px;
-  }
-  
-  #tab{
-    padding: 0 30px;
   }
   
   h2{
@@ -539,9 +542,9 @@ input[type=submit]:hover {
     width: 50%;
   }
   
-  input[type=text], select, textarea {
-    width: 70%;
-  }
+  /* input[type=text], select, textarea { */
+    /* width: 70%; */
+  /* } */
   
   .footmob	{
     margin: 15px auto;
@@ -566,13 +569,13 @@ input[type=submit]:hover {
     height: 75%;
   }
   
-  #tab {
-    padding: 0 30px;
-  }
+  /* #tab { */
+    /* padding: 0 30px; */
+  /* } */
   
-  .mobile1 {
-    padding-right: 35%;
-  }
+  /* .mobile1 { */
+    /* padding-right: 35%; */
+  /* } */
   
   .modal2-body {
     width: 95%; 
@@ -586,8 +589,8 @@ input[type=submit]:hover {
     width: 50%;
   }
   
-  input[type=text], select, textarea {
-    width: 60%;
+  textarea {
+    height: 6em;
   }
   
   .reportButton {
@@ -636,9 +639,9 @@ input[type=submit]:hover {
     margin: 10px 11%; 
   }
     
-  .mobile1 {
-    padding-right: 40%;
-  }
+  /* .mobile1 { */
+    /* padding-right: 40%; */
+  /* } */
   
   .modal2-header {
     width: 92.5%;
@@ -656,7 +659,7 @@ input[type=submit]:hover {
     width: 40%;
   }
   
-  input[type=text], select, textarea {
-    width: 50%;
-  }   
+  /* input[type=text], select, textarea { */
+    /* width: 95%; */
+  /* }    */
 }
