@@ -263,24 +263,26 @@
       <button class="aboutButton altHover"><a href="aboutus.html">About us</a></button>
       <button class="contactButton altHover" id="contactBtn" onclick="showContactModal()">Contact us!</button>
     </div>
-    <div id="contactModal" class="modal2">
-      <div class="mdcontact">
-        <span class="close" onclick="closeContactModal()">&times;</span>
-        <form class="formcontact" id="formcontact"  action="" method="post">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname">
+    <div id="contactModal" class="modal">
+      <div class="modal2">
+        <div class="mdcontact">
+          <span class="close" onclick="closeContactModal()">&times;</span>
+          <form class="formcontact" id="formcontact"  action="" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
 
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
 
-          <label for="email">E-mail</label>
-          <input type="text" id="email" name="email">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="We look forward to hearing from you!"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="We look forward to hearing from you!"></textarea>
 
-          <input type="submit" name="submitContact" value="Submit" class="altHover">
-        </form>
+            <input type="submit" name="submitContact" value="Submit" class="altHover">
+          </form>
+        </div>
       </div>
     </div>
     <img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">

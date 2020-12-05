@@ -18,7 +18,7 @@
 }
 
 .modal2{
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 1;
   left: 19%;
@@ -281,6 +281,10 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+textarea{
+  height:200px;
 }
 
 input[type=submit] {
