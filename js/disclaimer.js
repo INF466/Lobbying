@@ -36,11 +36,16 @@ function checkCookie(cookieLabel) {
 
 function showDisclaimer(){
 	var modal = document.getElementById("modalDisclaimer");
+	var pageBody = document.getElementsByTagName("body")[0];
 	modal.style.display = "block";
+	// pageBody.style.height = "100vh";
+	pageBody.style.overflow = "hidden";
 }
 
 function acceptDisclaimer(){
-	setCookie("disclaimer", "accepted", 10);
+	setCookie("disclaimer", "accepted", 1440);
+	var pageBody = document.getElementsByTagName("body")[0];
 	var modal = document.getElementById("modalDisclaimer");
-	modal.style.display = "none";	
+	modal.style.display = "none";
+	document.getElementsByTagName("body")[0].style.overflow = "initial";
 }

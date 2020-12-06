@@ -3,35 +3,29 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Basic Page Needs -->
   <meta charset="utf-8">
   <title>Lobbster: Reporting Lobbying Expenses</title>
   <meta name="description" content="Lobbster provides a way for you to report and save your lobbying expenses">
   <meta name="keywords" content="Lobbying, Lobbying Report, Lobbying Expenses, Reporting Lobbying Expenses">
   <meta name="author" content="This wesbite was made in collaborations with Albany Law and SUNY Albany. The students who worked on this were Jocelyn Chan, Jesse Conklin, Matthew Galetta, and Gyuhaeng 'Alex' Lee!">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CSS -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/reportingStyles.css">
 
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
-
-	<!-- Styles- placeholder
-	-------------------------------------------------- -->
-	<style>
-
-	</style>
+  <!-- Favicon -->
+	<link rel="icon" type="image/ico" href="images/lobbster.ico">
+  
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
 </head>
 <body onload="checkDisclaimer()">
 
@@ -70,15 +64,16 @@
 				<p>Albany Law School has made no warranties regarding web-based tool and that this software is being provided on an “as is” basis without any warranties or representations of any kind. Albany Law School disclaims all warranties worldwide with regard to the software, express or implied, including any warranty of software performance, and any implied warranties of fitness for a specific purpose, accuracy, or merchantability of computer program, merchantable quality or noninfringement of third-party rights. Some states or jurisdictions do not allow the exclusion of implied warranties, so the above limitations may not apply to you.</p>
 				<p>This product could include inaccuracies in the information therein or typographical errors. Albany Law School disclaims all liability related to such inaccuracies or errors. Your sole remedy for all claims related to the product shall be the amount paid for the product. The material is not to be interpreted as legal advice; it is for informational purposes only. Users seeking legal advice should consult a licensed attorney in their jurisdiction.</p>
 				<div>
-					<button type="button" class="modalClose" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
+					<button type="button" class="modalClose altHover" id="acceptDisclaimer" onclick="acceptDisclaimer()">Accept</button>
 				</div>
 			</div>
 		</div>
+    <!-- Instruction modal -->
 		<div id="modalInstructions" class="modal instructions">
 			<div class="modal-content"><h4>Directions</h4>
 			<span class="close" onclick="hideModalInstructions()">&times;</span>
 				<p>This form is designed to help you track your organization's lobbying expenses. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
-				<button type="button" class="modalClose acceptInstructions" onclick="hideModalInstructions()">OK</button>
+				<button type="button" class="modalClose acceptInstructions altHover" onclick="hideModalInstructions()">OK</button>
 			</div>
 		</div>
 
@@ -90,8 +85,8 @@
 						<p class="instruction">This form is designed to help you track your organization's lobbying expenses. Hovering over the question mark icon will provide more information on each question. On each page, you will need to enter the requested information to proceed. All fields are mandatory unless otherwise noted.</p>
 					</div>
 					<div class="buttonFrame">
-						<button class="reportButton" id="reportButton" onclick="startForm()">Report my lobbying expenses</button>
-						<button class="instructionsButton reportButton hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
+						<button class="reportButton altHover" id="reportButton" onclick="startForm()">Report my lobbying expenses</button>
+						<button class="instructionsButton reportButton altHover hide" id="instructionsButton" onclick="showModalInstructions()">Show instructions</button>
 					</div>
 				</div>
 				<form class="reportingForm expenseForm" id="reportingForm" >
@@ -112,6 +107,7 @@
 					<!--New Question Section-->
 					<div class="tab" id="tab">
 						<p class="mobile1">You incurred expenses on:&nbsp;&nbsp;<img src="images/question.png" class="questionmark" alt="Expense tooltip 2" title="Placeholder tooltip for explaining expenses."/></p>
+						<p>Please check all that apply.</p>
 						<br>
 						<br>
 						<div class="checkbox">
@@ -200,14 +196,13 @@
 
 						<div class="checkbox">
 							<input type="checkbox" id="type18" name="expenseType" value="Travel Reimbursement - Train, Airfare, Car, Hotel">
-							<label for="type18">Travel Reimbursement - Train, Airfare, Car, Hotel</label>
+							<label for="type18">Travel Expense Reimbursement</label>
 						</div>
 
 						<div class="checkbox">
 							<input type="checkbox" id="type19" name="expenseType" value="Other" onchange="toggleOtherInput(this)">
 							<label for="type19">Other: <span><input type="text" id="otherType" name="otherType"></span></label>
 						</div>
-						<p>Please check all that apply.</p>
 					</div>
 
 					<!--New Question Section-->
@@ -255,20 +250,20 @@
 							<label for="compNumber">Payment number: </label>
 							<input type="text" id="compNumber" name="compNumber" placeholder="Check number or 'N/A for cash">
 							<label for="compType">Type of compensation: </label>
-							<input type="text" id="compType" name="compType" placeholder="I'm not even sure">
+							<input type="text" id="compType" name="compType" placeholder="Salary, fee, gift, etc.">
 						</div>
 					</div>
 					<br>
 					<br>
 					<div class="navButtons hide" id="navButtons">
-						<button class="navButton" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-						<button class="navButton" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+						<button class="navButton altHover" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+						<button class="navButton altHover" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 					</div>
 				</form>
 				<div class="reportingResults" id="reportingResults">
 					<div class="userInput" id="userResults">
 						<h3 class="resultmob">Reported Expenses</h3>
-						<button class="printbutton" onclick="window.print()">Print lobbying report</button>
+						<button class="printbutton altHover" onclick="window.print()">Print lobbying report</button>
 						<p>Report summary</p>
 					</div>
 					<div class="userInput" id="userResults2">
@@ -282,49 +277,54 @@
 				</div>
 			</div>
 		</div>
+    
+    <!-- Multi-purpose Modal pop-up -->
 		<div id="modalPopUp" class="modal">
-			<!-- Modal content -->
 			<div class="modal-content">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<div id="modalText"></div>
-				<button type="button" class="modalClose acceptInstructions" onclick="hideModal()">OK</button>
+				<button type="button" class="modalClose acceptInstructions altHover" onclick="hideModal()">OK</button>
 			</div>
 		</div>
 		
 	</main>
 	<footer class="footerShort">
-			
-			<br>
-			<button class="aboutButton"><a href="aboutus.html">About us</a></button>
-			<button class="contactButton" id="contactBtn" onclick="showContactModal()">Contact us!</button>
-			<div id="contactModal" class="modal2">
-				<div class="mdcontact">
-					<span class="close" onclick="closeContactModal()">&times;</span>
-					<form class="formcontact" id="formcontact" action="mail.php" method="post" target="_blank">
-						<label for="fname">First Name</label>
-						<input type="text" id="fname" name="firstname">
+		
+		<br>
+		<div id="footerButtons">
+			<button class="aboutButton altHover"><a href="aboutus.html">About us</a></button>
+			<button class="contactButton altHover" id="contactBtn" onclick="showContactModal()">Contact us!</button>
+		</div>
+		<div id="contactModal" class="modal">
+      <div class="modal2">
+        <div class="mdcontact">
+          <span class="close" onclick="closeContactModal()">&times;</span>
+          <form class="formcontact" id="formcontact"  action="" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
 
-						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
 
-						<label for="email">E-mail</label>
-						<input type="text" id="email" name="email">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
 
-						<label for="subject">Subject</label>
-						<textarea id="subject" name="subject" placeholder="Please feel free to ask about anything to us!" style="height:200px"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="We look forward to hearing from you!"></textarea>
 
-						<input type="submit" value="Submit">
-					</form>
-				</div>
-			</div>
-			<img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
-		</footer>
+            <input type="submit" name="submitContact" value="Submit" class="altHover">
+          </form>
+        </div>
+      </div>
+    </div>
+		<img id="footerLogo" src="images/lobbsterLogo.png" alt="NY Lobbying Express">
+	</footer>
 	<script src="js/reportingModal.js"></script>
 	<script src="js/expenses.js"></script>
 	<script src="js/disclaimer.js"></script>
 	<script src="js/js.js"></script>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/contact.js"></script>
+  <!-- End Document -->
 </body>
 </html>
 

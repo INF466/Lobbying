@@ -54,7 +54,25 @@ function displayUserInput(){
 	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
 	for (key of keys){
-		target.innerHTML += ("<dt>" + key + "</dt><dd>" + activitiesReported[currentIndex][key] + "</dd>" + "<br>");
+		var inputName; 
+		if (key == "lobbyStatus"){
+			inputName = "Lobbied today?";
+		} else if (key == "lobbyTarget") {
+			inputName = "Level of goverment lobbied:";
+		} else if (key == "lobbyOfficeType") {
+			inputName = "Lobbied at the office of an individual or state entity?";
+		} else if (key == "lobbiedOffice") {
+			inputName = "What office did you lobby?";
+		} else if (key == "lobbiedIndividual") {
+			inputName = "Who did you meet with?";
+		} else if (key == "lobbiedFor") {
+			inputName = "Lobbied for:";
+		} else if (key == "lobbiedforSpecific") {
+			inputName = "Specific outcome desired:";
+		} else {
+			inputName = key;
+		}
+		target.innerHTML += ("<dt>" + inputName + "</dt><dd>" + activitiesReported[currentIndex][key] + "</dd>" + "<br>");
 	}
 	target.innerHTML += ("</dl>");
 	

@@ -7,21 +7,18 @@
 	left: 0;
 	top: 0;
 	margin-top:0;
-	/* padding-top: 20px; */
 	width: 100vw; /* Full width */
 	height: 100%; /* Full height */
-	/* overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	-webkit-animation-name: fadeIn;
 	-webkit-animation-duration: 0.6s;
 	animation-name: fadeIn;
-	animation-duration: 0.6s
-  
+	animation-duration: 0.6s;
   }
-
+  
   .modal2{
-	display: none;
+	/* display: none; */
 	position: fixed;
 	z-index: 1;
 	left: 19%;
@@ -29,26 +26,26 @@
 	margin: auto;
   }
   
-.modalClose{
-	  display:inline-block;
-	  float: right;
-	  margin-top:-25px;
-	  border-radius: 8px;
-	  font-size: 20px;
+  .modalClose{
+	display:inline-block;
+	float: right;
+	margin-top:-5px;
+	border-radius: 8px;
+	font-size: 20px;
   }
   .modalClose::after{
-	  clear:both;
+	clear:both;
   }
   
-.footmob	{
-   padding-bottom:12px;
-   margin-bottom:0px;
-}  
-
-footer a{
+  .footmob	{
+	padding-bottom:12px;
+	margin-bottom:0px;
+  }  
+  
+  footer a{
 	text-decoration:none;
 	color:white;
-}
+  }
   
   /* Modal Content/Box */
   .modal-content {
@@ -57,39 +54,39 @@ footer a{
 	padding: 20px;
 	border: 1px solid #888;
 	width: 60%; /* Could be more or less, depending on screen size */
-	max-height: 80%;
 	overflow: auto;
   }
-
-#modalDisclaimer .modal-content {
-	margin: 50px auto;
-}
+  
+  #modalDisclaimer .modal-content {
+	margin: 3em auto;
+	max-height: 80vh;
+  }
   
   #modalPopUp .modal-content{
-	  margin-top: 20%;
+	margin-top: 20%;
   }
   
   #modalPopUp .close{
-	  margin-top:-20px;
+	margin-top:-20px;
   }
-
-#modalInstructions .close{
-	margin-top:-40px;
-}
   
-   .info-modal{
-	   padding-top: 20%;
-   }
+  #modalInstructions .close{
+	margin-top:-40px;
+  }
+  
+  .info-modal{
+	padding-top: 20%;
+  }
   
   .disclaimer{
-	  padding:0;
-	  margin:0;
+	padding:0;
+	margin:0;
   }
   
   /* The Close Button */
   .close {
-	  margin-top:-20px;
-	  margin-right:-15px;
+	margin-top:-20px;
+	margin-right:-15px;
 	color: #aaa;
 	float: right;
 	font-size: 28px;
@@ -104,93 +101,42 @@ footer a{
   }
   
   .pageTitle{
-	  padding-bottom:15px;
+	padding-bottom:15px;
   }
   
   .reportPageTitle{
-	  margin-left: inherit;
-	  text-align: center;
+	margin-left: inherit;
+	text-align: center;
   }
   
   #reportingForm{
-	  display:block;
-	  width:80%;
-	  min-width:400px;
-	  min-height:400px;
-	  margin:0 auto 10px;
+	display:block;
+	width:80%;
+	min-height:400px;
+	margin:0 auto 10px;
   }
   
   .tab{
-	  display:none;
-	  margin:50px auto;
+	display:none;
+	margin:1em auto;
   }
   
   #reportingResults{
-	  display:none;
+	display:none;
   }
   .act{
-	  display:none;
-	}
-	
-  #otherType{
-	  visibility: hidden;
+	display:none;
   }
   
   #compTab{
-	  display:none;
+	display:none;
   }
   .checkbox{
-	  margin:5px auto;
-	  width:48%;
-	  display:inline-block;
+	margin:.5em 1%;
+	width:47%;
+	display:inline-block;
   }
   
-  /* .tooltip { */
-	/* position: relative; */
-	/* display: inline-block; */
-  /* } */
-  
-  /* .tooltip .tiptext { */
-	/* visibility: hidden; */
-	/* width: 700px; */
-	/* background-color: gray; */
-	/* color: black; */
-	/* text-align: center; */
-	/* padding: 5px 0; */
-  
-	/* Position the tooltip */
-	/* position: absolute; */
-	/* z-index: 1; */
-	/* top: -5px; */
-	/* left: 105%; */
-  /* } */
-  
-  /* .tooltip:hover .tiptext { */
-	/* visibility: visible; */
-  /* } */
-  /* .tooltip2 { */
-	/* position: relative; */
-	/* display: inline-block; */
-  /* } */
-  
-  /* .tooltip2 .tiptext2 { */
-	/* visibility: hidden; */
-	/* width: 700px; */
-	/* background-color: gray; */
-	/* color: black; */
-	/* text-align: center; */
-	/* padding: 5px 0; */
-  
-	/* Position the tooltip2 */
-	/* position: absolute; */
-	/* z-index: 1; */
-	/* top: -5px; */
-	/* left: 105%; */
-  /* } */
-  
-  /* .tooltip2:hover .tiptext2 { */
-	/* visibility: visible; */
-  /* } */
   .reportContainer {
 	width: 75%;
 	height: auto;
@@ -200,15 +146,16 @@ footer a{
 	background-color:lightgray;
 	border-radius:10px;
   }
-	 
+  
   .result {
-	   position: relative;
-	   top: 325px;
-	 }
-
+	position: relative;
+	top: 325px;
+  }
+  
   .resultimage {
 	margin-left: 15%;
-  } 
+  }
+  
   dl,dt,dd { 
 	margin-left: 15%;
   } 
@@ -216,24 +163,24 @@ footer a{
   #tab {
 	padding: 0 150px;
   }
-
-.instruction {
+  
+  .instruction {
 	padding: 1em 15% 0;
-}
-
+  }
+  
   .questionmark{
-	  display: inline;
-	  width: 3%;
-	  height: 3%;
+	display: inline;
+	width: .6em;
+	height: .6em;
   }
   
   .buttonFrame{
-	  padding-top:15px;
-	  width:100%;
-	  text-align:center
+	padding-top:15px;
+	width:100%;
+	text-align:center
   }
   
-button{
+  button{
 	background-color: #0076d0;
 	border: 1px solid #000;
 	border-radius:10px;
@@ -243,161 +190,41 @@ button{
 	text-align: center;
 	display: block;
 	font-size: 16px;
-
   }
-
+  
   .reportButton{
 	border-radius: 8px;
 	font-size: 20px;
 	padding: 15px 40px;
   }
-
+  
   .instructionsButton{
 	border-radius: 8px;
 	font-size: 15px;
 	padding: 15px 40px;
   }
-  .contactButton{
-	width: 200px;
-	border: 1px solid #000;
-	border-radius:10px;
-	color: white;
-	padding: 12px 25px;
-	text-align: center;
-	display: inline-block;
-	font-size: 20px;
-	position: absolute;
-	top: 43%;
-	left: 77.5%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.aboutButton {
-	width: 200px;
-	border: 1px solid #000;
-	border-radius:10px;
-	color: white;
-	padding: 12px 25px;
-	text-align: center;
-	display: inline-block;
-	font-size: 20px;
-	position: absolute;
-	top: 43%;
-	left: 65%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
   
-.navButton{
-	  display: inline-block;
-	  margin: 10px 9.5%;
-	  width: 30%;
-	  border-radius: 6px;
+  
+  .navButton{
+	display: inline-block;
+	margin: 10px 9.5%;
+	width: 30%;
+	border-radius: 6px;
   }
   
   .navButtons{
-	  display: block;
-	  width: 100%;
+	display: block;
+	width: 100%;
   }
   
   #userResults{
-	  width: 80%;
-	  margin: auto;
+	width: 80%;
+	margin: auto;
   }
   #userResults2{
-	  width: 80%;
-	  margin: auto;
+	width: 80%;
+	margin: auto;
   }
-	
-  /* .reportbutton2 { */
-  
-  
-	  /* padding: 12px 25px; */
-	  /* text-align: center; */
-	  /* display: inline-block; */
-	  /* font-size: 12px; */
-	  /* position: absolute; */
-	  /* top: 98%; */
-	  /* left: 50%; */
-	  /* -ms-transform: translate(-50%, -50%); */
-	  /* transform: translate(-50%, -50%); */
-  /* } */
-  
-  
-	
-  /* .reportbutton3 { */
-	  /* width: 210px; */
-  
-  
-	  /* padding: 5px 5px; */
-	  /* text-align: center; */
-	  /* display: inline-block; */
-	  /* font-size: 12px; */
-	  /* position: absolute; */
-	  /* top: 10%; */
-	  /* left: 50%; */
-	  /* -ms-transform: translate(-50%, -50%); */
-	  /* transform: translate(-50%, -50%); */
-  /* } */
-  
-  /* .reportbutton4 { */
-	  /* width: 210px; */
-  
-  
-	  /* padding: 5px 5px; */
-	  /* text-align: center; */
-	  /* display: inline-block; */
-	  /* font-size: 12px; */
-	  /* position: absolute; */
-	  /* top: 85.5%; */
-	  /* left: 32.5%; */
-	  /* -ms-transform: translate(-50%, -50%); */
-	  /* transform: translate(-50%, -50%); */
-  /* } */
-	
-  /* .reportbutton5 { */
-	  /* width: 210px; */
-  
-  
-	  /* padding: 5px 5px; */
-	  /* text-align: center; */
-	  /* display: inline-block; */
-	  /* font-size: 12px; */
-	  /* position: absolute; */
-	  /* top: 85.5%; */
-	  /* left: 67.5%; */
-	  /* -ms-transform: translate(-50%, -50%); */
-	  /* transform: translate(-50%, -50%); */
-  /* } */
-  /* .printbutton { */
-	  /* width: 210px; */
-  
-  
-	  /* padding: 12px 25px; */
-	  /* text-align: center; */
-	  /* font-size: 12px; */
-	  /* position: absolute; */
-	  /* top: 90%; */
-	  /* left: 50%; */
-	  /* -ms-transform: translate(-50%, -50%); */
-	  /* transform: translate(-50%, -50%); */
-  /* } */
-  
-  /* .contactbutton { */
-	/* width: 210px; */
-	/* border: none; */
-	/* color: white; */
-	/* padding: 12px 25px; */
-	/* text-align: center; */
-	/* display: inline-block; */
-	/* font-size: 23px; */
-	/* position: absolute; */
-	/* top: 44%; */
-	/* left: 55%; */
-	/* -ms-transform: translate(-50%, -50%); */
-	/* transform: translate(-50%, -50%); */
-  /* } */
-  
   
   .modal2-header {
 	padding: 4px 12px;
@@ -405,27 +232,15 @@ button{
 	color: white;
   }
   
-  .modal2-body {padding: 4px 12px;}
+  .modal2-body {
+	padding: 4px 12px;
+  }
   
   .modal2-footer {
 	padding: 4px 12px;
 	background-color: #0076d0;
 	color: white;
   }
-  
-  /* .modalActivities { */
-	/* position: relative; */
-	/* background-color: #fefefe; */
-	/* margin: auto; */
-	/* padding: 0; */
-	/* border: 1px solid #888; */
-	/* width: 80%; */
-	/* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-	/* -webkit-animation-name: animatetop; */
-	/* -webkit-animation-duration: 0.7s; */
-	/* animation-name: animatetop; */
-	/* animation-duration: 0.7s */
-  /* } */
   
   .modalActivities2 {
 	position: fixed;
@@ -451,21 +266,7 @@ button{
 	animation-name: animatetop;
 	animation-duration: 0.7s;
 	border-radius: 5px;
-	}
-  
- 
-  /* .close { */
-	/* color: #aaaaaa; */
-	/* float: right; */
-	/* font-size: 28px; */
-	/* font-weight: bold; */
-  /* } */
-  
-  /* .close:hover, */
-  /* .close:focus { */
-	/* color: #000; */
-	/* cursor: pointer; */
-  /* } */
+  }
   
   .hide {
 	display: none;
@@ -480,6 +281,10 @@ button{
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+  }
+  
+  textarea{
+	height:200px;
   }
   
   input[type=submit] {
@@ -526,7 +331,6 @@ button{
 	to {opacity: 1}
   }
   
-  
   /*media for print option*/
   
   @media print {
@@ -539,787 +343,331 @@ button{
 	p {display:none;}
 	h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, blockquote, form, fieldset, legend, div,body { -webkit-print-color-adjust:exact; }
   }
-@media only screen and (max-width: 1024px) {
-.modal-content {
-   background-color: #fefefe;
-   margin: 90px 18% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 60%; /* Could be more or less, depending on screen size */
-   max-height: 80%;
-   overflow: auto;
-}
-.navButton {
-   margin: 10px 9.5%; 
-}
-p{
-   font-size: 15px; 
-}
-h2{
-   font-size: 23px;	
-}
-h3{
-   font-size: 15px;
-}
-.mobile1 {
-   font-size: 15px;
-   margin: auto; 
-}
-.modal2-header {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.modal2-body {
-   width: 98%; 
-   padding: 4px 12px;
-}
-.modal2-footer {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.close {
-   margin-top: -10px;
-   margin-right: 0px;
-}
-input[type=text].mobile2 {
-	width: 80%;
-}
-input[type=text], select, textarea {
-   width: 99%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
- }
-.checkbox {
-   font-size: 1px;
-   width: 49%;
-}
-.aboutButton{
-	width: 110px;
-	font-size: 7px; 
-	top: 33%;
-	left: 45%;
-	padding: 10px 10px;
- }
-.contactButton{
-	width: 110px;
-	font-size: 7px; 
-	top: 33%;
-	left: 60%;
-	padding: 10px 10px;
- }
-.footmob	{
-   margin: 15px auto;
-}
-}  
-
-@media only screen and (max-width: 768px) {
-.modal-content {
-   background-color: #fefefe;
-   margin: 90px 17% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 60%; /* Could be more or less, depending on screen size */
-   max-height: 80%;
-   overflow: auto;
-}
-.navButton {
-   margin: 10px 9.5%; 
-}
-#tab{
-	padding: 0 30px;
-}
-.reportButton{
-	border-radius: 8px;
-	font-size: 17px;
-	padding: 7px 20px;
-}
-p{
-   font-size: 15px; 
-}
-h2{
-   font-size: 23px;	
-}
-h3{
-   font-size: 15px;
-}
-.mobile1 {
-   font-size: 15px;
-   margin: auto; 
-}
-.modal2-header {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.modal2-body {
-   width: 98%; 
-   padding: 4px 12px;
-}
-.modal2-footer {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.close {
-   margin-top: -10px;
-   margin-right: 0px;
-}
-input[type=text].mobile2 {
-	width: 80%;
-}
-input[type=text], select, textarea {
-   width: 99%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
- }
-.checkbox {
-   font-size: 1px;
-   width: 49%;
-}
-.aboutButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 33%;
-	left: 35%;
-	padding: 10px 10px;
- }
-.contactButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 33%;
-	left: 55%;
-	padding: 10px 10px;
- }
-.footmob	{
-   margin: 15px auto;
-}
-}
-
-@media only screen and (max-width: 540px) {
-.modal-content {
-   background-color: #fefefe;
-   margin: 90px 17% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 60%; /* Could be more or less, depending on screen size */
-   max-height: 80%;
-   overflow: auto;
-}
-.navButton {
-   margin: 10px 9.5%; 
-}
-.modalClose{
-	margin-top: 10px;
-}
-#tab{
-	padding: 0 30px;
-}
-.reportButton{
-	border-radius: 8px;
-	font-size: 15px;
-	padding: 7px 20px;
-}
-p{
-   font-size: 15px; 
-}
-h2{
-   font-size: 23px;	
-}
-h3{
-   font-size: 15px;
-}
-.resultimage{
-	width: 75%;
-	height: 75%;
-}
-.mobile1 {
-   font-size: 15px;
-   margin: auto; 
-}
-.modal2-header {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.modal2-body {
-   width: 98%; 
-   padding: 4px 12px;
-}
-.modal2-footer {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.close {
-   margin-top: -10px;
-   margin-right: 0px;
-}
-input[type=text].mobile2 {
-	width: 80%;
-}
-input[type=text], select, textarea {
-   width: 99%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
- }
-.checkbox {
-   font-size: 1px;
-   width: 49%;
-}
-.instructionsButton{
-	border-radius: 8px;
-    font-size: 14px;
-    padding: 7px 20px;
-}
-.aboutButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 33%;
-	left: 40%;
-	padding: 10px 10px;
- }
-.contactButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 33%;
-	left: 62.5%;
-	padding: 10px 10px;
- }
-.footmob	{
-   margin: 15px auto;
-}
-}
-
-@media only screen and (max-width: 414px) {
-.modal-content {
-   background-color: #fefefe;
-   margin: 110px 16% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 50%; /* Could be more or less, depending on screen size */
-   max-height: 80%;
-   overflow: auto;
-}
-.navButton {
-   margin: 10px 4.25%; 
-   font-size: 14px;
-}
-p{
-   font-size: 15px; 
-}
-h2{
-   font-size: 23px;	
-}
-h3{
-   font-size: 15px;
-}
-#tab {
-   padding: 0 30px;
-}
-.reportButton{
-   border-radius: 8px;
-   font-size: 13px;
-   padding: 7px 20px;
-}
-.instructionsButton{
-	border-radius: 8px;
-    font-size: 10px;
-    padding: 7px 20px;
-}
-.modalClose{
-	font-size: 14px;
-}
-.resultimage{
-	width: 75%;
-	height: 75%;
-}
-.mobile1 {
-   font-size: 15px;
-   margin: auto; 
-   padding-right: 30%;
-}
-.modal2-header {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.modal2-body {
-   width: 98%; 
-   padding: 4px 12px;
-}
-.modal2-footer {
-   width: 98%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.close {
-   margin-top: -10px;
-   margin-right: 0px;
-}
-input[type=text].mobile2 {
-	width: 50%;
-}
-input[type=text], select, textarea {
-   width: 77%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
- }
-.checkbox {
-   font-size: 1px;
-   width: 37.3%;
-}
-.aboutButton{
-	width: 100px;
-	font-size: 7px; 
-	top: 35%;
-	left: 50%;
- }
- .contactButton{
-	width: 110px;
-	font-size: 6px; 
-	top: 35%;
-	left: 80%;
- }
-footer {
-	width: 67%;
-}
-.footmob	{
-   margin: 15px auto;
-}
-dt,dd,dl {
-	font-size: 10px;
-}
-}
-
-@media only screen and (max-width: 375px) {
- .modal-content {
-	background-color: #fefefe;
-	margin: 110px 12% auto; /* 15% from the top and centered */
-	padding: 20px;
-	border: 1px solid #888;
-	width: 60%; /* Could be more or less, depending on screen size */
-	max-height: 80%;
-	overflow: auto;
-}
- .navButton {
-	margin: 10px 2.25%; 
-	font-size: 13px;
- }
- .modalClose {
-	font-size: 12px;
- }
- .reportButton {
-	border-radius: 8px;
-	font-size: 13px;
-	padding: 7px 20px;
- }
- #tab{
-	padding: 0 30px;
- }
- p{
-	font-size: 15px; 
- }
- h2{
-	font-size: 20px; 
- }
- h3{
-	font-size: 15px;
- }
- .resultimage{
-	width: 75%;
-	height: 75%;
-}
- .mobile1 {
-	font-size: 15px;
-	margin: auto; 
-	padding-right: 30%;
- }
- .modal2-header {
-	width: 95%;
-	padding: 4px 12px;
-	background-color: #0076d0;
-	color: white;
- }
- .modal2-body {
-	width: 95%; 
-	padding: 4px 12px;
- }
- .modal2-footer {
-	width: 95%;
-	padding: 4px 12px;
-	background-color: #0076d0;
-	color: white;
- }
- .close {
-	margin-top: -10px;
-	margin-right: 0px;
- }
- input[type=text].mobile2 {
-	 width: 50%;
- }
- input[type=text], select, textarea {
-	width: 70%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-  }
- .checkbox {
-	font-size: 1px;
-	width: 37.3%;
- }
- .aboutButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 33%;
-	left: 50%;
-	padding: 10px 10px;
- }
-.contactButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 33%;
-	left: 80%;
-	padding: 10px 10px;
- }
- .footmob	{
-	margin: 15px auto;
-}
-dt,dd,dl {
-	font-size: 10px;
-}
-}	  
-
-@media only screen and (max-width: 360px) {
-.modal-content {
-   background-color: #fefefe;
-   margin: 110px 10.5% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 50%; /* Could be more or less, depending on screen size */
-   max-height: 80%;
-   overflow: auto;
-}
-.navButton {
-   margin: 10px 1.5%; 
-   font-size: 12px;
-}
-.modalClose{
-   font-size: 12px;
-}
-p{
-	font-size: 15px; 
-}
-h2{
-	font-size: 20px;
-}
-h3{
-	font-size: 15px;
-}
-.resultimage{
-	width: 75%;
-	height: 75%;
-}
-#tab {
-	padding: 0 30px;
-  }
-.mobile1 {
-   font-size: 15px;
-   margin: auto; 
-   padding-right: 35%;
-}
-.modal2-header {
-   width: 95%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.modal2-body {
-   width: 95%; 
-   padding: 4px 12px;
-}
-.modal2-footer {
-   width: 95%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.close {
-   margin-top: -10px;
-   margin-right: 0px;
-}
-input[type=text].mobile2 {
-	width: 50%;
-}
-input[type=text], select, textarea {
-   width: 60%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
-}
-.checkbox {
-   font-size: 1px;
-   width: 32.3%;
-}
-.reportButton {
-	border-radius: 8px;
-	font-size: 13px;
-	padding: 7px 20px;
-}
-.instructionsButton{
-	border-radius: 8px;
-    font-size: 10px;
-    padding: 7px 20px;
-}
-.aboutButton{
-   width: 100px;
-   font-size: 7px; 
-   top: 33%;
-   left: 50%;
-}
-.contactButton{
-   width: 110px;
-   font-size: 6px; 
-   top: 33%;
-   left: 80%;
-}
-.footmob{
-   margin: 15px auto;
-}
-dt,dd,dl {
-	font-size: 10px;
-}
-}
-
-@media only screen and (max-width: 320px) {
-.modal-content {
-   background-color: #fefefe;
-   margin: 130px 6.5% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 50%; /* Could be more or less, depending on screen size */
-   max-height: 80%;
-   overflow: auto;
-}
-button {
-   font-size: 10px;
-}
-.navButton {
-   width: 50px;
-   font-size: 10px;
-   margin: 10px 9%; 
-}
-p{
-	font-size: 15px; 
-}
-h3{
-	font-size: 15px;
-}
-.resultimage{
-	width: 75%;
-	height: 75%;
-}
-.mobile1 {
-   font-size: 15px;
-   margin: auto; 
-   padding-right: 40%;
-}
-.modal2-header {
-   width: 92.5%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.modal2-body {
-   width: 92.5%; 
-   padding: 4px 12px;
-}
-.modal2-footer {
-   width: 92.5%;
-   padding: 4px 12px;
-   background-color: #0076d0;
-   color: white;
-}
-.close {
-   margin-top: -10px;
-   margin-right: 0px;
-}
-input[type=text].mobile2 {
-	width: 40%;
-}
-input[type=text], select, textarea {
-   width: 50%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
-}
-.checkbox {
-   font-size: 1px;
-   width: 50%;
-}
-.aboutButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 35%;
-	left: 50%;
-	padding: 10px 10px;
- }
-.contactButton{
-	width: 90px;
-	font-size: 5px; 
-	top: 35%;
-	left: 80%;
-	padding: 10px 10px;
- }
-.footmob{
-   margin: 15px auto;
-}
-dt,dd,dl {
- font-size: 10px;
-}
-}
-
-@media only screen and (max-width: 280px) {
+  
+  @media only screen and (max-width: 1024px) {
 	.modal-content {
-	   background-color: #fefefe;
-	   margin: 100px 4.5% auto; /* 15% from the top and centered */
-	   padding: 20px;
-	   border: 1px solid #888;
-	   width: 45%; /* Could be more or less, depending on screen size */
-	   max-height: 80%;
-	   overflow: auto;
+	  margin: 90px 18% auto; /* 15% from the top and centered */
 	}
-	button {
-	   font-size: 10px;
-	}
-	.navButton {
-	   width: 50px;
-	   font-size: 10px;
-	   margin: 10px 6.5%; 
-	}
-	.modalClose{
-		margin-top: 10px;
-	}
-	.reportButton{
-		border-radius: 8px;
-		font-size: 8px;
-		padding: 7px 20px;
-	}
+	  
 	p{
-		font-size: 12px; 
+	  font-size: 15px; 
 	}
+	
 	h2{
-		font-size: 18px;
+	  font-size: 23px;	
 	}
+	
 	h3{
-		font-size: 15px;
+	  font-size: 15px;
 	}
-	.resultimage{
-		width: 75%;
-		height: 75%;
+	
+	#tab{
+	  padding: 0 4em;
 	}
+	
 	.mobile1 {
-	   font-size: 15px;
-	   margin: auto;
-	   padding-right: 45%; 
+	  font-size: 15px;
+	  margin: auto; 
 	}
+	
 	.modal2-header {
-	   width: 92.5%;
-	   padding: 4px 12px;
-	   background-color: #0076d0;
-	   color: white;
+	  width: 98%;
 	}
+	
 	.modal2-body {
-	   width: 92.5%; 
-	   padding: 4px 12px;
+	  width: 98%; 
 	}
+	
 	.modal2-footer {
-	   width: 92.5%;
-	   padding: 4px 12px;
-	   background-color: #0076d0;
-	   color: white;
+	  width: 98%;
 	}
+	
 	.close {
-	   margin-top: -10px;
-	   margin-right: 0px;
+	  margin-right: -10px;
 	}
+	
 	input[type=text].mobile2 {
-		width: 30%;
+	  width: 80%;
 	}
+	
 	input[type=text], select, textarea {
-	   width: 43%;
-	   padding: 12px;
-	   border: 1px solid #ccc;
-	   border-radius: 4px;
-	   box-sizing: border-box;
-	   margin-top: 6px;
-	   margin-bottom: 16px;
-	   resize: vertical;
-	   display: block;
+	  width: 99%;
 	}
+	
+	.footmob	{
+	  margin: 15px auto;
+	}
+  }  
+  
+  @media only screen and (max-width: 768px) {
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: 9em auto; /* 15% from the top and centered */
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 60%; /* Could be more or less, depending on screen size */
+	  max-height: 80%;
+	  overflow: auto;
+	}
+	  
+	#tab{
+	  padding: 0 2em;
+	}
+	
+	.reportButton{
+	  border-radius: 8px;
+	  font-size: 17px;
+	  padding: 7px 20px;
+	}
+	
+	.modal2-body {
+	  width: 98%; 
+	}
+	
+	.modal2-footer {
+	width: 98%;
+	}
+	  
+	input[type=text].mobile2 {
+	  width: 80%;
+	}
+	  
 	.checkbox {
-	   font-size: 1px;
-	   width: 50%;
+	  font-size: 15px;
+	  height:1.5em;
 	}
-	.aboutButton{
-		width: 70px;
-		font-size: 5px; 
-		top: 35%;
-		left: 55%;
-		padding: 7px 7px;
-	 }
-	.contactButton{
-		width: 70px;
-		font-size: 5px; 
-		top: 35%;
-		left: 85%;
-		padding: 7px 7px;
-	 }
-	.footmob{
-	   margin: 15px auto;
+	
+	.footmob	{
+	  margin: 15px auto;
 	}
+  }
+  
+  @media only screen and (max-width: 540px) {
+	.modal-content {
+	  width: 75%; /* Could be more or less, depending on screen size */
+	}
+	
+	.modalDisclaimer .modalContent{
+	  margin: auto;
+	}
+	
+	.modalClose{
+	  margin-top: 10px;
+	}
+	
+	.resultimage{
+	  width: 75%;
+	  height: 75%;
+	}
+	
+	.instructionsButton{
+	  border-radius: 8px;
+	  font-size: 14px;
+	  padding: 7px 20px;
+	}
+  
+	.checkbox {
+	  width:95%;
+	}
+  }
+  
+  @media only screen and (max-width: 414px) {
+	.navButton {
+	  font-size: 14px;
+	}
+	
+	.reportButton{
+	  font-size: 13px;
+	}
+	
+	.instructionsButton{
+	  border-radius: 8px;
+	  font-size: 10px;
+	  padding: 7px 20px;
+	}
+	
+	.modalClose{
+	  font-size: 14px;
+	}
+	  
+	#tab{
+	  padding: 0;
+	}
+	
+	input[type=text].mobile2 {
+	  width: 50%;
+	}
+	
+	input[type=text], select, textarea {
+	  width: 77%;
+	}
+	.formcontact input, .formcontact textarea{
+	  width: 95%;
+	}
+	
 	dt,dd,dl {
-	 font-size: 10px;
+	  font-size: 10px;
 	}
+   }
+  
+  @media only screen and (max-width: 375px) {
+	.navButton {
+	  /* font-size: 13px; */
 	}
+	
+	.modalClose {
+	  font-size: 12px;
+	}
+	
+	.reportButton {
+	  border-radius: 8px;
+	  font-size: 13px;
+	  padding: 7px 20px;
+	}
+	
+	h2{
+	  font-size: 20px; 
+	}
+	  
+	.resultimage{
+	  width: 75%;
+	  height: 75%;
+	}
+	  
+	.modal2-header {
+	  width: 95%;
+	}
+	
+	.modal2-body {
+	  width: 95%; 
+	}
+	
+	.modal2-footer {
+	  width: 95%;
+	}
+	 
+	input[type=text].mobile2 {
+	  width: 50%;
+	}
+	
+	/* input[type=text], select, textarea { */
+	  /* width: 70%; */
+	/* } */
+	
+	.footmob	{
+	  margin: 15px auto;
+	}
+	
+	dt,dd,dl {
+	  font-size: 10px;
+	}
+  }	  
+  
+  @media only screen and (max-width: 360px) {
+	.navButton {
+	  font-size: 12px;
+	}
+	
+	.modalClose{
+	  font-size: 12px;
+	}
+	
+	.resultimage{
+	  width: 75%;
+	  height: 75%;
+	}
+	
+	/* #tab { */
+	  /* padding: 0 30px; */
+	/* } */
+	
+	/* .mobile1 { */
+	  /* padding-right: 35%; */
+	/* } */
+	
+	.modal2-body {
+	  width: 95%; 
+	}
+	
+	.modal2-footer {
+	  width: 95%;
+	}
+	
+	input[type=text].mobile2 {
+	  width: 50%;
+	}
+	
+	textarea {
+	  height: 6em;
+	}
+	
+	.reportButton {
+	  border-radius: 8px;
+	  font-size: 13px;
+	  padding: 7px 20px;
+	}
+	
+	.instructionsButton{
+	  border-radius: 8px;
+	  font-size: 10px;
+	  padding: 7px 20px;
+	}
+	
+	.aboutButton{
+	  width: 100px;
+	  font-size: 7px; 
+	  top: 33%;
+	  left: 50%;
+	}
+	
+	.contactButton{
+	  width: 110px;
+	  font-size: 6px; 
+	  top: 33%;
+	  left: 80%;
+	}
+	
+	.footmob{
+	  margin: 15px auto;
+	}
+	
+	dt,dd,dl {
+	  font-size: 10px;
+	}
+  }
+  
+  @media only screen and (max-width: 320px) {
+	button {
+	  font-size: 10px;
+	}
+	
+	.navButton {
+	  width: 50px;
+	  font-size: 10px;
+	  margin: 10px 11%; 
+	}
+	  
+	/* .mobile1 { */
+	  /* padding-right: 40%; */
+	/* } */
+	
+	.modal2-header {
+	  width: 92.5%;
+	}
+	
+	.modal2-body {
+	  width: 92.5%; 
+	}
+	
+	.modal2-footer {
+	  width: 92.5%;
+	}
+	  
+	input[type=text].mobile2 {
+	  width: 40%;
+	}
+	
+	/* input[type=text], select, textarea { */
+	  /* width: 95%; */
+	/* }    */
+  }

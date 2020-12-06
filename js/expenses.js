@@ -306,7 +306,31 @@ function displayUserInput(){
 	document.getElementById("reportingForm").style.display = "none";
 	target.innerHTML += ("<dl>");
 	for (key of keys){
-		target.innerHTML += ("<dt>" + key + "</dt><dd>" + expensesReported[key] + "</dd>" + "<br>");
+		var inputName; 
+		if (key == "incurredExpenses"){
+			inputName = "Expenses incurred?";
+		} else if (key == "expenseType") {
+			inputName = "Type of expense:";
+		} else if (key == "expenseCost") {
+			inputName = "Cost:";
+		} else if (key == "expensePaidTo") {
+			inputName = "Paid to:";
+		} else if (key == "compensationReceived") {
+			inputName = "Compensation received?";
+		} else if (key == "compAmt") {
+			inputName = "Amount of compensation";
+		} else if (key == "compFrom") {
+			inputName = "Compensated by:";
+		} else if (key == "compMethod") {
+			inputName = "Method of compensation";
+		} else if (key == "compNumber") {
+			inputName = "Payment number";
+		} else if (key == "compType") {
+			inputName = "Type of compensation:";
+		} else {
+			inputName = key;
+		}
+		target.innerHTML += ("<dt>" + inputName + "</dt><dd>" + expensesReported[key] + "</dd>" + "<br>");
 	}
 	target.innerHTML += ("</dl>");
 	
