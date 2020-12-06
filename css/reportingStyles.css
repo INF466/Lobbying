@@ -22,7 +22,7 @@
 	position: fixed;
 	z-index: 1;
 	left: 19%;
-	top: 19%;
+	top: 0%;
 	margin: auto;
   }
   
@@ -37,6 +37,11 @@
 	clear:both;
   }
   
+  .endheader{
+	color: white;
+  }
+
+
   .footmob	{
 	padding-bottom:12px;
 	margin-bottom:0px;
